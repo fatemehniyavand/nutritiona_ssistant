@@ -1,0 +1,8 @@
+openai
+chromadb
+pandas
+tqdm
+chainlit
+python-dotenv
+pydantic
+numpy

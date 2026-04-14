@@ -1,0 +1,1993 @@
+food_category,food_item,food_key,serving_reference_g,calories_per_100g,kj_per_100g
+sauces&dressings,1000 island dressing,1000_island_dressing,100.0,370.0,1554.0
+candy&sweets,3 musketeers,3_musketeers,100.0,400.0,1680.0
+soda&softdrinks,7up,7up,100.0,44.0,185.0
+alcoholicdrinks&beverages,absinthe,absinthe,100.0,348.0,1462.0
+fruits,acai,acai,100.0,70.0,294.0
+(fruit)juices,acai juice,acai_juice,100.0,58.0,244.0
+non-alcoholicdrinks&beverages,ace drink,ace_drink,100.0,44.0,185.0
+tropical&exoticfruits,acerola,acerola,100.0,32.0,134.0
+nuts&seeds,acorn,acorn,100.0,387.0,1625.0
+yogurt,activia,activia,100.0,74.0,311.0
+yogurt,activia lemon,activia_lemon,100.0,100.0,420.0
+yogurt,activia strawberry,activia_strawberry,100.0,97.0,407.0
+alcoholicdrinks&beverages,advocaat,advocaat,100.0,283.0,1189.0
+candy&sweets,after eight,after_eight,100.0,452.0,1898.0
+bakingingredients,agar-agar,agar_agar,100.0,26.0,109.0
+bakingingredients,agave syrup,agave_syrup,100.0,310.0,1302.0
+candy&sweets,airheads,airheads,100.0,375.0,1575.0
+sauces&dressings,ajvar,ajvar,100.0,18.0,76.0
+beer,ale,ale,100.0,35.0,147.0
+nuts&seeds,alfalfa sprouts,alfalfa_sprouts,100.0,23.0,97.0
+bakingingredients,all purpose flour,all_purpose_flour,100.0,364.0,1529.0
+potatoproducts,all-blue potatoes,all_blue_potatoes,100.0,61.0,256.0
+venison&game,alligator,alligator,100.0,104.0,437.0
+venison&game,alligator meat,alligator_meat,100.0,232.0,974.0
+spreads,almond butter,almond_butter,100.0,614.0,2579.0
+bakingingredients,almond extract,almond_extract,100.0,258.0,1084.0
+milk&dairyproducts,almond milk,almond_milk,100.0,17.0,71.0
+oils&fats,almond oil,almond_oil,100.0,882.0,3704.0
+candy&sweets,almond roca,almond_roca,100.0,571.0,2398.0
+bakingingredients,almonds,almonds,100.0,529.0,2222.0
+(fruit)juices,aloe vera,aloe_vera,100.0,44.0,185.0
+yogurt,aloe vera yogurt,aloe_vera_yogurt,100.0,85.0,357.0
+soups,alphabet soup,alphabet_soup,100.0,25.0,105.0
+beer,altbier,altbier,100.0,43.0,181.0
+cerealproducts,amaranth,amaranth,100.0,371.0,1558.0
+alcoholicdrinks&beverages,amaretto,amaretto,100.0,310.0,1302.0
+cheese,american cheese,american_cheese,100.0,148.0,622.0
+fish&seafood,anchovy,anchovy,100.0,131.0,550.0
+sausage,andouille,andouille,100.0,232.0,974.0
+candy&sweets,angel delight,angel_delight,100.0,451.0,1894.0
+cakes&pies,angel food cake,angel_food_cake,100.0,258.0,1084.0
+candy&sweets,animal crackers,animal_crackers,100.0,446.0,1873.0
+herbs&spices,anise,anise,100.0,337.0,1415.0
+herbs&spices,anise seed,anise_seed,100.0,337.0,1415.0
+venison&game,antelope meat,antelope_meat,100.0,150.0,630.0
+fruits,apple,apple,100.0,52.0,218.0
+spreads,apple butter,apple_butter,100.0,173.0,727.0
+cakes&pies,apple cake,apple_cake,100.0,252.0,1058.0
+cakes&pies,apple cobbler,apple_cobbler,100.0,198.0,832.0
+cakes&pies,apple crisp,apple_crisp,100.0,156.0,655.0
+cakes&pies,apple crumble,apple_crumble,100.0,156.0,655.0
+(fruit)juices,apple juice,apple_juice,100.0,46.0,193.0
+cakes&pies,apple pie,apple_pie,100.0,237.0,995.0
+bakingingredients,apple pie filling,apple_pie_filling,100.0,100.0,420.0
+non-alcoholicdrinks&beverages,apple spritzer,apple_spritzer,100.0,24.0,101.0
+cakes&pies,apple strudel,apple_strudel,100.0,274.0,1151.0
+cakes&pies,apple turnover,apple_turnover,100.0,348.0,1462.0
+alcoholicdrinks&beverages,applejack,applejack,100.0,233.0,979.0
+cannedfruit,applesauce,applesauce,100.0,62.0,260.0
+cakes&pies,applesauce cake,applesauce_cake,100.0,358.0,1504.0
+cheese,applewood,applewood,100.0,410.0,1722.0
+fruits,apricot,apricot,100.0,48.0,202.0
+spreads,apricot jam,apricot_jam,100.0,250.0,1050.0
+vegetableoils,apricot kernel oil,apricot_kernel_oil,100.0,889.0,3734.0
+(fruit)juices,apricot nectar,apricot_nectar,100.0,56.0,235.0
+fastfood,arby’s grand turkey club,arby_s_grand_turkey_club,100.0,210.0,882.0
+fastfood,arby’s reuben,arby_s_reuben,100.0,208.0,874.0
+fastfood,arby’s roast beef classic,arby_s_roast_beef_classic,100.0,234.0,983.0
+fastfood,arby’s roast beef max,arby_s_roast_beef_max,100.0,234.0,983.0
+vegetableoils,argan oil,argan_oil,100.0,896.0,3763.0
+sauces&dressings,arrabiata sauce,arrabiata_sauce,100.0,36.0,151.0
+herbs&spices,arrowroot,arrowroot,100.0,65.0,273.0
+vegetables,artichoke,artichoke,100.0,47.0,197.0
+vegetables,arugula,arugula,100.0,25.0,105.0
+cheese,asiago cheese,asiago_cheese,100.0,392.0,1646.0
+tropical&exoticfruits,asian pear,asian_pear,100.0,42.0,176.0
+vegetables,asparagus,asparagus,100.0,20.0,84.0
+alcoholicdrinks&beverages,asti,asti,100.0,138.0,580.0
+vegetables,aubergine,aubergine,100.0,25.0,105.0
+fruits,avocado,avocado,100.0,160.0,672.0
+oils&fats,avocado oil,avocado_oil,100.0,857.0,3599.0
+yogurt,ayran,ayran,100.0,42.0,176.0
+legumes,azuki bean,azuki_bean,100.0,124.0,521.0
+vegetableoils,babassu oil,babassu_oil,100.0,884.0,3713.0
+dishes&meals,baby back ribs,baby_back_ribs,100.0,259.0,1088.0
+candy&sweets,baby ruth,baby_ruth,100.0,469.0,1970.0
+cheese,babybel,babybel,100.0,333.0,1399.0
+pork,bacon,bacon,100.0,407.0,1709.0
+dishes&meals,bacon and eggs,bacon_and_eggs,100.0,252.0,1058.0
+"pastries,breads&rolls",bagel,bagel,100.0,257.0,1079.0
+"pastries,breads&rolls",baguette,baguette,100.0,274.0,1151.0
+alcoholicdrinks&beverages,baileys,baileys,100.0,327.0,1373.0
+alcoholicdrinks&beverages,bailey’s irish cream,bailey_s_irish_cream,100.0,327.0,1373.0
+cakes&pies,baked alaska,baked_alaska,100.0,247.0,1037.0
+dishes&meals,baked beans,baked_beans,100.0,94.0,395.0
+dishes&meals,baked chicken,baked_chicken,100.0,164.0,689.0
+coldcuts&lunchmeat,baked ham,baked_ham,100.0,343.0,1441.0
+potatoproducts,baked potato,baked_potato,100.0,93.0,391.0
+cakes&pies,bakewell tart,bakewell_tart,100.0,430.0,1806.0
+bakingingredients,baking powder,baking_powder,100.0,53.0,223.0
+bakingingredients,baking soda,baking_soda,100.0,0.0,0.0
+sauces&dressings,balsamic vinaigrette dressing,balsamic_vinaigrette_dressing,100.0,290.0,1218.0
+herbs&spices,balsamic vinegar,balsamic_vinegar,100.0,88.0,370.0
+legumes,bamboo shoots,bamboo_shoots,100.0,27.0,113.0
+fruits,banana,banana,100.0,89.0,374.0
+"pastries,breads&rolls",banana bread,banana_bread,100.0,326.0,1369.0
+(fruit)juices,banana juice,banana_juice,100.0,50.0,210.0
+"pastries,breads&rolls",banana nut bread,banana_nut_bread,100.0,326.0,1369.0
+cakes&pies,banoffee pie,banoffee_pie,100.0,395.0,1659.0
+sauces&dressings,barbecue sauce,barbecue_sauce,100.0,150.0,630.0
+cerealproducts,barley,barley,100.0,354.0,1487.0
+cerealproducts,barley groats,barley_groats,100.0,100.0,420.0
+soda&softdrinks,barq’s,barq_s,100.0,46.0,193.0
+herbs&spices,basil,basil,100.0,233.0,979.0
+icecream,baskin-robbins,baskin_robbins,100.0,239.0,1004.0
+beer,bass,bass,100.0,45.0,189.0
+pizza,bbq chicken pizza,bbq_chicken_pizza,100.0,234.0,983.0
+pizza,bbq pizza,bbq_pizza,100.0,224.0,941.0
+fastfood,bbq rib,bbq_rib,100.0,212.0,890.0
+dishes&meals,bbq ribs,bbq_ribs,100.0,255.0,1071.0
+fastfood,bean burrito,bean_burrito,100.0,200.0,840.0
+legumes,bean curd,bean_curd,100.0,76.0,319.0
+legumes,bean sprouts,bean_sprouts,100.0,30.0,126.0
+soups,bean stew,bean_stew,100.0,133.0,559.0
+venison&game,bear meat,bear_meat,100.0,259.0,1088.0
+venison&game,beaver meat,beaver_meat,100.0,212.0,890.0
+sauces&dressings,bechamel sauce,bechamel_sauce,100.0,225.0,945.0
+beer,beck’s,beck_s,100.0,39.0,164.0
+nuts&seeds,beechnut,beechnut,100.0,576.0,2419.0
+beef&veal,beef,beef,100.0,171.0,718.0
+soups,beef bouillon,beef_bouillon,100.0,3.0,13.0
+offal&giblets,beef brain,beef_brain,100.0,196.0,823.0
+beef&veal,beef brisket,beef_brisket,100.0,137.0,575.0
+beef&veal,beef fillet,beef_fillet,100.0,189.0,794.0
+beef&veal,beef goulash,beef_goulash,100.0,123.0,517.0
+offal&giblets,beef heart,beef_heart,100.0,165.0,693.0
+meat,beef jerky,beef_jerky,100.0,410.0,1722.0
+offal&giblets,beef kidney,beef_kidney,100.0,158.0,664.0
+offal&giblets,beef liver,beef_liver,100.0,191.0,802.0
+offal&giblets,beef lung,beef_lung,100.0,120.0,504.0
+offal&giblets,beef melt,beef_melt,100.0,271.0,1138.0
+beef&veal,beef minute steak,beef_minute_steak,100.0,133.0,559.0
+beef&veal,beef neck,beef_neck,100.0,213.0,895.0
+soups,beef noodle soup,beef_noodle_soup,100.0,34.0,143.0
+beef&veal,beef pancreas,beef_pancreas,100.0,271.0,1138.0
+beef&veal,beef patty,beef_patty,100.0,247.0,1037.0
+pizza,beef pizza,beef_pizza,100.0,304.0,1277.0
+beef&veal,beef prime rib,beef_prime_rib,100.0,404.0,1697.0
+beef&veal,beef ribs,beef_ribs,100.0,196.0,823.0
+coldcuts&lunchmeat,beef salami,beef_salami,100.0,375.0,1575.0
+beef&veal,beef sirloin,beef_sirloin,100.0,182.0,764.0
+soups,beef soup,beef_soup,100.0,33.0,139.0
+dishes&meals,beef stew,beef_stew,100.0,95.0,399.0
+beef&veal,beef suet,beef_suet,100.0,854.0,3587.0
+beef&veal,beef tallow,beef_tallow,100.0,902.0,3788.0
+meat,beef tenderloin,beef_tenderloin,100.0,218.0,916.0
+beef&veal,beef thymus,beef_thymus,100.0,319.0,1340.0
+offal&giblets,beef tongue,beef_tongue,100.0,284.0,1193.0
+beef&veal,beef tripe,beef_tripe,100.0,94.0,395.0
+alcoholicdrinks&beverages,beer,beer,100.0,43.0,181.0
+"pastries,breads&rolls",beer bread,beer_bread,100.0,227.0,953.0
+vegetables,beetroot,beetroot,100.0,43.0,181.0
+vegetables,bell pepper,bell_pepper,100.0,20.0,84.0
+icecream,ben and jerry’s,ben_and_jerry_s,100.0,228.0,958.0
+legumes,bengal gram,bengal_gram,100.0,364.0,1529.0
+slicedcheese,bergkäse,bergk_se,100.0,418.0,1756.0
+sauces&dressings,bernaise sauce,bernaise_sauce,100.0,414.0,1739.0
+pizza,bianca pizza,bianca_pizza,100.0,246.0,1033.0
+fastfood,big n’ tasty,big_n_tasty,100.0,223.0,937.0
+yogurt,bircher muesli yogurt,bircher_muesli_yogurt,100.0,109.0,458.0
+cakes&pies,birthday cake,birthday_cake,100.0,465.0,1953.0
+dishes&meals,biryani,biryani,100.0,176.0,739.0
+"pastries,breads&rolls",biscuit,biscuit,100.0,269.0,1130.0
+venison&game,bison,bison,100.0,171.0,718.0
+venison&game,bison meat,bison_meat,100.0,171.0,718.0
+venison&game,bison sirloin,bison_sirloin,100.0,171.0,718.0
+soda&softdrinks,bitter lemon,bitter_lemon,100.0,34.0,143.0
+cakes&pies,black and white cookie,black_and_white_cookie,100.0,381.0,1600.0
+legumes,black beans,black_beans,100.0,341.0,1432.0
+"pastries,breads&rolls",black bread,black_bread,100.0,250.0,1050.0
+legumes,black chickpeas,black_chickpeas,100.0,364.0,1529.0
+cakes&pies,black forest cake,black_forest_cake,100.0,264.0,1109.0
+legumes,black gram,black_gram,100.0,341.0,1432.0
+vegetables,black olives,black_olives,100.0,115.0,483.0
+herbs&spices,black pepper,black_pepper,100.0,251.0,1054.0
+dishes&meals,black pudding,black_pudding,100.0,253.0,1063.0
+dishes&meals,black rice,black_rice,100.0,323.0,1357.0
+herbs&spices,black sesame seeds,black_sesame_seeds,100.0,573.0,2407.0
+fruits,blackberries,blackberries,100.0,43.0,181.0
+spreads,blackberry jam,blackberry_jam,100.0,250.0,1050.0
+(fruit)juices,blackberry juice,blackberry_juice,100.0,48.0,202.0
+spreads,blackcurrant jam,blackcurrant_jam,100.0,250.0,1050.0
+fruits,blood oranges,blood_oranges,100.0,50.0,210.0
+sausage,blood sausage,blood_sausage,100.0,379.0,1592.0
+dishes&meals,blt,blt,100.0,247.0,1037.0
+cheese,blue cheese,blue_cheese,100.0,353.0,1483.0
+sauces&dressings,blue cheese dressing,blue_cheese_dressing,100.0,533.0,2239.0
+alcoholicdrinks&beverages,blue curacao,blue_curacao,100.0,243.0,1021.0
+beer,blue moon,blue_moon,100.0,48.0,202.0
+fruits,blueberries,blueberries,100.0,57.0,239.0
+cakes&pies,blueberry cobbler,blueberry_cobbler,100.0,234.0,983.0
+spreads,blueberry jam,blueberry_jam,100.0,250.0,1050.0
+cakes&pies,blueberry muffin,blueberry_muffin,100.0,377.0,1583.0
+cakes&pies,blueberry pie,blueberry_pie,100.0,232.0,974.0
+yogurt,blueberry yogurt,blueberry_yogurt,100.0,105.0,441.0
+fish&seafood,bluefish,bluefish,100.0,159.0,668.0
+beer,bock beer,bock_beer,100.0,50.0,210.0
+sausage,bockwurst,bockwurst,100.0,301.0,1264.0
+sausage,boiled ham,boiled_ham,100.0,104.0,437.0
+potatoproducts,boiled potatoes,boiled_potatoes,100.0,87.0,365.0
+coldcuts&lunchmeat,bologna,bologna,100.0,247.0,1037.0
+sauces&dressings,bolognese,bolognese,100.0,106.0,445.0
+sausage,boudin,boudin,100.0,194.0,815.0
+soups,bouillon,bouillon,100.0,16.0,67.0
+alcoholicdrinks&beverages,bourbon,bourbon,100.0,233.0,979.0
+(fruit)juices,boysenberry juice,boysenberry_juice,100.0,54.0,227.0
+"oatmeal,muesli&cereals",bran flakes,bran_flakes,100.0,356.0,1495.0
+"pastries,breads&rolls",bran muffins,bran_muffins,100.0,270.0,1134.0
+alcoholicdrinks&beverages,brandy,brandy,100.0,213.0,895.0
+sausage,bratwurst,bratwurst,100.0,297.0,1247.0
+sausage,brawn,brawn,100.0,157.0,659.0
+nuts&seeds,brazil nuts,brazil_nuts,100.0,656.0,2755.0
+bakingingredients,bread flour,bread_flour,100.0,361.0,1516.0
+"pastries,breads&rolls",bread pudding,bread_pudding,100.0,153.0,643.0
+tropical&exoticfruits,breadfruit,breadfruit,100.0,103.0,433.0
+"pastries,breads&rolls",breadsticks,breadsticks,100.0,400.0,1680.0
+sausage,breakfast sausage links,breakfast_sausage_links,100.0,339.0,1424.0
+fish&seafood,bream,bream,100.0,135.0,567.0
+coldcuts&lunchmeat,bresaola,bresaola,100.0,178.0,748.0
+cheese,brie,brie,100.0,334.0,1403.0
+"pastries,breads&rolls",brioche,brioche,100.0,346.0,1453.0
+bakingingredients,brittle,brittle,100.0,592.0,2486.0
+vegetables,broccoli,broccoli,100.0,34.0,143.0
+soups,broccoli cheese soup,broccoli_cheese_soup,100.0,87.0,365.0
+soups,broccoli soup,broccoli_soup,100.0,87.0,365.0
+herbs&spices,broth,broth,100.0,100.0,420.0
+"pastries,breads&rolls",brown bread,brown_bread,100.0,246.0,1033.0
+legumes,brown lentil,brown_lentil,100.0,353.0,1483.0
+dishes&meals,brown rice,brown_rice,100.0,362.0,1520.0
+bakingingredients,brown sugar,brown_sugar,100.0,395.0,1659.0
+"pastries,breads&rolls",brownies,brownies,100.0,405.0,1701.0
+vegetables,brussels sprouts,brussels_sprouts,100.0,43.0,181.0
+beer,buckler (n.a.),buckler_n_a,100.0,21.0,88.0
+cerealproducts,buckwheat,buckwheat,100.0,343.0,1441.0
+cerealproducts,buckwheat groats,buckwheat_groats,100.0,346.0,1453.0
+beer,bud ice,bud_ice,100.0,35.0,147.0
+beer,bud light,bud_light,100.0,29.0,122.0
+beer,bud light chelada,bud_light_chelada,100.0,43.0,181.0
+beer,bud light lime,bud_light_lime,100.0,34.0,143.0
+beer,bud select,bud_select,100.0,28.0,118.0
+beer,bud select 55,bud_select_55,100.0,15.0,63.0
+beer,budweiser,budweiser,100.0,41.0,172.0
+beer,budweiser chelada,budweiser_chelada,100.0,52.0,218.0
+venison&game,buffalo,buffalo,100.0,131.0,550.0
+pizza,buffalo chicken pizza,buffalo_chicken_pizza,100.0,252.0,1058.0
+venison&game,buffalo meat,buffalo_meat,100.0,131.0,550.0
+"pastries,breads&rolls",bun,bun,100.0,316.0,1327.0
+cakes&pies,bundt cake,bundt_cake,100.0,370.0,1554.0
+fastfood,burger king angry whopper,burger_king_angry_whopper,100.0,255.0,1071.0
+fastfood,burger king double whopper,burger_king_double_whopper,100.0,239.0,1004.0
+fastfood,burger king double whopper with cheese,burger_king_double_whopper_with_cheese,100.0,249.0,1046.0
+fastfood,burger king original chicken sandwich,burger_king_original_chicken_sandwich,100.0,301.0,1264.0
+fastfood,burger king premium alaskan fish sandwich,burger_king_premium_alaskan_fish_sandwich,100.0,259.0,1088.0
+fastfood,burger king triple whopper,burger_king_triple_whopper,100.0,269.0,1130.0
+fastfood,burger king whopper,burger_king_whopper,100.0,231.0,970.0
+fastfood,burger king whopper jr.,burger_king_whopper_jr,100.0,234.0,983.0
+fastfood,burger king whopper with cheese,burger_king_whopper_with_cheese,100.0,241.0,1012.0
+dishes&meals,burrito,burrito,100.0,163.0,685.0
+beer,busch,busch,100.0,37.0,155.0
+beer,busch light,busch_light,100.0,27.0,113.0
+beer,busch n.a.,busch_n_a,100.0,17.0,71.0
+oils&fats,butter,butter,100.0,720.0,3024.0
+slicedcheese,butter cheese,butter_cheese,100.0,388.0,1630.0
+dishes&meals,butter chicken,butter_chicken,100.0,140.0,588.0
+icecream,butter pecan ice cream,butter_pecan_ice_cream,100.0,248.0,1042.0
+candy&sweets,butterfinger,butterfinger,100.0,450.0,1890.0
+fish&seafood,butterfish,butterfish,100.0,187.0,785.0
+milk&dairyproducts,buttermilk,buttermilk,100.0,62.0,260.0
+candy&sweets,buttermilk pancakes,buttermilk_pancakes,100.0,238.0,1000.0
+cakes&pies,buttermilk pie,buttermilk_pie,100.0,380.0,1596.0
+sauces&dressings,buttermilk ranch dressing,buttermilk_ranch_dressing,100.0,533.0,2239.0
+legumes,butternut,butternut,100.0,612.0,2570.0
+bakingingredients,butterscotch chips,butterscotch_chips,100.0,539.0,2264.0
+vegetables,cabbage,cabbage,100.0,25.0,105.0
+soups,cabbage soup,cabbage_soup,100.0,28.0,118.0
+wine,cabernet sauvignon,cabernet_sauvignon,100.0,77.0,323.0
+sauces&dressings,caesar dressing,caesar_dressing,100.0,429.0,1802.0
+bakingingredients,cake flour,cake_flour,100.0,362.0,1520.0
+pizza,calabrese pizza,calabrese_pizza,100.0,235.0,987.0
+fish&seafood,calamari,calamari,100.0,175.0,735.0
+offal&giblets,calf brain,calf_brain,100.0,136.0,571.0
+offal&giblets,calf liver,calf_liver,100.0,192.0,806.0
+offal&giblets,calf lung,calf_lung,100.0,104.0,437.0
+offal&giblets,calf melt,calf_melt,100.0,256.0,1075.0
+dishes&meals,california roll,california_roll,100.0,93.0,391.0
+pizza,calzone,calzone,100.0,231.0,970.0
+cheese,camembert,camembert,100.0,300.0,1260.0
+soda&softdrinks,canada dry ginger ale,canada_dry_ginger_ale,100.0,41.0,172.0
+alcoholicdrinks&beverages,canadian whiskey,canadian_whiskey,100.0,216.0,907.0
+pork,canadian-style bacon,canadian_style_bacon,100.0,107.0,449.0
+bakingingredients,candied orange peel,candied_orange_peel,100.0,97.0,407.0
+candy&sweets,candy apple,candy_apple,100.0,152.0,638.0
+candy&sweets,candy cane,candy_cane,100.0,423.0,1777.0
+candy&sweets,candy canes,candy_canes,100.0,423.0,1777.0
+candy&sweets,candy corn,candy_corn,100.0,360.0,1512.0
+candy&sweets,candy floss,candy_floss,100.0,400.0,1680.0
+bakingingredients,cane sugar,cane_sugar,100.0,387.0,1625.0
+cannedfruit,canned apricots,canned_apricots,100.0,48.0,202.0
+cannedfruit,canned blackberries,canned_blackberries,100.0,92.0,386.0
+cannedfruit,canned blueberries,canned_blueberries,100.0,88.0,370.0
+cannedfruit,canned cherries,canned_cherries,100.0,54.0,227.0
+cannedfruit,canned cranberries,canned_cranberries,100.0,178.0,748.0
+cannedfruit,canned crushed pineapple,canned_crushed_pineapple,100.0,53.0,223.0
+cannedfruit,canned figs,canned_figs,100.0,107.0,449.0
+cannedfruit,canned fruit cocktail,canned_fruit_cocktail,100.0,81.0,340.0
+cannedfruit,canned fruit salad,canned_fruit_salad,100.0,50.0,210.0
+cannedfruit,canned gooseberries,canned_gooseberries,100.0,73.0,307.0
+cannedfruit,canned grapefruit,canned_grapefruit,100.0,37.0,155.0
+cannedfruit,canned grapes,canned_grapes,100.0,76.0,319.0
+cannedfruit,canned mandarin oranges,canned_mandarin_oranges,100.0,71.0,298.0
+cannedfruit,canned mango,canned_mango,100.0,65.0,273.0
+cannedfruit,canned mangosteen,canned_mangosteen,100.0,73.0,307.0
+cannedfruit,canned mixed fruit,canned_mixed_fruit,100.0,71.0,298.0
+cannedfruit,canned morello cherries,canned_morello_cherries,100.0,81.0,340.0
+cannedfruit,canned oranges,canned_oranges,100.0,62.0,260.0
+cannedfruit,canned peaches,canned_peaches,100.0,54.0,227.0
+cannedfruit,canned pears,canned_pears,100.0,35.0,147.0
+cannedfruit,canned pineapple,canned_pineapple,100.0,60.0,252.0
+cannedfruit,canned plums,canned_plums,100.0,58.0,244.0
+cannedfruit,canned raspberries,canned_raspberries,100.0,91.0,382.0
+cannedfruit,canned sliced pineapple,canned_sliced_pineapple,100.0,53.0,223.0
+cannedfruit,canned sour cherries,canned_sour_cherries,100.0,114.0,479.0
+cannedfruit,canned strawberries,canned_strawberries,100.0,92.0,386.0
+cannedfruit,canned tangerines,canned_tangerines,100.0,61.0,256.0
+pasta&noodles,cannelloni,cannelloni,100.0,146.0,613.0
+"pastries,breads&rolls",cannoli,cannoli,100.0,254.0,1067.0
+oils&fats,canola oil,canola_oil,100.0,884.0,3713.0
+fruits,cantaloupe,cantaloupe,100.0,34.0,143.0
+tropical&exoticfruits,cantaloupe melon,cantaloupe_melon,100.0,34.0,143.0
+pasta&noodles,capellini,capellini,100.0,353.0,1483.0
+herbs&spices,capers,capers,100.0,23.0,97.0
+coldcuts&lunchmeat,capicola,capicola,100.0,110.0,462.0
+poultry&fowl,capon,capon,100.0,229.0,962.0
+pasta&noodles,cappelletti,cappelletti,100.0,164.0,689.0
+(fruit)juices,capri-sun,capri_sun,100.0,41.0,172.0
+pizza,capricciosa pizza,capricciosa_pizza,100.0,260.0,1092.0
+vegetables,capsicum,capsicum,100.0,27.0,113.0
+"oatmeal,muesli&cereals",cap’n crunch,cap_n_crunch,100.0,404.0,1697.0
+"pastries,breads&rolls",caramel cake,caramel_cake,100.0,385.0,1617.0
+candy&sweets,caramel popcorn,caramel_popcorn,100.0,376.0,1579.0
+candy&sweets,caramel squares,caramel_squares,100.0,367.0,1541.0
+herbs&spices,caraway seeds,caraway_seeds,100.0,333.0,1399.0
+herbs&spices,cardamom,cardamom,100.0,311.0,1306.0
+venison&game,caribou,caribou,100.0,159.0,668.0
+beer,carlsberg,carlsberg,100.0,32.0,134.0
+fish&seafood,carp,carp,100.0,162.0,680.0
+vegetables,carrot,carrot,100.0,41.0,172.0
+cakes&pies,carrot cake,carrot_cake,100.0,408.0,1714.0
+soups,carrot ginger soup,carrot_ginger_soup,100.0,25.0,105.0
+(fruit)juices,carrot juice,carrot_juice,100.0,40.0,168.0
+soups,carrot soup,carrot_soup,100.0,25.0,105.0
+icecream,carvel,carvel,100.0,212.0,890.0
+tropical&exoticfruits,casaba melon,casaba_melon,100.0,28.0,118.0
+nuts&seeds,cashew,cashew,100.0,553.0,2323.0
+potatoproducts,cassava,cassava,100.0,160.0,672.0
+sauces&dressings,catalina dressing,catalina_dressing,100.0,282.0,1184.0
+vegetables,cauliflower,cauliflower,100.0,25.0,105.0
+wine,cava,cava,100.0,76.0,319.0
+fish&seafood,caviar,caviar,100.0,264.0,1109.0
+herbs&spices,cayenne pepper,cayenne_pepper,100.0,318.0,1336.0
+candy&sweets,celebrations,celebrations,100.0,490.0,2058.0
+vegetables,celery,celery,100.0,16.0,67.0
+pasta&noodles,cellophane noodles,cellophane_noodles,100.0,351.0,1474.0
+non-alcoholicdrinks&beverages,chai,chai,100.0,0.0,0.0
+non-alcoholicdrinks&beverages,chai tea,chai_tea,100.0,0.0,0.0
+"pastries,breads&rolls",challah,challah,100.0,283.0,1189.0
+alcoholicdrinks&beverages,chambord,chambord,100.0,348.0,1462.0
+(fruit)juices,chamomile tea,chamomile_tea,100.0,0.0,0.0
+alcoholicdrinks&beverages,champagne,champagne,100.0,75.0,315.0
+"pastries,breads&rolls",chapati,chapati,100.0,240.0,1008.0
+vegetables,chard,chard,100.0,19.0,80.0
+wine,chardonnay,chardonnay,100.0,85.0,357.0
+sauces&dressings,chasseur sauce,chasseur_sauce,100.0,45.0,189.0
+cheese,cheddar,cheddar,100.0,403.0,1693.0
+"oatmeal,muesli&cereals",cheerios,cheerios,100.0,347.0,1457.0
+cheese,cheese fondue,cheese_fondue,100.0,228.0,958.0
+sausage,cheese pastry,cheese_pastry,100.0,374.0,1571.0
+pizza,cheese pizza,cheese_pizza,100.0,267.0,1121.0
+slicedcheese,cheese platter,cheese_platter,100.0,357.0,1499.0
+slicedcheese,cheese slices,cheese_slices,100.0,356.0,1495.0
+cheese,cheese spread,cheese_spread,100.0,290.0,1218.0
+pasta&noodles,cheese tortellini,cheese_tortellini,100.0,291.0,1222.0
+cheese,cheese whiz,cheese_whiz,100.0,276.0,1159.0
+fastfood,cheeseburger,cheeseburger,100.0,263.0,1105.0
+cakes&pies,cheesecake,cheesecake,100.0,321.0,1348.0
+candy&sweets,cheez-it’s,cheez_it_s,100.0,533.0,2239.0
+wine,chenin blanc,chenin_blanc,100.0,80.0,336.0
+tropical&exoticfruits,cherimoya,cherimoya,100.0,75.0,315.0
+fruits,cherries,cherries,100.0,50.0,210.0
+soda&softdrinks,cherry coke,cherry_coke,100.0,44.0,185.0
+spreads,cherry jam,cherry_jam,100.0,250.0,1050.0
+(fruit)juices,cherry juice,cherry_juice,100.0,45.0,189.0
+cakes&pies,cherry pie,cherry_pie,100.0,260.0,1092.0
+vegetables,cherry tomato,cherry_tomato,100.0,100.0,420.0
+yogurt,cherry yogurt,cherry_yogurt,100.0,97.0,407.0
+cakes&pies,chess pie,chess_pie,100.0,411.0,1726.0
+cheese,chester,chester,100.0,387.0,1625.0
+nuts&seeds,chestnut,chestnut,100.0,213.0,895.0
+"oatmeal,muesli&cereals",chex,chex,100.0,387.0,1625.0
+nuts&seeds,chia seeds,chia_seeds,100.0,486.0,2041.0
+meat,chicken,chicken,100.0,219.0,920.0
+soups,chicken bouillon,chicken_bouillon,100.0,4.0,17.0
+sausage,chicken breast,chicken_breast,100.0,79.0,332.0
+coldcuts&lunchmeat,chicken breast fillet,chicken_breast_fillet,100.0,79.0,332.0
+soups,chicken broth,chicken_broth,100.0,16.0,67.0
+dishes&meals,chicken caesar salad,chicken_caesar_salad,100.0,127.0,533.0
+meat,chicken drumstick,chicken_drumstick,100.0,185.0,777.0
+poultry&fowl,chicken drumsticks,chicken_drumsticks,100.0,185.0,777.0
+fastfood,chicken fajita,chicken_fajita,100.0,147.0,617.0
+meat,chicken fat,chicken_fat,100.0,898.0,3772.0
+dishes&meals,chicken fried steak,chicken_fried_steak,100.0,151.0,634.0
+meat,chicken giblets,chicken_giblets,100.0,158.0,664.0
+meat,chicken gizzards,chicken_gizzards,100.0,146.0,613.0
+soups,chicken gumbo soup,chicken_gumbo_soup,100.0,23.0,97.0
+offal&giblets,chicken heart,chicken_heart,100.0,185.0,777.0
+meat,chicken leg,chicken_leg,100.0,174.0,731.0
+poultry&fowl,chicken legs,chicken_legs,100.0,174.0,731.0
+meat,chicken liver,chicken_liver,100.0,167.0,701.0
+dishes&meals,chicken marsala,chicken_marsala,100.0,96.0,403.0
+fastfood,chicken mcnuggets,chicken_mcnuggets,100.0,302.0,1268.0
+sausage,chicken meat,chicken_meat,100.0,79.0,332.0
+soups,chicken noodle soup,chicken_noodle_soup,100.0,25.0,105.0
+fastfood,chicken nuggets,chicken_nuggets,100.0,296.0,1243.0
+dishes&meals,chicken parmesan,chicken_parmesan,100.0,110.0,462.0
+pizza,chicken pizza,chicken_pizza,100.0,234.0,983.0
+fastfood,chicken pizziola,chicken_pizziola,100.0,141.0,592.0
+dishes&meals,chicken pot pie,chicken_pot_pie,100.0,223.0,937.0
+sausage,chicken salad,chicken_salad,100.0,81.0,340.0
+fastfood,chicken sandwich,chicken_sandwich,100.0,241.0,1012.0
+soups,chicken stock,chicken_stock,100.0,16.0,67.0
+offal&giblets,chicken stomach,chicken_stomach,100.0,148.0,622.0
+fastfood,chicken teriyaki sandwich,chicken_teriyaki_sandwich,100.0,138.0,580.0
+meat,chicken thigh,chicken_thigh,100.0,229.0,962.0
+poultry&fowl,chicken thighs,chicken_thighs,100.0,229.0,962.0
+dishes&meals,chicken tikka masala,chicken_tikka_masala,100.0,81.0,340.0
+soups,chicken vegetable soup,chicken_vegetable_soup,100.0,31.0,130.0
+meat,chicken wing,chicken_wing,100.0,266.0,1117.0
+poultry&fowl,chicken wings,chicken_wings,100.0,266.0,1117.0
+soups,chicken with rice soup,chicken_with_rice_soup,100.0,24.0,101.0
+legumes,chickpeas,chickpeas,100.0,364.0,1529.0
+vegetables,chicory,chicory,100.0,72.0,302.0
+herbs&spices,chicory greens,chicory_greens,100.0,23.0,97.0
+herbs&spices,chicory roots,chicory_roots,100.0,72.0,302.0
+herbs&spices,chili,chili,100.0,282.0,1184.0
+legumes,chili bean,chili_bean,100.0,97.0,407.0
+dishes&meals,chili con carne,chili_con_carne,100.0,105.0,441.0
+herbs&spices,chili powder,chili_powder,100.0,282.0,1184.0
+sauces&dressings,chili sauce,chili_sauce,100.0,112.0,470.0
+dishes&meals,chimichanga,chimichanga,100.0,232.0,974.0
+vegetables,chinese cabbage,chinese_cabbage,100.0,16.0,67.0
+offal&giblets,chitterlings,chitterlings,100.0,233.0,979.0
+creamcheese,chive cream cheese,chive_cream_cheese,100.0,342.0,1436.0
+vegetables,chives,chives,100.0,30.0,126.0
+candy&sweets,chocolate,chocolate,100.0,529.0,2222.0
+candy&sweets,chocolate bar,chocolate_bar,100.0,533.0,2239.0
+cakes&pies,chocolate cake,chocolate_cake,100.0,389.0,1634.0
+"oatmeal,muesli&cereals",chocolate cheerios,chocolate_cheerios,100.0,367.0,1541.0
+icecream,chocolate chip ice cream,chocolate_chip_ice_cream,100.0,215.0,903.0
+bakingingredients,chocolate chips,chocolate_chips,100.0,467.0,1961.0
+cakes&pies,chocolate cream pie,chocolate_cream_pie,100.0,304.0,1277.0
+icecream,chocolate ice cream,chocolate_ice_cream,100.0,216.0,907.0
+non-alcoholicdrinks&beverages,chocolate milk,chocolate_milk,100.0,89.0,374.0
+non-alcoholicdrinks&beverages,chocolate milkshake,chocolate_milkshake,100.0,125.0,525.0
+milk&dairyproducts,chocolate mousse,chocolate_mousse,100.0,225.0,945.0
+cakes&pies,chocolate mousse cake,chocolate_mousse_cake,100.0,260.0,1092.0
+cakes&pies,chocolate mousse pie,chocolate_mousse_pie,100.0,260.0,1092.0
+cakes&pies,chocolate muffin,chocolate_muffin,100.0,420.0,1764.0
+spreads,chocolate philadelphia,chocolate_philadelphia,100.0,287.0,1205.0
+spreads,chocolate spread,chocolate_spread,100.0,541.0,2272.0
+bakingingredients,chocolate sprinkles,chocolate_sprinkles,100.0,500.0,2100.0
+wine,chocolate wine,chocolate_wine,100.0,256.0,1075.0
+yogurt,chocolate yogurt,chocolate_yogurt,100.0,128.0,538.0
+"oatmeal,muesli&cereals",chocos,chocos,100.0,380.0,1596.0
+fastfood,chop suey,chop_suey,100.0,172.0,722.0
+coldcuts&lunchmeat,chopped ham,chopped_ham,100.0,180.0,756.0
+coldcuts&lunchmeat,chorizo,chorizo,100.0,455.0,1911.0
+beef&veal,chuck roast,chuck_roast,100.0,141.0,592.0
+beef&veal,chuck steak,chuck_steak,100.0,137.0,575.0
+"pastries,breads&rolls",ciabatta,ciabatta,100.0,271.0,1138.0
+icecream,ciao bella,ciao_bella,100.0,109.0,458.0
+alcoholicdrinks&beverages,cider,cider,100.0,49.0,206.0
+herbs&spices,cider vinegar,cider_vinegar,100.0,21.0,88.0
+herbs&spices,cilantro,cilantro,100.0,23.0,97.0
+herbs&spices,cinnamon,cinnamon,100.0,247.0,1037.0
+"pastries,breads&rolls",cinnamon bun,cinnamon_bun,100.0,436.0,1831.0
+"oatmeal,muesli&cereals",cinnamon toast crunch,cinnamon_toast_crunch,100.0,433.0,1819.0
+fish&seafood,clam,clam,100.0,148.0,622.0
+(fruit)juices,clamato,clamato,100.0,60.0,252.0
+beer,clausthaler (n.a.),clausthaler_n_a,100.0,26.0,109.0
+fruits,clementine,clementine,100.0,47.0,197.0
+herbs&spices,cloves,cloves,100.0,274.0,1151.0
+non-alcoholicdrinks&beverages,club mate,club_mate,100.0,30.0,126.0
+dishes&meals,cobb salad,cobb_salad,100.0,118.0,496.0
+non-alcoholicdrinks&beverages,coca cola,coca_cola,100.0,42.0,176.0
+"oatmeal,muesli&cereals",coco pops,coco_pops,100.0,376.0,1579.0
+"oatmeal,muesli&cereals",cocoa krispies,cocoa_krispies,100.0,386.0,1621.0
+"oatmeal,muesli&cereals",cocoa pebbles,cocoa_pebbles,100.0,367.0,1541.0
+bakingingredients,cocoa powder,cocoa_powder,100.0,228.0,958.0
+"oatmeal,muesli&cereals",cocoa puffs,cocoa_puffs,100.0,400.0,1680.0
+nuts&seeds,coconut,coconut,100.0,354.0,1487.0
+cakes&pies,coconut cake,coconut_cake,100.0,356.0,1495.0
+bakingingredients,coconut flakes,coconut_flakes,100.0,456.0,1915.0
+bakingingredients,coconut milk,coconut_milk,100.0,50.0,210.0
+oils&fats,coconut oil,coconut_oil,100.0,857.0,3599.0
+(fruit)juices,coconut water,coconut_water,100.0,19.0,80.0
+fish&seafood,cod,cod,100.0,105.0,441.0
+oils&fats,cod liver oil,cod_liver_oil,100.0,1000.0,4200.0
+non-alcoholicdrinks&beverages,coffee,coffee,100.0,1.0,4.0
+cakes&pies,coffee cake,coffee_cake,100.0,331.0,1390.0
+milk&dairyproducts,coffee creamer,coffee_creamer,100.0,195.0,819.0
+icecream,coffee ice cream,coffee_ice_cream,100.0,236.0,991.0
+alcoholicdrinks&beverages,cognac,cognac,100.0,235.0,987.0
+alcoholicdrinks&beverages,cointreau,cointreau,100.0,320.0,1344.0
+soda&softdrinks,coke,coke,100.0,42.0,176.0
+soda&softdrinks,coke zero,coke_zero,100.0,0.0,0.0
+non-alcoholicdrinks&beverages,cola,cola,100.0,42.0,176.0
+cheese,colby cheese,colby_cheese,100.0,394.0,1655.0
+cheese,colby-jack cheese,colby_jack_cheese,100.0,394.0,1655.0
+slicedcheese,cold pack cheese,cold_pack_cheese,100.0,246.0,1033.0
+icecream,cold stone creamery,cold_stone_creamery,100.0,232.0,974.0
+dishes&meals,collard greens,collard_greens,100.0,28.0,118.0
+beer,colt 45,colt_45,100.0,44.0,185.0
+"pastries,breads&rolls",conchas/mexican sweet bread,conchas_mexican_sweet_bread,100.0,353.0,1483.0
+(fruit)juices,concord grape,concord_grape,100.0,71.0,298.0
+milk&dairyproducts,condensed milk,condensed_milk,100.0,321.0,1348.0
+sausage,cooked ham,cooked_ham,100.0,133.0,559.0
+"oatmeal,muesli&cereals",cookie crisp,cookie_crisp,100.0,400.0,1680.0
+icecream,cookie dough ice cream,cookie_dough_ice_cream,100.0,200.0,840.0
+candy&sweets,cookies,cookies,100.0,488.0,2050.0
+beer,coors,coors,100.0,42.0,176.0
+beer,coors light,coors_light,100.0,29.0,122.0
+beer,coors n.a.,coors_n_a,100.0,18.0,76.0
+herbs&spices,coriander,coriander,100.0,23.0,97.0
+vegetables,corn,corn,100.0,365.0,1533.0
+dishes&meals,corn dog,corn_dog,100.0,250.0,1050.0
+"oatmeal,muesli&cereals",corn flakes,corn_flakes,100.0,357.0,1499.0
+bakingingredients,corn flour,corn_flour,100.0,361.0,1516.0
+oils&fats,corn oil,corn_oil,100.0,800.0,3360.0
+"oatmeal,muesli&cereals",corn pops,corn_pops,100.0,377.0,1583.0
+bakingingredients,corn syrup,corn_syrup,100.0,281.0,1180.0
+cerealproducts,corn waffles,corn_waffles,100.0,274.0,1151.0
+"pastries,breads&rolls",cornbread,cornbread,100.0,179.0,752.0
+sausage,corned beef,corned_beef,100.0,153.0,643.0
+dishes&meals,corned beef hash,corned_beef_hash,100.0,164.0,689.0
+poultry&fowl,cornish hens,cornish_hens,100.0,259.0,1088.0
+cerealproducts,cornmeal,cornmeal,100.0,362.0,1520.0
+cerealproducts,cornstarch,cornstarch,100.0,381.0,1600.0
+beer,corona,corona,100.0,42.0,176.0
+cheese,cottage cheese,cottage_cheese,100.0,98.0,412.0
+dishes&meals,cottage pie,cottage_pie,100.0,139.0,584.0
+candy&sweets,cotton candy,cotton_candy,100.0,643.0,2701.0
+nuts&seeds,cotton seeds,cotton_seeds,100.0,506.0,2125.0
+oils&fats,cottonseed oil,cottonseed_oil,100.0,882.0,3704.0
+"oatmeal,muesli&cereals",count chocula,count_chocula,100.0,407.0,1709.0
+vegetables,courgette,courgette,100.0,17.0,71.0
+cerealproducts,couscous,couscous,100.0,376.0,1579.0
+bakingingredients,couverture,couverture,100.0,600.0,2520.0
+cerealproducts,cracker,cracker,100.0,502.0,2108.0
+"oatmeal,muesli&cereals",cracklin oat bran,cracklin_oat_bran,100.0,402.0,1688.0
+fruits,cranberries,cranberries,100.0,46.0,193.0
+(fruit)juices,cranberry apple juice,cranberry_apple_juice,100.0,67.0,281.0
+(fruit)juices,cranberry grape juice,cranberry_grape_juice,100.0,71.0,298.0
+(fruit)juices,cranberry juice,cranberry_juice,100.0,46.0,193.0
+fish&seafood,crawfish,crawfish,100.0,82.0,344.0
+fish&seafood,crayfish,crayfish,100.0,87.0,365.0
+milk&dairyproducts,cream,cream,100.0,242.0,1016.0
+bakingingredients,cream cheese,cream_cheese,100.0,54.0,227.0
+creamcheese,cream cheese with herbs,cream_cheese_with_herbs,100.0,342.0,1436.0
+soups,cream of asparagus soup,cream_of_asparagus_soup,100.0,35.0,147.0
+soups,cream of broccoli soup,cream_of_broccoli_soup,100.0,45.0,189.0
+soups,cream of celery soup,cream_of_celery_soup,100.0,37.0,155.0
+soups,cream of chicken soup,cream_of_chicken_soup,100.0,48.0,202.0
+soups,cream of mushroom soup,cream_of_mushroom_soup,100.0,39.0,164.0
+soups,cream of onion soup,cream_of_onion_soup,100.0,44.0,185.0
+soups,cream of potato soup,cream_of_potato_soup,100.0,30.0,126.0
+bakingingredients,cream of tartar,cream_of_tartar,100.0,258.0,1084.0
+"oatmeal,muesli&cereals",cream of wheat,cream_of_wheat,100.0,364.0,1529.0
+cakes&pies,cream puff,cream_puff,100.0,334.0,1403.0
+sauces&dressings,cream sauce,cream_sauce,100.0,180.0,756.0
+yogurt,cream yogurt,cream_yogurt,100.0,124.0,521.0
+vegetables,creamed spinach,creamed_spinach,100.0,74.0,311.0
+soups,creamy chicken noodle soup,creamy_chicken_noodle_soup,100.0,23.0,97.0
+yogurt,creamy yogurt,creamy_yogurt,100.0,90.0,378.0
+milk&dairyproducts,creme fraiche,creme_fraiche,100.0,393.0,1651.0
+"pastries,breads&rolls",crepes,crepes,100.0,224.0,941.0
+herbs&spices,cress,cress,100.0,32.0,134.0
+"pastries,breads&rolls",croissant,croissant,100.0,406.0,1705.0
+potatoproducts,croquettes,croquettes,100.0,127.0,533.0
+cakes&pies,crumb cake,crumb_cake,100.0,441.0,1852.0
+"pastries,breads&rolls",crumpet,crumpet,100.0,178.0,748.0
+icecream,crunchie mcflurry,crunchie_mcflurry,100.0,174.0,731.0
+"oatmeal,muesli&cereals",crunchy nut,crunchy_nut,100.0,600.0,2520.0
+"oatmeal,muesli&cereals",crunchy nut cornflakes,crunchy_nut_cornflakes,100.0,600.0,2520.0
+non-alcoholicdrinks&beverages,crystal light,crystal_light,100.0,263.0,1105.0
+bakingingredients,crystallized ginger,crystallized_ginger,100.0,335.0,1407.0
+meat,cubed steak,cubed_steak,100.0,199.0,836.0
+vegetables,cucumber,cucumber,100.0,16.0,67.0
+(fruit)juices,cucumber juice,cucumber_juice,100.0,10.0,42.0
+sausage,cumberland sausage,cumberland_sausage,100.0,250.0,1050.0
+herbs&spices,cumin,cumin,100.0,375.0,1575.0
+herbs&spices,cumin seed,cumin_seed,100.0,375.0,1575.0
+cakes&pies,cupcake,cupcake,100.0,305.0,1281.0
+"pastries,breads&rolls",cupcakes,cupcakes,100.0,305.0,1281.0
+milk&dairyproducts,curd,curd,100.0,98.0,412.0
+fastfood,curly fries,curly_fries,100.0,311.0,1306.0
+(fruit)juices,currant juice,currant_juice,100.0,48.0,202.0
+fruits,currants,currants,100.0,56.0,235.0
+herbs&spices,curry,curry,100.0,325.0,1365.0
+sauces&dressings,curry ketchup,curry_ketchup,100.0,124.0,521.0
+sauces&dressings,curry sauce,curry_sauce,100.0,26.0,109.0
+milk&dairyproducts,custard,custard,100.0,122.0,512.0
+fruits,custard apple,custard_apple,100.0,101.0,424.0
+bakingingredients,custard powder,custard_powder,100.0,337.0,1415.0
+icecream,dairy milk mcflurry,dairy_milk_mcflurry,100.0,186.0,781.0
+legumes,dal,dal,100.0,230.0,966.0
+pasta&noodles,dampfnudel,dampfnudel,100.0,274.0,1151.0
+herbs&spices,dandelion,dandelion,100.0,45.0,189.0
+cakes&pies,danish pastry,danish_pastry,100.0,374.0,1571.0
+beer,dark beer,dark_beer,100.0,46.0,193.0
+bakingingredients,dark rum,dark_rum,100.0,216.0,907.0
+fruits,dates,dates,100.0,282.0,1184.0
+pizza,deep dish pizza,deep_dish_pizza,100.0,265.0,1113.0
+legumes,deep-fried tofu,deep_fried_tofu,100.0,271.0,1138.0
+dishes&meals,deviled eggs,deviled_eggs,100.0,201.0,844.0
+bakingingredients,dextrose,dextrose,100.0,375.0,1575.0
+soda&softdrinks,diet cherry coke,diet_cherry_coke,100.0,1.0,4.0
+non-alcoholicdrinks&beverages,diet coke,diet_coke,100.0,1.0,4.0
+soda&softdrinks,diet dr. pepper,diet_dr_pepper,100.0,0.0,0.0
+soda&softdrinks,diet pepsi,diet_pepsi,100.0,0.0,0.0
+soda&softdrinks,diet sunkist,diet_sunkist,100.0,0.0,0.0
+yogurt,diet yogurt,diet_yogurt,100.0,54.0,227.0
+herbs&spices,dill,dill,100.0,43.0,181.0
+herbs&spices,dill weed,dill_weed,100.0,43.0,181.0
+dishes&meals,dim sum,dim_sum,100.0,193.0,811.0
+icecream,dippin dots,dippin_dots,100.0,224.0,941.0
+pizza,dominos philly cheese steak pizza,dominos_philly_cheese_steak_pizza,100.0,224.0,941.0
+cakes&pies,donut,donut,100.0,403.0,1693.0
+"pastries,breads&rolls",donut/doughnut,donut_doughnut,100.0,421.0,1768.0
+dishes&meals,dosa,dosa,100.0,66.0,277.0
+fastfood,double cheeseburger,double_cheeseburger,100.0,267.0,1121.0
+icecream,double rainbow,double_rainbow,100.0,257.0,1079.0
+cakes&pies,doughnut,doughnut,100.0,403.0,1693.0
+poultry&fowl,dove,dove,100.0,213.0,895.0
+soda&softdrinks,dr. brown’s,dr_brown_s,100.0,53.0,223.0
+soda&softdrinks,dr. pepper,dr_pepper,100.0,27.0,113.0
+tropical&exoticfruits,dragon fruit,dragon_fruit,100.0,60.0,252.0
+alcoholicdrinks&beverages,drambuie,drambuie,100.0,358.0,1504.0
+bakingingredients,dried apricots,dried_apricots,100.0,241.0,1012.0
+bakingingredients,dried cranberries,dried_cranberries,100.0,308.0,1294.0
+bakingingredients,dried figs,dried_figs,100.0,249.0,1046.0
+cannedfruit,dried fruit,dried_fruit,100.0,243.0,1021.0
+bakingingredients,dried prunes,dried_prunes,100.0,107.0,449.0
+icecream,drumsticks,drumsticks,100.0,255.0,1071.0
+wine,dry red wine,dry_red_wine,100.0,85.0,357.0
+meat,duck,duck,100.0,337.0,1415.0
+poultry&fowl,duck breast,duck_breast,100.0,201.0,844.0
+bakingingredients,duck egg,duck_egg,100.0,185.0,777.0
+offal&giblets,duck liver,duck_liver,100.0,136.0,571.0
+pasta&noodles,dumpling dough,dumpling_dough,100.0,99.0,416.0
+potatoproducts,dumplings,dumplings,100.0,124.0,521.0
+tropical&exoticfruits,durian,durian,100.0,147.0,617.0
+cerealproducts,durum wheat semolina,durum_wheat_semolina,100.0,397.0,1667.0
+cheese,dutch cheese,dutch_cheese,100.0,393.0,1651.0
+coldcuts&lunchmeat,dutch loaf,dutch_loaf,100.0,268.0,1126.0
+slicedcheese,edam,edam,100.0,357.0,1499.0
+cheese,edam cheese,edam_cheese,100.0,357.0,1499.0
+fish&seafood,eel,eel,100.0,236.0,991.0
+bakingingredients,egg,egg,100.0,97.0,407.0
+non-alcoholicdrinks&beverages,egg cream,egg_cream,100.0,94.0,395.0
+non-alcoholicdrinks&beverages,egg nog,egg_nog,100.0,88.0,370.0
+pasta&noodles,egg noodles,egg_noodles,100.0,384.0,1613.0
+fastfood,egg roll,egg_roll,100.0,250.0,1050.0
+bakingingredients,egg white,egg_white,100.0,13.0,55.0
+bakingingredients,egg yolk,egg_yolk,100.0,322.0,1352.0
+vegetables,eggplant,eggplant,100.0,25.0,105.0
+candy&sweets,eggy bread,eggy_bread,100.0,196.0,823.0
+non-alcoholicdrinks&beverages,elderflower cordial,elderflower_cordial,100.0,29.0,122.0
+slicedcheese,emmental,emmental,100.0,357.0,1499.0
+cheese,emmentaler,emmentaler,100.0,357.0,1499.0
+"pastries,breads&rolls",empanada,empanada,100.0,335.0,1407.0
+poultry&fowl,emu,emu,100.0,152.0,638.0
+dishes&meals,enchiladas,enchiladas,100.0,168.0,706.0
+vegetables,endive,endive,100.0,17.0,71.0
+(fruit)juices,energy-drink,energy_drink,100.0,87.0,365.0
+"pastries,breads&rolls",english muffin,english_muffin,100.0,227.0,953.0
+slicedcheese,esrom (cheese),esrom_cheese,100.0,322.0,1352.0
+bakingingredients,evaporated milk,evaporated_milk,100.0,134.0,563.0
+non-alcoholicdrinks&beverages,evian,evian,100.0,0.0,0.0
+legumes,extra-firm tofu,extra_firm_tofu,100.0,91.0,382.0
+candy&sweets,fairy cakes,fairy_cakes,100.0,440.0,1848.0
+dishes&meals,fajita,fajita,100.0,117.0,491.0
+fastfood,falafel,falafel,100.0,335.0,1407.0
+soda&softdrinks,fanta,fanta,100.0,39.0,164.0
+soda&softdrinks,fanta zero,fanta_zero,100.0,0.0,0.0
+pasta&noodles,farfalle,farfalle,100.0,358.0,1504.0
+tropical&exoticfruits,feijoa,feijoa,100.0,55.0,231.0
+vegetables,fennel,fennel,100.0,31.0,130.0
+herbs&spices,fennel seed,fennel_seed,100.0,345.0,1449.0
+herbs&spices,fenugreek,fenugreek,100.0,323.0,1357.0
+candy&sweets,ferrero rocher,ferrero_rocher,100.0,576.0,2419.0
+cheese,feta,feta,100.0,264.0,1109.0
+creamcheese,feta cream cheese,feta_cream_cheese,100.0,342.0,1436.0
+pasta&noodles,fettuccine,fettuccine,100.0,353.0,1483.0
+"oatmeal,muesli&cereals",fiber one,fiber_one,100.0,267.0,1121.0
+fruits,figs,figs,100.0,74.0,311.0
+beef&veal,filet mignon,filet_mignon,100.0,207.0,869.0
+fastfood,filet-o-fish,filet_o_fish,100.0,282.0,1184.0
+legumes,firm tofu,firm_tofu,100.0,70.0,294.0
+fastfood,fish and chips,fish_and_chips,100.0,195.0,819.0
+fish&seafood,fish fingers,fish_fingers,100.0,290.0,1218.0
+fastfood,fish sandwich,fish_sandwich,100.0,273.0,1147.0
+fish&seafood,fish sticks,fish_sticks,100.0,290.0,1218.0
+soda&softdrinks,five alive,five_alive,100.0,35.0,147.0
+legumes,flageolet,flageolet,100.0,85.0,357.0
+cakes&pies,flan,flan,100.0,145.0,609.0
+beef&veal,flank steak,flank_steak,100.0,194.0,815.0
+candy&sweets,flapjack,flapjack,100.0,486.0,2041.0
+meat,flat iron steak,flat_iron_steak,100.0,137.0,575.0
+"pastries,breads&rolls",flatbread,flatbread,100.0,311.0,1306.0
+cerealproducts,flaxseed,flaxseed,100.0,534.0,2243.0
+oils&fats,flaxseed oil,flaxseed_oil,100.0,884.0,3713.0
+fish&seafood,flounder,flounder,100.0,86.0,361.0
+bakingingredients,flour,flour,100.0,364.0,1529.0
+cakes&pies,flourless chocolate cake,flourless_chocolate_cake,100.0,509.0,2138.0
+"pastries,breads&rolls",focaccia,focaccia,100.0,249.0,1046.0
+slicedcheese,fol epi,fol_epi,100.0,388.0,1630.0
+cheese,fontina,fontina,100.0,389.0,1634.0
+candy&sweets,fortune cookies,fortune_cookies,100.0,214.0,899.0
+pizza,four cheese pizza,four_cheese_pizza,100.0,221.0,928.0
+alcoholicdrinks&beverages,frangelico,frangelico,100.0,238.0,1000.0
+sausage,frankfurters,frankfurters,100.0,305.0,1281.0
+cerealproducts,freekeh,freekeh,100.0,520.0,2184.0
+cakes&pies,french cruller,french_cruller,100.0,412.0,1730.0
+sauces&dressings,french dressing,french_dressing,100.0,60.0,252.0
+potatoproducts,french fingerling potatoes,french_fingerling_potatoes,100.0,82.0,344.0
+potatoproducts,french fries,french_fries,100.0,312.0,1310.0
+soups,french onion soup,french_onion_soup,100.0,23.0,97.0
+icecream,french vanilla ice cream,french_vanilla_ice_cream,100.0,201.0,844.0
+soda&softdrinks,fresca,fresca,100.0,0.0,0.0
+cheese,fresh mozzarella,fresh_mozzarella,100.0,280.0,1176.0
+legumes,fried bean curd,fried_bean_curd,100.0,271.0,1138.0
+potatoproducts,fried potatoes,fried_potatoes,100.0,312.0,1310.0
+dishes&meals,fried rice,fried_rice,100.0,186.0,781.0
+dishes&meals,fried shrimp,fried_shrimp,100.0,277.0,1163.0
+icecream,friendly’s,friendly_s,100.0,212.0,890.0
+"oatmeal,muesli&cereals",froot loops,froot_loops,100.0,379.0,1592.0
+"oatmeal,muesli&cereals",frosted cheerios,frosted_cheerios,100.0,393.0,1651.0
+"oatmeal,muesli&cereals",frosted flakes,frosted_flakes,100.0,367.0,1541.0
+"oatmeal,muesli&cereals",frosted mini-wheats,frosted_mini_wheats,100.0,353.0,1483.0
+"oatmeal,muesli&cereals",frosties,frosties,100.0,367.0,1541.0
+bakingingredients,fructose,fructose,100.0,368.0,1546.0
+cakes&pies,fruit cake,fruit_cake,100.0,324.0,1361.0
+fruits,fruit salad,fruit_salad,100.0,50.0,210.0
+yogurt,fruit yogurt,fruit_yogurt,100.0,97.0,407.0
+(fruit)juices,fruitopia,fruitopia,100.0,110.0,462.0
+"oatmeal,muesli&cereals",fruity pebbles,fruity_pebbles,100.0,400.0,1680.0
+soda&softdrinks,full throttle,full_throttle,100.0,110.0,462.0
+cakes&pies,funnel cake,funnel_cake,100.0,307.0,1289.0
+pasta&noodles,fusilli,fusilli,100.0,352.0,1478.0
+soda&softdrinks,fuze,fuze,100.0,20.0,84.0
+soda&softdrinks,fuze tea,fuze_tea,100.0,25.0,105.0
+tropical&exoticfruits,galia melon,galia_melon,100.0,23.0,97.0
+wine,gamay,gamay,100.0,78.0,328.0
+vegetables,garlic,garlic,100.0,149.0,626.0
+"pastries,breads&rolls",garlic bread,garlic_bread,100.0,350.0,1470.0
+creamcheese,garlic cream cheese,garlic_cream_cheese,100.0,342.0,1436.0
+herbs&spices,garlic powder,garlic_powder,100.0,331.0,1390.0
+herbs&spices,garlic salt,garlic_salt,100.0,0.0,0.0
+sausage,garlic sausage,garlic_sausage,100.0,169.0,710.0
+non-alcoholicdrinks&beverages,gatorade,gatorade,100.0,23.0,97.0
+bakingingredients,gelatin,gelatin,100.0,335.0,1407.0
+beer,genesee cream ale,genesee_cream_ale,100.0,46.0,193.0
+cakes&pies,german chocolate cake,german_chocolate_cake,100.0,370.0,1554.0
+oils&fats,ghee,ghee,100.0,120.0,504.0
+vegetables,gherkin,gherkin,100.0,14.0,59.0
+alcoholicdrinks&beverages,gin,gin,100.0,263.0,1105.0
+herbs&spices,ginger,ginger,100.0,80.0,336.0
+soda&softdrinks,ginger ale,ginger_ale,100.0,35.0,147.0
+beer,ginger beer,ginger_beer,100.0,42.0,176.0
+non-alcoholicdrinks&beverages,ginger tea,ginger_tea,100.0,0.0,0.0
+cakes&pies,gingerbread,gingerbread,100.0,356.0,1495.0
+nuts&seeds,ginkgo nuts,ginkgo_nuts,100.0,182.0,764.0
+cheese,gjetost,gjetost,100.0,466.0,1957.0
+pasta&noodles,glass noodles,glass_noodles,100.0,192.0,806.0
+alcoholicdrinks&beverages,glenfiddich,glenfiddich,100.0,230.0,966.0
+bakingingredients,glucose,glucose,100.0,286.0,1201.0
+bakingingredients,glucose syrup,glucose_syrup,100.0,387.0,1625.0
+cerealproducts,gluten,gluten,100.0,370.0,1554.0
+potatoproducts,gnocchi,gnocchi,100.0,133.0,559.0
+nuts&seeds,goa bean,goa_bean,100.0,409.0,1718.0
+cheese,goat cheese,goat_cheese,100.0,364.0,1529.0
+pizza,goat cheese pizza,goat_cheese_pizza,100.0,219.0,920.0
+milk&dairyproducts,goat milk,goat_milk,100.0,69.0,290.0
+"oatmeal,muesli&cereals",golden grahams,golden_grahams,100.0,400.0,1680.0
+soups,golden mushroom soup,golden_mushroom_soup,100.0,65.0,273.0
+venison&game,goose,goose,100.0,238.0,1000.0
+oils&fats,goose fat,goose_fat,100.0,898.0,3772.0
+offal&giblets,goose liver,goose_liver,100.0,133.0,559.0
+venison&game,goose meat,goose_meat,100.0,238.0,1000.0
+cheese,gorgonzola,gorgonzola,100.0,350.0,1470.0
+cheese,gouda,gouda,100.0,356.0,1495.0
+slicedcheese,gouda cheese,gouda_cheese,100.0,356.0,1495.0
+soups,goulash,goulash,100.0,1009.0,4238.0
+vegetables,gourd,gourd,100.0,14.0,59.0
+alcoholicdrinks&beverages,grand marnier,grand_marnier,100.0,253.0,1063.0
+candy&sweets,granola bars,granola_bars,100.0,452.0,1898.0
+bakingingredients,granulated sugar,granulated_sugar,100.0,387.0,1625.0
+spreads,grape jelly,grape_jelly,100.0,255.0,1071.0
+(fruit)juices,grape juice,grape_juice,100.0,60.0,252.0
+herbs&spices,grape leaves,grape_leaves,100.0,93.0,391.0
+oils&fats,grape seed oil,grape_seed_oil,100.0,884.0,3713.0
+"oatmeal,muesli&cereals",grape-nuts,grape_nuts,100.0,362.0,1520.0
+tropical&exoticfruits,grapefruit,grapefruit,100.0,42.0,176.0
+(fruit)juices,grapefruit juice,grapefruit_juice,100.0,46.0,193.0
+fruits,grapes,grapes,100.0,69.0,290.0
+cheese,grated parmesan,grated_parmesan,100.0,431.0,1810.0
+sauces&dressings,gravy,gravy,100.0,53.0,223.0
+sauces&dressings,greek dressing,greek_dressing,100.0,467.0,1961.0
+yogurt,greek yogurt,greek_yogurt,100.0,53.0,223.0
+vegetables,green beans,green_beans,100.0,31.0,130.0
+legumes,green gram,green_gram,100.0,347.0,1457.0
+legumes,green lentil,green_lentil,100.0,257.0,1079.0
+vegetables,green olives,green_olives,100.0,115.0,483.0
+vegetables,green onion,green_onion,100.0,32.0,134.0
+fruits,greengage,greengage,100.0,41.0,172.0
+cheese,grilled cheese,grilled_cheese,100.0,350.0,1470.0
+dishes&meals,grilled cheese sandwich,grilled_cheese_sandwich,100.0,288.0,1210.0
+fastfood,grilled chicken salad,grilled_chicken_salad,100.0,88.0,370.0
+pizza,grilled pizza,grilled_pizza,100.0,226.0,949.0
+cerealproducts,grissini,grissini,100.0,408.0,1714.0
+beef&veal,ground beef,ground_beef,100.0,241.0,1012.0
+beef&veal,ground chuck,ground_chuck,100.0,250.0,1050.0
+bakingingredients,ground cinnamon,ground_cinnamon,100.0,247.0,1037.0
+herbs&spices,ground ginger,ground_ginger,100.0,335.0,1407.0
+pork,ground pork,ground_pork,100.0,263.0,1105.0
+beef&veal,ground round,ground_round,100.0,212.0,890.0
+fish&seafood,grouper,grouper,100.0,118.0,496.0
+cheese,gruyere,gruyere,100.0,413.0,1735.0
+fruits,guava,guava,100.0,68.0,286.0
+poultry&fowl,guinea-fowl,guinea_fowl,100.0,158.0,664.0
+beer,guinness,guinness,100.0,35.0,147.0
+candy&sweets,gumdrops,gumdrops,100.0,321.0,1348.0
+candy&sweets,gummi bears,gummi_bears,100.0,316.0,1327.0
+fish&seafood,haddock,haddock,100.0,90.0,378.0
+fish&seafood,hake,hake,100.0,71.0,298.0
+fish&seafood,halibut,halibut,100.0,111.0,466.0
+cheese,halloumi,halloumi,100.0,321.0,1348.0
+coldcuts&lunchmeat,ham,ham,100.0,145.0,609.0
+dishes&meals,ham and cheese sandwich,ham_and_cheese_sandwich,100.0,241.0,1012.0
+fastfood,ham sandwich,ham_sandwich,100.0,241.0,1012.0
+coldcuts&lunchmeat,ham sausage,ham_sausage,100.0,164.0,689.0
+fastfood,hamburger,hamburger,100.0,254.0,1067.0
+sauces&dressings,hamburger sauce,hamburger_sauce,100.0,383.0,1609.0
+candy&sweets,hanuta,hanuta,100.0,541.0,2272.0
+sauces&dressings,harissa,harissa,100.0,52.0,218.0
+cheese,havarti,havarti,100.0,371.0,1558.0
+pizza,hawaiian pizza,hawaiian_pizza,100.0,115.0,483.0
+non-alcoholicdrinks&beverages,hawaiian punch,hawaiian_punch,100.0,31.0,130.0
+nuts&seeds,hazelnut,hazelnut,100.0,628.0,2638.0
+vegetableoils,hazelnut oil,hazelnut_oil,100.0,889.0,3734.0
+bakingingredients,hazelnuts,hazelnuts,100.0,628.0,2638.0
+coldcuts&lunchmeat,head cheese,head_cheese,100.0,157.0,659.0
+icecream,healthy choice,healthy_choice,100.0,125.0,525.0
+bakingingredients,heavy cream,heavy_cream,100.0,345.0,1449.0
+beer,heineken,heineken,100.0,35.0,147.0
+oils&fats,hemp oil,hemp_oil,100.0,807.0,3389.0
+fish&seafood,herring,herring,100.0,203.0,853.0
+oils&fats,herring oil,herring_oil,100.0,902.0,3788.0
+candy&sweets,hershey kisses,hershey_kisses,100.0,471.0,1978.0
+non-alcoholicdrinks&beverages,hi-c,hi_c,100.0,49.0,206.0
+coldcuts&lunchmeat,hickory ham,hickory_ham,100.0,188.0,790.0
+nuts&seeds,hickory nuts,hickory_nuts,100.0,657.0,2759.0
+offal&giblets,hog maws,hog_maws,100.0,157.0,659.0
+fish&seafood,hoki,hoki,100.0,121.0,508.0
+sauces&dressings,hollandaise sauce,hollandaise_sauce,100.0,535.0,2247.0
+spreads,honey,honey,100.0,304.0,1277.0
+beer,honey brown,honey_brown,100.0,42.0,176.0
+coldcuts&lunchmeat,honey ham,honey_ham,100.0,122.0,512.0
+sauces&dressings,honey mustard dressing,honey_mustard_dressing,100.0,464.0,1949.0
+"oatmeal,muesli&cereals",honey nut cheerios,honey_nut_cheerios,100.0,393.0,1651.0
+"oatmeal,muesli&cereals",honey smacks,honey_smacks,100.0,370.0,1554.0
+"oatmeal,muesli&cereals",honeycomb,honeycomb,100.0,397.0,1667.0
+tropical&exoticfruits,honeydew,honeydew,100.0,36.0,151.0
+non-alcoholicdrinks&beverages,horchata,horchata,100.0,54.0,227.0
+vegetables,horseradish,horseradish,100.0,48.0,202.0
+milk&dairyproducts,hot chocolate,hot_chocolate,100.0,89.0,374.0
+fastfood,hot dog,hot_dog,100.0,269.0,1130.0
+"pastries,breads&rolls",hot dog buns,hot_dog_buns,100.0,279.0,1172.0
+sausage,hot dogs,hot_dogs,100.0,278.0,1168.0
+icecream,hot fudge sundae,hot_fudge_sundae,100.0,186.0,781.0
+herbs&spices,hot pepper,hot_pepper,100.0,318.0,1336.0
+sausage,hot sausage,hot_sausage,100.0,259.0,1088.0
+dishes&meals,hummus,hummus,100.0,177.0,743.0
+beer,hurricane high gravity,hurricane_high_gravity,100.0,39.0,164.0
+oils&fats,i can\’t believe it\’s not butter,i_can_t_believe_it_s_not_butter,100.0,357.0,1499.0
+cakes&pies,ice cream cake,ice_cream_cake,100.0,200.0,840.0
+icecream,ice cream sandwich,ice_cream_sandwich,100.0,237.0,995.0
+icecream,ice cream sundae,ice_cream_sundae,100.0,142.0,596.0
+icecream,ice milk,ice_milk,100.0,159.0,668.0
+non-alcoholicdrinks&beverages,ice tea,ice_tea,100.0,27.0,113.0
+non-alcoholicdrinks&beverages,iced tea,iced_tea,100.0,27.0,113.0
+soups,instant ramen,instant_ramen,100.0,436.0,1831.0
+herbs&spices,iodized salt,iodized_salt,100.0,0.0,0.0
+beer,ipa,ipa,100.0,51.0,214.0
+alcoholicdrinks&beverages,irish whiskey,irish_whiskey,100.0,233.0,979.0
+fastfood,italian bmt,italian_bmt,100.0,183.0,769.0
+"pastries,breads&rolls",italian bread,italian_bread,100.0,271.0,1138.0
+cheese,italian cheese,italian_cheese,100.0,397.0,1667.0
+sauces&dressings,italian dressing,italian_dressing,100.0,293.0,1231.0
+sausage,italian sausage,italian_sausage,100.0,149.0,626.0
+alcoholicdrinks&beverages,jack daniel’s,jack_daniel_s,100.0,146.0,613.0
+fruits,jackfruit,jackfruit,100.0,95.0,399.0
+alcoholicdrinks&beverages,jagermeister,jagermeister,100.0,250.0,1050.0
+bakingingredients,jaggery,jaggery,100.0,383.0,1609.0
+herbs&spices,jalapeno,jalapeno,100.0,13.0,55.0
+dishes&meals,jambalaya,jambalaya,100.0,100.0,420.0
+potatoproducts,japanese sweet potatoes,japanese_sweet_potatoes,100.0,87.0,365.0
+cheese,jarlsberg,jarlsberg,100.0,352.0,1478.0
+spreads,jelly,jelly,100.0,278.0,1168.0
+candy&sweets,jelly beans,jelly_beans,100.0,354.0,1487.0
+candy&sweets,jelly belly,jelly_belly,100.0,354.0,1487.0
+sausage,jerky,jerky,100.0,410.0,1722.0
+spreads,jif peanut butter,jif_peanut_butter,100.0,580.0,2436.0
+alcoholicdrinks&beverages,jim beam,jim_beam,100.0,222.0,932.0
+candy&sweets,jolly ranchers,jolly_ranchers,100.0,385.0,1617.0
+soda&softdrinks,jolt cola,jolt_cola,100.0,44.0,185.0
+candy&sweets,jordan almonds,jordan_almonds,100.0,429.0,1802.0
+fruits,jujube,jujube,100.0,79.0,332.0
+herbs&spices,juniper,juniper,100.0,45.0,189.0
+"oatmeal,muesli&cereals",just right,just_right,100.0,391.0,1642.0
+alcoholicdrinks&beverages,kahlua,kahlua,100.0,180.0,756.0
+vegetables,kale,kale,100.0,49.0,206.0
+cerealproducts,kamut,kamut,100.0,337.0,1415.0
+non-alcoholicdrinks&beverages,karamalz,karamalz,100.0,37.0,155.0
+"oatmeal,muesli&cereals",kashi,kashi,100.0,377.0,1583.0
+dishes&meals,kebab,kebab,100.0,215.0,903.0
+milk&dairyproducts,kefir,kefir,100.0,55.0,231.0
+"oatmeal,muesli&cereals",kelloggs corn flakes,kelloggs_corn_flakes,100.0,357.0,1499.0
+sauces&dressings,ketchup,ketchup,100.0,100.0,420.0
+cakes&pies,key lime pie,key_lime_pie,100.0,359.0,1508.0
+beer,keystone ice,keystone_ice,100.0,40.0,168.0
+beer,keystone light,keystone_light,100.0,29.0,122.0
+legumes,kidney beans,kidney_beans,100.0,337.0,1415.0
+sausage,kielbasa,kielbasa,100.0,309.0,1298.0
+cakes&pies,king cake,king_cake,100.0,377.0,1583.0
+fish&seafood,kipper,kipper,100.0,217.0,911.0
+candy&sweets,kit kat,kit_kat,100.0,521.0,2188.0
+fruits,kiwi,kiwi,100.0,61.0,256.0
+"oatmeal,muesli&cereals",kix,kix,100.0,367.0,1541.0
+sausage,knackwurst,knackwurst,100.0,307.0,1289.0
+beer,koelsch,koelsch,100.0,43.0,181.0
+vegetables,kohlrabi,kohlrabi,100.0,27.0,113.0
+non-alcoholicdrinks&beverages,kombucha,kombucha,100.0,13.0,55.0
+non-alcoholicdrinks&beverages,kool-aid,kool_aid,100.0,26.0,109.0
+"oatmeal,muesli&cereals",krave,krave,100.0,372.0,1562.0
+vegetables,kumara,kumara,100.0,86.0,361.0
+tropical&exoticfruits,kumquat,kumquat,100.0,71.0,298.0
+beer,labatt,labatt,100.0,43.0,181.0
+milk&dairyproducts,lactose-free milk,lactose_free_milk,100.0,52.0,218.0
+slicedcheese,lacy swiss cheese,lacy_swiss_cheese,100.0,321.0,1348.0
+candy&sweets,laffy taffy,laffy_taffy,100.0,372.0,1562.0
+beer,lager beer,lager_beer,100.0,43.0,181.0
+venison&game,lamb,lamb,100.0,202.0,848.0
+venison&game,lamb meat,lamb_meat,100.0,202.0,848.0
+beer,land shark,land_shark,100.0,42.0,176.0
+sausage,landjaeger,landjaeger,100.0,352.0,1478.0
+pork,lard,lard,100.0,898.0,3772.0
+fastfood,lasagna,lasagna,100.0,132.0,554.0
+dishes&meals,lasagne,lasagne,100.0,132.0,554.0
+pasta&noodles,lasagne sheets,lasagne_sheets,100.0,271.0,1138.0
+milk&dairyproducts,lassi,lassi,100.0,75.0,315.0
+"pastries,breads&rolls",latkes,latkes,100.0,189.0,794.0
+non-alcoholicdrinks&beverages,latte macchiato,latte_macchiato,100.0,57.0,239.0
+cakes&pies,layer cake,layer_cake,100.0,402.0,1688.0
+vegetables,leek,leek,100.0,61.0,256.0
+slicedcheese,leerdammer,leerdammer,100.0,284.0,1193.0
+slicedcheese,leerdammer cheese,leerdammer_cheese,100.0,284.0,1193.0
+fruits,lemon,lemon,100.0,29.0,122.0
+cakes&pies,lemon cake,lemon_cake,100.0,352.0,1478.0
+herbs&spices,lemon grass,lemon_grass,100.0,99.0,416.0
+(fruit)juices,lemon juice,lemon_juice,100.0,21.0,88.0
+cakes&pies,lemon meringue pie,lemon_meringue_pie,100.0,268.0,1126.0
+bakingingredients,lemon pie filling,lemon_pie_filling,100.0,143.0,601.0
+non-alcoholicdrinks&beverages,lemonade,lemonade,100.0,42.0,176.0
+soups,lentil soup,lentil_soup,100.0,56.0,235.0
+legumes,lentils,lentils,100.0,353.0,1483.0
+vegetables,lettuce,lettuce,100.0,15.0,63.0
+candy&sweets,licorice,licorice,100.0,375.0,1575.0
+"oatmeal,muesli&cereals",life cereal,life_cereal,100.0,375.0,1575.0
+candy&sweets,lifesavers,lifesavers,100.0,500.0,2100.0
+beer,light beer,light_beer,100.0,29.0,122.0
+legumes,lima beans,lima_beans,100.0,71.0,298.0
+fruits,lime,lime,100.0,30.0,126.0
+(fruit)juices,lime juice,lime_juice,100.0,21.0,88.0
+(fruit)juices,limeade,limeade,100.0,128.0,538.0
+candy&sweets,lindt chocolate,lindt_chocolate,100.0,548.0,2302.0
+fish&seafood,ling,ling,100.0,109.0,458.0
+sausage,linguica,linguica,100.0,282.0,1184.0
+pasta&noodles,linguine,linguine,100.0,357.0,1499.0
+vegetableoils,linseed oil,linseed_oil,100.0,837.0,3515.0
+alcoholicdrinks&beverages,liqueur,liqueur,100.0,250.0,1050.0
+alcoholicdrinks&beverages,liquor,liquor,100.0,250.0,1050.0
+candy&sweets,liquorice,liquorice,100.0,375.0,1575.0
+sausage,liver pate,liver_pate,100.0,319.0,1340.0
+spreads,liverwurst,liverwurst,100.0,305.0,1281.0
+fish&seafood,lobster,lobster,100.0,89.0,374.0
+soups,lobster bisque soup,lobster_bisque_soup,100.0,100.0,420.0
+candy&sweets,lollipop,lollipop,100.0,392.0,1646.0
+nuts&seeds,lotus seed,lotus_seed,100.0,89.0,374.0
+pasta&noodles,low carb pasta,low_carb_pasta,100.0,282.0,1184.0
+yogurt,low-fat yogurt,low_fat_yogurt,100.0,63.0,265.0
+beer,lowenbrau,lowenbrau,100.0,45.0,189.0
+"oatmeal,muesli&cereals",lucky charms,lucky_charms,100.0,406.0,1705.0
+sausage,luncheon meat,luncheon_meat,100.0,117.0,491.0
+tropical&exoticfruits,lychee,lychee,100.0,66.0,277.0
+fruits,lychees,lychees,100.0,66.0,277.0
+candy&sweets,m&m’s,m_m_s,100.0,479.0,2012.0
+cheese,maasdam cheese,maasdam_cheese,100.0,344.0,1445.0
+dishes&meals,mac and cheese,mac_and_cheese,100.0,370.0,1554.0
+nuts&seeds,macadamia nuts,macadamia_nuts,100.0,718.0,3016.0
+oils&fats,macadamia oil,macadamia_oil,100.0,819.0,3440.0
+pasta&noodles,macaroni,macaroni,100.0,370.0,1554.0
+dishes&meals,macaroni and cheese,macaroni_and_cheese,100.0,370.0,1554.0
+fish&seafood,mackerel,mackerel,100.0,262.0,1100.0
+cakes&pies,madeira cake,madeira_cake,100.0,394.0,1655.0
+herbs&spices,maggi,maggi,100.0,104.0,437.0
+icecream,magnolia,magnolia,100.0,230.0,966.0
+icecream,magnum,magnum,100.0,300.0,1260.0
+icecream,magnum almond,magnum_almond,100.0,315.0,1323.0
+icecream,magnum double caramel,magnum_double_caramel,100.0,355.0,1491.0
+icecream,magnum double chocolate,magnum_double_chocolate,100.0,380.0,1596.0
+icecream,magnum gold,magnum_gold,100.0,341.0,1432.0
+icecream,magnum white,magnum_white,100.0,297.0,1247.0
+wine,malbec,malbec,100.0,82.0,344.0
+wine,malbec wine,malbec_wine,100.0,82.0,344.0
+venison&game,mallard duck meat,mallard_duck_meat,100.0,211.0,886.0
+venison&game,mallard meat,mallard_meat,100.0,211.0,886.0
+beer,malt beer,malt_beer,100.0,37.0,155.0
+bakingingredients,malt powder,malt_powder,100.0,361.0,1516.0
+"oatmeal,muesli&cereals",malt-o-meal,malt_o_meal,100.0,51.0,214.0
+bakingingredients,malted milk,malted_milk,100.0,405.0,1701.0
+candy&sweets,maltesers,maltesers,100.0,498.0,2092.0
+bakingingredients,maltitol,maltitol,100.0,210.0,882.0
+bakingingredients,maltodextrin,maltodextrin,100.0,375.0,1575.0
+bakingingredients,maltose,maltose,100.0,344.0,1445.0
+cheese,manchego cheese,manchego_cheese,100.0,320.0,1344.0
+fruits,mandarin oranges,mandarin_oranges,100.0,53.0,223.0
+fruits,mango,mango,100.0,60.0,252.0
+(fruit)juices,mango lassi,mango_lassi,100.0,66.0,277.0
+tropical&exoticfruits,mangosteen,mangosteen,100.0,73.0,307.0
+pasta&noodles,manicotti,manicotti,100.0,357.0,1499.0
+bakingingredients,maple syrup,maple_syrup,100.0,270.0,1134.0
+tropical&exoticfruits,maracuya,maracuya,100.0,97.0,407.0
+tropical&exoticfruits,maraschino cherries,maraschino_cherries,100.0,165.0,693.0
+cakes&pies,marble cake,marble_cake,100.0,339.0,1424.0
+oils&fats,margarine,margarine,100.0,717.0,3011.0
+pizza,margherita pizza,margherita_pizza,100.0,275.0,1155.0
+herbs&spices,marjoram,marjoram,100.0,271.0,1138.0
+spreads,marmite,marmite,100.0,225.0,945.0
+legumes,marron,marron,100.0,210.0,882.0
+potatoproducts,marrow dumplings,marrow_dumplings,100.0,424.0,1781.0
+candy&sweets,mars bar,mars_bar,100.0,448.0,1882.0
+wine,marsala wine,marsala_wine,100.0,100.0,420.0
+spreads,marshmallow fluff,marshmallow_fluff,100.0,666.0,2797.0
+candy&sweets,marshmallows,marshmallows,100.0,318.0,1336.0
+candy&sweets,marzipan,marzipan,100.0,411.0,1726.0
+creamcheese,mascarpone,mascarpone,100.0,450.0,1890.0
+dishes&meals,mashed potatoes,mashed_potatoes,100.0,83.0,349.0
+"pastries,breads&rolls",matzo bread,matzo_bread,100.0,351.0,1474.0
+sauces&dressings,mayonnaise,mayonnaise,100.0,692.0,2906.0
+fastfood,mcdonald’s big mac,mcdonald_s_big_mac,100.0,256.0,1075.0
+fastfood,mcdonald’s cheeseburger,mcdonald_s_cheeseburger,100.0,263.0,1105.0
+fastfood,mcdonald’s chicken nuggets,mcdonald_s_chicken_nuggets,100.0,297.0,1247.0
+fastfood,mcdonald’s double cheeseburger,mcdonald_s_double_cheeseburger,100.0,282.0,1184.0
+fastfood,mcdonald’s filet-o-fish,mcdonald_s_filet_o_fish,100.0,275.0,1155.0
+fastfood,mcdonald’s mcchicken,mcdonald_s_mcchicken,100.0,251.0,1054.0
+fastfood,mcdonald’s mcdouble,mcdonald_s_mcdouble,100.0,252.0,1058.0
+fastfood,mcdonald’s mcmuffi egg,mcdonald_s_mcmuffi_egg,100.0,225.0,945.0
+fastfood,mcdonald’s mcrib,mcdonald_s_mcrib,100.0,265.0,1113.0
+fastfood,mcdonald’s mighty wings,mcdonald_s_mighty_wings,100.0,308.0,1294.0
+icecream,mcflurry,mcflurry,100.0,153.0,643.0
+icecream,mcflurry oreo,mcflurry_oreo,100.0,186.0,781.0
+fastfood,mcrib,mcrib,100.0,265.0,1113.0
+dishes&meals,meat pie,meat_pie,100.0,242.0,1016.0
+fastfood,meatball sandwich,meatball_sandwich,100.0,161.0,676.0
+soups,meatball soup,meatball_soup,100.0,49.0,206.0
+pork,meatloaf,meatloaf,100.0,89.0,374.0
+soda&softdrinks,mello yello,mello_yello,100.0,49.0,206.0
+vegetableoils,menhaden oil,menhaden_oil,100.0,911.0,3826.0
+cakes&pies,meringue,meringue,100.0,285.0,1197.0
+wine,merlot,merlot,100.0,83.0,349.0
+wine,merlot wine,merlot_wine,100.0,83.0,349.0
+sausage,mettwurst,mettwurst,100.0,310.0,1302.0
+beer,michelob amber bock,michelob_amber_bock,100.0,47.0,197.0
+beer,michelob lager,michelob_lager,100.0,44.0,185.0
+beer,michelob light,michelob_light,100.0,32.0,134.0
+beer,michelob ultra,michelob_ultra,100.0,27.0,113.0
+beer,michelob ultra amber,michelob_ultra_amber,100.0,26.0,109.0
+beer,michelob ultra lime cactus,michelob_ultra_lime_cactus,100.0,27.0,113.0
+alcoholicdrinks&beverages,midori,midori,100.0,267.0,1121.0
+candy&sweets,mike and ike,mike_and_ike,100.0,360.0,1512.0
+milk&dairyproducts,milk,milk,100.0,61.0,256.0
+candy&sweets,milk duds,milk_duds,100.0,422.0,1772.0
+fish&seafood,milkfish,milkfish,100.0,190.0,798.0
+non-alcoholicdrinks&beverages,milkshake (dry),milkshake_dry,100.0,329.0,1382.0
+candy&sweets,milky way,milky_way,100.0,449.0,1886.0
+beer,miller chill,miller_chill,100.0,31.0,130.0
+beer,miller genuine draft,miller_genuine_draft,100.0,40.0,168.0
+beer,miller high life,miller_high_life,100.0,40.0,168.0
+beer,miller high life light,miller_high_life_light,100.0,31.0,130.0
+beer,miller lite,miller_lite,100.0,27.0,113.0
+cerealproducts,millet,millet,100.0,378.0,1588.0
+cerealproducts,millet flour,millet_flour,100.0,372.0,1562.0
+cerealproducts,millet gruel,millet_gruel,100.0,46.0,193.0
+non-alcoholicdrinks&beverages,milo,milo,100.0,409.0,1718.0
+beer,milwaukee’s best,milwaukee_s_best,100.0,36.0,151.0
+beer,milwaukee’s best light,milwaukee_s_best_light,100.0,28.0,118.0
+herbs&spices,minced onion,minced_onion,100.0,40.0,168.0
+beef&veal,minced veal,minced_veal,100.0,143.0,601.0
+soups,minestrone,minestrone,100.0,34.0,143.0
+icecream,mini milk,mini_milk,100.0,120.0,504.0
+"oatmeal,muesli&cereals",mini-wheats,mini_wheats,100.0,353.0,1483.0
+fruits,minneola,minneola,100.0,64.0,269.0
+herbs&spices,mint,mint,100.0,70.0,294.0
+icecream,mint chocolate chip ice cream,mint_chocolate_chip_ice_cream,100.0,239.0,1004.0
+soda&softdrinks,minute maid,minute_maid,100.0,46.0,193.0
+soda&softdrinks,minute maid light,minute_maid_light,100.0,2.0,8.0
+legumes,miso,miso,100.0,199.0,836.0
+yogurt,mocca yogurt,mocca_yogurt,100.0,100.0,420.0
+bakingingredients,molasses,molasses,100.0,290.0,1218.0
+beer,molson,molson,100.0,42.0,176.0
+"pastries,breads&rolls",monkey bread,monkey_bread,100.0,290.0,1218.0
+fish&seafood,monkfish,monkfish,100.0,97.0,407.0
+cheese,monterey,monterey,100.0,373.0,1567.0
+cheese,monterey jack cheese,monterey_jack_cheese,100.0,373.0,1567.0
+venison&game,moose,moose,100.0,134.0,563.0
+venison&game,moose meat,moose_meat,100.0,134.0,563.0
+sausage,mortadella,mortadella,100.0,311.0,1306.0
+wine,moscato wine,moscato_wine,100.0,76.0,319.0
+pasta&noodles,mostaccioli,mostaccioli,100.0,184.0,773.0
+cheese,mozzarella,mozzarella,100.0,280.0,1176.0
+pizza,mozzarella pizza,mozzarella_pizza,100.0,249.0,1046.0
+cheese,muenster cheese,muenster_cheese,100.0,368.0,1546.0
+"oatmeal,muesli&cereals",muesli,muesli,100.0,336.0,1411.0
+"pastries,breads&rolls",muffin,muffin,100.0,296.0,1243.0
+soda&softdrinks,mug root beer,mug_root_beer,100.0,42.0,176.0
+fruits,mulberries,mulberries,100.0,43.0,181.0
+wine,mulled wine,mulled_wine,100.0,196.0,823.0
+fish&seafood,mullet,mullet,100.0,150.0,630.0
+"pastries,breads&rolls",multi-grain bread,multi_grain_bread,100.0,265.0,1113.0
+"oatmeal,muesli&cereals",multigrain cheerios,multigrain_cheerios,100.0,380.0,1596.0
+legumes,mung beans,mung_beans,100.0,12.0,50.0
+pizza,mushroom pizza,mushroom_pizza,100.0,212.0,890.0
+soups,mushroom soup,mushroom_soup,100.0,35.0,147.0
+vegetables,mushrooms,mushrooms,100.0,22.0,92.0
+tropical&exoticfruits,muskmelon,muskmelon,100.0,34.0,143.0
+fish&seafood,mussel,mussel,100.0,172.0,722.0
+sauces&dressings,mustard,mustard,100.0,60.0,252.0
+vegetables,mustard greens,mustard_greens,100.0,27.0,113.0
+oils&fats,mustard oil,mustard_oil,100.0,884.0,3713.0
+sauces&dressings,mustard sauce,mustard_sauce,100.0,645.0,2709.0
+herbs&spices,mustard seed,mustard_seed,100.0,508.0,2134.0
+venison&game,mutton,mutton,100.0,234.0,983.0
+venison&game,mutton meat,mutton_meat,100.0,234.0,983.0
+"pastries,breads&rolls",naan,naan,100.0,275.0,1155.0
+fastfood,nachos with cheese,nachos_with_cheese,100.0,306.0,1285.0
+pizza,napoli pizza,napoli_pizza,100.0,202.0,848.0
+legumes,natto,natto,100.0,212.0,890.0
+beer,natural ice,natural_ice,100.0,44.0,185.0
+beer,natural light,natural_light,100.0,27.0,113.0
+legumes,navy bean,navy_bean,100.0,337.0,1415.0
+non-alcoholicdrinks&beverages,nectar,nectar,100.0,53.0,223.0
+fruits,nectarine,nectarine,100.0,44.0,185.0
+(fruit)juices,nestea,nestea,100.0,21.0,88.0
+cheese,neufchatel,neufchatel,100.0,253.0,1063.0
+meat,new york strip steak,new_york_strip_steak,100.0,199.0,836.0
+pizza,new york style pizza,new_york_style_pizza,100.0,169.0,710.0
+beer,newcastle,newcastle,100.0,39.0,164.0
+beer,non-alcoholic beer,non_alcoholic_beer,100.0,37.0,155.0
+tropical&exoticfruits,noni,noni,100.0,53.0,223.0
+bakingingredients,nonpareils,nonpareils,100.0,475.0,1995.0
+soups,noodle soup,noodle_soup,100.0,34.0,143.0
+vegetables,nori,nori,100.0,35.0,147.0
+potatoproducts,norland red potatoes,norland_red_potatoes,100.0,89.0,374.0
+spreads,nutella,nutella,100.0,544.0,2285.0
+herbs&spices,nutmeg,nutmeg,100.0,525.0,2205.0
+"oatmeal,muesli&cereals",nutri-grain,nutri_grain,100.0,351.0,1474.0
+cerealproducts,oat bran,oat_bran,100.0,246.0,1033.0
+vegetableoils,oat oil,oat_oil,100.0,884.0,3713.0
+"oatmeal,muesli&cereals",oatibix,oatibix,100.0,421.0,1768.0
+"oatmeal,muesli&cereals",oatmeal,oatmeal,100.0,375.0,1575.0
+"pastries,breads&rolls",oatmeal cookies,oatmeal_cookies,100.0,450.0,1890.0
+"pastries,breads&rolls",oatmeal raisin cookies,oatmeal_raisin_cookies,100.0,435.0,1827.0
+creamcheese,obatzda,obatzda,100.0,303.0,1273.0
+fish&seafood,octopus,octopus,100.0,164.0,689.0
+legumes,okara,okara,100.0,77.0,323.0
+vegetables,okra,okra,100.0,33.0,139.0
+beer,old milwaukee,old_milwaukee,100.0,41.0,172.0
+beer,old milwaukee n.a.,old_milwaukee_n_a,100.0,16.0,67.0
+beer,olde english,olde_english,100.0,45.0,189.0
+creamcheese,olive cream cheese,olive_cream_cheese,100.0,342.0,1436.0
+coldcuts&lunchmeat,olive loaf,olive_loaf,100.0,232.0,974.0
+vegetableoils,olive oil,olive_oil,100.0,800.0,3360.0
+spreads,olive spread,olive_spread,100.0,550.0,2310.0
+fruits,olives,olives,100.0,115.0,483.0
+potatoproducts,omelette,omelette,100.0,154.0,647.0
+vegetables,onion,onion,100.0,40.0,168.0
+herbs&spices,onion powder,onion_powder,100.0,341.0,1432.0
+fastfood,onion rings,onion_rings,100.0,411.0,1726.0
+soups,onion soup,onion_soup,100.0,23.0,97.0
+cakes&pies,opera cake,opera_cake,100.0,320.0,1344.0
+fruits,orange,orange,100.0,47.0,197.0
+dishes&meals,orange chicken,orange_chicken,100.0,259.0,1088.0
+(fruit)juices,orange juice,orange_juice,100.0,46.0,193.0
+herbs&spices,orange peel,orange_peel,100.0,97.0,407.0
+sauces&dressings,orange sauce,orange_sauce,100.0,179.0,752.0
+soda&softdrinks,orange soda,orange_soda,100.0,48.0,202.0
+pasta&noodles,orecchiette,orecchiette,100.0,370.0,1554.0
+herbs&spices,oregano,oregano,100.0,265.0,1113.0
+yogurt,organic yogurt,organic_yogurt,100.0,75.0,315.0
+pasta&noodles,orzo,orzo,100.0,357.0,1499.0
+meat,ostrich,ostrich,100.0,145.0,609.0
+poultry&fowl,ostrich meat,ostrich_meat,100.0,145.0,609.0
+coldcuts&lunchmeat,oven-roasted turkey breast,oven_roasted_turkey_breast,100.0,104.0,437.0
+soups,oxtail soup,oxtail_soup,100.0,28.0,118.0
+beer,o’doul’s (n.a.),o_doul_s_n_a,100.0,19.0,80.0
+beer,pabst blue ribbon,pabst_blue_ribbon,100.0,41.0,172.0
+cakes&pies,paczki,paczki,100.0,336.0,1411.0
+dishes&meals,pad thai,pad_thai,100.0,150.0,630.0
+dishes&meals,paella,paella,100.0,156.0,655.0
+beer,pale ale,pale_ale,100.0,42.0,176.0
+vegetableoils,palm kernel oil,palm_kernel_oil,100.0,882.0,3704.0
+oils&fats,palm oil,palm_oil,100.0,882.0,3704.0
+"pastries,breads&rolls",pan de sal,pan_de_sal,100.0,293.0,1231.0
+cakes&pies,pancake,pancake,100.0,227.0,953.0
+"pastries,breads&rolls",pandesal,pandesal,100.0,293.0,1231.0
+"pastries,breads&rolls",panettone,panettone,100.0,318.0,1336.0
+fruits,papaya,papaya,100.0,43.0,181.0
+(fruit)juices,papaya juice,papaya_juice,100.0,58.0,244.0
+herbs&spices,paprika,paprika,100.0,282.0,1184.0
+dishes&meals,paratha,paratha,100.0,325.0,1365.0
+pork,parma ham,parma_ham,100.0,261.0,1096.0
+cheese,parmesan,parmesan,100.0,431.0,1810.0
+herbs&spices,parsley,parsley,100.0,36.0,151.0
+herbs&spices,parsnip,parsnip,100.0,75.0,315.0
+vegetables,parsnips,parsnips,100.0,75.0,315.0
+fruits,passion fruit,passion_fruit,100.0,97.0,407.0
+(fruit)juices,passion fruit juice,passion_fruit_juice,100.0,48.0,202.0
+coldcuts&lunchmeat,pastrami,pastrami,100.0,133.0,559.0
+cakes&pies,pavlova,pavlova,100.0,294.0,1235.0
+candy&sweets,payday,payday,100.0,462.0,1940.0
+dishes&meals,pea soup,pea_soup,100.0,75.0,315.0
+fruits,peach,peach,100.0,39.0,164.0
+cakes&pies,peach cobbler,peach_cobbler,100.0,65.0,273.0
+(fruit)juices,peach juice,peach_juice,100.0,54.0,227.0
+(fruit)juices,peach nectar,peach_nectar,100.0,54.0,227.0
+cakes&pies,peach pie,peach_pie,100.0,223.0,937.0
+yogurt,peach yogurt,peach_yogurt,100.0,97.0,407.0
+candy&sweets,peanut bar,peanut_bar,100.0,533.0,2239.0
+candy&sweets,peanut brittle,peanut_brittle,100.0,183.0,769.0
+spreads,peanut butter,peanut_butter,100.0,589.0,2474.0
+candy&sweets,peanut butter bars,peanut_butter_bars,100.0,379.0,1592.0
+candy&sweets,peanut butter cookies,peanut_butter_cookies,100.0,475.0,1995.0
+dishes&meals,peanut butter sandwich,peanut_butter_sandwich,100.0,408.0,1714.0
+"oatmeal,muesli&cereals",peanut butter toast crunch,peanut_butter_toast_crunch,100.0,431.0,1810.0
+oils&fats,peanut oil,peanut_oil,100.0,857.0,3599.0
+legumes,peanuts,peanuts,100.0,567.0,2381.0
+fruits,pear,pear,100.0,57.0,239.0
+(fruit)juices,pear juice,pear_juice,100.0,60.0,252.0
+(fruit)juices,pear nectar,pear_nectar,100.0,60.0,252.0
+cerealproducts,pearl barley,pearl_barley,100.0,352.0,1478.0
+legumes,peas,peas,100.0,42.0,176.0
+legumes,pecan,pecan,100.0,691.0,2902.0
+nuts&seeds,pecan nuts,pecan_nuts,100.0,691.0,2902.0
+cakes&pies,pecan pie,pecan_pie,100.0,407.0,1709.0
+nuts&seeds,pecans,pecans,100.0,691.0,2902.0
+cheese,pecorino,pecorino,100.0,387.0,1625.0
+dishes&meals,peking duck,peking_duck,100.0,225.0,945.0
+pasta&noodles,penne,penne,100.0,351.0,1474.0
+pasta&noodles,penne rigate,penne_rigate,100.0,370.0,1554.0
+vegetables,pepper,pepper,100.0,27.0,113.0
+slicedcheese,pepper cheese,pepper_cheese,100.0,100.0,420.0
+candy&sweets,peppermint bark,peppermint_bark,100.0,500.0,2100.0
+bakingingredients,peppermint extract,peppermint_extract,100.0,0.0,0.0
+coldcuts&lunchmeat,pepperoni,pepperoni,100.0,494.0,2075.0
+pizza,pepperoni pizza,pepperoni_pizza,100.0,255.0,1071.0
+soda&softdrinks,pepsi,pepsi,100.0,44.0,185.0
+fruits,persimmon,persimmon,100.0,127.0,533.0
+sauces&dressings,pesto,pesto,100.0,458.0,1924.0
+creamcheese,pesto cream cheese,pesto_cream_cheese,100.0,342.0,1436.0
+spreads,peter pan peanut butter,peter_pan_peanut_butter,100.0,609.0,2558.0
+candy&sweets,pez,pez,100.0,427.0,1793.0
+poultry&fowl,pheasant,pheasant,100.0,239.0,1004.0
+poultry&fowl,pheasant breast,pheasant_breast,100.0,133.0,559.0
+poultry&fowl,pheasant leg,pheasant_leg,100.0,239.0,1004.0
+venison&game,pheasant meat,pheasant_meat,100.0,239.0,1004.0
+creamcheese,philadelphia cream cheese,philadelphia_cream_cheese,100.0,342.0,1436.0
+dishes&meals,philly cheese steak,philly_cheese_steak,100.0,250.0,1050.0
+fruits,physalis,physalis,100.0,49.0,206.0
+soda&softdrinks,pibb xtra,pibb_xtra,100.0,40.0,168.0
+fish&seafood,pickerel,pickerel,100.0,111.0,466.0
+fish&seafood,pickled herring,pickled_herring,100.0,262.0,1100.0
+"pastries,breads&rolls",pide,pide,100.0,268.0,1126.0
+"pastries,breads&rolls",pie,pie,100.0,237.0,995.0
+pasta&noodles,pierogi,pierogi,100.0,200.0,840.0
+offal&giblets,pig brain,pig_brain,100.0,138.0,580.0
+pork,pig ear,pig_ear,100.0,166.0,697.0
+pork,pig fat,pig_fat,100.0,638.0,2680.0
+offal&giblets,pig heart,pig_heart,100.0,148.0,622.0
+offal&giblets,pig kidney,pig_kidney,100.0,151.0,634.0
+offal&giblets,pig lung,pig_lung,100.0,99.0,416.0
+poultry&fowl,pigeon,pigeon,100.0,142.0,596.0
+pork,pig’s tail,pig_s_tail,100.0,396.0,1663.0
+pork,pig’s trotter,pig_s_trotter,100.0,243.0,1021.0
+fish&seafood,pike,pike,100.0,113.0,475.0
+nuts&seeds,pili nuts,pili_nuts,100.0,719.0,3020.0
+beer,pilsner,pilsner,100.0,43.0,181.0
+coldcuts&lunchmeat,pimento loaf,pimento_loaf,100.0,265.0,1113.0
+nuts&seeds,pine nuts,pine_nuts,100.0,673.0,2827.0
+fruits,pineapple,pineapple,100.0,50.0,210.0
+creamcheese,pineapple cream cheese,pineapple_cream_cheese,100.0,342.0,1436.0
+(fruit)juices,pineapple juice,pineapple_juice,100.0,53.0,223.0
+(fruit)juices,pineapple orange juice,pineapple_orange_juice,100.0,50.0,210.0
+cakes&pies,pineapple upside-down cake,pineapple_upside_down_cake,100.0,319.0,1340.0
+tropical&exoticfruits,pink grapefruit,pink_grapefruit,100.0,42.0,176.0
+wine,pinot gris,pinot_gris,100.0,83.0,349.0
+wine,pinot noir,pinot_noir,100.0,75.0,315.0
+legumes,pinto beans,pinto_beans,100.0,347.0,1457.0
+nuts&seeds,pistachios,pistachios,100.0,562.0,2360.0
+"pastries,breads&rolls",pita bread,pita_bread,100.0,275.0,1155.0
+dishes&meals,pizza,pizza,100.0,267.0,1121.0
+pizza,pizza dough,pizza_dough,100.0,228.0,958.0
+pizza,pizza hut stuffed crust pizza,pizza_hut_stuffed_crust_pizza,100.0,255.0,1071.0
+pizza,pizza hut supreme pizza,pizza_hut_supreme_pizza,100.0,248.0,1042.0
+pizza,pizza rolls,pizza_rolls,100.0,247.0,1037.0
+fish&seafood,plaice,plaice,100.0,91.0,382.0
+milk&dairyproducts,plain yogurt,plain_yogurt,100.0,61.0,256.0
+tropical&exoticfruits,plantain,plantain,100.0,122.0,512.0
+fruits,plantains,plantains,100.0,122.0,512.0
+fruits,plum,plum,100.0,46.0,193.0
+cakes&pies,plum cake,plum_cake,100.0,109.0,458.0
+spreads,plum jam,plum_jam,100.0,250.0,1050.0
+(fruit)juices,plum juice,plum_juice,100.0,71.0,298.0
+wine,plum wine,plum_wine,100.0,163.0,685.0
+cerealproducts,polenta,polenta,100.0,366.0,1537.0
+sausage,polish sausage,polish_sausage,100.0,301.0,1264.0
+fish&seafood,pollack,pollack,100.0,111.0,466.0
+fruits,pomegranate,pomegranate,100.0,83.0,349.0
+(fruit)juices,pomegranate juice,pomegranate_juice,100.0,66.0,277.0
+tropical&exoticfruits,pomelo,pomelo,100.0,38.0,160.0
+candy&sweets,pop rocks,pop_rocks,100.0,358.0,1504.0
+candy&sweets,popcorn,popcorn,100.0,582.0,2444.0
+herbs&spices,poppy seed,poppy_seed,100.0,525.0,2205.0
+vegetableoils,poppy seed oil,poppy_seed_oil,100.0,884.0,3713.0
+nuts&seeds,poppy seeds,poppy_seeds,100.0,525.0,2205.0
+cakes&pies,poppy-seed cake,poppy_seed_cake,100.0,394.0,1655.0
+meat,pork,pork,100.0,196.0,823.0
+meat,pork baby back ribs,pork_baby_back_ribs,100.0,212.0,890.0
+pork,pork bacon,pork_bacon,100.0,407.0,1709.0
+pork,pork belly,pork_belly,100.0,518.0,2176.0
+pork,pork blade steak,pork_blade_steak,100.0,232.0,974.0
+pork,pork chop,pork_chop,100.0,123.0,517.0
+meat,pork chops,pork_chops,100.0,196.0,823.0
+pork,pork country-style ribs,pork_country_style_ribs,100.0,133.0,559.0
+pork,pork crown roast,pork_crown_roast,100.0,212.0,890.0
+pork,pork cutlet,pork_cutlet,100.0,131.0,550.0
+pork,pork cutlets,pork_cutlets,100.0,131.0,550.0
+pork,pork leg,pork_leg,100.0,201.0,844.0
+offal&giblets,pork liver,pork_liver,100.0,165.0,693.0
+pork,pork loin,pork_loin,100.0,143.0,601.0
+pork,pork meatloaf,pork_meatloaf,100.0,243.0,1021.0
+offal&giblets,pork melt,pork_melt,100.0,219.0,920.0
+pork,pork ragout,pork_ragout,100.0,73.0,307.0
+pork,pork rib roast,pork_rib_roast,100.0,159.0,668.0
+pork,pork ribs,pork_ribs,100.0,292.0,1226.0
+pork,pork roast,pork_roast,100.0,194.0,815.0
+sausage,pork roll,pork_roll,100.0,302.0,1268.0
+pork,pork sausage,pork_sausage,100.0,339.0,1424.0
+pork,pork shank,pork_shank,100.0,172.0,722.0
+pork,pork shoulder,pork_shoulder,100.0,269.0,1130.0
+pork,pork shoulder blade,pork_shoulder_blade,100.0,232.0,974.0
+meat,pork steaks,pork_steaks,100.0,196.0,823.0
+pork,pork stomach,pork_stomach,100.0,250.0,1050.0
+offal&giblets,pork tongue,pork_tongue,100.0,271.0,1138.0
+wine,port wine,port_wine,100.0,160.0,672.0
+beer,porter,porter,100.0,54.0,227.0
+beef&veal,porterhouse steak,porterhouse_steak,100.0,247.0,1037.0
+"oatmeal,muesli&cereals",post raisin bran,post_raisin_bran,100.0,322.0,1352.0
+"oatmeal,muesli&cereals",post shredded wheat,post_shredded_wheat,100.0,347.0,1457.0
+potatoproducts,potato,potato,100.0,77.0,323.0
+"pastries,breads&rolls",potato bread,potato_bread,100.0,266.0,1117.0
+potatoproducts,potato dumpling,potato_dumpling,100.0,124.0,521.0
+potatoproducts,potato fritter,potato_fritter,100.0,185.0,777.0
+potatoproducts,potato gratin,potato_gratin,100.0,132.0,554.0
+potatoproducts,potato pancakes,potato_pancakes,100.0,268.0,1126.0
+potatoproducts,potato salad,potato_salad,100.0,143.0,601.0
+soups,potato soup,potato_soup,100.0,80.0,336.0
+potatoproducts,potato starch,potato_starch,100.0,331.0,1390.0
+potatoproducts,potato sticks,potato_sticks,100.0,522.0,2192.0
+potatoproducts,potato waffles,potato_waffles,100.0,167.0,701.0
+potatoproducts,potato wedges,potato_wedges,100.0,123.0,517.0
+potatoproducts,potatoes au gratin,potatoes_au_gratin,100.0,132.0,554.0
+poultry&fowl,poularde,poularde,100.0,200.0,840.0
+herbs&spices,poultry seasoning,poultry_seasoning,100.0,307.0,1289.0
+cakes&pies,pound cake,pound_cake,100.0,390.0,1638.0
+fastfood,poutine,poutine,100.0,227.0,953.0
+milk&dairyproducts,powdered milk,powdered_milk,100.0,496.0,2083.0
+bakingingredients,powdered sugar,powdered_sugar,100.0,389.0,1634.0
+non-alcoholicdrinks&beverages,powerade,powerade,100.0,16.0,67.0
+cerealproducts,prawn crackers,prawn_crackers,100.0,527.0,2213.0
+"pastries,breads&rolls",pretzel,pretzel,100.0,338.0,1420.0
+"pastries,breads&rolls",pretzel roll,pretzel_roll,100.0,338.0,1420.0
+cerealproducts,pretzel sticks,pretzel_sticks,100.0,380.0,1596.0
+tropical&exoticfruits,prickly pear,prickly_pear,100.0,41.0,172.0
+yogurt,probiotic yogurt,probiotic_yogurt,100.0,80.0,336.0
+cakes&pies,profiterole,profiterole,100.0,334.0,1403.0
+coldcuts&lunchmeat,prosciutto,prosciutto,100.0,195.0,819.0
+alcoholicdrinks&beverages,prosecco,prosecco,100.0,66.0,277.0
+bakingingredients,protein powder,protein_powder,100.0,411.0,1726.0
+cheese,provolone,provolone,100.0,351.0,1474.0
+"oatmeal,muesli&cereals",puff,puff,100.0,367.0,1541.0
+cakes&pies,puff pastry,puff_pastry,100.0,558.0,2344.0
+"oatmeal,muesli&cereals",puffed rice,puffed_rice,100.0,383.0,1609.0
+"oatmeal,muesli&cereals",puffed wheat,puffed_wheat,100.0,367.0,1541.0
+dishes&meals,pulled pork sandwich,pulled_pork_sandwich,100.0,211.0,886.0
+"pastries,breads&rolls",pumpernickel,pumpernickel,100.0,250.0,1050.0
+vegetables,pumpkin,pumpkin,100.0,26.0,109.0
+cakes&pies,pumpkin bread,pumpkin_bread,100.0,298.0,1252.0
+cakes&pies,pumpkin cheesecake,pumpkin_cheesecake,100.0,340.0,1428.0
+cakes&pies,pumpkin pie,pumpkin_pie,100.0,243.0,1021.0
+herbs&spices,pumpkin pie spice,pumpkin_pie_spice,100.0,342.0,1436.0
+vegetableoils,pumpkin seed oil,pumpkin_seed_oil,100.0,880.0,3696.0
+nuts&seeds,pumpkin seeds,pumpkin_seeds,100.0,559.0,2348.0
+soups,pumpkin soup,pumpkin_soup,100.0,29.0,122.0
+alcoholicdrinks&beverages,punch,punch,100.0,62.0,260.0
+potatoproducts,purple majesty potatoes,purple_majesty_potatoes,100.0,72.0,302.0
+legumes,puy lentils,puy_lentils,100.0,345.0,1449.0
+spreads,"pâté (720), pate",p_t_720_pate,100.0,319.0,1340.0
+poultry&fowl,quail,quail,100.0,227.0,953.0
+poultry&fowl,quail breast,quail_breast,100.0,123.0,517.0
+"oatmeal,muesli&cereals",quaker grits,quaker_grits,100.0,344.0,1445.0
+"oatmeal,muesli&cereals",quaker oatmeal,quaker_oatmeal,100.0,375.0,1575.0
+"oatmeal,muesli&cereals",quaker oatmeal squares,quaker_oatmeal_squares,100.0,400.0,1680.0
+milk&dairyproducts,quark,quark,100.0,145.0,609.0
+pizza,quattro formaggi pizza,quattro_formaggi_pizza,100.0,248.0,1042.0
+fruits,quince,quince,100.0,57.0,239.0
+cerealproducts,quinoa,quinoa,100.0,368.0,1546.0
+venison&game,rabbit,rabbit,100.0,197.0,827.0
+pork,rack of pork,rack_of_pork,100.0,241.0,1012.0
+cheese,raclette cheese,raclette_cheese,100.0,357.0,1499.0
+venison&game,racoon,racoon,100.0,255.0,1071.0
+venison&game,racoon meat,racoon_meat,100.0,255.0,1071.0
+nuts&seeds,radish seeds,radish_seeds,100.0,43.0,181.0
+vegetables,radishes,radishes,100.0,16.0,67.0
+"oatmeal,muesli&cereals",raisin bran,raisin_bran,100.0,322.0,1352.0
+"oatmeal,muesli&cereals",raisin bran crunch,raisin_bran_crunch,100.0,355.0,1491.0
+"pastries,breads&rolls",raisin bread,raisin_bread,100.0,274.0,1151.0
+"oatmeal,muesli&cereals",raisin nut bran,raisin_nut_bran,100.0,367.0,1541.0
+fruits,raisins,raisins,100.0,299.0,1256.0
+legumes,rajma,rajma,100.0,140.0,588.0
+fruits,rambutan,rambutan,100.0,82.0,344.0
+soups,ramen,ramen,100.0,436.0,1831.0
+sauces&dressings,ranch dressing,ranch_dressing,100.0,510.0,2142.0
+fruits,raspberries,raspberries,100.0,52.0,218.0
+cakes&pies,raspberry pie,raspberry_pie,100.0,240.0,1008.0
+pasta&noodles,ravioli,ravioli,100.0,77.0,323.0
+"oatmeal,muesli&cereals",ready brek,ready_brek,100.0,359.0,1508.0
+oils&fats,real butter,real_butter,100.0,720.0,3024.0
+legumes,red beans,red_beans,100.0,124.0,521.0
+vegetables,red cabbage,red_cabbage,100.0,31.0,130.0
+potatoproducts,red gold potatoes,red_gold_potatoes,100.0,89.0,374.0
+legumes,red kidney bean,red_kidney_bean,100.0,337.0,1415.0
+legumes,red lentils,red_lentils,100.0,329.0,1382.0
+herbs&spices,red pepper,red_pepper,100.0,251.0,1054.0
+pizza,red pepper pizza,red_pepper_pizza,100.0,192.0,806.0
+potatoproducts,red potatoes,red_potatoes,100.0,89.0,374.0
+fish&seafood,red snapper,red_snapper,100.0,128.0,538.0
+cakes&pies,red velvet cake,red_velvet_cake,100.0,367.0,1541.0
+alcoholicdrinks&beverages,red wine,red_wine,100.0,85.0,357.0
+herbs&spices,red wine vinegar,red_wine_vinegar,100.0,19.0,80.0
+wine,red wines,red_wines,100.0,85.0,357.0
+beer,redbridge (gluten-free),redbridge_gluten_free,100.0,45.0,189.0
+fish&seafood,redfish,redfish,100.0,94.0,395.0
+candy&sweets,reeses peanut butter cups,reeses_peanut_butter_cups,100.0,536.0,2251.0
+legumes,refried beans,refried_beans,100.0,91.0,382.0
+venison&game,reindeer,reindeer,100.0,200.0,840.0
+venison&game,reindeer meat,reindeer_meat,100.0,200.0,840.0
+sauces&dressings,remoulade sauce,remoulade_sauce,100.0,635.0,2667.0
+dishes&meals,reuben sandwich,reuben_sandwich,100.0,208.0,874.0
+poultry&fowl,rhea,rhea,100.0,160.0,672.0
+fruits,rhubarb,rhubarb,100.0,21.0,88.0
+cakes&pies,rhubarb pie,rhubarb_pie,100.0,245.0,1029.0
+beef&veal,rib eye steak,rib_eye_steak,100.0,217.0,911.0
+oils&fats,rice bran oil,rice_bran_oil,100.0,889.0,3734.0
+"oatmeal,muesli&cereals",rice chex,rice_chex,100.0,387.0,1625.0
+"oatmeal,muesli&cereals",rice krispies,rice_krispies,100.0,394.0,1655.0
+milk&dairyproducts,rice milk,rice_milk,100.0,49.0,206.0
+milk&dairyproducts,rice pudding,rice_pudding,100.0,118.0,496.0
+cheese,ricotta,ricotta,100.0,174.0,731.0
+wine,riesling,riesling,100.0,80.0,336.0
+wine,riesling wine,riesling_wine,100.0,80.0,336.0
+pasta&noodles,rigatoni,rigatoni,100.0,353.0,1483.0
+sausage,ring bologna,ring_bologna,100.0,286.0,1201.0
+dishes&meals,roast beef,roast_beef,100.0,111.0,466.0
+dishes&meals,roast dinner,roast_dinner,100.0,198.0,832.0
+potatoproducts,roast potatoes,roast_potatoes,100.0,149.0,626.0
+candy&sweets,roasted almonds,roasted_almonds,100.0,452.0,1898.0
+legumes,roasted soybeans,roasted_soybeans,100.0,471.0,1978.0
+bakingingredients,rock sugar,rock_sugar,100.0,625.0,2625.0
+icecream,rocky road ice cream,rocky_road_ice_cream,100.0,257.0,1079.0
+"pastries,breads&rolls",roll,roll,100.0,316.0,1327.0
+bakingingredients,rolled oats,rolled_oats,100.0,384.0,1613.0
+beer,rolling rock,rolling_rock,100.0,37.0,155.0
+beer,rolling rock light,rolling_rock_light,100.0,30.0,126.0
+fish&seafood,rollmops,rollmops,100.0,171.0,718.0
+candy&sweets,rolo,rolo,100.0,474.0,1991.0
+cheese,romano,romano,100.0,387.0,1625.0
+beer,root beer,root_beer,100.0,41.0,172.0
+cheese,roquefort,roquefort,100.0,369.0,1550.0
+alcoholicdrinks&beverages,rose wine,rose_wine,100.0,71.0,298.0
+herbs&spices,rosemary,rosemary,100.0,131.0,550.0
+potatoproducts,rosemary potatoes,rosemary_potatoes,100.0,93.0,391.0
+"pastries,breads&rolls",roti,roti,100.0,264.0,1109.0
+pasta&noodles,rotini,rotini,100.0,353.0,1483.0
+meat,round steak,round_steak,100.0,182.0,764.0
+alcoholicdrinks&beverages,rum,rum,100.0,231.0,970.0
+cakes&pies,rum cake,rum_cake,100.0,351.0,1474.0
+beef&veal,rump steak,rump_steak,100.0,171.0,718.0
+cerealproducts,rusk,rusk,100.0,410.0,1722.0
+potatoproducts,russet potatoes,russet_potatoes,100.0,97.0,407.0
+potatoproducts,russian banana potatoes,russian_banana_potatoes,100.0,67.0,281.0
+sauces&dressings,russian dressing,russian_dressing,100.0,400.0,1680.0
+vegetables,rutabaga,rutabaga,100.0,38.0,160.0
+cerealproducts,rye bran,rye_bran,100.0,281.0,1180.0
+"pastries,breads&rolls",rye bread,rye_bread,100.0,259.0,1088.0
+potatoproducts,rösti,r_sti,100.0,138.0,580.0
+cakes&pies,sacher torte,sacher_torte,100.0,352.0,1478.0
+oils&fats,safflower oil,safflower_oil,100.0,857.0,3599.0
+nuts&seeds,safflower seeds,safflower_seeds,100.0,517.0,2171.0
+herbs&spices,saffron,saffron,100.0,310.0,1302.0
+herbs&spices,sage,sage,100.0,315.0,1323.0
+cerealproducts,sago,sago,100.0,354.0,1487.0
+sauces&dressings,salad dressing,salad_dressing,100.0,449.0,1886.0
+coldcuts&lunchmeat,salami,salami,100.0,336.0,1411.0
+pizza,salami pizza,salami_pizza,100.0,255.0,1071.0
+fish&seafood,salmon,salmon,100.0,206.0,865.0
+creamcheese,salmon cream cheese,salmon_cream_cheese,100.0,342.0,1436.0
+vegetableoils,salmon oil,salmon_oil,100.0,911.0,3826.0
+herbs&spices,salt,salt,100.0,0.0,0.0
+pork,salt meat,salt_meat,100.0,286.0,1201.0
+pork,salt pork,salt_pork,100.0,286.0,1201.0
+spreads,salted butter,salted_butter,100.0,717.0,3011.0
+sauces&dressings,sambal oelek,sambal_oelek,100.0,21.0,88.0
+alcoholicdrinks&beverages,sambuca,sambuca,100.0,333.0,1399.0
+dishes&meals,samosa,samosa,100.0,214.0,899.0
+beer,samuel adams,samuel_adams,100.0,45.0,189.0
+"pastries,breads&rolls",sandwich,sandwich,100.0,304.0,1277.0
+"pastries,breads&rolls",sandwich bread,sandwich_bread,100.0,251.0,1054.0
+slicedcheese,sandwich cheese,sandwich_cheese,100.0,148.0,622.0
+alcoholicdrinks&beverages,sangria,sangria,100.0,96.0,403.0
+tropical&exoticfruits,sapodilla,sapodilla,100.0,83.0,349.0
+oils&fats,sardine oil,sardine_oil,100.0,902.0,3788.0
+fish&seafood,sardines,sardines,100.0,208.0,874.0
+(fruit)juices,sauerkraut juice,sauerkraut_juice,100.0,14.0,59.0
+sausage,sausage,sausage,100.0,230.0,966.0
+pizza,sausage pizza,sausage_pizza,100.0,246.0,1033.0
+dishes&meals,sausage roll,sausage_roll,100.0,350.0,1470.0
+dishes&meals,sausage rolls,sausage_rolls,100.0,297.0,1247.0
+wine,sauvignon blanc,sauvignon_blanc,100.0,81.0,340.0
+herbs&spices,savory,savory,100.0,272.0,1142.0
+cerealproducts,savoury biscuits,savoury_biscuits,100.0,347.0,1457.0
+fish&seafood,scallops,scallops,100.0,111.0,466.0
+fish&seafood,scampi,scampi,100.0,84.0,353.0
+meat,schnitzel,schnitzel,100.0,156.0,655.0
+icecream,schwan’s,schwan_s,100.0,246.0,1033.0
+soda&softdrinks,schweppes ginger ale,schweppes_ginger_ale,100.0,38.0,160.0
+"pastries,breads&rolls",scone,scone,100.0,362.0,1520.0
+"oatmeal,muesli&cereals",scooters,scooters,100.0,367.0,1541.0
+alcoholicdrinks&beverages,scotch,scotch,100.0,222.0,932.0
+soups,scotch broth,scotch_broth,100.0,33.0,139.0
+fish&seafood,sea bass,sea_bass,100.0,124.0,521.0
+herbs&spices,sea salt,sea_salt,100.0,0.0,0.0
+pizza,seafood pizza,seafood_pizza,100.0,245.0,1029.0
+milk&dairyproducts,semi-skimmed milk,semi_skimmed_milk,100.0,50.0,210.0
+candy&sweets,semolina,semolina,100.0,340.0,1428.0
+bakingingredients,semolina flour,semolina_flour,100.0,350.0,1470.0
+milk&dairyproducts,semolina pudding,semolina_pudding,100.0,67.0,281.0
+coldcuts&lunchmeat,serrano ham,serrano_ham,100.0,300.0,1260.0
+herbs&spices,serrano pepper,serrano_pepper,100.0,32.0,134.0
+sauces&dressings,sesame ginger dressing,sesame_ginger_dressing,100.0,464.0,1949.0
+oils&fats,sesame oil,sesame_oil,100.0,884.0,3713.0
+sauces&dressings,sesame paste,sesame_paste,100.0,595.0,2499.0
+nuts&seeds,sesame seeds,sesame_seeds,100.0,573.0,2407.0
+fish&seafood,shad,shad,100.0,252.0,1058.0
+vegetables,shallots,shallots,100.0,72.0,302.0
+fish&seafood,shark,shark,100.0,130.0,546.0
+vegetableoils,shea oil,shea_oil,100.0,884.0,3713.0
+cheese,sheep cheese,sheep_cheese,100.0,364.0,1529.0
+pasta&noodles,shells,shells,100.0,353.0,1483.0
+dishes&meals,shepherds pie,shepherds_pie,100.0,70.0,294.0
+alcoholicdrinks&beverages,sherry,sherry,100.0,116.0,487.0
+pasta&noodles,shirataki noodles,shirataki_noodles,100.0,18.0,76.0
+wine,shiraz,shiraz,100.0,71.0,298.0
+beer,shock top,shock_top,100.0,47.0,197.0
+beer,shock top raspberry wheat,shock_top_raspberry_wheat,100.0,50.0,210.0
+cerealproducts,shortbread,shortbread,100.0,502.0,2108.0
+"pastries,breads&rolls",shortcrust pastry,shortcrust_pastry,100.0,544.0,2285.0
+bakingingredients,shredded coconut,shredded_coconut,100.0,501.0,2104.0
+"oatmeal,muesli&cereals",shredded wheat,shredded_wheat,100.0,340.0,1428.0
+"oatmeal,muesli&cereals",shreddies,shreddies,100.0,351.0,1474.0
+dishes&meals,shrimp cocktail,shrimp_cocktail,100.0,464.0,1949.0
+pizza,shrimp pizza,shrimp_pizza,100.0,209.0,878.0
+pizza,sicilian pizza,sicilian_pizza,100.0,241.0,1012.0
+beer,sierra nevada strong,sierra_nevada_strong,100.0,62.0,260.0
+legumes,silken tofu,silken_tofu,100.0,55.0,231.0
+milk&dairyproducts,skim milk,skim_milk,100.0,35.0,147.0
+yogurt,skim milk yogurt,skim_milk_yogurt,100.0,56.0,235.0
+spreads,skippy peanut butter,skippy_peanut_butter,100.0,594.0,2495.0
+beef&veal,skirt steak,skirt_steak,100.0,205.0,861.0
+candy&sweets,skittles,skittles,100.0,405.0,1701.0
+alcoholicdrinks&beverages,sloe gin,sloe_gin,100.0,332.0,1394.0
+dishes&meals,sloppy joe,sloppy_joe,100.0,71.0,298.0
+dishes&meals,sloppy joes,sloppy_joes,100.0,154.0,647.0
+non-alcoholicdrinks&beverages,slurpee,slurpee,100.0,4.0,17.0
+non-alcoholicdrinks&beverages,slush puppie,slush_puppie,100.0,50.0,210.0
+"oatmeal,muesli&cereals",smart start,smart_start,100.0,371.0,1558.0
+candy&sweets,smarties,smarties,100.0,357.0,1499.0
+icecream,smarties mcflurry,smarties_mcflurry,100.0,198.0,832.0
+fish&seafood,smelt,smelt,100.0,124.0,521.0
+nuts&seeds,smoked almonds,smoked_almonds,100.0,575.0,2415.0
+slicedcheese,smoked cheese,smoked_cheese,100.0,410.0,1722.0
+coldcuts&lunchmeat,smoked ham,smoked_ham,100.0,107.0,449.0
+fastfood,smoked salmon,smoked_salmon,100.0,158.0,664.0
+sausage,smoked sausage,smoked_sausage,100.0,301.0,1264.0
+coldcuts&lunchmeat,smoked turkey breast,smoked_turkey_breast,100.0,104.0,437.0
+non-alcoholicdrinks&beverages,smoothie,smoothie,100.0,37.0,155.0
+candy&sweets,smores,smores,100.0,500.0,2100.0
+spreads,smuckers strawberry jam,smuckers_strawberry_jam,100.0,250.0,1050.0
+candy&sweets,snickers,snickers,100.0,484.0,2033.0
+icecream,snickers ice cream,snickers_ice_cream,100.0,360.0,1512.0
+soda&softdrinks,soda,soda,100.0,53.0,223.0
+"pastries,breads&rolls",soda bread,soda_bread,100.0,290.0,1218.0
+cheese,soft cheese,soft_cheese,100.0,268.0,1126.0
+icecream,soft serve,soft_serve,100.0,222.0,932.0
+legumes,soft tofu,soft_tofu,100.0,61.0,256.0
+fish&seafood,sole,sole,100.0,86.0,361.0
+icecream,solero,solero,100.0,100.0,420.0
+bakingingredients,sorbitol,sorbitol,100.0,375.0,1575.0
+"pastries,breads&rolls",soufflé,souffl,100.0,204.0,857.0
+milk&dairyproducts,sour cream,sour_cream,100.0,181.0,760.0
+sauces&dressings,sour cream sauce,sour_cream_sauce,100.0,60.0,252.0
+candy&sweets,sour patch kids,sour_patch_kids,100.0,363.0,1525.0
+"pastries,breads&rolls",sourdough bread,sourdough_bread,100.0,289.0,1214.0
+tropical&exoticfruits,soursop fruit,soursop_fruit,100.0,66.0,277.0
+sausage,souse,souse,100.0,157.0,659.0
+alcoholicdrinks&beverages,southern comfort,southern_comfort,100.0,247.0,1037.0
+nuts&seeds,soy beans,soy_beans,100.0,147.0,617.0
+legumes,soy cheese,soy_cheese,100.0,235.0,987.0
+legumes,soy mayonnaise,soy_mayonnaise,100.0,322.0,1352.0
+bakingingredients,soy milk,soy_milk,100.0,41.0,172.0
+pasta&noodles,soy noodles,soy_noodles,100.0,216.0,907.0
+legumes,soy nut butter,soy_nut_butter,100.0,562.0,2360.0
+legumes,soy nuts,soy_nuts,100.0,471.0,1978.0
+vegetableoils,soy oil,soy_oil,100.0,882.0,3704.0
+bakingingredients,soy protein powder,soy_protein_powder,100.0,338.0,1420.0
+sauces&dressings,soy sauce,soy_sauce,100.0,67.0,281.0
+legumes,soy yogurt,soy_yogurt,100.0,66.0,277.0
+legumes,soya cheese,soya_cheese,100.0,235.0,987.0
+oils&fats,soybean oil,soybean_oil,100.0,889.0,3734.0
+legumes,soybeans,soybeans,100.0,147.0,617.0
+legumes,soynut butter,soynut_butter,100.0,562.0,2360.0
+pasta&noodles,spaetzle,spaetzle,100.0,368.0,1546.0
+pasta&noodles,spaghetti,spaghetti,100.0,370.0,1554.0
+dishes&meals,spaghetti bolognese,spaghetti_bolognese,100.0,132.0,554.0
+sausage,spam,spam,100.0,315.0,1323.0
+"pastries,breads&rolls",spanakopita,spanakopita,100.0,246.0,1033.0
+meat,spare ribs,spare_ribs,100.0,238.0,1000.0
+pork,spareribs,spareribs,100.0,238.0,1000.0
+wine,sparkling wine,sparkling_wine,100.0,190.0,798.0
+beer,sparks,sparks,100.0,74.0,311.0
+"oatmeal,muesli&cereals",special k,special_k,100.0,377.0,1583.0
+"oatmeal,muesli&cereals",special k chocolatey delight,special_k_chocolatey_delight,100.0,388.0,1630.0
+"oatmeal,muesli&cereals",special k protein plus,special_k_protein_plus,100.0,375.0,1575.0
+"oatmeal,muesli&cereals",special k red berries,special_k_red_berries,100.0,345.0,1449.0
+candy&sweets,speculoos,speculoos,100.0,469.0,1970.0
+cerealproducts,spelt,spelt,100.0,338.0,1420.0
+cerealproducts,spelt bran,spelt_bran,100.0,177.0,743.0
+cerealproducts,spelt semolina,spelt_semolina,100.0,360.0,1512.0
+"pastries,breads&rolls",spice cake,spice_cake,100.0,332.0,1394.0
+fastfood,spicy italian,spicy_italian,100.0,219.0,920.0
+vegetables,spinach,spinach,100.0,23.0,97.0
+pizza,spinach feta pizza,spinach_feta_pizza,100.0,242.0,1016.0
+pizza,spinach pizza,spinach_pizza,100.0,234.0,983.0
+pasta&noodles,spinach tortellini,spinach_tortellini,100.0,314.0,1319.0
+pasta&noodles,spirelli,spirelli,100.0,367.0,1541.0
+cakes&pies,sponge cake,sponge_cake,100.0,289.0,1214.0
+dishes&meals,spring roll,spring_roll,100.0,250.0,1050.0
+dishes&meals,spring rolls,spring_rolls,100.0,250.0,1050.0
+bakingingredients,sprinkles,sprinkles,100.0,500.0,2100.0
+soda&softdrinks,sprite,sprite,100.0,37.0,155.0
+soda&softdrinks,sprite zero,sprite_zero,100.0,0.0,0.0
+candy&sweets,spritz cookies,spritz_cookies,100.0,500.0,2100.0
+vegetables,squash,squash,100.0,45.0,189.0
+fish&seafood,squid,squid,100.0,92.0,386.0
+venison&game,squirrel,squirrel,100.0,173.0,727.0
+venison&game,squirrel meat,squirrel_meat,100.0,173.0,727.0
+soda&softdrinks,squirt,squirt,100.0,44.0,185.0
+beer,st. pauli girl,st_pauli_girl,100.0,42.0,176.0
+meat,standing rib roast,standing_rib_roast,100.0,333.0,1399.0
+tropical&exoticfruits,star fruit,star_fruit,100.0,31.0,130.0
+bakingingredients,starch,starch,100.0,381.0,1600.0
+fruits,starfruit,starfruit,100.0,31.0,130.0
+beer,steel reserve,steel_reserve,100.0,63.0,265.0
+herbs&spices,stevia,stevia,100.0,0.0,0.0
+beef&veal,stew beef,stew_beef,100.0,191.0,802.0
+cheese,stilton cheese,stilton_cheese,100.0,393.0,1651.0
+beer,stout,stout,100.0,51.0,214.0
+beer,stout beer,stout_beer,100.0,51.0,214.0
+yogurt,stracciatella yogurt,stracciatella_yogurt,100.0,139.0,584.0
+fruits,strawberries,strawberries,100.0,32.0,134.0
+cakes&pies,strawberry cheesecake,strawberry_cheesecake,100.0,327.0,1373.0
+icecream,strawberry ice cream,strawberry_ice_cream,100.0,236.0,991.0
+spreads,strawberry jam,strawberry_jam,100.0,250.0,1050.0
+spreads,strawberry jelly,strawberry_jelly,100.0,250.0,1050.0
+non-alcoholicdrinks&beverages,strawberry milkshake,strawberry_milkshake,100.0,113.0,475.0
+cakes&pies,strawberry pie,strawberry_pie,100.0,230.0,966.0
+bakingingredients,strawberry preserves,strawberry_preserves,100.0,278.0,1168.0
+cakes&pies,strawberry rhubarb pie,strawberry_rhubarb_pie,100.0,281.0,1180.0
+icecream,strawberry sundae,strawberry_sundae,100.0,158.0,664.0
+yogurt,strawberry yogurt,strawberry_yogurt,100.0,100.0,420.0
+cheese,string cheese,string_cheese,100.0,250.0,1050.0
+beef&veal,strip steak,strip_steak,100.0,117.0,491.0
+beer,strong beer,strong_beer,100.0,55.0,231.0
+pizza,stuffed crust pizza,stuffed_crust_pizza,100.0,255.0,1071.0
+fish&seafood,sturgeon,sturgeon,100.0,135.0,567.0
+fastfood,subway club sandwich,subway_club_sandwich,100.0,131.0,550.0
+soups,succotash,succotash,100.0,115.0,483.0
+bakingingredients,sucrose,sucrose,100.0,387.0,1625.0
+bakingingredients,sugar,sugar,100.0,405.0,1701.0
+legumes,sugar peas,sugar_peas,100.0,42.0,176.0
+"oatmeal,muesli&cereals",sugar puffs,sugar_puffs,100.0,379.0,1592.0
+coldcuts&lunchmeat,summer sausage,summer_sausage,100.0,298.0,1252.0
+spreads,sunbutter,sunbutter,100.0,617.0,2591.0
+icecream,sundae,sundae,100.0,215.0,903.0
+spreads,sunflower butter,sunflower_butter,100.0,617.0,2591.0
+oils&fats,sunflower oil,sunflower_oil,100.0,884.0,3713.0
+bakingingredients,sunflower seeds,sunflower_seeds,100.0,117.0,491.0
+soda&softdrinks,sunkist,sunkist,100.0,25.0,105.0
+soda&softdrinks,surge,surge,100.0,48.0,202.0
+fish&seafood,sushi,sushi,100.0,150.0,630.0
+sauces&dressings,sweet and sour sauce,sweet_and_sour_sauce,100.0,179.0,752.0
+nuts&seeds,sweet chestnut,sweet_chestnut,100.0,194.0,815.0
+legumes,sweet peas,sweet_peas,100.0,48.0,202.0
+vegetables,sweet potato,sweet_potato,100.0,86.0,361.0
+cakes&pies,sweet potato pie,sweet_potato_pie,100.0,260.0,1092.0
+wine,sweet red wine,sweet_red_wine,100.0,81.0,340.0
+"pastries,breads&rolls",sweet rolls,sweet_rolls,100.0,333.0,1399.0
+wine,sweet white wine,sweet_white_wine,100.0,82.0,344.0
+wine,sweet wines,sweet_wines,100.0,83.0,349.0
+milk&dairyproducts,sweetened condensed milk,sweetened_condensed_milk,100.0,321.0,1348.0
+bakingingredients,sweetener,sweetener,100.0,360.0,1512.0
+cheese,swiss cheese,swiss_cheese,100.0,380.0,1596.0
+"pastries,breads&rolls",swiss roll,swiss_roll,100.0,313.0,1315.0
+fish&seafood,swordfish,swordfish,100.0,172.0,722.0
+candy&sweets,s’mores,s_mores,100.0,500.0,2100.0
+meat,t-bone steak,t_bone_steak,100.0,202.0,848.0
+soda&softdrinks,tab,tab,100.0,0.0,0.0
+sauces&dressings,tabasco,tabasco,100.0,70.0,294.0
+dishes&meals,taco,taco,100.0,217.0,911.0
+pasta&noodles,tagliatelle,tagliatelle,100.0,370.0,1554.0
+candy&sweets,take 5,take_5,100.0,476.0,1999.0
+fruits,tamarind,tamarind,100.0,239.0,1004.0
+dishes&meals,tandoori chicken,tandoori_chicken,100.0,113.0,475.0
+non-alcoholicdrinks&beverages,tang,tang,100.0,381.0,1600.0
+fruits,tangerine,tangerine,100.0,53.0,223.0
+(fruit)juices,tangerine juice,tangerine_juice,100.0,43.0,181.0
+non-alcoholicdrinks&beverages,tap water,tap_water,100.0,0.0,0.0
+spreads,tapenade,tapenade,100.0,233.0,979.0
+herbs&spices,taro,taro,100.0,112.0,470.0
+herbs&spices,tarragon,tarragon,100.0,295.0,1239.0
+pizza,tarte flambée,tarte_flamb_e,100.0,253.0,1063.0
+cakes&pies,tarte tatin,tarte_tatin,100.0,210.0,882.0
+non-alcoholicdrinks&beverages,tea,tea,100.0,1.0,4.0
+legumes,tempeh,tempeh,100.0,193.0,811.0
+alcoholicdrinks&beverages,tequila,tequila,100.0,110.0,462.0
+sauces&dressings,teriyaki sauce,teriyaki_sauce,100.0,89.0,374.0
+legumes,textured soy protein,textured_soy_protein,100.0,571.0,2398.0
+legumes,textured vegetable protein,textured_vegetable_protein,100.0,333.0,1399.0
+sauces&dressings,thai curry paste,thai_curry_paste,100.0,155.0,651.0
+soups,thai soup,thai_soup,100.0,60.0,252.0
+pizza,thin crust pizza,thin_crust_pizza,100.0,261.0,1096.0
+herbs&spices,thyme,thyme,100.0,276.0,1159.0
+slicedcheese,tilsit,tilsit,100.0,340.0,1428.0
+beer,tilt,tilt,100.0,64.0,269.0
+cakes&pies,tiramisu,tiramisu,100.0,283.0,1189.0
+cakes&pies,tiramisu cake,tiramisu_cake,100.0,291.0,1222.0
+"pastries,breads&rolls",toast,toast,100.0,261.0,1096.0
+"oatmeal,muesli&cereals",toasties,toasties,100.0,361.0,1516.0
+candy&sweets,toblerone,toblerone,100.0,525.0,2205.0
+legumes,tofu,tofu,100.0,76.0,319.0
+vegetables,tomato,tomato,100.0,18.0,76.0
+(fruit)juices,tomato juice,tomato_juice,100.0,17.0,71.0
+sauces&dressings,tomato paste,tomato_paste,100.0,82.0,344.0
+sauces&dressings,tomato puree,tomato_puree,100.0,38.0,160.0
+soups,tomato rice soup,tomato_rice_soup,100.0,47.0,197.0
+sauces&dressings,tomato sauce,tomato_sauce,100.0,24.0,101.0
+vegetableoils,tomato seed oil,tomato_seed_oil,100.0,884.0,3713.0
+soups,tomato soup,tomato_soup,100.0,30.0,126.0
+coldcuts&lunchmeat,tongue,tongue,100.0,284.0,1193.0
+soda&softdrinks,tonic water,tonic_water,100.0,35.0,147.0
+pasta&noodles,tortellini,tortellini,100.0,291.0,1222.0
+cerealproducts,tortilla,tortilla,100.0,237.0,995.0
+"pastries,breads&rolls",tortilla bread,tortilla_bread,100.0,265.0,1113.0
+cerealproducts,tortilla chips,tortilla_chips,100.0,499.0,2096.0
+fastfood,tortilla wrap,tortilla_wrap,100.0,271.0,1138.0
+cakes&pies,treacle tart,treacle_tart,100.0,369.0,1550.0
+cakes&pies,tres leches cake,tres_leches_cake,100.0,246.0,1033.0
+cakes&pies,trifle,trifle,100.0,180.0,756.0
+fish&seafood,triggerfish,triggerfish,100.0,93.0,391.0
+alcoholicdrinks&beverages,triple sec,triple_sec,100.0,153.0,643.0
+"oatmeal,muesli&cereals",trix,trix,100.0,400.0,1680.0
+fish&seafood,trout,trout,100.0,190.0,798.0
+fastfood,tuna,tuna,100.0,86.0,361.0
+pizza,tuna pizza,tuna_pizza,100.0,254.0,1067.0
+fish&seafood,tuna salad,tuna_salad,100.0,187.0,785.0
+fish&seafood,turbot,turbot,100.0,122.0,512.0
+fastfood,turkey,turkey,100.0,104.0,437.0
+coldcuts&lunchmeat,turkey breast,turkey_breast,100.0,104.0,437.0
+poultry&fowl,turkey cutlet,turkey_cutlet,100.0,189.0,794.0
+poultry&fowl,turkey drumsticks,turkey_drumsticks,100.0,208.0,874.0
+offal&giblets,turkey giblets,turkey_giblets,100.0,173.0,727.0
+coldcuts&lunchmeat,turkey ham,turkey_ham,100.0,126.0,529.0
+offal&giblets,turkey heart,turkey_heart,100.0,174.0,731.0
+icecream,turkey hill,turkey_hill,100.0,271.0,1138.0
+meat,turkey legs,turkey_legs,100.0,208.0,874.0
+offal&giblets,turkey liver,turkey_liver,100.0,189.0,794.0
+coldcuts&lunchmeat,turkey salami,turkey_salami,100.0,152.0,638.0
+meat,turkey steak,turkey_steak,100.0,189.0,794.0
+offal&giblets,turkey stomach,turkey_stomach,100.0,148.0,622.0
+meat,turkey wings,turkey_wings,100.0,221.0,928.0
+herbs&spices,turmeric,turmeric,100.0,354.0,1487.0
+vegetables,turnip greens,turnip_greens,100.0,20.0,84.0
+vegetables,turnips,turnips,100.0,28.0,118.0
+candy&sweets,twix,twix,100.0,495.0,2079.0
+sauces&dressings,tzatziki,tzatziki,100.0,94.0,395.0
+bakingingredients,unsalted butter,unsalted_butter,100.0,717.0,3011.0
+herbs&spices,vanilla bean,vanilla_bean,100.0,250.0,1050.0
+soda&softdrinks,vanilla coke,vanilla_coke,100.0,45.0,189.0
+icecream,vanilla cone,vanilla_cone,100.0,162.0,680.0
+bakingingredients,vanilla extract,vanilla_extract,100.0,288.0,1210.0
+icecream,vanilla ice cream,vanilla_ice_cream,100.0,201.0,844.0
+non-alcoholicdrinks&beverages,vanilla milkshake,vanilla_milkshake,100.0,149.0,626.0
+bakingingredients,vanilla sugar,vanilla_sugar,100.0,357.0,1499.0
+yogurt,vanilla yogurt,vanilla_yogurt,100.0,101.0,424.0
+beef&veal,veal,veal,100.0,282.0,1184.0
+beef&veal,veal breast,veal_breast,100.0,282.0,1184.0
+offal&giblets,veal heart,veal_heart,100.0,186.0,781.0
+offal&giblets,veal kidney,veal_kidney,100.0,163.0,685.0
+beef&veal,veal leg,veal_leg,100.0,211.0,886.0
+beef&veal,veal roast beef,veal_roast_beef,100.0,175.0,735.0
+beef&veal,veal shank,veal_shank,100.0,177.0,743.0
+beef&veal,veal shoulder,veal_shoulder,100.0,183.0,769.0
+beef&veal,veal sirloin,veal_sirloin,100.0,204.0,857.0
+beef&veal,veal tenderloin,veal_tenderloin,100.0,217.0,911.0
+offal&giblets,veal tongue,veal_tongue,100.0,202.0,848.0
+spreads,vegemite,vegemite,100.0,180.0,756.0
+soups,vegetable beef soup,vegetable_beef_soup,100.0,31.0,130.0
+soups,vegetable broth,vegetable_broth,100.0,5.0,21.0
+creamcheese,vegetable cream cheese,vegetable_cream_cheese,100.0,342.0,1436.0
+(fruit)juices,vegetable juice,vegetable_juice,100.0,21.0,88.0
+vegetableoils,vegetable oil,vegetable_oil,100.0,800.0,3360.0
+pizza,vegetable pizza,vegetable_pizza,100.0,256.0,1075.0
+bakingingredients,vegetable shortening,vegetable_shortening,100.0,884.0,3713.0
+soups,vegetable soup,vegetable_soup,100.0,28.0,118.0
+soups,vegetable stock,vegetable_stock,100.0,5.0,21.0
+pizza,vegetarian pizza,vegetarian_pizza,100.0,256.0,1075.0
+fastfood,veggie burger,veggie_burger,100.0,181.0,760.0
+fastfood,veggie delight,veggie_delight,100.0,138.0,580.0
+fastfood,veggie patty,veggie_patty,100.0,390.0,1638.0
+pizza,veggie pizza,veggie_pizza,100.0,231.0,970.0
+venison&game,venison,venison,100.0,164.0,689.0
+venison&game,venison sirloin,venison_sirloin,100.0,158.0,664.0
+pasta&noodles,vermicelli,vermicelli,100.0,368.0,1546.0
+wine,vermouth,vermouth,100.0,108.0,454.0
+cakes&pies,victoria sponge cake,victoria_sponge_cake,100.0,257.0,1079.0
+sauces&dressings,vinaigrette,vinaigrette,100.0,120.0,504.0
+herbs&spices,vinegar,vinegar,100.0,18.0,76.0
+alcoholicdrinks&beverages,vodka,vodka,100.0,231.0,970.0
+non-alcoholicdrinks&beverages,volvic,volvic,100.0,0.0,0.0
+candy&sweets,waffles,waffles,100.0,272.0,1142.0
+fish&seafood,wahoo,wahoo,100.0,167.0,701.0
+creamcheese,walnut cream cheese,walnut_cream_cheese,100.0,342.0,1436.0
+oils&fats,walnut oil,walnut_oil,100.0,889.0,3734.0
+bakingingredients,walnuts,walnuts,100.0,131.0,550.0
+vegetables,wasabi,wasabi,100.0,109.0,458.0
+non-alcoholicdrinks&beverages,water,water,100.0,0.0,0.0
+fruits,watermelon,watermelon,100.0,30.0,126.0
+cakes&pies,wedding cake,wedding_cake,100.0,381.0,1600.0
+soups,wedding soup,wedding_soup,100.0,53.0,223.0
+"oatmeal,muesli&cereals",weet-bix,weet_bix,100.0,353.0,1483.0
+"oatmeal,muesli&cereals",weetabix,weetabix,100.0,358.0,1504.0
+"oatmeal,muesli&cereals",weetos,weetos,100.0,378.0,1588.0
+sausage,weisswurst,weisswurst,100.0,313.0,1315.0
+fastfood,wendy’s baconator,wendy_s_baconator,100.0,304.0,1277.0
+fastfood,wendy’s jr. bacon cheeseburger,wendy_s_jr_bacon_cheeseburger,100.0,261.0,1096.0
+fastfood,wendy’s jr. cheeseburger,wendy_s_jr_cheeseburger,100.0,225.0,945.0
+fastfood,wendy’s son of baconator,wendy_s_son_of_baconator,100.0,321.0,1348.0
+beer,wheat beer,wheat_beer,100.0,45.0,189.0
+cerealproducts,wheat bran,wheat_bran,100.0,216.0,907.0
+cerealproducts,wheat germ,wheat_germ,100.0,382.0,1604.0
+vegetableoils,wheat germ oil,wheat_germ_oil,100.0,929.0,3902.0
+cerealproducts,wheat gluten,wheat_gluten,100.0,325.0,1365.0
+cerealproducts,wheat semolina,wheat_semolina,100.0,360.0,1512.0
+cerealproducts,wheat starch,wheat_starch,100.0,351.0,1474.0
+"oatmeal,muesli&cereals",wheaties,wheaties,100.0,367.0,1541.0
+milk&dairyproducts,whipped cream,whipped_cream,100.0,257.0,1079.0
+alcoholicdrinks&beverages,whisky,whisky,100.0,250.0,1050.0
+slicedcheese,white american,white_american,100.0,148.0,622.0
+legumes,white beans,white_beans,100.0,336.0,1411.0
+"pastries,breads&rolls",white bread,white_bread,100.0,238.0,1000.0
+cheese,white cheddar,white_cheddar,100.0,403.0,1693.0
+(fruit)juices,white grape juice,white_grape_juice,100.0,75.0,315.0
+herbs&spices,white pepper,white_pepper,100.0,296.0,1243.0
+pizza,white pizza,white_pizza,100.0,246.0,1033.0
+potatoproducts,white potatoes,white_potatoes,100.0,94.0,395.0
+alcoholicdrinks&beverages,white wine,white_wine,100.0,82.0,344.0
+wine,white zinfandel,white_zinfandel,100.0,88.0,370.0
+fish&seafood,whitefish,whitefish,100.0,172.0,722.0
+fish&seafood,whiting,whiting,100.0,116.0,487.0
+pasta&noodles,whole grain noodles,whole_grain_noodles,100.0,347.0,1457.0
+pasta&noodles,whole grain spaghetti,whole_grain_spaghetti,100.0,351.0,1474.0
+cerealproducts,whole grain wheat,whole_grain_wheat,100.0,339.0,1424.0
+milk&dairyproducts,whole milk,whole_milk,100.0,61.0,256.0
+"pastries,breads&rolls",whole wheat bread,whole_wheat_bread,100.0,247.0,1037.0
+bakingingredients,whole wheat flour,whole_wheat_flour,100.0,340.0,1428.0
+cerealproducts,wholegrain oat,wholegrain_oat,100.0,375.0,1575.0
+candy&sweets,whoopie pie,whoopie_pie,100.0,400.0,1680.0
+fastfood,whopper,whopper,100.0,231.0,970.0
+venison&game,wild boar,wild_boar,100.0,160.0,672.0
+venison&game,wild boar meat,wild_boar_meat,100.0,160.0,672.0
+poultry&fowl,wild duck,wild_duck,100.0,211.0,886.0
+spreads,wild honey,wild_honey,100.0,286.0,1201.0
+alcoholicdrinks&beverages,wine,wine,100.0,83.0,349.0
+vegetables,winter squash,winter_squash,100.0,34.0,143.0
+cheese,wisconsin cheese,wisconsin_cheese,100.0,389.0,1634.0
+sauces&dressings,worcestershire sauce,worcestershire_sauce,100.0,78.0,328.0
+bakingingredients,xylitol,xylitol,100.0,240.0,1008.0
+herbs&spices,yam,yam,100.0,118.0,496.0
+legumes,yam bean,yam_bean,100.0,38.0,160.0
+potatoproducts,yams,yams,100.0,116.0,487.0
+bakingingredients,yeast (dry),yeast_dry,100.0,325.0,1365.0
+legumes,yellow lentils,yellow_lentils,100.0,304.0,1277.0
+wine,yellow tail wine,yellow_tail_wine,100.0,71.0,298.0
+non-alcoholicdrinks&beverages,yerba mate,yerba_mate,100.0,62.0,260.0
+milk&dairyproducts,yogurt,yogurt,100.0,61.0,256.0
+yogurt,yogurt corner,yogurt_corner,100.0,119.0,500.0
+sauces&dressings,yogurt dressing,yogurt_dressing,100.0,45.0,189.0
+yogurt,yoplait boston cream pie,yoplait_boston_cream_pie,100.0,90.0,378.0
+yogurt,yoplait french vanilla,yoplait_french_vanilla,100.0,100.0,420.0
+yogurt,yoplait greek blueberry,yoplait_greek_blueberry,100.0,100.0,420.0
+yogurt,yoplait greek coconut,yoplait_greek_coconut,100.0,100.0,420.0
+yogurt,yoplait greek strawberry,yoplait_greek_strawberry,100.0,100.0,420.0
+yogurt,yoplait greek vanilla,yoplait_greek_vanilla,100.0,100.0,420.0
+yogurt,yoplait harvest peach,yoplait_harvest_peach,100.0,100.0,420.0
+yogurt,yoplait key lime pie,yoplait_key_lime_pie,100.0,100.0,420.0
+yogurt,yoplait mango,yoplait_mango,100.0,100.0,420.0
+yogurt,yoplait mixed berry,yoplait_mixed_berry,100.0,100.0,420.0
+yogurt,yoplait pina colada,yoplait_pina_colada,100.0,100.0,420.0
+yogurt,yoplait strawberry,yoplait_strawberry,100.0,100.0,420.0
+yogurt,yoplait strawberry banana,yoplait_strawberry_banana,100.0,100.0,420.0
+yogurt,yoplait strawberry cheesecake,yoplait_strawberry_cheesecake,100.0,100.0,420.0
+dishes&meals,yorkshire pudding,yorkshire_pudding,100.0,553.0,2323.0
+slicedcheese,young gouda,young_gouda,100.0,356.0,1495.0
+legumes,yuba,yuba,100.0,176.0,739.0
+potatoproducts,yukon gold potatoes,yukon_gold_potatoes,100.0,82.0,344.0
+fish&seafood,zander,zander,100.0,84.0,353.0
+sauces&dressings,zesty italian dressing,zesty_italian_dressing,100.0,267.0,1121.0
+wine,zinfandel,zinfandel,100.0,88.0,370.0
+fastfood,zinger,zinger,100.0,256.0,1075.0
+fastfood,zinger burger,zinger_burger,100.0,256.0,1075.0
+pasta&noodles,ziti,ziti,100.0,352.0,1478.0
+vegetables,zucchini,zucchini,100.0,17.0,71.0

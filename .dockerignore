@@ -1,0 +1,12 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.env.*
+storage/chroma/*.bin
+storage/chroma/*.sqlite3
+eval/outputs/
+node_modules/

@@ -1,0 +1,1026 @@
+{
+  "summary": {
+    "generated_at": "2026-04-14T12:53:28.783578+00:00",
+    "dataset_path": "/workspaces/nutritiona_ssistant/eval/datasets/eval_cases_adversarial.json",
+    "total_cases": 50,
+    "passed_cases": 48,
+    "failed_cases": 2,
+    "pass_rate": 0.96,
+    "average_case_score": 0.992,
+    "category_breakdown": {
+      "ADV": {
+        "total_cases": 50,
+        "passed_cases": 48,
+        "failed_cases": 2,
+        "pass_rate": 0.96,
+        "average_score": 0.992
+      }
+    }
+  },
+  "results": [
+    {
+      "case_id": "ADV-NOISE-001",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200g asdkjashd",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 1 item(s), but some extra text looked unclear or misspelled. Current meal total is 104.0 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 1,
+        "total_items": 2,
+        "total_calories": 104.0,
+        "meal_total": 104.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-002",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "banana 100g ??? milk 150g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 2 item(s), but some extra text looked unclear or misspelled. Current meal total is 180.5 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 2,
+        "total_items": 3,
+        "total_calories": 180.5,
+        "meal_total": 180.5,
+        "items_count": 3
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-003",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple200gmilk100g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 165.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 2,
+        "total_items": 2,
+        "total_calories": 165.0,
+        "meal_total": 165.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-004",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "banana100gandmilk150ghello",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 2 item(s), but some extra text looked unclear or misspelled. Current meal total is 180.5 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 2,
+        "total_items": 3,
+        "total_calories": 180.5,
+        "meal_total": 180.5,
+        "items_count": 3
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-005",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "xyz apple 200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 1 item(s), but some extra text looked unclear or misspelled. Current meal total is 104.0 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 1,
+        "total_items": 2,
+        "total_calories": 104.0,
+        "meal_total": 104.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-006",
+      "case_type": "single_turn",
+      "passed": false,
+      "score": 0.8,
+      "input_summary": "hello banana 100g",
+      "failures": [
+        "Expected total_items=2, got 1"
+      ],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 89.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 89.0,
+        "meal_total": 89.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-007",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "milk 200g lorem",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 1 item(s), but some extra text looked unclear or misspelled. Current meal total is 122.0 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 1,
+        "total_items": 2,
+        "total_calories": 122.0,
+        "meal_total": 122.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-008",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "rice100gandmilk200ghello",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 2 item(s), but some extra text looked unclear or misspelled. Current meal total is 252.0 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 2,
+        "total_items": 3,
+        "total_calories": 252.0,
+        "meal_total": 252.0,
+        "items_count": 3
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-001",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "unicorn milk 100g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-002",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "dragon meat 200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-003",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "quantum rice 150g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-004",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "alien fruit 50g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-005",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "ghost food 100g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-006",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "space burger 150g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-007",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "mars protein 200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-FORMAT-001",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple,200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 104.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 104.0,
+        "meal_total": 104.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-FORMAT-002",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "APPLE200G",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 104.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 104.0,
+        "meal_total": 104.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-FORMAT-003",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "grilled-chicken 200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 330.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 330.0,
+        "meal_total": 330.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-FORMAT-004",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200 g banana 100 g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 193.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 2,
+        "total_items": 2,
+        "total_calories": 193.0,
+        "meal_total": 193.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-FORMAT-005",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "rice100gandmilk200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 252.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 2,
+        "total_items": 2,
+        "total_calories": 252.0,
+        "meal_total": 252.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-FORMAT-006",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple@@@200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 104.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 104.0,
+        "meal_total": 104.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-FORMAT-007",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "banana100gandmilk150g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 180.5 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 2,
+        "total_items": 2,
+        "total_calories": 180.5,
+        "meal_total": 180.5,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-GUARD-001",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "",
+      "failures": [],
+      "actual": {
+        "mode": "nutrition_qa",
+        "answer": "Your message is empty.",
+        "final_message": "Type a food query or a nutrition question in English. Example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": null,
+        "total_items": null,
+        "total_calories": null,
+        "meal_total": 0.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-GUARD-002",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple two hundred grams",
+      "failures": [],
+      "actual": {
+        "mode": "nutrition_qa",
+        "answer": "I recognized a quantity expression, but it is not written with digits.",
+        "final_message": "Please write the amount with digits, for example: 'apple 200g' instead of 'apple two hundred grams'.",
+        "confidence": "LOW",
+        "matched_items": null,
+        "total_items": null,
+        "total_calories": null,
+        "meal_total": 0.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-GUARD-003",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "banana",
+      "failures": [],
+      "actual": {
+        "mode": "nutrition_qa",
+        "answer": "I recognized 'banana', but I still need the quantity in grams.",
+        "final_message": "Try: 'banana 200g'.",
+        "confidence": "LOW",
+        "matched_items": null,
+        "total_items": null,
+        "total_calories": null,
+        "meal_total": 0.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-GUARD-004",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "150g",
+      "failures": [],
+      "actual": {
+        "mode": "nutrition_qa",
+        "answer": "I can see the quantity, but the food name is missing.",
+        "final_message": "Please provide both the food name and the amount. Example: 'apple 200g' or 'rice 150g'.",
+        "confidence": "LOW",
+        "matched_items": null,
+        "total_items": null,
+        "total_calories": null,
+        "meal_total": 0.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-GUARD-005",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "سلام",
+      "failures": [],
+      "actual": {
+        "mode": "nutrition_qa",
+        "answer": "Please use English for food and nutrition queries.",
+        "final_message": "Example: 'apple 200g' or 'Is avocado healthy?'",
+        "confidence": "LOW",
+        "matched_items": null,
+        "total_items": null,
+        "total_calories": null,
+        "meal_total": 0.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-GUARD-006",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "ciao",
+      "failures": [],
+      "actual": {
+        "mode": "nutrition_qa",
+        "answer": "This looks like a food name, but I could not confidently match it.",
+        "final_message": "I may not have understood the food name correctly. Did you mean 'avocado'? Example: 'avocado 200g'.",
+        "confidence": "LOW",
+        "matched_items": null,
+        "total_items": null,
+        "total_calories": null,
+        "meal_total": 0.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-GUARD-007",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "brown rice",
+      "failures": [],
+      "actual": {
+        "mode": "nutrition_qa",
+        "answer": "I recognized 'brown rice', but I still need the quantity in grams.",
+        "final_message": "Try: 'brown rice 200g'.",
+        "confidence": "LOW",
+        "matched_items": null,
+        "total_items": null,
+        "total_calories": null,
+        "meal_total": 0.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-001",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200g -> banana 100g -> what is the total now?",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Returned total calories from the current meal memory.",
+        "confidence": "HIGH",
+        "matched_items": 2,
+        "total_items": 2,
+        "total_calories": 193.0,
+        "meal_total": 193.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-002",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200g -> apple 200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "As I told you before, apple 200g is 104.0 kcal and it is already in your current meal.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 104.0,
+        "meal_total": 104.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-003",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "banana 100g -> remove banana -> what is the total now?",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Your current meal is empty.",
+        "confidence": "MEDIUM",
+        "matched_items": 0,
+        "total_items": 0,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-004",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200g -> clear meal",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Your meal memory has been cleared.",
+        "confidence": "HIGH",
+        "matched_items": 0,
+        "total_items": 0,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-005",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200g -> Is avocado healthy?",
+      "failures": [],
+      "actual": {
+        "mode": "nutrition_qa",
+        "answer": "Some examples include 'kocho', vegetables like cabbage and carrot, fruits like banana and avocado, peas and bean varieties, and whole-grain cereals such as wheat flour.",
+        "final_message": "Answer generated from retrieved nutrition Q&A context.",
+        "confidence": "LOW",
+        "matched_items": null,
+        "total_items": null,
+        "total_calories": null,
+        "meal_total": 104.0,
+        "items_count": 0
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-006",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "milk 200g -> oats 40g -> what is the total now?",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Returned total calories from the current meal memory.",
+        "confidence": "HIGH",
+        "matched_items": 2,
+        "total_items": 2,
+        "total_calories": 277.6,
+        "meal_total": 277.6,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-007",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200g banana 100g -> clear meal -> milk 200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 122.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 122.0,
+        "meal_total": 122.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-008",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200g -> banana 100g -> milk 200g -> what is the total now?",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Returned total calories from the current meal memory.",
+        "confidence": "HIGH",
+        "matched_items": 3,
+        "total_items": 3,
+        "total_calories": 315.0,
+        "meal_total": 315.0,
+        "items_count": 3
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-009",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200g -> remove banana -> what is the total now?",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Returned total calories from the current meal memory.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 104.0,
+        "meal_total": 104.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-MEM-010",
+      "case_type": "multi_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "milk 200g -> milk 200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "As I told you before, milk 200g is 122.0 kcal and it is already in your current meal.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 122.0,
+        "meal_total": 122.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-040",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple 200g asdkjashd",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 1 item(s), but some extra text looked unclear or misspelled. Current meal total is 104.0 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 1,
+        "total_items": 2,
+        "total_calories": 104.0,
+        "meal_total": 104.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-041",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "banana 100g ??? milk 150g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 2 item(s), but some extra text looked unclear or misspelled. Current meal total is 180.5 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 2,
+        "total_items": 3,
+        "total_calories": 180.5,
+        "meal_total": 180.5,
+        "items_count": 3
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-042",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "apple200gmilk100g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 165.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 2,
+        "total_items": 2,
+        "total_calories": 165.0,
+        "meal_total": 165.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-043",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "banana100gandmilk150ghello",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 2 item(s), but some extra text looked unclear or misspelled. Current meal total is 180.5 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 2,
+        "total_items": 3,
+        "total_calories": 180.5,
+        "meal_total": 180.5,
+        "items_count": 3
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-044",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "xyz apple 200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 1 item(s), but some extra text looked unclear or misspelled. Current meal total is 104.0 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 1,
+        "total_items": 2,
+        "total_calories": 104.0,
+        "meal_total": 104.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-045",
+      "case_type": "single_turn",
+      "passed": false,
+      "score": 0.8,
+      "input_summary": "hello banana 100g",
+      "failures": [
+        "Expected total_items=2, got 1"
+      ],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "Meal updated successfully. Current meal total is 89.0 kcal.",
+        "confidence": "HIGH",
+        "matched_items": 1,
+        "total_items": 1,
+        "total_calories": 89.0,
+        "meal_total": 89.0,
+        "items_count": 1
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-046",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "milk 200g lorem",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 1 item(s), but some extra text looked unclear or misspelled. Current meal total is 122.0 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 1,
+        "total_items": 2,
+        "total_calories": 122.0,
+        "meal_total": 122.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-NOISE-047",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "rice100gandmilk200ghello",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I recognized the valid food part and added 2 item(s), but some extra text looked unclear or misspelled. Current meal total is 252.0 kcal.",
+        "confidence": "MEDIUM",
+        "matched_items": 2,
+        "total_items": 3,
+        "total_calories": 252.0,
+        "meal_total": 252.0,
+        "items_count": 3
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-048",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "unicorn milk 100g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-049",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "dragon meat 200g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    },
+    {
+      "case_id": "ADV-OOD-050",
+      "case_type": "single_turn",
+      "passed": true,
+      "score": 1.0,
+      "input_summary": "quantum rice 150g",
+      "failures": [],
+      "actual": {
+        "mode": "calorie",
+        "answer": null,
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "confidence": "LOW",
+        "matched_items": 0,
+        "total_items": 2,
+        "total_calories": 0,
+        "meal_total": 0.0,
+        "items_count": 2
+      },
+      "category": "ADV"
+    }
+  ]
+}

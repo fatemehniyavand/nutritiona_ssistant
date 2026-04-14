@@ -1,0 +1,2825 @@
+{
+  "summary": {
+    "total_cases": 50,
+    "passed_cases": 50,
+    "failed_cases": 0,
+    "pass_rate": 1.0,
+    "total_items": 60,
+    "total_matched_items": 34,
+    "total_rejected_items": 26,
+    "overall_item_coverage": 0.5667,
+    "exact_match_count": 34,
+    "ambiguous_query_count": 15,
+    "no_reliable_match_count": 11,
+    "category_summary": {
+      "exact_single": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0,
+        "pass_rate": 1.0
+      },
+      "ambiguous_single": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0,
+        "pass_rate": 1.0
+      },
+      "unknown_food": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0,
+        "pass_rate": 1.0
+      },
+      "multi_item_partial": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0,
+        "pass_rate": 1.0
+      },
+      "specific_multiword": {
+        "total": 10,
+        "passed": 10,
+        "failed": 0,
+        "pass_rate": 1.0
+      }
+    }
+  },
+  "results": [
+    {
+      "name": "exact_apple",
+      "category": "exact_single",
+      "input": "apple 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "apple",
+            "matched_food": "apple",
+            "grams": 200.0,
+            "kcal_per_100g": 52.0,
+            "calories": 104.0,
+            "confidence": "HIGH",
+            "distance": 1.3918004035949707,
+            "status": "matched",
+            "suggestions": [
+              "apple",
+              "apple spritzer",
+              "apple juice",
+              "applejack",
+              "custard apple"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 104.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 104.0 kcal."
+      }
+    },
+    {
+      "name": "exact_milk",
+      "category": "exact_single",
+      "input": "milk 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "milk",
+            "matched_food": "milk",
+            "grams": 200.0,
+            "kcal_per_100g": 61.0,
+            "calories": 122.0,
+            "confidence": "HIGH",
+            "distance": 1.2879071235656738,
+            "status": "matched",
+            "suggestions": [
+              "milk",
+              "skim milk",
+              "whole milk",
+              "lactose-free milk",
+              "powdered milk"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 122.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 122.0 kcal."
+      }
+    },
+    {
+      "name": "exact_whole_milk",
+      "category": "exact_single",
+      "input": "whole milk 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "whole milk",
+            "matched_food": "whole milk",
+            "grams": 200.0,
+            "kcal_per_100g": 61.0,
+            "calories": 122.0,
+            "confidence": "HIGH",
+            "distance": 1.043226957321167,
+            "status": "matched",
+            "suggestions": [
+              "whole milk",
+              "lactose-free milk",
+              "skim milk",
+              "powdered milk",
+              "semi-skimmed milk"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 122.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 122.0 kcal."
+      }
+    },
+    {
+      "name": "exact_brown_rice",
+      "category": "exact_single",
+      "input": "brown rice 150g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "brown rice",
+            "matched_food": "brown rice",
+            "grams": 150.0,
+            "kcal_per_100g": 362.0,
+            "calories": 543.0,
+            "confidence": "HIGH",
+            "distance": 0.7552469968795776,
+            "status": "matched",
+            "suggestions": [
+              "brown rice",
+              "black rice",
+              "fried rice",
+              "puffed rice",
+              "rice bran oil"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 543.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 543.0 kcal."
+      }
+    },
+    {
+      "name": "exact_black_rice",
+      "category": "exact_single",
+      "input": "black rice 150g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "black rice",
+            "matched_food": "black rice",
+            "grams": 150.0,
+            "kcal_per_100g": 323.0,
+            "calories": 484.5,
+            "confidence": "HIGH",
+            "distance": 0.8008927702903748,
+            "status": "matched",
+            "suggestions": [
+              "black rice",
+              "brown rice",
+              "fried rice",
+              "black sesame seeds",
+              "puffed rice"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 484.5,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 484.5 kcal."
+      }
+    },
+    {
+      "name": "exact_skim_milk",
+      "category": "exact_single",
+      "input": "skim milk 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "skim milk",
+            "matched_food": "skim milk",
+            "grams": 200.0,
+            "kcal_per_100g": 35.0,
+            "calories": 70.0,
+            "confidence": "HIGH",
+            "distance": 0.7993977069854736,
+            "status": "matched",
+            "suggestions": [
+              "skim milk",
+              "skim milk yogurt",
+              "powdered milk",
+              "ice milk",
+              "semi-skimmed milk"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 70.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 70.0 kcal."
+      }
+    },
+    {
+      "name": "exact_apple_juice",
+      "category": "exact_single",
+      "input": "apple juice 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "apple juice",
+            "matched_food": "apple juice",
+            "grams": 200.0,
+            "kcal_per_100g": 46.0,
+            "calories": 92.0,
+            "confidence": "HIGH",
+            "distance": 0.8307619094848633,
+            "status": "matched",
+            "suggestions": [
+              "apple juice",
+              "cranberry apple juice",
+              "passion fruit juice",
+              "fruitopia",
+              "energy-drink"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 92.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 92.0 kcal."
+      }
+    },
+    {
+      "name": "exact_black_bread",
+      "category": "exact_single",
+      "input": "black bread 50g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "black bread",
+            "matched_food": "black bread",
+            "grams": 50.0,
+            "kcal_per_100g": 250.0,
+            "calories": 125.0,
+            "confidence": "HIGH",
+            "distance": 0.9721325635910034,
+            "status": "matched",
+            "suggestions": [
+              "black bread",
+              "brown bread",
+              "blackcurrant jam",
+              "white bread",
+              "rye bread"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 125.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 125.0 kcal."
+      }
+    },
+    {
+      "name": "exact_rye_bread",
+      "category": "exact_single",
+      "input": "rye bread 50g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "rye bread",
+            "matched_food": "rye bread",
+            "grams": 50.0,
+            "kcal_per_100g": 259.0,
+            "calories": 129.5,
+            "confidence": "HIGH",
+            "distance": 0.752123236656189,
+            "status": "matched",
+            "suggestions": [
+              "rye bread",
+              "rye bran",
+              "whole wheat bread",
+              "multi-grain bread",
+              "black bread"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 129.5,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 129.5 kcal."
+      }
+    },
+    {
+      "name": "exact_mushroom_pizza",
+      "category": "exact_single",
+      "input": "mushroom pizza 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "mushroom pizza",
+            "matched_food": "mushroom pizza",
+            "grams": 200.0,
+            "kcal_per_100g": 212.0,
+            "calories": 424.0,
+            "confidence": "HIGH",
+            "distance": 0.7376598715782166,
+            "status": "matched",
+            "suggestions": [
+              "mushroom pizza",
+              "sicilian pizza",
+              "mushrooms",
+              "new york style pizza",
+              "capricciosa pizza"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 424.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 424.0 kcal."
+      }
+    },
+    {
+      "name": "ambiguous_rice",
+      "category": "ambiguous_single",
+      "input": "rice 100g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "rice",
+            "matched_food": null,
+            "grams": 100.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 0.9496822357177734,
+            "status": "rejected",
+            "suggestions": [
+              "black rice",
+              "brown rice",
+              "fried rice",
+              "rice milk",
+              "puffed rice"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "black rice",
+          "brown rice",
+          "fried rice",
+          "rice milk",
+          "puffed rice"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "ambiguous_bread",
+      "category": "ambiguous_single",
+      "input": "bread 50g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "bread",
+            "matched_food": null,
+            "grams": 50.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.091552972793579,
+            "status": "rejected",
+            "suggestions": [
+              "black bread",
+              "rye bread",
+              "bread flour",
+              "multi-grain bread",
+              "brown bread"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "black bread",
+          "rye bread",
+          "bread flour",
+          "multi-grain bread",
+          "brown bread"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "ambiguous_pizza",
+      "category": "ambiguous_single",
+      "input": "pizza 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "pizza",
+            "matched_food": "pizza",
+            "grams": 200.0,
+            "kcal_per_100g": 267.0,
+            "calories": 534.0,
+            "confidence": "HIGH",
+            "distance": null,
+            "status": "matched",
+            "suggestions": [
+              "pizza",
+              "new york style pizza",
+              "sicilian pizza",
+              "white pizza",
+              "capricciosa pizza"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 534.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 534.0 kcal."
+      }
+    },
+    {
+      "name": "ambiguous_cheese",
+      "category": "ambiguous_single",
+      "input": "cheese 40g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "cheese",
+            "matched_food": null,
+            "grams": 40.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.081322193145752,
+            "status": "rejected",
+            "suggestions": [
+              "swiss cheese",
+              "italian cheese",
+              "string cheese",
+              "american cheese",
+              "cheese whiz"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "swiss cheese",
+          "italian cheese",
+          "string cheese",
+          "american cheese",
+          "cheese whiz"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "ambiguous_pasta",
+      "category": "ambiguous_single",
+      "input": "pasta 120g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "pasta",
+            "matched_food": null,
+            "grams": 120.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.0711584091186523,
+            "status": "rejected",
+            "suggestions": [
+              "whole grain spaghetti",
+              "spaghetti",
+              "mostaccioli",
+              "low carb pasta",
+              "penne"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "whole grain spaghetti",
+          "spaghetti",
+          "mostaccioli",
+          "low carb pasta",
+          "penne"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "ambiguous_juice",
+      "category": "ambiguous_single",
+      "input": "juice 200g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "juice",
+            "matched_food": null,
+            "grams": 200.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.0590968132019043,
+            "status": "rejected",
+            "suggestions": [
+              "energy-drink",
+              "passion fruit juice",
+              "apple juice",
+              "orange juice",
+              "fruitopia"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "energy-drink",
+          "passion fruit juice",
+          "apple juice",
+          "orange juice",
+          "fruitopia"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "ambiguous_generic_rice_2",
+      "category": "ambiguous_single",
+      "input": "rice 150g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "rice",
+            "matched_food": null,
+            "grams": 150.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 0.9496822357177734,
+            "status": "rejected",
+            "suggestions": [
+              "black rice",
+              "brown rice",
+              "fried rice",
+              "rice milk",
+              "puffed rice"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "black rice",
+          "brown rice",
+          "fried rice",
+          "rice milk",
+          "puffed rice"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "ambiguous_generic_bread_2",
+      "category": "ambiguous_single",
+      "input": "bread 80g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "bread",
+            "matched_food": null,
+            "grams": 80.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.091552972793579,
+            "status": "rejected",
+            "suggestions": [
+              "black bread",
+              "rye bread",
+              "bread flour",
+              "multi-grain bread",
+              "brown bread"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "black bread",
+          "rye bread",
+          "bread flour",
+          "multi-grain bread",
+          "brown bread"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "ambiguous_generic_pizza_2",
+      "category": "ambiguous_single",
+      "input": "pizza 300g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "pizza",
+            "matched_food": "pizza",
+            "grams": 300.0,
+            "kcal_per_100g": 267.0,
+            "calories": 801.0,
+            "confidence": "HIGH",
+            "distance": null,
+            "status": "matched",
+            "suggestions": [
+              "pizza",
+              "new york style pizza",
+              "sicilian pizza",
+              "white pizza",
+              "capricciosa pizza"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 801.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 801.0 kcal."
+      }
+    },
+    {
+      "name": "ambiguous_generic_cheese_2",
+      "category": "ambiguous_single",
+      "input": "cheese 80g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "cheese",
+            "matched_food": null,
+            "grams": 80.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.081322193145752,
+            "status": "rejected",
+            "suggestions": [
+              "swiss cheese",
+              "italian cheese",
+              "string cheese",
+              "american cheese",
+              "cheese whiz"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "swiss cheese",
+          "italian cheese",
+          "string cheese",
+          "american cheese",
+          "cheese whiz"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_unicorn_pizza",
+      "category": "unknown_food",
+      "input": "unicorn_pizza 300g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "unicorn_pizza",
+            "matched_food": null,
+            "grams": 300.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.3128201961517334,
+            "status": "rejected",
+            "suggestions": [
+              "sausage pizza",
+              "goat cheese pizza",
+              "vegetarian pizza",
+              "capricciosa pizza",
+              "mushroom pizza"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "sausage pizza",
+          "goat cheese pizza",
+          "vegetarian pizza",
+          "capricciosa pizza",
+          "mushroom pizza"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_dragon_burger",
+      "category": "unknown_food",
+      "input": "dragon burger 250g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "dragon burger",
+            "matched_food": null,
+            "grams": 250.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.100056767463684,
+            "status": "rejected",
+            "suggestions": [
+              "dragon fruit",
+              "burger king triple whopper",
+              "burger king whopper",
+              "burger king whopper jr.",
+              "burger king angry whopper"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "dragon fruit",
+          "burger king triple whopper",
+          "burger king whopper",
+          "burger king whopper jr.",
+          "burger king angry whopper"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_moon_pasta",
+      "category": "unknown_food",
+      "input": "moon pasta 100g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "moon pasta",
+            "matched_food": null,
+            "grams": 100.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.0937703847885132,
+            "status": "rejected",
+            "suggestions": [
+              "whole grain spaghetti",
+              "mostaccioli",
+              "rigatoni",
+              "spaghetti",
+              "whole grain noodles"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "whole grain spaghetti",
+          "mostaccioli",
+          "rigatoni",
+          "spaghetti",
+          "whole grain noodles"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_cosmic_milkshake",
+      "category": "unknown_food",
+      "input": "cosmic milkshake 250g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "cosmic milkshake",
+            "matched_food": null,
+            "grams": 250.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.2095893621444702,
+            "status": "rejected",
+            "suggestions": [
+              "milkshake (dry)",
+              "vanilla milkshake",
+              "strawberry milkshake",
+              "chocolate milkshake",
+              "skim milk yogurt"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "milkshake (dry)",
+          "vanilla milkshake",
+          "strawberry milkshake",
+          "chocolate milkshake",
+          "skim milk yogurt"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_phoenix_bread",
+      "category": "unknown_food",
+      "input": "phoenix bread 60g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "phoenix bread",
+            "matched_food": null,
+            "grams": 60.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.2364962100982666,
+            "status": "rejected",
+            "suggestions": [
+              "pumpkin bread",
+              "peach cobbler",
+              "brown bread",
+              "rye bread",
+              "black bread"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "pumpkin bread",
+          "peach cobbler",
+          "brown bread",
+          "rye bread",
+          "black bread"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_shadow_rice",
+      "category": "unknown_food",
+      "input": "shadow rice 150g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "shadow rice",
+            "matched_food": null,
+            "grams": 150.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.2261182069778442,
+            "status": "rejected",
+            "suggestions": [
+              "black rice",
+              "brown rice",
+              "puffed rice",
+              "fried rice",
+              "rice milk"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "black rice",
+          "brown rice",
+          "puffed rice",
+          "fried rice",
+          "rice milk"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_starlight_juice",
+      "category": "unknown_food",
+      "input": "starlight juice 200g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "starlight juice",
+            "matched_food": null,
+            "grams": 200.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.117970585823059,
+            "status": "rejected",
+            "suggestions": [
+              "capri-sun",
+              "starfruit",
+              "peach nectar",
+              "concord grape",
+              "star fruit"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "capri-sun",
+          "starfruit",
+          "peach nectar",
+          "concord grape",
+          "star fruit"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_volcano_cheese",
+      "category": "unknown_food",
+      "input": "volcano cheese 50g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "volcano cheese",
+            "matched_food": null,
+            "grams": 50.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.2158044576644897,
+            "status": "rejected",
+            "suggestions": [
+              "ricotta",
+              "swiss cheese",
+              "lacy swiss cheese",
+              "italian cheese",
+              "string cheese"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "ricotta",
+          "swiss cheese",
+          "lacy swiss cheese",
+          "italian cheese",
+          "string cheese"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_cloud_pizza",
+      "category": "unknown_food",
+      "input": "cloud pizza 220g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "cloud pizza",
+            "matched_food": null,
+            "grams": 220.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.143875002861023,
+            "status": "rejected",
+            "suggestions": [
+              "pizza hut supreme pizza",
+              "hawaiian pizza",
+              "pizza hut stuffed crust pizza",
+              "thin crust pizza",
+              "sicilian pizza"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "pizza hut supreme pizza",
+          "hawaiian pizza",
+          "pizza hut stuffed crust pizza",
+          "thin crust pizza",
+          "sicilian pizza"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "unknown_ocean_milk",
+      "category": "unknown_food",
+      "input": "ocean milk 180g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected"
+      ],
+      "actual_statuses": [
+        "rejected"
+      ],
+      "expected_min_coverage": 0.0,
+      "actual_coverage": 0.0,
+      "matched_items": 0,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "ocean milk",
+            "matched_food": null,
+            "grams": 180.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.4028079509735107,
+            "status": "rejected",
+            "suggestions": [
+              "skim milk",
+              "ice milk",
+              "mini milk",
+              "dairy milk mcflurry",
+              "milk"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          }
+        ],
+        "total_calories": null,
+        "confidence": "LOW",
+        "suggestions": [
+          "skim milk",
+          "ice milk",
+          "mini milk",
+          "dairy milk mcflurry",
+          "milk"
+        ],
+        "coverage": 0.0,
+        "matched_items": 0,
+        "total_items": 1,
+        "final_message": "No reliable food match was found in the calorie database."
+      }
+    },
+    {
+      "name": "partial_apple_rice",
+      "category": "multi_item_partial",
+      "input": "apple 200g and rice 150g",
+      "passed": true,
+      "expected_statuses": [
+        "matched",
+        "rejected"
+      ],
+      "actual_statuses": [
+        "matched",
+        "rejected"
+      ],
+      "expected_min_coverage": 0.5,
+      "actual_coverage": 0.5,
+      "matched_items": 1,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "apple",
+            "matched_food": "apple",
+            "grams": 200.0,
+            "kcal_per_100g": 52.0,
+            "calories": 104.0,
+            "confidence": "HIGH",
+            "distance": 1.3918004035949707,
+            "status": "matched",
+            "suggestions": [
+              "apple",
+              "apple spritzer",
+              "apple juice",
+              "applejack",
+              "custard apple"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          },
+          {
+            "input_food": "rice",
+            "matched_food": null,
+            "grams": 150.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 0.9496822357177734,
+            "status": "rejected",
+            "suggestions": [
+              "black rice",
+              "brown rice",
+              "fried rice",
+              "rice milk",
+              "puffed rice"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          }
+        ],
+        "total_calories": 104.0,
+        "confidence": "MEDIUM",
+        "suggestions": [
+          "black rice",
+          "brown rice",
+          "fried rice",
+          "rice milk",
+          "puffed rice"
+        ],
+        "coverage": 0.5,
+        "matched_items": 1,
+        "total_items": 2,
+        "final_message": "Partial estimate available. Current total is 104.0 kcal."
+      }
+    },
+    {
+      "name": "partial_bread_milk",
+      "category": "multi_item_partial",
+      "input": "bread 50g and milk 200g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "actual_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "expected_min_coverage": 0.5,
+      "actual_coverage": 0.5,
+      "matched_items": 1,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "bread",
+            "matched_food": null,
+            "grams": 50.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.091552972793579,
+            "status": "rejected",
+            "suggestions": [
+              "black bread",
+              "rye bread",
+              "bread flour",
+              "multi-grain bread",
+              "brown bread"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          },
+          {
+            "input_food": "milk",
+            "matched_food": "milk",
+            "grams": 200.0,
+            "kcal_per_100g": 61.0,
+            "calories": 122.0,
+            "confidence": "HIGH",
+            "distance": 1.2879071235656738,
+            "status": "matched",
+            "suggestions": [
+              "milk",
+              "skim milk",
+              "whole milk",
+              "lactose-free milk",
+              "powdered milk"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 122.0,
+        "confidence": "MEDIUM",
+        "suggestions": [
+          "black bread",
+          "rye bread",
+          "bread flour",
+          "multi-grain bread",
+          "brown bread"
+        ],
+        "coverage": 0.5,
+        "matched_items": 1,
+        "total_items": 2,
+        "final_message": "Partial estimate available. Current total is 122.0 kcal."
+      }
+    },
+    {
+      "name": "partial_pizza_apple",
+      "category": "multi_item_partial",
+      "input": "pizza 200g and apple 100g",
+      "passed": true,
+      "expected_statuses": [
+        "matched",
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched",
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "pizza",
+            "matched_food": "pizza",
+            "grams": 200.0,
+            "kcal_per_100g": 267.0,
+            "calories": 534.0,
+            "confidence": "HIGH",
+            "distance": null,
+            "status": "matched",
+            "suggestions": [
+              "pizza",
+              "new york style pizza",
+              "sicilian pizza",
+              "white pizza",
+              "capricciosa pizza"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          },
+          {
+            "input_food": "apple",
+            "matched_food": "apple",
+            "grams": 100.0,
+            "kcal_per_100g": 52.0,
+            "calories": 52.0,
+            "confidence": "HIGH",
+            "distance": 1.3918004035949707,
+            "status": "matched",
+            "suggestions": [
+              "apple",
+              "apple spritzer",
+              "apple juice",
+              "applejack",
+              "custard apple"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 586.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 2,
+        "total_items": 2,
+        "final_message": "Estimated total calories for your meal is 586.0 kcal."
+      }
+    },
+    {
+      "name": "partial_cheese_whole_milk",
+      "category": "multi_item_partial",
+      "input": "cheese 40g and whole milk 200g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "actual_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "expected_min_coverage": 0.5,
+      "actual_coverage": 0.5,
+      "matched_items": 1,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "cheese",
+            "matched_food": null,
+            "grams": 40.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.081322193145752,
+            "status": "rejected",
+            "suggestions": [
+              "swiss cheese",
+              "italian cheese",
+              "string cheese",
+              "american cheese",
+              "cheese whiz"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          },
+          {
+            "input_food": "whole milk",
+            "matched_food": "whole milk",
+            "grams": 200.0,
+            "kcal_per_100g": 61.0,
+            "calories": 122.0,
+            "confidence": "HIGH",
+            "distance": 1.043226957321167,
+            "status": "matched",
+            "suggestions": [
+              "whole milk",
+              "lactose-free milk",
+              "skim milk",
+              "powdered milk",
+              "semi-skimmed milk"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 122.0,
+        "confidence": "MEDIUM",
+        "suggestions": [
+          "swiss cheese",
+          "italian cheese",
+          "string cheese",
+          "american cheese",
+          "cheese whiz"
+        ],
+        "coverage": 0.5,
+        "matched_items": 1,
+        "total_items": 2,
+        "final_message": "Partial estimate available. Current total is 122.0 kcal."
+      }
+    },
+    {
+      "name": "partial_pasta_black_rice",
+      "category": "multi_item_partial",
+      "input": "pasta 100g and black rice 150g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "actual_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "expected_min_coverage": 0.5,
+      "actual_coverage": 0.5,
+      "matched_items": 1,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "pasta",
+            "matched_food": null,
+            "grams": 100.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.0711584091186523,
+            "status": "rejected",
+            "suggestions": [
+              "whole grain spaghetti",
+              "spaghetti",
+              "mostaccioli",
+              "low carb pasta",
+              "penne"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          },
+          {
+            "input_food": "black rice",
+            "matched_food": "black rice",
+            "grams": 150.0,
+            "kcal_per_100g": 323.0,
+            "calories": 484.5,
+            "confidence": "HIGH",
+            "distance": 0.8008927702903748,
+            "status": "matched",
+            "suggestions": [
+              "black rice",
+              "brown rice",
+              "fried rice",
+              "black sesame seeds",
+              "puffed rice"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 484.5,
+        "confidence": "MEDIUM",
+        "suggestions": [
+          "whole grain spaghetti",
+          "spaghetti",
+          "mostaccioli",
+          "low carb pasta",
+          "penne"
+        ],
+        "coverage": 0.5,
+        "matched_items": 1,
+        "total_items": 2,
+        "final_message": "Partial estimate available. Current total is 484.5 kcal."
+      }
+    },
+    {
+      "name": "partial_unicorn_pizza_milk",
+      "category": "multi_item_partial",
+      "input": "unicorn_pizza 200g and milk 200g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "actual_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "expected_min_coverage": 0.5,
+      "actual_coverage": 0.5,
+      "matched_items": 1,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "unicorn_pizza",
+            "matched_food": null,
+            "grams": 200.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.3128201961517334,
+            "status": "rejected",
+            "suggestions": [
+              "sausage pizza",
+              "goat cheese pizza",
+              "vegetarian pizza",
+              "capricciosa pizza",
+              "mushroom pizza"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "no_reliable_match"
+          },
+          {
+            "input_food": "milk",
+            "matched_food": "milk",
+            "grams": 200.0,
+            "kcal_per_100g": 61.0,
+            "calories": 122.0,
+            "confidence": "HIGH",
+            "distance": 1.2879071235656738,
+            "status": "matched",
+            "suggestions": [
+              "milk",
+              "skim milk",
+              "whole milk",
+              "lactose-free milk",
+              "powdered milk"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 122.0,
+        "confidence": "MEDIUM",
+        "suggestions": [
+          "sausage pizza",
+          "goat cheese pizza",
+          "vegetarian pizza",
+          "capricciosa pizza",
+          "mushroom pizza"
+        ],
+        "coverage": 0.5,
+        "matched_items": 1,
+        "total_items": 2,
+        "final_message": "Partial estimate available. Current total is 122.0 kcal."
+      }
+    },
+    {
+      "name": "partial_bread_apple_juice",
+      "category": "multi_item_partial",
+      "input": "bread 50g and apple juice 200g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "actual_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "expected_min_coverage": 0.5,
+      "actual_coverage": 0.5,
+      "matched_items": 1,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "bread",
+            "matched_food": null,
+            "grams": 50.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.091552972793579,
+            "status": "rejected",
+            "suggestions": [
+              "black bread",
+              "rye bread",
+              "bread flour",
+              "multi-grain bread",
+              "brown bread"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          },
+          {
+            "input_food": "apple juice",
+            "matched_food": "apple juice",
+            "grams": 200.0,
+            "kcal_per_100g": 46.0,
+            "calories": 92.0,
+            "confidence": "HIGH",
+            "distance": 0.8307619094848633,
+            "status": "matched",
+            "suggestions": [
+              "apple juice",
+              "cranberry apple juice",
+              "passion fruit juice",
+              "fruitopia",
+              "energy-drink"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 92.0,
+        "confidence": "MEDIUM",
+        "suggestions": [
+          "black bread",
+          "rye bread",
+          "bread flour",
+          "multi-grain bread",
+          "brown bread"
+        ],
+        "coverage": 0.5,
+        "matched_items": 1,
+        "total_items": 2,
+        "final_message": "Partial estimate available. Current total is 92.0 kcal."
+      }
+    },
+    {
+      "name": "partial_rice_skim_milk",
+      "category": "multi_item_partial",
+      "input": "rice 120g and skim milk 200g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "actual_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "expected_min_coverage": 0.5,
+      "actual_coverage": 0.5,
+      "matched_items": 1,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "rice",
+            "matched_food": null,
+            "grams": 120.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 0.9496822357177734,
+            "status": "rejected",
+            "suggestions": [
+              "black rice",
+              "brown rice",
+              "fried rice",
+              "rice milk",
+              "puffed rice"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          },
+          {
+            "input_food": "skim milk",
+            "matched_food": "skim milk",
+            "grams": 200.0,
+            "kcal_per_100g": 35.0,
+            "calories": 70.0,
+            "confidence": "HIGH",
+            "distance": 0.7993977069854736,
+            "status": "matched",
+            "suggestions": [
+              "skim milk",
+              "skim milk yogurt",
+              "powdered milk",
+              "ice milk",
+              "semi-skimmed milk"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 70.0,
+        "confidence": "MEDIUM",
+        "suggestions": [
+          "black rice",
+          "brown rice",
+          "fried rice",
+          "rice milk",
+          "puffed rice"
+        ],
+        "coverage": 0.5,
+        "matched_items": 1,
+        "total_items": 2,
+        "final_message": "Partial estimate available. Current total is 70.0 kcal."
+      }
+    },
+    {
+      "name": "partial_cheese_brown_rice",
+      "category": "multi_item_partial",
+      "input": "cheese 50g and brown rice 150g",
+      "passed": true,
+      "expected_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "actual_statuses": [
+        "rejected",
+        "matched"
+      ],
+      "expected_min_coverage": 0.5,
+      "actual_coverage": 0.5,
+      "matched_items": 1,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "cheese",
+            "matched_food": null,
+            "grams": 50.0,
+            "kcal_per_100g": null,
+            "calories": null,
+            "confidence": "LOW",
+            "distance": 1.081322193145752,
+            "status": "rejected",
+            "suggestions": [
+              "swiss cheese",
+              "italian cheese",
+              "string cheese",
+              "american cheese",
+              "cheese whiz"
+            ],
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "ambiguous_query"
+          },
+          {
+            "input_food": "brown rice",
+            "matched_food": "brown rice",
+            "grams": 150.0,
+            "kcal_per_100g": 362.0,
+            "calories": 543.0,
+            "confidence": "HIGH",
+            "distance": 0.7552469968795776,
+            "status": "matched",
+            "suggestions": [
+              "brown rice",
+              "black rice",
+              "fried rice",
+              "puffed rice",
+              "rice bran oil"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 543.0,
+        "confidence": "MEDIUM",
+        "suggestions": [
+          "swiss cheese",
+          "italian cheese",
+          "string cheese",
+          "american cheese",
+          "cheese whiz"
+        ],
+        "coverage": 0.5,
+        "matched_items": 1,
+        "total_items": 2,
+        "final_message": "Partial estimate available. Current total is 543.0 kcal."
+      }
+    },
+    {
+      "name": "partial_pizza_black_bread",
+      "category": "multi_item_partial",
+      "input": "pizza 250g and black bread 50g",
+      "passed": true,
+      "expected_statuses": [
+        "matched",
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched",
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "pizza",
+            "matched_food": "pizza",
+            "grams": 250.0,
+            "kcal_per_100g": 267.0,
+            "calories": 667.5,
+            "confidence": "HIGH",
+            "distance": null,
+            "status": "matched",
+            "suggestions": [
+              "pizza",
+              "new york style pizza",
+              "sicilian pizza",
+              "white pizza",
+              "capricciosa pizza"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          },
+          {
+            "input_food": "black bread",
+            "matched_food": "black bread",
+            "grams": 50.0,
+            "kcal_per_100g": 250.0,
+            "calories": 125.0,
+            "confidence": "HIGH",
+            "distance": 0.9721325635910034,
+            "status": "matched",
+            "suggestions": [
+              "black bread",
+              "brown bread",
+              "blackcurrant jam",
+              "white bread",
+              "rye bread"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 792.5,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 2,
+        "total_items": 2,
+        "final_message": "Estimated total calories for your meal is 792.5 kcal."
+      }
+    },
+    {
+      "name": "specific_lactose_free_milk",
+      "category": "specific_multiword",
+      "input": "lactose-free milk 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "lactose-free milk",
+            "matched_food": "lactose-free milk",
+            "grams": 200.0,
+            "kcal_per_100g": 52.0,
+            "calories": 104.0,
+            "confidence": "HIGH",
+            "distance": 0.7701131701469421,
+            "status": "matched",
+            "suggestions": [
+              "lactose-free milk",
+              "semi-skimmed milk",
+              "skim milk",
+              "whole milk",
+              "milk"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 104.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 104.0 kcal."
+      }
+    },
+    {
+      "name": "specific_powdered_milk",
+      "category": "specific_multiword",
+      "input": "powdered milk 100g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "powdered milk",
+            "matched_food": "powdered milk",
+            "grams": 100.0,
+            "kcal_per_100g": 496.0,
+            "calories": 496.0,
+            "confidence": "HIGH",
+            "distance": 1.0384347438812256,
+            "status": "matched",
+            "suggestions": [
+              "powdered milk",
+              "skim milk",
+              "condensed milk",
+              "creme fraiche",
+              "milkshake (dry)"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 496.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 496.0 kcal."
+      }
+    },
+    {
+      "name": "specific_multi_grain_bread",
+      "category": "specific_multiword",
+      "input": "multi-grain bread 50g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "multi-grain bread",
+            "matched_food": "multi-grain bread",
+            "grams": 50.0,
+            "kcal_per_100g": 265.0,
+            "calories": 132.5,
+            "confidence": "HIGH",
+            "distance": 0.9074116945266724,
+            "status": "matched",
+            "suggestions": [
+              "multi-grain bread",
+              "rye bread",
+              "whole wheat bread",
+              "bread flour",
+              "brown bread"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 132.5,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 132.5 kcal."
+      }
+    },
+    {
+      "name": "specific_brown_bread",
+      "category": "specific_multiword",
+      "input": "brown bread 50g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "brown bread",
+            "matched_food": "brown bread",
+            "grams": 50.0,
+            "kcal_per_100g": 246.0,
+            "calories": 123.0,
+            "confidence": "HIGH",
+            "distance": 0.8450021147727966,
+            "status": "matched",
+            "suggestions": [
+              "brown bread",
+              "brownies",
+              "brown sugar",
+              "black bread",
+              "white bread"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 123.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 123.0 kcal."
+      }
+    },
+    {
+      "name": "specific_fried_rice",
+      "category": "specific_multiword",
+      "input": "fried rice 150g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "fried rice",
+            "matched_food": "fried rice",
+            "grams": 150.0,
+            "kcal_per_100g": 186.0,
+            "calories": 279.0,
+            "confidence": "HIGH",
+            "distance": 0.7939009666442871,
+            "status": "matched",
+            "suggestions": [
+              "fried rice",
+              "black rice",
+              "brown rice",
+              "rice bran oil",
+              "puffed rice"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 279.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 279.0 kcal."
+      }
+    },
+    {
+      "name": "specific_rice_milk",
+      "category": "specific_multiword",
+      "input": "rice milk 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "rice milk",
+            "matched_food": "rice milk",
+            "grams": 200.0,
+            "kcal_per_100g": 49.0,
+            "calories": 98.0,
+            "confidence": "HIGH",
+            "distance": 0.8980348110198975,
+            "status": "matched",
+            "suggestions": [
+              "rice milk",
+              "rice pudding",
+              "rice bran oil",
+              "quark",
+              "black rice"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 98.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 98.0 kcal."
+      }
+    },
+    {
+      "name": "specific_puffed_rice",
+      "category": "specific_multiword",
+      "input": "puffed rice 80g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "puffed rice",
+            "matched_food": "puffed rice",
+            "grams": 80.0,
+            "kcal_per_100g": 383.0,
+            "calories": 306.4,
+            "confidence": "HIGH",
+            "distance": 0.8690344095230103,
+            "status": "matched",
+            "suggestions": [
+              "puffed rice",
+              "puffed wheat",
+              "puff",
+              "sugar puffs",
+              "cocoa puffs"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 306.4,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 306.4 kcal."
+      }
+    },
+    {
+      "name": "specific_goat_cheese_pizza",
+      "category": "specific_multiword",
+      "input": "goat cheese pizza 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "goat cheese pizza",
+            "matched_food": "goat cheese pizza",
+            "grams": 200.0,
+            "kcal_per_100g": 219.0,
+            "calories": 438.0,
+            "confidence": "HIGH",
+            "distance": 0.6707497835159302,
+            "status": "matched",
+            "suggestions": [
+              "goat cheese pizza",
+              "goat cheese",
+              "four cheese pizza",
+              "cheese pizza",
+              "dominos philly cheese steak pizza"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 438.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 438.0 kcal."
+      }
+    },
+    {
+      "name": "specific_vegetarian_pizza",
+      "category": "specific_multiword",
+      "input": "vegetarian pizza 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "vegetarian pizza",
+            "matched_food": "vegetarian pizza",
+            "grams": 200.0,
+            "kcal_per_100g": 256.0,
+            "calories": 512.0,
+            "confidence": "HIGH",
+            "distance": 0.6114738583564758,
+            "status": "matched",
+            "suggestions": [
+              "vegetarian pizza",
+              "vegetable pizza",
+              "sicilian pizza",
+              "veggie pizza",
+              "beef pizza"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 512.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 512.0 kcal."
+      }
+    },
+    {
+      "name": "specific_capricciosa_pizza",
+      "category": "specific_multiword",
+      "input": "capricciosa pizza 200g",
+      "passed": true,
+      "expected_statuses": [
+        "matched"
+      ],
+      "actual_statuses": [
+        "matched"
+      ],
+      "expected_min_coverage": 1.0,
+      "actual_coverage": 1.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "capricciosa pizza",
+            "matched_food": "capricciosa pizza",
+            "grams": 200.0,
+            "kcal_per_100g": 260.0,
+            "calories": 520.0,
+            "confidence": "HIGH",
+            "distance": 0.598895788192749,
+            "status": "matched",
+            "suggestions": [
+              "capricciosa pizza",
+              "sicilian pizza",
+              "napoli pizza",
+              "margherita pizza",
+              "pepperoni pizza"
+            ],
+            "match_reason": "exact",
+            "match_source": "lexical",
+            "why_rejected": null
+          }
+        ],
+        "total_calories": 520.0,
+        "confidence": "HIGH",
+        "suggestions": [],
+        "coverage": 1.0,
+        "matched_items": 1,
+        "total_items": 1,
+        "final_message": "Estimated total calories for your meal is 520.0 kcal."
+      }
+    }
+  ]
+}

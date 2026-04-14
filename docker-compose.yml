@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  nutrition-app:
+    build: .
+    container_name: nutrition-assistant
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./storage/chroma:/app/storage/chroma
+    environment:
+      - PYTHONUNBUFFERED=1
