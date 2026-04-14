@@ -1,6 +1,6 @@
 {
   "summary": {
-    "generated_at": "2026-04-14T12:53:28.783578+00:00",
+    "generated_at": "2026-04-14T16:13:55.430879+00:00",
     "dataset_path": "/workspaces/nutritiona_ssistant/eval/datasets/eval_cases_adversarial.json",
     "total_cases": 50,
     "passed_cases": 48,

@@ -176,7 +176,3 @@ default_avatar_file_url = ""
 
 [meta]
 generated_by = "2.11.0"
-
-
-name = "Nutrition Assistant"
-custom_css = "src/presentation/public/custom.css"

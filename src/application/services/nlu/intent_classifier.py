@@ -71,15 +71,12 @@ class IntentClassifier:
         return any(re.search(pattern, text) for pattern in patterns)
 
     def _looks_like_calorie_input(self, text: str) -> bool:
-        # Strongest signal: explicit grams
         if re.search(r"\d+(?:\.\d+)?g\b", text):
             return True
 
-        # Follow-up meal style: connector + food + grams-ish noisy text
         if re.search(r"^(?:and|add|with|plus)\b", text) and re.search(r"\d", text):
             return True
 
-        # Commands that manipulate meal memory should stay in calorie workflow
         if re.search(r"\b(?:remove|delete|clear meal|reset meal)\b", text):
             return True
 

@@ -40,9 +40,11 @@ CLEAR_MEAL_COMMANDS = {
     "reset meal",
     "empty meal",
     "clear the meal",
+    "delete meal",
+    "start over",
 }
 
-REMOVE_PREFIXES = ("remove ", "delete ")
+REMOVE_PREFIXES = ("remove ", "delete ", "take out ")
 
 
 def get_meal_state():

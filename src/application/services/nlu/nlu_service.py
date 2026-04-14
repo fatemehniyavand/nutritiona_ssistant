@@ -21,28 +21,12 @@ class NLUResult:
 
 
 class NutritionNLUService:
-    """
-    High-level NLU service for:
-    - text normalization
-    - intent classification
-    - food + grams extraction
-    - lightweight parsing diagnostics for downstream orchestration
-
-    Design goals:
-    - spacing should not matter
-    - multi-item calorie inputs should be preserved
-    - leftover/unparsed text should be visible downstream
-    - food-only and quantity-only cases should be detectable
-    - command intents (clear / remove / total) must win before calorie parsing
-    """
-
     CLEAR_PATTERNS = [
         r"\bclear meal\b",
         r"\breset meal\b",
         r"\bempty meal\b",
         r"\bclear the meal\b",
         r"\bdelete meal\b",
-        r"\bstart over\b",
     ]
 
     REMOVE_PATTERNS = [
@@ -157,11 +141,6 @@ class NutritionNLUService:
                     warnings.append(
                         f"Some text could not be confidently parsed: '{unparsed_text}'."
                     )
-
-                if is_food_only:
-                    warnings.append("Input also looks like food-only text.")
-                if is_quantity_only:
-                    warnings.append("Input also looks like quantity-only text.")
 
             else:
                 if is_food_only:
