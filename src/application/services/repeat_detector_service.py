@@ -23,17 +23,29 @@ class RepeatDetectorService:
         meal_state,
         conversation_memory=None,
     ) -> dict:
-        meal_match = self._find_in_meal_memory(
+        meal_exact_match = self._find_exact_in_meal_memory(
             input_food=input_food,
             matched_food=matched_food,
             grams=grams,
             meal_state=meal_state,
         )
-        if meal_match is not None:
+        if meal_exact_match is not None:
             return {
                 "found": True,
-                "repeat_type": "meal_memory",
-                "item": meal_match,
+                "repeat_type": "meal_memory_exact",
+                "item": meal_exact_match,
+            }
+
+        meal_update_match = self._find_same_food_different_grams_in_meal_memory(
+            matched_food=matched_food,
+            grams=grams,
+            meal_state=meal_state,
+        )
+        if meal_update_match is not None:
+            return {
+                "found": True,
+                "repeat_type": "meal_memory_update",
+                "item": meal_update_match,
             }
 
         conversation_match = self._find_in_conversation_memory(
@@ -45,7 +57,7 @@ class RepeatDetectorService:
         if conversation_match is not None:
             return {
                 "found": True,
-                "repeat_type": "conversation_memory",
+                "repeat_type": "conversation_memory_exact",
                 "item": conversation_match,
             }
 
@@ -103,7 +115,7 @@ class RepeatDetectorService:
             "similarity": 0.0,
         }
 
-    def _find_in_meal_memory(
+    def _find_exact_in_meal_memory(
         self,
         input_food: str,
         matched_food: str,
@@ -130,6 +142,27 @@ class RepeatDetectorService:
             score = self._similarity(compact_existing, compact_input)
             if score >= 0.92 and self._food_sanity_check(normalized_input, existing_food):
                 return self._build_item(item)
+
+        return None
+
+    def _find_same_food_different_grams_in_meal_memory(
+        self,
+        matched_food: str,
+        grams: float,
+        meal_state,
+    ) -> Optional[Dict[str, Any]]:
+        normalized_matched = self._normalize_text(matched_food)
+
+        for item in meal_state.items:
+            existing_food = self._normalize_text(item.food)
+
+            if existing_food != normalized_matched:
+                continue
+
+            if self._same_quantity(item.grams, grams):
+                continue
+
+            return self._build_item(item)
 
         return None
 

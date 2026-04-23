@@ -18,6 +18,7 @@ class NLUResult:
     unparsed_text: str = ""
     is_food_only: bool = False
     is_quantity_only: bool = False
+    is_quantity_not_numeric: bool = False
 
 
 class NutritionNLUService:
@@ -56,14 +57,212 @@ class NutritionNLUService:
     )
 
     NON_DIGIT_QUANTITY_PATTERN = re.compile(
-        r"\b(one|two|three|four|five|six|seven|eight|nine|ten|hundred|thousand)\b.*\b(gram|grams)\b",
-        re.IGNORECASE,
+        r"""
+        \b(
+            one|two|three|four|five|six|seven|eight|nine|ten|
+            eleven|twelve|thirteen|fourteen|fifteen|sixteen|
+            seventeen|eighteen|nineteen|twenty|thirty|forty|
+            fifty|sixty|seventy|eighty|ninety|hundred|thousand
+        )\b
+        .*?
+        \b(gram|grams)\b
+        """,
+        re.IGNORECASE | re.VERBOSE,
     )
+
+    GRAM_TOKEN_PATTERN = re.compile(r"\b\d+(?:\.\d+)?g\b", re.IGNORECASE)
+
+    HARMLESS_LEFTOVER_WORDS = {
+        "please",
+        "and",
+        "add",
+        "with",
+        "plus",
+        "the",
+        "a",
+        "an",
+        "my",
+        "some",
+        "track",
+        "log",
+        "include",
+        "including",
+    }
 
     def __init__(self):
         self.food_normalizer = FoodNormalizer()
         self.food_parser = FoodParser()
         self.intent_classifier = IntentClassifier()
+
+    def parse(self, text: str) -> NLUResult:
+        original_text = text or ""
+        normalized_text = self.food_normalizer.normalize(original_text)
+
+        if not original_text.strip():
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent="empty",
+                confidence="LOW",
+                warnings=["User input is empty."],
+            )
+
+        forced_intent = self._override_command_intent(normalized_text)
+        if forced_intent:
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent=forced_intent,
+                confidence="HIGH",
+            )
+
+        parsed_items = self.food_parser.parse_food_items(normalized_text)
+        unparsed_text = self.food_parser.extract_unparsed_text(normalized_text, parsed_items)
+        is_food_only = self.food_parser.looks_like_food_only(normalized_text)
+        is_quantity_only = self.food_parser.looks_like_quantity_only(normalized_text)
+        is_quantity_not_numeric = bool(self.NON_DIGIT_QUANTITY_PATTERN.search(original_text))
+
+        warnings: List[str] = []
+
+        # Highest-priority calorie routing:
+        # if we successfully parsed food+grams, it is calorie input.
+        if parsed_items:
+            confidence = "HIGH"
+            if unparsed_text and not self._is_harmless_leftover(unparsed_text):
+                confidence = "MEDIUM"
+                warnings.append(
+                    f"Some text could not be confidently parsed: '{unparsed_text}'."
+                )
+
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent="calorie_input",
+                parsed_items=parsed_items,
+                confidence=confidence,
+                warnings=warnings,
+                unparsed_text="" if self._is_harmless_leftover(unparsed_text) else unparsed_text,
+                is_food_only=False,
+                is_quantity_only=False,
+                is_quantity_not_numeric=False,
+            )
+
+        # If grams/token patterns exist but no parsed items, this is still an attempted calorie input.
+        if self.GRAM_TOKEN_PATTERN.search(normalized_text):
+            if is_food_only:
+                warnings.append("Food name detected, but quantity in grams is missing.")
+            elif is_quantity_only:
+                warnings.append("Quantity detected, but food name is missing.")
+            else:
+                warnings.append("Could not extract food and grams from calorie input.")
+
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent="calorie_input",
+                parsed_items=[],
+                confidence="LOW",
+                warnings=warnings,
+                unparsed_text=unparsed_text,
+                is_food_only=is_food_only,
+                is_quantity_only=is_quantity_only,
+                is_quantity_not_numeric=False,
+            )
+
+        if is_quantity_not_numeric:
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent="calorie_input",
+                parsed_items=[],
+                confidence="LOW",
+                warnings=["Quantity expression detected, but it is not written with digits."],
+                unparsed_text=unparsed_text,
+                is_food_only=False,
+                is_quantity_only=False,
+                is_quantity_not_numeric=True,
+            )
+
+        if is_food_only:
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent="calorie_input",
+                parsed_items=[],
+                confidence="LOW",
+                warnings=["Food name detected, but quantity in grams is missing."],
+                unparsed_text=unparsed_text,
+                is_food_only=True,
+                is_quantity_only=False,
+                is_quantity_not_numeric=False,
+            )
+
+        if is_quantity_only:
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent="calorie_input",
+                parsed_items=[],
+                confidence="LOW",
+                warnings=["Quantity detected, but food name is missing."],
+                unparsed_text=unparsed_text,
+                is_food_only=False,
+                is_quantity_only=True,
+                is_quantity_not_numeric=False,
+            )
+
+        classified_intent = self.intent_classifier.classify(normalized_text)
+
+        if classified_intent == "nutrition_qa":
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent="nutrition_qa",
+                confidence="HIGH" if ("?" in original_text or self.QUESTION_HINT_PATTERN.search(normalized_text)) else "MEDIUM",
+                warnings=[],
+                unparsed_text="",
+                is_food_only=False,
+                is_quantity_only=False,
+                is_quantity_not_numeric=False,
+            )
+
+        if classified_intent in {"clear_meal", "remove_item", "total_query"}:
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent=classified_intent,
+                confidence="HIGH",
+                warnings=[],
+                unparsed_text="",
+                is_food_only=False,
+                is_quantity_only=False,
+                is_quantity_not_numeric=False,
+            )
+
+        if "?" in original_text or self.QUESTION_HINT_PATTERN.search(normalized_text):
+            return NLUResult(
+                original_text=original_text,
+                normalized_text=normalized_text,
+                intent="nutrition_qa",
+                confidence="MEDIUM",
+                warnings=[],
+                unparsed_text="",
+                is_food_only=False,
+                is_quantity_only=False,
+                is_quantity_not_numeric=False,
+            )
+
+        return NLUResult(
+            original_text=original_text,
+            normalized_text=normalized_text,
+            intent="unknown",
+            confidence="LOW",
+            warnings=["Intent could not be determined confidently."],
+            unparsed_text=unparsed_text,
+            is_food_only=False,
+            is_quantity_only=False,
+            is_quantity_not_numeric=False,
+        )
 
     def _matches_any(self, text: str, patterns: List[str]) -> bool:
         for pattern in patterns:
@@ -83,146 +282,12 @@ class NutritionNLUService:
 
         return ""
 
-    def parse(self, text: str) -> NLUResult:
-        original_text = text or ""
-        normalized_text = self.food_normalizer.normalize(original_text)
+    def _is_harmless_leftover(self, text: str) -> bool:
+        if not text:
+            return True
 
-        parsed_items: List[ParsedFoodItem] = []
-        warnings: List[str] = []
-        confidence = "LOW"
-        unparsed_text = ""
-        is_food_only = False
-        is_quantity_only = False
+        words = [w for w in text.split() if w.strip()]
+        if not words:
+            return True
 
-        if not original_text.strip():
-            return NLUResult(
-                original_text=original_text,
-                normalized_text=normalized_text,
-                intent="empty",
-                parsed_items=[],
-                confidence="LOW",
-                warnings=["User input is empty."],
-                unparsed_text="",
-                is_food_only=False,
-                is_quantity_only=False,
-            )
-
-        forced_intent = self._override_command_intent(normalized_text)
-        if forced_intent:
-            return NLUResult(
-                original_text=original_text,
-                normalized_text=normalized_text,
-                intent=forced_intent,
-                parsed_items=[],
-                confidence="HIGH",
-                warnings=[],
-                unparsed_text="",
-                is_food_only=False,
-                is_quantity_only=False,
-            )
-
-        parsed_items = self.food_parser.parse_food_items(normalized_text)
-        unparsed_text = self.food_parser.extract_unparsed_text(normalized_text, parsed_items)
-        is_food_only = self.food_parser.looks_like_food_only(normalized_text)
-        is_quantity_only = self.food_parser.looks_like_quantity_only(normalized_text)
-
-        intent = self.intent_classifier.classify(normalized_text)
-
-        if intent == "empty":
-            warnings.append("User input is empty.")
-            confidence = "LOW"
-
-        elif intent == "calorie_input":
-            if parsed_items:
-                if not unparsed_text:
-                    confidence = "HIGH"
-                else:
-                    confidence = "MEDIUM"
-                    warnings.append(
-                        f"Some text could not be confidently parsed: '{unparsed_text}'."
-                    )
-
-            else:
-                if is_food_only:
-                    warnings.append("Food name detected, but quantity in grams is missing.")
-                elif is_quantity_only:
-                    warnings.append("Quantity detected, but food name is missing.")
-                elif self.NON_DIGIT_QUANTITY_PATTERN.search(original_text):
-                    warnings.append("Quantity expression detected, but it is not written with digits.")
-                else:
-                    warnings.append("Could not extract food and grams from calorie input.")
-
-                confidence = "LOW"
-
-        elif intent in {"clear_meal", "remove_item", "total_query"}:
-            confidence = "HIGH"
-
-        elif intent == "nutrition_qa":
-            confidence = "HIGH"
-
-            if parsed_items:
-                intent = "calorie_input"
-                if not unparsed_text:
-                    confidence = "HIGH"
-                else:
-                    confidence = "MEDIUM"
-                    warnings.append(
-                        f"Some text could not be confidently parsed: '{unparsed_text}'."
-                    )
-
-            elif is_food_only:
-                warnings.append("Food name detected, but quantity in grams is missing.")
-                confidence = "LOW"
-
-            elif is_quantity_only:
-                warnings.append("Quantity detected, but food name is missing.")
-                confidence = "LOW"
-
-            elif unparsed_text and not self.QUESTION_HINT_PATTERN.search(normalized_text):
-                warnings.append(
-                    f"Unparsed text remained after lightweight inspection: '{unparsed_text}'."
-                )
-                confidence = "MEDIUM"
-
-        else:
-            if parsed_items:
-                intent = "calorie_input"
-                if not unparsed_text:
-                    confidence = "HIGH"
-                else:
-                    confidence = "MEDIUM"
-                    warnings.append(
-                        f"Some text could not be confidently parsed: '{unparsed_text}'."
-                    )
-
-            elif is_food_only:
-                warnings.append("Food name detected, but quantity in grams is missing.")
-                confidence = "LOW"
-
-            elif is_quantity_only:
-                warnings.append("Quantity detected, but food name is missing.")
-                confidence = "LOW"
-
-            elif self.NON_DIGIT_QUANTITY_PATTERN.search(original_text):
-                warnings.append("Quantity expression detected, but it is not written with digits.")
-                confidence = "LOW"
-
-            else:
-                if "?" in original_text or self.QUESTION_HINT_PATTERN.search(normalized_text):
-                    intent = "nutrition_qa"
-                    confidence = "MEDIUM"
-                else:
-                    warnings.append("Intent could not be determined confidently.")
-                    confidence = "LOW"
-
-        return NLUResult(
-            original_text=original_text,
-            normalized_text=normalized_text,
-            intent=intent,
-            parsed_items=parsed_items,
-            confidence=confidence,
-            warnings=warnings,
-            unparsed_text=unparsed_text,
-            is_food_only=is_food_only,
-            is_quantity_only=is_quantity_only,
-        )
+        return all(word in self.HARMLESS_LEFTOVER_WORDS for word in words)

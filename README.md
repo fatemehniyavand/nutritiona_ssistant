@@ -1,215 +1,217 @@
-# 🥗 Nutrition Assistant (AI Systems Engineering Project)
+# 🥗 Nutrition Assistant
 
-## Overview
+An intelligent nutrition assistant that supports two main capabilities:
 
-This project is an AI-powered Nutrition Assistant designed to help users with two main tasks:
+1. Calorie Estimation (structured input)
+2. Nutrition Question Answering (RAG-based)
 
-- Estimating calories from food inputs (e.g., "apple 200g")
-- Answering general nutrition-related questions
-
-The system combines rule-based parsing, semantic retrieval, and memory mechanisms to provide reliable, explainable, and user-friendly responses.
-
-This project was developed as part of the AI Systems Engineering course.
+The system is designed with a clean architecture, strong evaluation coverage, and explainable outputs.
 
 ---
 
-## Features
+## 🎯 Project Goals
 
-### 1. Calorie Estimation Mode
-- Supports inputs like:
+This project was designed to:
+
+- Build a robust natural language interface for food tracking
+- Combine structured estimation (calories) with unstructured QA (RAG)
+- Ensure grounded, explainable outputs
+- Maintain stateful interaction through meal memory
+- Evaluate the system under standard, randomized, and adversarial conditions
+
+The focus was not only on functionality, but also on reliability, interpretability, and evaluation.
+
+---
+
+## 🚀 Features
+
+### 🍽️ Calorie Mode
+- Accepts inputs like:
   - apple 200g
-  - rice 150g and chicken 200g
-  - apple200g (no spacing required)
-- Matches food items against a nutrition database
-- Computes total calories
-- Provides per-item breakdown
-- Includes:
-  - confidence levels
-  - coverage (matched vs total items)
-  - suggestions when confidence is low
+  - banana 100g and rice 150g
+- Calculates total calories
+- Maintains meal memory
+- Supports:
+  - Add items (and, add, with)
+  - Remove items (remove apple)
+  - Clear meal (clear meal)
+- Provides:
+  - Per-item breakdown
+  - Total calories
+  - Confidence score
+  - Coverage (matched vs total items)
 
 ---
 
-### 2. Nutrition Q&A Mode (RAG-based)
-- Answers questions such as:
+### 📚 Nutrition QA Mode (RAG)
+- Answers questions like:
   - Is avocado healthy?
   - What are good sources of protein?
-- Uses retrieval-based approach (no hallucinated answers)
-- Shows:
-  - retrieved contexts
-  - source references
-- Handles repeated questions using semantic memory
+- Uses a nutrition Q&A dataset
+- Retrieves relevant contexts
+- Returns:
+  - Answer
+  - Confidence
+  - Sources used
+  - Retrieved context snippets
 
 ---
 
-### 3. Meal Memory
-- Keeps track of the current meal
-- Supports follow-up inputs:
-  - and banana 100g
-- Allows:
-  - incremental updates
-  - clearing the meal
-- Automatically updates total calories
-
----
-
-### 4. Semantic Memory (Repeat Detection)
+### 🧠 Memory & Repetition Handling
 - Detects repeated questions
-- Avoids recomputation
-- Responds with:
-  As I told you before...
+- Reuses previous answers when appropriate
+- Supports meal memory for multi-turn calorie tracking
 
 ---
 
-### 5. Input Guard System
-Handles edge cases such as:
-- empty input
-- non-English input
-- missing food or quantity
-- non-numeric quantities
-- ambiguous or unclear text
+### ⚠️ Input Guard System
+Handles invalid inputs:
+- Empty input
+- Non-English input
+- Food without quantity
+- Quantity without food
+- Non-numeric quantities
+- Gibberish input
 
 ---
 
-## Architecture
+## 🧱 Architecture
 
-The system follows a modular layered architecture:
+The project follows a clean, modular architecture:
 
 src/
 ├── application/
 │   ├── orchestrators/
 │   ├── services/
-│   │   ├── nlu/
-│   │   ├── memory/
-│   │   ├── resolver/
 │   ├── use_cases/
-│
+│   └── dto/
 ├── domain/
-│   ├── models/
-│   ├── services/
-│
+│   └── services/
 ├── infrastructure/
-│   ├── vector_db/
-│
 ├── presentation/
-│   ├── chainlit_app.py
-│
-├── shared/
+│   └── chainlit_app.py
+└── shared/
 
 ### Key Components
-- NLU Service → normalization, parsing, intent classification  
-- Orchestrator → routing between calorie and QA modes  
-- Calorie Use Case → database-based estimation  
-- QA Use Case → retrieval-based answers  
-- Memory Services → meal memory + semantic memory  
+
+- NLU Service
+  - Normalization
+  - Parsing
+  - Intent classification
+
+- Orchestrator
+  - Routes between Calorie Mode and QA Mode
+
+- Meal Memory Service
+  - Tracks current meal state
+
+- Memory Service
+  - Stores previous interactions
+
+- RAG Pipeline
+  - Retrieves and answers nutrition questions
 
 ---
 
-## Datasets
-
-### Calorie Dataset
-- Source: Kaggle (Calories per 100g)
-- Stored in ChromaDB
-- Used for calorie estimation
-
-### Nutrition Q&A Dataset
-- Derived from a public nutrition dataset
-- Stored as text blocks in ChromaDB
-- Used for retrieval-based question answering
-
----
-
-## Evaluation
+## 📊 Evaluation Results
 
 The system was evaluated using multiple datasets:
 
-- Standard evaluation
-- Extended evaluation
-- Randomized evaluation
-- Adversarial evaluation
+- Extended Evaluation: 99.5% pass rate
+- Randomized Evaluation: 100% pass rate
+- Adversarial Evaluation: 96% pass rate
 
-### Results
-
-Category        | Pass Rate
----------------|----------
-Calorie Mode   | 100%
-Memory         | 100%
-Multi-item     | 100%
-Randomized     | 100%
-Adversarial    | 96%
-Overall        | ~99%
-
-Evaluation focuses on:
-- correctness
-- robustness to noisy inputs
-- memory behavior
-- routing accuracy
+These results demonstrate strong robustness, especially under noisy and adversarial inputs.
 
 ---
 
-## Example Inputs
+## 🔍 Explainability
 
-apple 200g  
-apple200g  
-apple 200g rice 150g  
-and banana 100g  
-What are good sources of protein?  
-Is avocado healthy?  
+Each calorie estimation includes:
+
+- Match reason
+- Match source
+- Confidence level
+- Coverage (matched items / total items)
+- Suggestions for low-confidence matches
+
+This ensures transparency and interpretability of results.
 
 ---
 
-## How to Run
+## ⚙️ Installation & Run
 
-### Install dependencies
+```bash
+git clone https://github.com/your-username/nutritiona_ssistant.git
+cd nutritiona_ssistant
 pip install -r requirements.txt
-
-### Run the application
-PYTHONPATH=. chainlit run src/presentation/chainlit_app.py -w
-
-### Run evaluation
-PYTHONPATH=. python scripts/run_eval.py  
-PYTHONPATH=. python scripts/run_extended_eval.py  
-PYTHONPATH=. python scripts/run_randomized_eval.py  
-PYTHONPATH=. python scripts/run_adversarial_eval.py  
+export PYTHONPATH=.
+chainlit run src/presentation/chainlit_app.py -w
+```
 
 ---
 
-## Deployment
+## 🧪 Evaluation
 
-The system runs locally and can be containerized using Docker.
-
----
-
-## Limitations
-
-- Some noisy inputs may not extract all food items correctly  
-- Repeated QA detection may fail in rare edge cases  
-- Performance depends on dataset coverage  
+```bash
+PYTHONPATH=. python scripts/run_eval.py
+PYTHONPATH=. python scripts/run_extended_eval.py
+PYTHONPATH=. python scripts/run_randomized_eval.py
+PYTHONPATH=. python scripts/run_adversarial_eval.py
+```
 
 ---
 
-## Future Improvements
+## 💡 Example Usage
 
-- Improve parsing robustness for noisy inputs  
-- Enhance QA memory reuse consistency  
-- Expand nutrition dataset coverage  
-- Add multilingual support  
-- Improve UI/UX  
+Calorie Mode:
+
+```text
+apple 200g
+and banana 100g
+```
+
+QA Mode:
+
+```text
+Is avocado healthy?
+What are good sources of protein?
+```
 
 ---
 
-## Author
+## ⚠️ Limitations
 
-Fatemeh Niyavand 
-University of Naples Federico II  
+- Noisy inputs may slightly reduce parsing accuracy in adversarial cases
+- QA repeat detection depends on similarity thresholds
+- Calorie database is static (no live updates)
 
 ---
 
-## Notes
+## 🔮 Future Improvements
 
-This project focuses on:
-- reliability  
-- explainability  
-- reproducibility  
+- Better handling of noisy and mixed inputs
+- Integration with live nutrition APIs
+- Personalized meal recommendations
+- Advanced semantic matching
 
-rather than relying purely on black-box model outputs.
+---
+
+## 👩‍💻 Author
+
+**Fatemeh Niyavand**  
+MSc Data Science Student  
+University of Naples Federico II
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates:
+
+- Strong NLU design
+- Robust routing between multiple modes
+- Reliable evaluation performance
+- Clear and explainable outputs
+
+It is built to be both practical and academically solid.

@@ -9,6 +9,7 @@ from src.application.services.nlu.nlu_service import NutritionNLUService
 from src.application.services.repeat_detector_service import RepeatDetectorService
 from src.application.use_cases.answer_nutrition_question import AnswerNutritionQuestion
 from src.application.use_cases.estimate_meal_calories import EstimateMealCalories
+from src.domain.models.meal_state import MealState
 from src.domain.services.input_guard_service import InputGuardService
 from src.shared.constants import CALORIE_MODE, LOW_CONFIDENCE, QNA_MODE
 
@@ -24,25 +25,22 @@ class NutritionOrchestrator:
         self.repeat_detector_service = RepeatDetectorService()
         self.food_resolver_service = FoodResolverService()
 
+        # Internal session state for multi-turn flows when caller does not pass state explicitly
+        self._session_history = []
+        self._session_memory_entries = []
+        self._session_meal_state = MealState()
+        self._session_conversation_memory = []
+
+    def reset_session_state(self) -> None:
+        self._session_history = []
+        self._session_memory_entries = []
+        self._session_meal_state = MealState()
+        self._session_conversation_memory = []
+
     def detect_mode(self, text: str) -> str:
-        normalized = (text or "").strip().lower()
-
-        calorie_patterns = [
-            r"\d+(?:\.\d+)?\s*g\b",
-            r"\badd\b",
-            r"\band\b",
-            r"\bwith\b",
-            r"\bplus\b",
-            r"\bremove\b",
-            r"\bclear meal\b",
-            r"\btotal now\b",
-            r"\bwhat is the total now\b",
-        ]
-
-        for pattern in calorie_patterns:
-            if re.search(pattern, normalized):
-                return CALORIE_MODE
-
+        nlu_result = self.nlu_service.parse(text)
+        if nlu_result.intent in {"calorie_input", "clear_meal", "remove_item", "total_query"}:
+            return CALORIE_MODE
         return QNA_MODE
 
     def run(
@@ -53,44 +51,149 @@ class NutritionOrchestrator:
         meal_state=None,
         conversation_memory=None,
     ):
-        history = history or []
-        memory_entries = memory_entries or []
-        conversation_memory = conversation_memory or []
+        # Use caller-provided state when available; otherwise use persistent internal state.
+        using_internal_history = history is None
+        using_internal_memory_entries = memory_entries is None
+        using_internal_meal_state = meal_state is None
+        using_internal_conversation_memory = conversation_memory is None
+
+        history = self._session_history if using_internal_history else history
+        memory_entries = self._session_memory_entries if using_internal_memory_entries else memory_entries
+        meal_state = self._session_meal_state if using_internal_meal_state else meal_state
+        conversation_memory = (
+            self._session_conversation_memory
+            if using_internal_conversation_memory
+            else conversation_memory
+        )
 
         nlu_result = self.nlu_service.parse(text)
         original_text = (nlu_result.original_text or "").strip()
         normalized = (nlu_result.normalized_text or "").strip()
         intent = (nlu_result.intent or "").strip().lower()
 
-        guard_bypass_intents = {
-            "total_query",
-            "clear_meal",
-            "remove_item",
-        }
-
-        guard_input = normalized
-        if not normalized and original_text:
-            guard_input = original_text
-
-        input_class = self.input_guard.classify_input(guard_input)
+        guard_bypass_intents = {"total_query", "clear_meal", "remove_item"}
 
         if intent in guard_bypass_intents:
-            return self.calorie_use_case.run(
+            response = self.calorie_use_case.run(
                 normalized,
                 history=history,
                 meal_state=meal_state,
                 conversation_memory=conversation_memory,
             )
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized,
+                kind="calorie",
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
+
+        if intent == "empty":
+            repeated_guard = self._find_repeated_non_answer_case(
+                normalized=normalized or original_text.lower().strip(),
+                conversation_memory=conversation_memory,
+            )
+            response = repeated_guard or self._build_guard_response("empty", original_text)
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized or original_text.lower().strip(),
+                kind=QNA_MODE,
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
+
+        if nlu_result.is_quantity_not_numeric:
+            response = self._build_guard_response("quantity_not_numeric", original_text)
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized,
+                kind=QNA_MODE,
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
+
+        if nlu_result.is_quantity_only:
+            response = self._build_guard_response("quantity_only", original_text)
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized,
+                kind=QNA_MODE,
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
+
+        if nlu_result.is_food_only:
+            response = self._build_guard_response("food_only", normalized or original_text)
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized,
+                kind=QNA_MODE,
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
+
+        if intent == "calorie_input" and nlu_result.parsed_items:
+            response = self.calorie_use_case.run(
+                normalized,
+                history=history,
+                meal_state=meal_state,
+                conversation_memory=conversation_memory,
+            )
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized,
+                kind="calorie",
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
+
+        if intent == "calorie_input" and not nlu_result.parsed_items:
+            repeated_guard = self._find_repeated_non_answer_case(
+                normalized=normalized or original_text.lower().strip(),
+                conversation_memory=conversation_memory,
+            )
+            response = repeated_guard or self._build_guard_response("gibberish", original_text or normalized)
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized,
+                kind=QNA_MODE,
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
 
         if intent == "nutrition_qa":
+            guard_input = normalized if normalized else original_text
+            input_class = self.input_guard.classify_input(guard_input)
+
             if input_class in {"empty", "non_english"}:
                 repeated_guard = self._find_repeated_non_answer_case(
                     normalized=normalized or original_text.lower().strip(),
                     conversation_memory=conversation_memory,
                 )
-                if repeated_guard is not None:
-                    return repeated_guard
-                return self._build_guard_response(input_class, original_text or normalized)
+                response = repeated_guard or self._build_guard_response(input_class, original_text or normalized)
+                self._record_turn(
+                    user_input=text,
+                    normalized_input=normalized,
+                    kind=QNA_MODE,
+                    response=response,
+                    history=history,
+                    conversation_memory=conversation_memory,
+                )
+                return response
 
             repeated_qa = self._try_reuse_previous_qa(
                 normalized=normalized,
@@ -98,36 +201,134 @@ class NutritionOrchestrator:
                 conversation_memory=conversation_memory,
             )
             if repeated_qa is not None:
+                self._record_turn(
+                    user_input=text,
+                    normalized_input=normalized,
+                    kind=QNA_MODE,
+                    response=repeated_qa,
+                    history=history,
+                    conversation_memory=conversation_memory,
+                )
                 return repeated_qa
 
-            return self.qa_use_case.run(
+            qa_response = self.qa_use_case.run(
                 normalized,
                 history=history,
                 conversation_memory=conversation_memory,
             )
+
+            fallback_repeat = self._recover_repeat_after_failed_qa(
+                normalized=normalized,
+                qa_response=qa_response,
+                conversation_memory=conversation_memory,
+            )
+            response = fallback_repeat or qa_response
+
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized,
+                kind=QNA_MODE,
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
+
+        guard_input = normalized if normalized else original_text
+        input_class = self.input_guard.classify_input(guard_input)
 
         if input_class != "valid":
             repeated_guard = self._find_repeated_non_answer_case(
                 normalized=normalized or original_text.lower().strip(),
                 conversation_memory=conversation_memory,
             )
-            if repeated_guard is not None:
-                return repeated_guard
-
-            return self._build_guard_response(input_class, original_text or normalized)
-
-        if intent == "calorie_input":
-            return self.calorie_use_case.run(
-                normalized,
+            response = repeated_guard or self._build_guard_response(input_class, original_text or normalized)
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized,
+                kind=QNA_MODE,
+                response=response,
                 history=history,
-                meal_state=meal_state,
                 conversation_memory=conversation_memory,
             )
+            return response
 
-        if intent == "empty":
-            return self._build_guard_response("empty", original_text or normalized)
+        response = self._build_guard_response("gibberish", original_text or normalized)
+        self._record_turn(
+            user_input=text,
+            normalized_input=normalized,
+            kind=QNA_MODE,
+            response=response,
+            history=history,
+            conversation_memory=conversation_memory,
+        )
+        return response
 
-        return self._build_guard_response("gibberish", original_text or normalized)
+    def _record_turn(
+        self,
+        user_input: str,
+        normalized_input: str,
+        kind: str,
+        response,
+        history,
+        conversation_memory,
+    ) -> None:
+        response_dict = self._response_to_dict(response)
+
+        history.append(
+            {
+                "user_input": user_input,
+                "normalized_input": normalized_input,
+                "kind": kind,
+                "response": response_dict,
+            }
+        )
+
+        conversation_entry = {
+            "user_input": user_input,
+            "normalized_input": normalized_input,
+            "kind": kind,
+            "answer": response_dict.get("answer", "") or response_dict.get("final_message", ""),
+            "confidence": response_dict.get("confidence", ""),
+            "sources_used": response_dict.get("sources_used", []) or [],
+            "retrieved_contexts": response_dict.get("retrieved_contexts", []) or [],
+            "items": response_dict.get("items", []) or [],
+            "final_message": response_dict.get("final_message", ""),
+            "mode": response_dict.get("mode", ""),
+        }
+        conversation_memory.append(conversation_entry)
+
+    def _response_to_dict(self, response) -> dict:
+        if isinstance(response, dict):
+            return response
+
+        data = {}
+        for key in dir(response):
+            if key.startswith("_"):
+                continue
+            value = getattr(response, key, None)
+            if callable(value):
+                continue
+            data[key] = value
+
+        if "items" in data and data["items"]:
+            normalized_items = []
+            for item in data["items"]:
+                if isinstance(item, dict):
+                    normalized_items.append(item)
+                else:
+                    item_dict = {}
+                    for k in dir(item):
+                        if k.startswith("_"):
+                            continue
+                        v = getattr(item, k, None)
+                        if callable(v):
+                            continue
+                        item_dict[k] = v
+                    normalized_items.append(item_dict)
+            data["items"] = normalized_items
+
+        return data
 
     def _try_reuse_previous_qa(self, normalized: str, memory_entries, conversation_memory) -> QAResponse | None:
         repeat_match = self.repeat_detector_service.find_qa_repeat(
@@ -180,18 +381,62 @@ class NutritionOrchestrator:
 
         return None
 
+    def _recover_repeat_after_failed_qa(
+        self,
+        normalized: str,
+        qa_response,
+        conversation_memory,
+    ) -> QAResponse | None:
+        final_message = (getattr(qa_response, "final_message", "") or "").strip().lower()
+        answer = (getattr(qa_response, "answer", "") or "").strip().lower()
+
+        blocked_prefixes = (
+            "i could not find enough grounded information",
+            "i could not find a sufficiently relevant grounded answer",
+            "i could not find a grounded answer",
+            "no grounded answer found",
+            "no grounded answer could be safely composed",
+        )
+
+        failed_grounding = (
+            any(answer.startswith(prefix) for prefix in blocked_prefixes)
+            or any(final_message.startswith(prefix) for prefix in blocked_prefixes)
+        )
+
+        if not failed_grounding:
+            return None
+
+        for entry in reversed(list(conversation_memory or [])):
+            previous_input = (entry.get("normalized_input") or "").strip().lower()
+            previous_kind = (entry.get("kind") or "").strip().lower()
+
+            if previous_input != normalized:
+                continue
+            if previous_kind != QNA_MODE:
+                continue
+            if not self._is_reusable_qa_entry_dict(entry):
+                continue
+
+            return QAResponse(
+                mode=QNA_MODE,
+                answer=entry.get("answer", ""),
+                confidence=entry.get("confidence", LOW_CONFIDENCE),
+                sources_used=entry.get("sources_used", []) or [],
+                retrieved_contexts=entry.get("retrieved_contexts", []) or [],
+                final_message="As I told you before, this question was already answered earlier in the conversation.",
+            )
+
+        return None
+
     def _is_reusable_qa_entry_dict(self, entry: dict[str, Any]) -> bool:
         answer = (entry.get("answer") or "").strip().lower()
-        confidence = (entry.get("confidence") or LOW_CONFIDENCE).strip().lower()
         sources_used = entry.get("sources_used", []) or []
         retrieved_contexts = entry.get("retrieved_contexts", []) or []
 
-        if confidence == LOW_CONFIDENCE.lower():
+        if not answer:
             return False
-
         if not sources_used:
             return False
-
         if not retrieved_contexts:
             return False
 
@@ -200,6 +445,7 @@ class NutritionOrchestrator:
             "i could not find a sufficiently relevant grounded answer",
             "i could not find a grounded answer",
             "no grounded answer found",
+            "no grounded answer could be safely composed",
         )
 
         if any(answer.startswith(prefix) for prefix in blocked_prefixes):
@@ -209,12 +455,10 @@ class NutritionOrchestrator:
 
     def _is_reusable_memory_entry(self, entry) -> bool:
         answer = (getattr(entry, "answer", "") or "").strip().lower()
-        confidence = (getattr(entry, "confidence", LOW_CONFIDENCE) or LOW_CONFIDENCE).strip().lower()
         sources_used = getattr(entry, "sources_used", []) or []
 
-        if confidence == LOW_CONFIDENCE.lower():
+        if not answer:
             return False
-
         if not sources_used:
             return False
 
@@ -223,6 +467,7 @@ class NutritionOrchestrator:
             "i could not find a sufficiently relevant grounded answer",
             "i could not find a grounded answer",
             "no grounded answer found",
+            "no grounded answer could be safely composed",
         )
 
         if any(answer.startswith(prefix) for prefix in blocked_prefixes):
@@ -247,10 +492,8 @@ class NutritionOrchestrator:
 
             if previous_input != normalized:
                 continue
-
             if previous_kind != QNA_MODE:
                 continue
-
             if not previous_answer:
                 continue
 

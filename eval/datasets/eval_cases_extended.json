@@ -1,2316 +1,3300 @@
 [
   {
-    "id": "CAL-001",
-    "type": "single_turn",
+    "case_id": "CAL-001",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add banana 50g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 104.0
+      "coverage": 1.0,
+      "total_calories": 44.5
     },
-    "input": "apple 200g"
+    "meta": {
+      "food": "banana",
+      "grams": 50
+    }
   },
   {
-    "id": "CAL-002",
-    "type": "single_turn",
+    "case_id": "CAL-002",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "rice75g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 89.0
+      "coverage": 1.0,
+      "total_calories": 97.5
     },
-    "input": "banana 100g"
+    "meta": {
+      "food": "rice",
+      "grams": 75
+    }
   },
   {
-    "id": "CAL-003",
-    "type": "single_turn",
+    "case_id": "CAL-003",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "banana 200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 122.0
-    },
-    "input": "milk 200g"
-  },
-  {
-    "id": "CAL-004",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "total_calories": 195.0
-    },
-    "input": "rice 150g"
-  },
-  {
-    "id": "CAL-005",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "total_calories": 166.5
-    },
-    "input": "brown rice 150g"
-  },
-  {
-    "id": "CAL-006",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "total_calories": 330.0
-    },
-    "input": "chicken 200g"
-  },
-  {
-    "id": "CAL-007",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "total_calories": 330.0
-    },
-    "input": "grilled chicken 200g"
-  },
-  {
-    "id": "CAL-008",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "total_calories": 155.0
-    },
-    "input": "egg 100g"
-  },
-  {
-    "id": "CAL-009",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "total_calories": 160.0
-    },
-    "input": "avocado 100g"
-  },
-  {
-    "id": "CAL-010",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "total_calories": 155.6
-    },
-    "input": "oats 40g"
-  },
-  {
-    "id": "CAL-011",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "total_calories": 265.0
-    },
-    "input": "bread 100g"
-  },
-  {
-    "id": "CAL-012",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "total_calories": 52.0
-    },
-    "input": "apple 100g"
-  },
-  {
-    "id": "CAL-013",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
+      "coverage": 1.0,
       "total_calories": 178.0
     },
-    "input": "banana 200g"
+    "meta": {
+      "food": "banana",
+      "grams": 200
+    }
   },
   {
-    "id": "CAL-014",
-    "type": "single_turn",
+    "case_id": "CAL-004",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "grilled chicken 120g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 61.0
+      "coverage": 1.0,
+      "total_calories": 198.0
     },
-    "input": "milk 100g"
+    "meta": {
+      "food": "grilled chicken",
+      "grams": 120
+    }
   },
   {
-    "id": "CAL-015",
-    "type": "single_turn",
+    "case_id": "CAL-005",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "apple50g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 26.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL-006",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "rice 150g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 195.0
+    },
+    "meta": {
+      "food": "rice",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL-007",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "pizza 75 g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 199.5
+    },
+    "meta": {
+      "food": "pizza",
+      "grams": 75
+    }
+  },
+  {
+    "case_id": "CAL-008",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add rice 120g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 156.0
+    },
+    "meta": {
+      "food": "rice",
+      "grams": 120
+    }
+  },
+  {
+    "case_id": "CAL-009",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "apple250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
       "total_calories": 130.0
     },
-    "input": "rice 100g"
+    "meta": {
+      "food": "apple",
+      "grams": 250
+    }
   },
   {
-    "id": "CAL-016",
-    "type": "single_turn",
+    "case_id": "CAL-010",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add avocado 100g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 222.0
+      "coverage": 1.0,
+      "total_calories": 160.0
     },
-    "input": "brown rice 200g"
+    "meta": {
+      "food": "avocado",
+      "grams": 100
+    }
   },
   {
-    "id": "CAL-017",
-    "type": "single_turn",
+    "case_id": "CAL-011",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add milk 75g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 45.75
+    },
+    "meta": {
+      "food": "milk",
+      "grams": 75
+    }
+  },
+  {
+    "case_id": "CAL-012",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "banana 50 g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 44.5
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL-013",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add banana 100g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 89.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL-014",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "grilled chicken 100g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
       "total_calories": 165.0
     },
-    "input": "chicken 100g"
+    "meta": {
+      "food": "grilled chicken",
+      "grams": 100
+    }
   },
   {
-    "id": "CAL-018",
-    "type": "single_turn",
+    "case_id": "CAL-015",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "oats 150g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 232.5
+      "coverage": 1.0,
+      "total_calories": 583.5
     },
-    "input": "egg 150g"
+    "meta": {
+      "food": "oats",
+      "grams": 150
+    }
   },
   {
-    "id": "CAL-019",
-    "type": "single_turn",
+    "case_id": "CAL-016",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add avocado 50g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
+      "coverage": 1.0,
       "total_calories": 80.0
     },
-    "input": "avocado 50g"
+    "meta": {
+      "food": "avocado",
+      "grams": 50
+    }
   },
   {
-    "id": "CAL-020",
-    "type": "single_turn",
+    "case_id": "CAL-017",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add grilled chicken 250g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 389.0
+      "coverage": 1.0,
+      "total_calories": 412.5
     },
-    "input": "oats 100g"
+    "meta": {
+      "food": "grilled chicken",
+      "grams": 250
+    }
   },
   {
-    "id": "CAL-021",
-    "type": "single_turn",
+    "case_id": "CAL-018",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "grilled chicken 75g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 397.5
+      "coverage": 1.0,
+      "total_calories": 123.75
     },
-    "input": "bread 150g"
+    "meta": {
+      "food": "grilled chicken",
+      "grams": 75
+    }
   },
   {
-    "id": "CAL-022",
-    "type": "single_turn",
+    "case_id": "CAL-019",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "apple200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "appl 200g"
-  },
-  {
-    "id": "CAL-023",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "min_total_calories": 85.0,
-      "max_total_calories": 95.0
-    },
-    "input": "bananna 100g"
-  },
-  {
-    "id": "CAL-024",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "min_total_calories": 150.0,
-      "max_total_calories": 170.0
-    },
-    "input": "avocad 100g"
-  },
-  {
-    "id": "CAL-025",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "min_total_calories": 260.0,
-      "max_total_calories": 270.0
-    },
-    "input": "bred 100g"
-  },
-  {
-    "id": "CAL-026",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "min_total_calories": 320.0,
-      "max_total_calories": 340.0
-    },
-    "input": "grilled chiken 200g"
-  },
-  {
-    "id": "CAL-027",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
+      "coverage": 1.0,
       "total_calories": 104.0
     },
-    "input": "apple200g"
+    "meta": {
+      "food": "apple",
+      "grams": 200
+    }
   },
   {
-    "id": "CAL-028",
-    "type": "single_turn",
+    "case_id": "CAL-020",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "bread50g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "min_total_calories": 160.0,
-      "max_total_calories": 170.0
+      "coverage": 1.0,
+      "total_calories": 132.5
     },
-    "input": "brownrice150g"
+    "meta": {
+      "food": "bread",
+      "grams": 50
+    }
   },
   {
-    "id": "CAL-029",
-    "type": "single_turn",
+    "case_id": "CAL-021",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add banana 120g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "min_total_calories": 320.0,
-      "max_total_calories": 340.0
+      "coverage": 1.0,
+      "total_calories": 106.8
     },
-    "input": "grilledchicken200g"
+    "meta": {
+      "food": "banana",
+      "grams": 120
+    }
   },
   {
-    "id": "CAL-030",
-    "type": "single_turn",
+    "case_id": "CAL-022",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add oats 200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 104.0
+      "coverage": 1.0,
+      "total_calories": 778.0
     },
-    "input": "apple,200g"
+    "meta": {
+      "food": "oats",
+      "grams": 200
+    }
   },
   {
-    "id": "MUL-001",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "total_calories": 193.0
-    },
-    "input": "apple 200g and banana 100g"
-  },
-  {
-    "id": "MUL-002",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "total_calories": 299.0
-    },
-    "input": "apple 200g rice 150g"
-  },
-  {
-    "id": "MUL-003",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "total_calories": 277.6
-    },
-    "input": "milk 200g plus oats 40g"
-  },
-  {
-    "id": "MUL-004",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
-      "total_calories": 315.0
-    },
-    "input": "apple 200g banana 100g milk 200g"
-  },
-  {
-    "id": "MUL-005",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 420.0,
-      "max_total_calories": 440.0
-    },
-    "input": "chicken 100g bread 100g"
-  },
-  {
-    "id": "MUL-006",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 205.0,
-      "max_total_calories": 215.0
-    },
-    "input": "rice 100g avocado 50g"
-  },
-  {
-    "id": "MUL-007",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 300.0,
-      "max_total_calories": 310.0
-    },
-    "input": "egg 100g milk 250g"
-  },
-  {
-    "id": "MUL-008",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 240.0,
-      "max_total_calories": 245.0
-    },
-    "input": "banana 50g bread 75g"
-  },
-  {
-    "id": "MUL-009",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
-      "min_total_calories": 540.0,
-      "max_total_calories": 560.0
-    },
-    "input": "apple 100g brown rice 150g chicken 200g"
-  },
-  {
-    "id": "MUL-010",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 164.0,
-      "max_total_calories": 167.0
-    },
-    "input": "oats 40g and milk 16g"
-  },
-  {
-    "id": "MUL-011",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 290.0,
-      "max_total_calories": 305.0
-    },
-    "input": "apple200grice150g"
-  },
-  {
-    "id": "MUL-012",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "total_calories": 193.0
-    },
-    "input": "apple 200 g banana 100 g"
-  },
-  {
-    "id": "MUL-013",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 178.0,
-      "max_total_calories": 183.0
-    },
-    "input": "banana100gandmilk150g"
-  },
-  {
-    "id": "MUL-014",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 355.0,
-      "max_total_calories": 362.0
-    },
-    "input": "avocado 100g bread 75g"
-  },
-  {
-    "id": "MUL-015",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 520.0,
-      "max_total_calories": 526.0
-    },
-    "input": "rice 200g chicken 160g"
-  },
-  {
-    "id": "MUL-016",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
-      "min_total_calories": 295.0,
-      "max_total_calories": 301.0
-    },
-    "input": "apple 100g egg 100g milk 150g"
-  },
-  {
-    "id": "MUL-017",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 650.0,
-      "max_total_calories": 660.0
-    },
-    "input": "oats 100g bread 100g"
-  },
-  {
-    "id": "MUL-018",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 130.0,
-      "max_total_calories": 135.0
-    },
-    "input": "apple 100g avocado 50g"
-  },
-  {
-    "id": "MUL-019",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 236.0,
-      "max_total_calories": 242.0
-    },
-    "input": "banana 50g egg 125g"
-  },
-  {
-    "id": "MUL-020",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 405.0,
-      "max_total_calories": 412.0
-    },
-    "input": "bread 50g brown rice 250g"
-  },
-  {
-    "id": "MUL-021",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 268.0,
-      "max_total_calories": 272.0
-    },
-    "input": "rice100gandmilk230g"
-  },
-  {
-    "id": "MUL-022",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "total_calories": 193.0
-    },
-    "input": "add apple 200g and banana 100g"
-  },
-  {
-    "id": "MUL-023",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "total_calories": 277.6
-    },
-    "input": "with milk 200g plus oats 40g"
-  },
-  {
-    "id": "MUL-024",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "total_calories": 299.0
-    },
-    "input": "apple 200g and rice 150g"
-  },
-  {
-    "id": "MUL-025",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
-      "min_total_calories": 338.0,
-      "max_total_calories": 343.0
-    },
-    "input": "banana 100g rice 100g milk 200g"
-  },
-  {
-    "id": "GRD-001",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "empty"
-    },
-    "input": ""
-  },
-  {
-    "id": "GRD-002",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "empty"
-    },
-    "input": "   "
-  },
-  {
-    "id": "GRD-003",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "english"
-    },
-    "input": "سلام"
-  },
-  {
-    "id": "GRD-004",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "food name"
-    },
-    "input": "200g"
-  },
-  {
-    "id": "GRD-005",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "quantity"
-    },
-    "input": "apple"
-  },
-  {
-    "id": "GRD-006",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "digits"
-    },
-    "input": "apple two hundred grams"
-  },
-  {
-    "id": "GRD-007",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_nonempty": true
-    },
-    "input": "hello world"
-  },
-  {
-    "id": "GRD-008",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "please apple 200g"
-  },
-  {
-    "id": "GRD-009",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "hello apple 200g xyz"
-  },
-  {
-    "id": "GRD-010",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "apple 200g xyz"
-  },
-  {
-    "id": "GRD-011",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "xyz apple 200g"
-  },
-  {
-    "id": "GRD-012",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 3,
-      "min_total_calories": 290.0,
-      "max_total_calories": 305.0
-    },
-    "input": "apple 200g xyz rice 150g"
-  },
-  {
-    "id": "GRD-013",
-    "type": "single_turn",
+    "case_id": "CAL-023",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add milk 100g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 104.0
+      "coverage": 1.0,
+      "total_calories": 61.0
     },
-    "input": "APPLE200G"
+    "meta": {
+      "food": "milk",
+      "grams": 100
+    }
   },
   {
-    "id": "GRD-014",
-    "type": "single_turn",
+    "case_id": "CAL-024",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "add rice 200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "total_calories": 104.0
+      "coverage": 1.0,
+      "total_calories": 260.0
     },
-    "input": "apple@@@200g"
+    "meta": {
+      "food": "rice",
+      "grams": 200
+    }
   },
   {
-    "id": "GRD-015",
-    "type": "single_turn",
+    "case_id": "CAL-025",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "banana150g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
       "total_items": 1,
-      "min_total_calories": 320.0,
-      "max_total_calories": 340.0
+      "coverage": 1.0,
+      "total_calories": 133.5
     },
-    "input": "grilled-chicken 200g"
+    "meta": {
+      "food": "banana",
+      "grams": 150
+    }
   },
   {
-    "id": "GRD-016",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_nonempty": true
-    },
-    "input": "ciao"
-  },
-  {
-    "id": "GRD-017",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "quantity"
-    },
-    "input": "brown rice"
-  },
-  {
-    "id": "GRD-018",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "food name"
-    },
-    "input": "150 grams"
-  },
-  {
-    "id": "GRD-019",
-    "type": "single_turn",
+    "case_id": "CAL-026",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "pizza200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 532.0
     },
-    "input": "apple 200 grams"
+    "meta": {
+      "food": "pizza",
+      "grams": 200
+    }
   },
   {
-    "id": "GRD-020",
-    "type": "single_turn",
+    "case_id": "CAL-027",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "milk 120 g",
     "expected": {
       "mode": "calorie",
       "matched_items": 1,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 73.2
     },
-    "input": "apple 200 g"
+    "meta": {
+      "food": "milk",
+      "grams": 120
+    }
   },
   {
-    "id": "MEM-001",
-    "type": "multi_turn",
+    "case_id": "CAL-028",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "bread200g",
     "expected": {
-      "final_mode": "calorie",
-      "meal_total": 104.0
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 530.0
     },
+    "meta": {
+      "food": "bread",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL-029",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "egg 250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 387.5
+    },
+    "meta": {
+      "food": "egg",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL-030",
+    "category": "CAL",
+    "kind": "single_turn",
+    "input": "rice 250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0,
+      "total_calories": 325.0
+    },
+    "meta": {
+      "food": "rice",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "GRD-001",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "empty"
+    }
+  },
+  {
+    "case_id": "GRD-002",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "   ",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "empty"
+    }
+  },
+  {
+    "case_id": "GRD-003",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "200g",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "quantity_only"
+    }
+  },
+  {
+    "case_id": "GRD-004",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "150 g",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "quantity_only"
+    }
+  },
+  {
+    "case_id": "GRD-005",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "apple",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "food_only"
+    }
+  },
+  {
+    "case_id": "GRD-006",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "banana",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "food_only"
+    }
+  },
+  {
+    "case_id": "GRD-007",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "apple two hundred grams",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "non_numeric_quantity"
+    }
+  },
+  {
+    "case_id": "GRD-008",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "banana one hundred grams",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "non_numeric_quantity"
+    }
+  },
+  {
+    "case_id": "GRD-009",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "سلام خوبی",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "non_english"
+    }
+  },
+  {
+    "case_id": "GRD-010",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "ciao come stai",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "non_english"
+    }
+  },
+  {
+    "case_id": "GRD-011",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "asdkjhasd qweoiu zmxn",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "gibberish"
+    }
+  },
+  {
+    "case_id": "GRD-012",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "zzzz food blahhhh",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "gibberish"
+    }
+  },
+  {
+    "case_id": "GRD-013",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "what is the total now?",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "state_total"
+    }
+  },
+  {
+    "case_id": "GRD-014",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "clear meal",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "state_clear"
+    }
+  },
+  {
+    "case_id": "GRD-015",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "remove apple 100g",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "state_remove"
+    }
+  },
+  {
+    "case_id": "GRD-016",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "reset meal",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "state_clear"
+    }
+  },
+  {
+    "case_id": "GRD-017",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "delete meal",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "state_clear"
+    }
+  },
+  {
+    "case_id": "GRD-018",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "meal total",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "state_total"
+    }
+  },
+  {
+    "case_id": "GRD-019",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "take out banana 100g",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "state_remove"
+    }
+  },
+  {
+    "case_id": "GRD-020",
+    "category": "GRD",
+    "kind": "single_turn",
+    "input": "whats the total now",
+    "expected": {
+      "message_non_empty": true,
+      "semantic_guard": "state_total"
+    }
+  },
+  {
+    "case_id": "MEM-001",
+    "category": "MEM",
+    "kind": "multi_turn",
     "steps": [
-      "apple 200g",
+      "egg 100g",
+      "and avocado 50g",
       "what is the total now?"
-    ]
-  },
-  {
-    "id": "MEM-002",
-    "type": "multi_turn",
+    ],
     "expected": {
       "final_mode": "calorie",
-      "meal_total": 193.0
+      "meal_total": 235.0,
+      "matched_items": 2
     },
+    "meta": {
+      "foods": [
+        [
+          "egg",
+          100
+        ],
+        [
+          "avocado",
+          50
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-002",
+    "category": "MEM",
+    "kind": "multi_turn",
     "steps": [
-      "apple 200g",
-      "banana 100g",
+      "rice 75g",
+      "and egg 200g",
       "what is the total now?"
-    ]
-  },
-  {
-    "id": "MEM-003",
-    "type": "multi_turn",
+    ],
     "expected": {
       "final_mode": "calorie",
-      "meal_total": 0.0
+      "meal_total": 407.5,
+      "matched_items": 2
     },
-    "steps": [
-      "apple 200g",
-      "remove apple"
-    ]
+    "meta": {
+      "foods": [
+        [
+          "rice",
+          75
+        ],
+        [
+          "egg",
+          200
+        ]
+      ]
+    }
   },
   {
-    "id": "MEM-004",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "calorie",
-      "meal_total": 0.0
-    },
+    "case_id": "MEM-003",
+    "category": "MEM",
+    "kind": "multi_turn",
     "steps": [
-      "apple 200g",
-      "banana 100g",
-      "clear meal"
-    ]
-  },
-  {
-    "id": "MEM-005",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "calorie",
-      "final_message_contains": "already"
-    },
-    "steps": [
-      "apple 200g",
-      "apple 200g"
-    ]
-  },
-  {
-    "id": "MEM-006",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "calorie",
-      "final_message_contains": "already",
-      "meal_total": 193.0
-    },
-    "steps": [
-      "apple 200g",
-      "banana 100g",
-      "apple 200g"
-    ]
-  },
-  {
-    "id": "MEM-007",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "calorie",
-      "meal_total": 0.0
-    },
-    "steps": [
-      "banana 100g",
-      "remove banana",
+      "oats 200g",
+      "and avocado 120g",
       "what is the total now?"
-    ]
-  },
-  {
-    "id": "MEM-008",
-    "type": "multi_turn",
+    ],
     "expected": {
       "final_mode": "calorie",
-      "meal_total": 277.6
+      "meal_total": 970.0,
+      "matched_items": 2
     },
+    "meta": {
+      "foods": [
+        [
+          "oats",
+          200
+        ],
+        [
+          "avocado",
+          120
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-004",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "milk 75g",
+      "and bread 75g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 244.5,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "milk",
+          75
+        ],
+        [
+          "bread",
+          75
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-005",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "pizza 100g",
+      "and grilled chicken 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 596.0,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "pizza",
+          100
+        ],
+        [
+          "grilled chicken",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-006",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "grilled chicken 150g",
+      "and avocado 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 439.5,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "grilled chicken",
+          150
+        ],
+        [
+          "avocado",
+          120
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-007",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "egg 75g",
+      "and rice 150g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 311.25,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "egg",
+          75
+        ],
+        [
+          "rice",
+          150
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-008",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "oats 250g",
+      "and banana 50g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 1017.0,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "oats",
+          250
+        ],
+        [
+          "banana",
+          50
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-009",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 200g",
+      "and milk 75g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 223.75,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "banana",
+          200
+        ],
+        [
+          "milk",
+          75
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-010",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "avocado 120g",
+      "and banana 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 298.8,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "avocado",
+          120
+        ],
+        [
+          "banana",
+          120
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-011",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "grilled chicken 150g",
+      "and oats 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 636.5,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "grilled chicken",
+          150
+        ],
+        [
+          "oats",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-012",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "pizza 200g",
+      "and apple 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 636.0,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "pizza",
+          200
+        ],
+        [
+          "apple",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-013",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 250g",
+      "and pizza 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 488.5,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "banana",
+          250
+        ],
+        [
+          "pizza",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-014",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "egg 100g",
+      "and banana 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 261.8,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "egg",
+          100
+        ],
+        [
+          "banana",
+          120
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MEM-015",
+    "category": "MEM",
+    "kind": "multi_turn",
+    "steps": [
+      "milk 50g",
+      "and oats 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 808.5,
+      "matched_items": 2
+    },
+    "meta": {
+      "foods": [
+        [
+          "milk",
+          50
+        ],
+        [
+          "oats",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-001",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add bread 250g and pizza 75g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 862.0
+    },
+    "meta": {
+      "items": [
+        [
+          "bread",
+          250
+        ],
+        [
+          "pizza",
+          75
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-002",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add banana 250g and bread 200g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 752.5
+    },
+    "meta": {
+      "items": [
+        [
+          "banana",
+          250
+        ],
+        [
+          "bread",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-003",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "grilled chicken 75g and rice 100g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 253.75
+    },
+    "meta": {
+      "items": [
+        [
+          "grilled chicken",
+          75
+        ],
+        [
+          "rice",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-004",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "pizza50g and grilled chicken150g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 380.5
+    },
+    "meta": {
+      "items": [
+        [
+          "pizza",
+          50
+        ],
+        [
+          "grilled chicken",
+          150
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-005",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "oats50g and apple100g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 246.5
+    },
+    "meta": {
+      "items": [
+        [
+          "oats",
+          50
+        ],
+        [
+          "apple",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-006",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "rice 75g and apple 150g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 175.5
+    },
+    "meta": {
+      "items": [
+        [
+          "rice",
+          75
+        ],
+        [
+          "apple",
+          150
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-007",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add banana 250g and oats 50g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 417.0
+    },
+    "meta": {
+      "items": [
+        [
+          "banana",
+          250
+        ],
+        [
+          "oats",
+          50
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-008",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add milk 200g and grilled chicken 120g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 320.0
+    },
+    "meta": {
+      "items": [
+        [
+          "milk",
+          200
+        ],
+        [
+          "grilled chicken",
+          120
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-009",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add milk 150g and bread 250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 754.0
+    },
+    "meta": {
+      "items": [
+        [
+          "milk",
+          150
+        ],
+        [
+          "bread",
+          250
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-010",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add avocado 150g and rice 250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 565.0
+    },
+    "meta": {
+      "items": [
+        [
+          "avocado",
+          150
+        ],
+        [
+          "rice",
+          250
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-011",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add rice 120g and bread 200g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 686.0
+    },
+    "meta": {
+      "items": [
+        [
+          "rice",
+          120
+        ],
+        [
+          "bread",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-012",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "egg 150g and oats 120g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 699.3
+    },
+    "meta": {
+      "items": [
+        [
+          "egg",
+          150
+        ],
+        [
+          "oats",
+          120
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-013",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "rice 50g and grilled chicken 100g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 230.0
+    },
+    "meta": {
+      "items": [
+        [
+          "rice",
+          50
+        ],
+        [
+          "grilled chicken",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-014",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "grilled chicken 75g and pizza 150g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 522.75
+    },
+    "meta": {
+      "items": [
+        [
+          "grilled chicken",
+          75
+        ],
+        [
+          "pizza",
+          150
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-015",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "apple 200g and banana 200g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 282.0
+    },
+    "meta": {
+      "items": [
+        [
+          "apple",
+          200
+        ],
+        [
+          "banana",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-016",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "rice50g and banana250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 287.5
+    },
+    "meta": {
+      "items": [
+        [
+          "rice",
+          50
+        ],
+        [
+          "banana",
+          250
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-017",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add banana 75g and pizza 100g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 332.75
+    },
+    "meta": {
+      "items": [
+        [
+          "banana",
+          75
+        ],
+        [
+          "pizza",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-018",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add oats 150g and rice 75g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0,
+      "total_calories": 681.0
+    },
+    "meta": {
+      "items": [
+        [
+          "oats",
+          150
+        ],
+        [
+          "rice",
+          75
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-019",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "grilled chicken 250g and oats 120g and rice 250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "coverage": 1.0,
+      "total_calories": 1204.3
+    },
+    "meta": {
+      "items": [
+        [
+          "grilled chicken",
+          250
+        ],
+        [
+          "oats",
+          120
+        ],
+        [
+          "rice",
+          250
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-020",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "rice 200g and banana 120g and pizza 100g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "coverage": 1.0,
+      "total_calories": 632.8
+    },
+    "meta": {
+      "items": [
+        [
+          "rice",
+          200
+        ],
+        [
+          "banana",
+          120
+        ],
+        [
+          "pizza",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-021",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "avocado 200g and oats 200g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "coverage": 1.0,
+      "total_calories": 1202.0
+    },
+    "meta": {
+      "items": [
+        [
+          "avocado",
+          200
+        ],
+        [
+          "oats",
+          200
+        ],
+        [
+          "apple",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-022",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "apple250g and avocado250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "coverage": 1.0,
+      "total_calories": 607.5
+    },
+    "meta": {
+      "items": [
+        [
+          "apple",
+          250
+        ],
+        [
+          "avocado",
+          250
+        ],
+        [
+          "egg",
+          50
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-023",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add rice 75g and grilled chicken 120g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "coverage": 1.0,
+      "total_calories": 587.25
+    },
+    "meta": {
+      "items": [
+        [
+          "rice",
+          75
+        ],
+        [
+          "grilled chicken",
+          120
+        ],
+        [
+          "oats",
+          75
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-024",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "add oats 120g and rice 250g and banana 250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "coverage": 1.0,
+      "total_calories": 1014.3
+    },
+    "meta": {
+      "items": [
+        [
+          "oats",
+          120
+        ],
+        [
+          "rice",
+          250
+        ],
+        [
+          "banana",
+          250
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "MUL-025",
+    "category": "MUL",
+    "kind": "single_turn",
+    "input": "banana50g and apple250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "coverage": 1.0,
+      "total_calories": 839.5
+    },
+    "meta": {
+      "items": [
+        [
+          "banana",
+          50
+        ],
+        [
+          "apple",
+          250
+        ],
+        [
+          "pizza",
+          250
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "QA-001",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "How much water should a person drink?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "QA-002",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "What are healthy breakfast ideas?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "QA-003",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "Are eggs healthy?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "QA-004",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "What are good sources of protein?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "QA-005",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "What foods help with satiety?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "QA-006",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "Is avocado healthy?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "QA-007",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "Why is hydration important?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "QA-008",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "Why are vegetables important?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "QA-009",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "Is brown rice better than white rice?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "QA-010",
+    "category": "QA",
+    "kind": "single_turn",
+    "input": "What foods are high in fiber?",
+    "expected": {
+      "message_non_empty": true,
+      "mode_candidates": [
+        "qa",
+        "nutrition_qa",
+        "unknown"
+      ]
+    }
+  },
+  {
+    "case_id": "LOG-001",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 200g",
+      "add apple 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 230.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-002",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "rice 75g",
+      "add grilled chicken 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 427.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-003",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 50g",
+      "add pizza 150g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 443.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-004",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "avocado 50g",
+      "add apple 50g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 106.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-005",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "rice 150g",
+      "add grilled chicken 150g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 442.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-006",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "apple 75g",
+      "add pizza 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 571.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-007",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "pizza 75g",
+      "add avocado 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 391.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-008",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "grilled chicken 250g",
+      "add bread 250g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 1075.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-009",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "apple 200g",
+      "add milk 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 177.2,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-010",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "egg 75g",
+      "add bread 75g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 315.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-011",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "egg 50g",
+      "add banana 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 184.3,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-012",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 250g",
+      "add egg 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 377.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-013",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "grilled chicken 250g",
+      "add bread 50g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 545.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-014",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "oats 50g",
+      "add pizza 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 513.7,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-015",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 100g",
+      "add pizza 250g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 754.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-016",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "grilled chicken 150g",
+      "add egg 75g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 363.75,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-017",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 200g",
+      "add apple 75g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 217.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-018",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "bread 250g",
+      "add banana 75g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 729.25,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-019",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 100g",
+      "add avocado 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 281.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-020",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "egg 100g",
+      "add milk 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 216.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-021",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "rice 200g",
+      "add bread 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 790.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-022",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 150g",
+      "add milk 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 255.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-023",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "rice 120g",
+      "add milk 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 229.2,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-024",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "bread 75g",
+      "add pizza 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 730.75,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-025",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "egg 75g",
+      "add apple 250g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 246.25,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-026",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "apple 120g",
+      "add egg 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 217.4,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-027",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "banana 150g",
+      "add rice 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 393.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-028",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "egg 200g",
+      "add rice 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 466.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-029",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "avocado 75g",
+      "add oats 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 509.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-030",
+    "category": "LOG",
+    "kind": "multi_turn",
     "steps": [
       "milk 200g",
-      "oats 40g",
+      "add rice 150g",
       "what is the total now?"
-    ]
-  },
-  {
-    "id": "MEM-009",
-    "type": "multi_turn",
+    ],
     "expected": {
       "final_mode": "calorie",
-      "meal_total": 122.0
-    },
+      "meal_total": 317.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-031",
+    "category": "LOG",
+    "kind": "multi_turn",
     "steps": [
-      "apple 200g banana 100g",
-      "clear meal",
-      "milk 200g"
-    ]
-  },
-  {
-    "id": "MEM-010",
-    "type": "multi_turn",
+      "pizza 200g",
+      "add bread 150g",
+      "what is the total now?"
+    ],
     "expected": {
       "final_mode": "calorie",
-      "meal_total": 315.0
-    },
+      "meal_total": 929.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-032",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "avocado 100g",
+      "add grilled chicken 75g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 283.75,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-033",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "milk 120g",
+      "add pizza 50g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 206.2,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-034",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "apple 75g",
+      "add banana 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 217.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-035",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "milk 150g",
+      "add avocado 50g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 171.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-036",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "avocado 150g",
+      "add grilled chicken 120g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 438.0,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-037",
+    "category": "LOG",
+    "kind": "multi_turn",
+    "steps": [
+      "pizza 150g",
+      "add bread 250g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "final_mode": "calorie",
+      "meal_total": 1061.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-038",
+    "category": "LOG",
+    "kind": "multi_turn",
     "steps": [
       "apple 200g",
-      "banana 100g",
-      "milk 200g",
+      "add banana 150g",
       "what is the total now?"
-    ]
-  },
-  {
-    "id": "MEM-011",
-    "type": "multi_turn",
+    ],
     "expected": {
       "final_mode": "calorie",
-      "meal_total": 104.0
-    },
+      "meal_total": 237.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
+  },
+  {
+    "case_id": "LOG-039",
+    "category": "LOG",
+    "kind": "multi_turn",
     "steps": [
-      "apple 200g",
-      "remove banana",
+      "bread 50g",
+      "add egg 100g",
       "what is the total now?"
-    ]
-  },
-  {
-    "id": "MEM-012",
-    "type": "multi_turn",
+    ],
     "expected": {
       "final_mode": "calorie",
-      "meal_total": 0.0
-    },
-    "steps": [
-      "clear meal"
-    ]
+      "meal_total": 287.5,
+      "matched_items": 2,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "MEM-013",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "calorie",
-      "meal_total": 193.0
-    },
+    "case_id": "LOG-040",
+    "category": "LOG",
+    "kind": "multi_turn",
     "steps": [
-      "apple 200g and banana 100g",
+      "avocado 120g",
+      "add milk 50g",
       "what is the total now?"
-    ]
-  },
-  {
-    "id": "MEM-014",
-    "type": "multi_turn",
+    ],
     "expected": {
       "final_mode": "calorie",
-      "final_message_contains": "already"
-    },
-    "steps": [
-      "milk 200g",
-      "milk 200g"
-    ]
-  },
-  {
-    "id": "MEM-015",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "calorie",
-      "meal_total": 341.0
-    },
-    "steps": [
-      "banana 100g rice 100g milk 200g",
-      "what is the total now?"
-    ]
-  },
-  {
-    "id": "QA-001",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_nonempty": true
-    },
-    "input": "What are good sources of protein?"
-  },
-  {
-    "id": "QA-002",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_nonempty": true
-    },
-    "input": "Is avocado healthy?"
-  },
-  {
-    "id": "QA-003",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_nonempty": true
-    },
-    "input": "Is rice good for weight loss?"
-  },
-  {
-    "id": "QA-004",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_nonempty": true
-    },
-    "input": "What are healthy breakfast ideas?"
-  },
-  {
-    "id": "QA-005",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_nonempty": true
-    },
-    "input": "Is milk good for bones?"
-  },
-  {
-    "id": "QA-006",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "nutrition_qa",
-      "final_message_contains": "as i told you before"
-    },
-    "steps": [
-      "Is avocado healthy?",
-      "Is avocado healthy?"
-    ]
-  },
-  {
-    "id": "QA-007",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "nutrition_qa",
-      "answer_nonempty": true
-    },
-    "steps": [
-      "What are good sources of protein?",
-      "What are good protein sources?"
-    ]
-  },
-  {
-    "id": "QA-008",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "nutrition_qa",
-      "answer_nonempty": true,
-      "meal_total": 104.0
-    },
-    "steps": [
-      "apple 200g",
-      "Is avocado healthy?"
-    ]
-  },
-  {
-    "id": "QA-009",
-    "type": "multi_turn",
-    "expected": {
-      "final_mode": "nutrition_qa",
-      "answer_nonempty": true,
-      "meal_total": 89.0
-    },
-    "steps": [
-      "banana 100g",
-      "What are good sources of protein?"
-    ]
-  },
-  {
-    "id": "QA-010",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_nonempty": true
-    },
-    "input": "Is avocado healthy for breakfast?"
-  },
-  {
-    "id": "LOG-001",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
+      "meal_total": 222.5,
       "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 210.0,
-      "max_total_calories": 212.0
-    },
-    "input": "banana 100 g milk 200 g"
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-002",
-    "type": "single_turn",
+    "case_id": "OOD-001",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "cosmic oats 150g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 250.0,
-      "max_total_calories": 252.0
-    },
-    "input": "rice100gandmilk200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-003",
-    "type": "single_turn",
+    "case_id": "OOD-002",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "crystal chicken bites50g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 178.0,
-      "max_total_calories": 181.0
-    },
-    "input": "banana100gandmilk150g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-004",
-    "type": "single_turn",
+    "case_id": "OOD-003",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "cosmic oats250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 3,
-      "min_total_calories": 193.0,
-      "max_total_calories": 193.0
-    },
-    "input": "add apple 200g then banana 100g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-005",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "digits"
-    },
-    "input": "apple two hundred grams"
-  },
-  {
-    "id": "LOG-006",
-    "type": "single_turn",
+    "case_id": "OOD-004",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "crystal chicken bites 150g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 85.0,
-      "max_total_calories": 95.0
-    },
-    "input": "hello add banana 100g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-007",
-    "type": "single_turn",
+    "case_id": "OOD-005",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "lava rice 100g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "pls apple200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-008",
-    "type": "single_turn",
+    "case_id": "OOD-006",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "crystal chicken bites250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 120.0,
-      "max_total_calories": 124.0
-    },
-    "input": "milk 200g and random text"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-009",
-    "type": "single_turn",
+    "case_id": "OOD-007",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "add dragon burger 150g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "i want apple 200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-010",
-    "type": "single_turn",
+    "case_id": "OOD-008",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "wild apple burger 50g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "apple 200g pls fast"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-011",
-    "type": "single_turn",
+    "case_id": "OOD-009",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "add mystic milkshake 250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 210.0,
-      "max_total_calories": 212.0
-    },
-    "input": "banana 100 g milk 200 g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-012",
-    "type": "single_turn",
+    "case_id": "OOD-010",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "shadow pizza 50g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 250.0,
-      "max_total_calories": 252.0
-    },
-    "input": "rice100gandmilk200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-013",
-    "type": "single_turn",
+    "case_id": "OOD-011",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "fake avocado supreme 50g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 178.0,
-      "max_total_calories": 181.0
-    },
-    "input": "banana100gandmilk150g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-014",
-    "type": "single_turn",
+    "case_id": "OOD-012",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "wild apple burger 250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 3,
-      "min_total_calories": 193.0,
-      "max_total_calories": 193.0
-    },
-    "input": "add apple 200g then banana 100g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-015",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "digits"
-    },
-    "input": "apple two hundred grams"
-  },
-  {
-    "id": "LOG-016",
-    "type": "single_turn",
+    "case_id": "OOD-013",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "crystal chicken bites 250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 85.0,
-      "max_total_calories": 95.0
-    },
-    "input": "hello add banana 100g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-017",
-    "type": "single_turn",
+    "case_id": "OOD-014",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "add lava rice 200g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "pls apple200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-018",
-    "type": "single_turn",
+    "case_id": "OOD-015",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "add crystal chicken bites 75g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 120.0,
-      "max_total_calories": 124.0
-    },
-    "input": "milk 200g and random text"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-019",
-    "type": "single_turn",
+    "case_id": "OOD-016",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "crystal chicken bites250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "i want apple 200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-020",
-    "type": "single_turn",
+    "case_id": "OOD-017",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "ultra banana fusion75g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "apple 200g pls fast"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-021",
-    "type": "single_turn",
+    "case_id": "OOD-018",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "add shadow pizza 200g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 210.0,
-      "max_total_calories": 212.0
-    },
-    "input": "banana 100 g milk 200 g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-022",
-    "type": "single_turn",
+    "case_id": "OOD-019",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "ultra banana fusion200g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 250.0,
-      "max_total_calories": 252.0
-    },
-    "input": "rice100gandmilk200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-023",
-    "type": "single_turn",
+    "case_id": "OOD-020",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "mystic milkshake120g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 178.0,
-      "max_total_calories": 181.0
-    },
-    "input": "banana100gandmilk150g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-024",
-    "type": "single_turn",
+    "case_id": "OOD-021",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "wild apple burger 50g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 3,
-      "min_total_calories": 193.0,
-      "max_total_calories": 193.0
-    },
-    "input": "add apple 200g then banana 100g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-025",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "digits"
-    },
-    "input": "apple two hundred grams"
-  },
-  {
-    "id": "LOG-026",
-    "type": "single_turn",
+    "case_id": "OOD-022",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "add shadow pizza 50g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 85.0,
-      "max_total_calories": 95.0
-    },
-    "input": "hello add banana 100g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-027",
-    "type": "single_turn",
+    "case_id": "OOD-023",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "dragon burger150g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "pls apple200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-028",
-    "type": "single_turn",
+    "case_id": "OOD-024",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "shadow pizza 150g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 120.0,
-      "max_total_calories": 124.0
-    },
-    "input": "milk 200g and random text"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-029",
-    "type": "single_turn",
+    "case_id": "OOD-025",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "dragon burger50g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "i want apple 200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-030",
-    "type": "single_turn",
+    "case_id": "OOD-026",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "dragon burger 75g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "apple 200g pls fast"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-031",
-    "type": "single_turn",
+    "case_id": "OOD-027",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "add dragon burger 250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 210.0,
-      "max_total_calories": 212.0
-    },
-    "input": "banana 100 g milk 200 g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-032",
-    "type": "single_turn",
+    "case_id": "OOD-028",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "quantum soup 150g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 250.0,
-      "max_total_calories": 252.0
-    },
-    "input": "rice100gandmilk200g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-033",
-    "type": "single_turn",
+    "case_id": "OOD-029",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "add cosmic oats 200g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 2,
-      "min_total_calories": 178.0,
-      "max_total_calories": 181.0
-    },
-    "input": "banana100gandmilk150g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-034",
-    "type": "single_turn",
+    "case_id": "OOD-030",
+    "category": "OOD",
+    "kind": "single_turn",
+    "input": "shadow pizza 150g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 2,
-      "total_items": 3,
-      "min_total_calories": 193.0,
-      "max_total_calories": 193.0
-    },
-    "input": "add apple 200g then banana 100g"
+      "matched_items_max": 1,
+      "coverage_max": 1.0,
+      "message_non_empty": true
+    }
   },
   {
-    "id": "LOG-035",
-    "type": "single_turn",
-    "expected": {
-      "mode": "nutrition_qa",
-      "answer_contains": "digits"
-    },
-    "input": "apple two hundred grams"
-  },
-  {
-    "id": "LOG-036",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 85.0,
-      "max_total_calories": 95.0
-    },
-    "input": "hello add banana 100g"
-  },
-  {
-    "id": "LOG-037",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 1,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "pls apple200g"
-  },
-  {
-    "id": "LOG-038",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 120.0,
-      "max_total_calories": 124.0
-    },
-    "input": "milk 200g and random text"
-  },
-  {
-    "id": "LOG-039",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "i want apple 200g"
-  },
-  {
-    "id": "LOG-040",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 1,
-      "total_items": 2,
-      "min_total_calories": 100.0,
-      "max_total_calories": 110.0
-    },
-    "input": "apple 200g pls fast"
-  },
-  {
-    "id": "STR-001",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
-      "min_total_calories": 238.0,
-      "max_total_calories": 298.0
-    },
-    "input": "apple 100g egg 100g milk 100g"
-  },
-  {
-    "id": "STR-002",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
-      "min_total_calories": 162.0,
-      "max_total_calories": 222.0
-    },
-    "input": "banana 50g chicken 50g rice 50g"
-  },
-  {
-    "id": "STR-003",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 4,
-      "total_items": 4,
-      "min_total_calories": 799.0,
-      "max_total_calories": 859.0
-    },
-    "input": "rice 100g chicken 200g bread 100g apple 200g"
-  },
-  {
-    "id": "STR-004",
-    "type": "single_turn",
+    "case_id": "STR-001",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "grilled chicken 250g and oats 120g and rice 75g and avocado 50g and pizza 50g",
     "expected": {
       "mode": "calorie",
       "matched_items": 5,
       "total_items": 5,
-      "min_total_calories": 627.5,
-      "max_total_calories": 687.5
-    },
-    "input": "apple 150g bread 100g banana 100g rice 150g milk 50g"
+      "total_calories": 1189.8,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-005",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
-      "min_total_calories": 476.0,
-      "max_total_calories": 536.0
-    },
-    "input": "bread 150g apple 150g milk 50g"
-  },
-  {
-    "id": "STR-006",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 6,
-      "total_items": 6,
-      "min_total_calories": 800.5,
-      "max_total_calories": 860.5
-    },
-    "input": "banana 150g rice 100g apple 50g chicken 50g milk 100g bread 150g"
-  },
-  {
-    "id": "STR-007",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
-      "min_total_calories": 731.5,
-      "max_total_calories": 791.5
-    },
-    "input": "rice 200g bread 150g apple 200g"
-  },
-  {
-    "id": "STR-008",
-    "type": "single_turn",
+    "case_id": "STR-002",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "avocado 250g and egg 200g and grilled chicken 50g and rice 200g and oats 200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 5,
       "total_items": 5,
-      "min_total_calories": 824.5,
-      "max_total_calories": 884.5
-    },
-    "input": "milk 50g avocado 100g bread 100g banana 100g egg 200g"
+      "total_calories": 1830.5,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-009",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 6,
-      "total_items": 6,
-      "min_total_calories": 895.5,
-      "max_total_calories": 955.5
-    },
-    "input": "chicken 150g egg 50g bread 100g avocado 50g banana 150g milk 200g"
-  },
-  {
-    "id": "STR-010",
-    "type": "single_turn",
+    "case_id": "STR-003",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "banana 250g and apple 250g and avocado 50g and egg 75g and milk 75g",
     "expected": {
       "mode": "calorie",
       "matched_items": 5,
       "total_items": 5,
-      "min_total_calories": 1256.5,
-      "max_total_calories": 1316.5
-    },
-    "input": "banana 200g avocado 200g chicken 200g milk 100g bread 150g"
+      "total_calories": 594.5,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-011",
-    "type": "single_turn",
+    "case_id": "STR-004",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "pizza 120g and oats 75g and milk 100g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 671.95,
+      "coverage": 1.0
+    }
+  },
+  {
+    "case_id": "STR-005",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "rice 250g and banana 250g and oats 150g and avocado 50g",
     "expected": {
       "mode": "calorie",
       "matched_items": 4,
       "total_items": 4,
-      "min_total_calories": 1202.5,
-      "max_total_calories": 1262.5
-    },
-    "input": "rice 150g egg 200g chicken 200g bread 150g"
+      "total_calories": 1211.0,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-012",
-    "type": "single_turn",
+    "case_id": "STR-006",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "pizza 250g and apple 250g and banana 75g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 861.75,
+      "coverage": 1.0
+    }
+  },
+  {
+    "case_id": "STR-007",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "avocado 75g and oats 250g and pizza 120g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 1411.7,
+      "coverage": 1.0
+    }
+  },
+  {
+    "case_id": "STR-008",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "milk 120g and avocado 100g and apple 250g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 363.2,
+      "coverage": 1.0
+    }
+  },
+  {
+    "case_id": "STR-009",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "bread 75g and avocado 100g and oats 75g and banana 50g",
     "expected": {
       "mode": "calorie",
       "matched_items": 4,
       "total_items": 4,
-      "min_total_calories": 265.0,
-      "max_total_calories": 325.0
-    },
-    "input": "milk 50g chicken 50g rice 100g apple 100g"
+      "total_calories": 695.0,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-013",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 6,
-      "total_items": 6,
-      "min_total_calories": 811.5,
-      "max_total_calories": 871.5
-    },
-    "input": "banana 150g rice 50g bread 50g chicken 150g egg 150g milk 50g"
-  },
-  {
-    "id": "STR-014",
-    "type": "single_turn",
+    "case_id": "STR-010",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "pizza 150g and apple 120g and egg 150g and grilled chicken 250g and avocado 150g",
     "expected": {
       "mode": "calorie",
       "matched_items": 5,
       "total_items": 5,
-      "min_total_calories": 587.5,
-      "max_total_calories": 647.5
-    },
-    "input": "bread 100g banana 50g rice 150g apple 100g milk 100g"
+      "total_calories": 1346.4,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-015",
-    "type": "single_turn",
+    "case_id": "STR-011",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "apple 250g and pizza 75g and banana 50g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 374.0,
+      "coverage": 1.0
+    }
+  },
+  {
+    "case_id": "STR-012",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "banana 75g and rice 150g and avocado 150g and apple 50g and bread 150g",
     "expected": {
       "mode": "calorie",
       "matched_items": 5,
       "total_items": 5,
-      "min_total_calories": 625.0,
-      "max_total_calories": 685.0
-    },
-    "input": "milk 200g chicken 50g bread 50g apple 150g avocado 150g"
+      "total_calories": 925.25,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-016",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 4,
-      "total_items": 4,
-      "min_total_calories": 416.5,
-      "max_total_calories": 476.5
-    },
-    "input": "apple 50g banana 200g chicken 50g avocado 100g"
-  },
-  {
-    "id": "STR-017",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 4,
-      "total_items": 4,
-      "min_total_calories": 635.5,
-      "max_total_calories": 695.5
-    },
-    "input": "avocado 200g chicken 100g banana 100g milk 150g"
-  },
-  {
-    "id": "STR-018",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 6,
-      "total_items": 6,
-      "min_total_calories": 782.0,
-      "max_total_calories": 842.0
-    },
-    "input": "egg 100g rice 50g chicken 150g bread 50g apple 100g avocado 100g"
-  },
-  {
-    "id": "STR-019",
-    "type": "single_turn",
+    "case_id": "STR-013",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "avocado 100g and pizza 75g and egg 200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 3,
       "total_items": 3,
-      "min_total_calories": 302.0,
-      "max_total_calories": 362.0
-    },
-    "input": "banana 50g egg 100g bread 50g"
+      "total_calories": 669.5,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-020",
-    "type": "single_turn",
+    "case_id": "STR-014",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "egg 200g and rice 200g and bread 100g and pizza 120g and banana 100g",
+    "expected": {
+      "mode": "calorie",
+      "matched_items": 5,
+      "total_items": 5,
+      "total_calories": 1243.2,
+      "coverage": 1.0
+    }
+  },
+  {
+    "case_id": "STR-015",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "apple 50g and oats 150g and banana 75g",
     "expected": {
       "mode": "calorie",
       "matched_items": 3,
       "total_items": 3,
-      "min_total_calories": 533.0,
-      "max_total_calories": 593.0
-    },
-    "input": "egg 100g apple 150g chicken 200g"
+      "total_calories": 676.25,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-021",
-    "type": "single_turn",
+    "case_id": "STR-016",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "bread 100g and milk 100g and egg 75g and apple 120g and banana 250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 4,
-      "total_items": 4,
-      "min_total_calories": 1107.0,
-      "max_total_calories": 1167.0
-    },
-    "input": "milk 200g egg 100g chicken 200g bread 200g"
+      "matched_items": 5,
+      "total_items": 5,
+      "total_calories": 727.15,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-022",
-    "type": "single_turn",
+    "case_id": "STR-017",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "bread 100g and pizza 200g and apple 50g and egg 75g and grilled chicken 100g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 4,
-      "total_items": 4,
-      "min_total_calories": 777.5,
-      "max_total_calories": 837.5
-    },
-    "input": "banana 150g apple 200g egg 200g rice 200g"
+      "matched_items": 5,
+      "total_items": 5,
+      "total_calories": 1104.25,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-023",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
-      "min_total_calories": 259.5,
-      "max_total_calories": 319.5
-    },
-    "input": "banana 150g apple 50g rice 100g"
-  },
-  {
-    "id": "STR-024",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 4,
-      "total_items": 4,
-      "min_total_calories": 813.0,
-      "max_total_calories": 873.0
-    },
-    "input": "rice 200g chicken 100g avocado 150g banana 200g"
-  },
-  {
-    "id": "STR-025",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 4,
-      "total_items": 4,
-      "min_total_calories": 214.0,
-      "max_total_calories": 274.0
-    },
-    "input": "banana 50g rice 50g chicken 50g apple 100g"
-  },
-  {
-    "id": "STR-026",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 4,
-      "total_items": 4,
-      "min_total_calories": 903.0,
-      "max_total_calories": 963.0
-    },
-    "input": "bread 200g rice 50g avocado 100g banana 200g"
-  },
-  {
-    "id": "STR-027",
-    "type": "single_turn",
+    "case_id": "STR-018",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "banana 100g and pizza 100g and milk 150g",
     "expected": {
       "mode": "calorie",
       "matched_items": 3,
       "total_items": 3,
-      "min_total_calories": 749.5,
-      "max_total_calories": 809.5
-    },
-    "input": "bread 150g milk 200g rice 200g"
+      "total_calories": 446.5,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "STR-028",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 4,
-      "total_items": 4,
-      "min_total_calories": 197.0,
-      "max_total_calories": 257.0
-    },
-    "input": "rice 50g milk 150g banana 50g apple 50g"
-  },
-  {
-    "id": "STR-029",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 6,
-      "total_items": 6,
-      "min_total_calories": 681.5,
-      "max_total_calories": 741.5
-    },
-    "input": "milk 50g apple 100g chicken 200g bread 50g banana 100g egg 50g"
-  },
-  {
-    "id": "STR-030",
-    "type": "single_turn",
+    "case_id": "STR-019",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "egg 150g and rice 120g and bread 100g",
     "expected": {
       "mode": "calorie",
       "matched_items": 3,
       "total_items": 3,
-      "min_total_calories": 765.0,
-      "max_total_calories": 825.0
-    },
-    "input": "bread 150g egg 150g chicken 100g"
+      "total_calories": 653.5,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-001",
-    "type": "single_turn",
+    "case_id": "STR-020",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "banana 50g and avocado 50g and bread 100g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "space burger 150g"
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 389.5,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-002",
-    "type": "single_turn",
+    "case_id": "STR-021",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "bread 150g and milk 200g and oats 120g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "unicorn milk 150g"
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 986.3,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-003",
-    "type": "single_turn",
+    "case_id": "STR-022",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "apple 150g and banana 50g and pizza 250g and egg 100g and oats 150g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "mars protein 100g"
+      "matched_items": 5,
+      "total_items": 5,
+      "total_calories": 1526.0,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-004",
-    "type": "single_turn",
+    "case_id": "STR-023",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "milk 100g and avocado 250g and grilled chicken 250g and apple 50g and oats 100g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "space burger 150g"
+      "matched_items": 5,
+      "total_items": 5,
+      "total_calories": 1288.5,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-005",
-    "type": "single_turn",
+    "case_id": "STR-024",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "rice 250g and banana 150g and egg 250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "mars protein 150g"
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 846.0,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-006",
-    "type": "single_turn",
+    "case_id": "STR-025",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "grilled chicken 75g and milk 250g and rice 250g and avocado 75g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "quantum rice 50g"
+      "matched_items": 4,
+      "total_items": 4,
+      "total_calories": 721.25,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-007",
-    "type": "single_turn",
+    "case_id": "STR-026",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "apple 120g and milk 250g and egg 200g and avocado 250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "dragon meat 200g"
+      "matched_items": 4,
+      "total_items": 4,
+      "total_calories": 924.9,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-008",
-    "type": "single_turn",
+    "case_id": "STR-027",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "rice 50g and bread 120g and milk 250g and avocado 50g and egg 250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "ghost food 50g"
+      "matched_items": 5,
+      "total_items": 5,
+      "total_calories": 1003.0,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-009",
-    "type": "single_turn",
+    "case_id": "STR-028",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "rice 100g and grilled chicken 250g and oats 250g and milk 250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "dragon meat 100g"
+      "matched_items": 4,
+      "total_items": 4,
+      "total_calories": 1667.5,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-010",
-    "type": "single_turn",
+    "case_id": "STR-029",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "rice 120g and apple 100g and grilled chicken 100g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "ghost food 150g"
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 373.0,
+      "coverage": 1.0
+    }
   },
   {
-    "id": "OOD-011",
-    "type": "single_turn",
+    "case_id": "STR-030",
+    "category": "STR",
+    "kind": "single_turn",
+    "input": "bread 200g and egg 250g and avocado 150g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "unicorn milk 150g"
-  },
-  {
-    "id": "OOD-012",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "dragon meat 100g"
-  },
-  {
-    "id": "OOD-013",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "alien fruit 150g"
-  },
-  {
-    "id": "OOD-014",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "unicorn milk 200g"
-  },
-  {
-    "id": "OOD-015",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "quantum rice 150g"
-  },
-  {
-    "id": "OOD-016",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "ghost food 50g"
-  },
-  {
-    "id": "OOD-017",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "space burger 150g"
-  },
-  {
-    "id": "OOD-018",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "space burger 50g"
-  },
-  {
-    "id": "OOD-019",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "unicorn milk 150g"
-  },
-  {
-    "id": "OOD-020",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "dragon meat 50g"
-  },
-  {
-    "id": "OOD-021",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "space burger 100g"
-  },
-  {
-    "id": "OOD-022",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "alien fruit 150g"
-  },
-  {
-    "id": "OOD-023",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "ghost food 100g"
-  },
-  {
-    "id": "OOD-024",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "space burger 150g"
-  },
-  {
-    "id": "OOD-025",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "unicorn milk 150g"
-  },
-  {
-    "id": "OOD-026",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "ghost food 200g"
-  },
-  {
-    "id": "OOD-027",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "alien fruit 50g"
-  },
-  {
-    "id": "OOD-028",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "dragon meat 200g"
-  },
-  {
-    "id": "OOD-029",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "quantum rice 150g"
-  },
-  {
-    "id": "OOD-030",
-    "type": "single_turn",
-    "expected": {
-      "mode": "calorie",
-      "matched_items": 0,
-      "confidence_in": [
-        "LOW"
-      ]
-    },
-    "input": "dragon meat 50g"
+      "matched_items": 3,
+      "total_items": 3,
+      "total_calories": 1157.5,
+      "coverage": 1.0
+    }
   }
 ]

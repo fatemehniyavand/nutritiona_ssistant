@@ -1,0 +1,156 @@
+======================================================================
+Running RANDOMIZED evaluation
+======================================================================
+Using dataset: /workspaces/nutritiona_ssistant/eval/datasets/eval_cases_randomized.json
+======================================================================
+======================================================================
+Nutrition Assistant Evaluation Report
+======================================================================
+Dataset path    : /workspaces/nutritiona_ssistant/eval/datasets/eval_cases_randomized.json
+Total cases     : 200
+Passed cases    : 131
+Failed cases    : 69
+Pass rate       : 65.50%
+Average score   : 86.20%
+Report written  : /workspaces/nutritiona_ssistant/eval/outputs/eval_report_randomized.json
+======================================================================
+
+Failed cases:
+- RND-002 [RND]:
+    * Expected total_calories≈290.5, got 30.5
+- RND-003 [RND]:
+    * Expected total_calories≈198.0, got 0.0
+- RND-009 [RND]:
+    * Expected total_calories≈276.25, got 232.75
+- RND-019 [RND]:
+    * Expected total_calories≈325.0, got 0.0
+- RND-024 [RND]:
+    * Expected total_calories≈575.5, got 178.0
+- RND-025 [RND]:
+    * Expected total_calories≈462.2, got 73.2
+- RND-026 [RND]:
+    * Expected total_calories≈246.25, got 202.75
+- RND-029 [RND]:
+    * Expected total_calories≈433.75, got 194.0
+- RND-033 [RND]:
+    * Expected total_calories≈596.0, got 267.0
+- RND-046 [RND]:
+    * Expected total_calories≈882.0, got 104.0
+- RND-048 [RND]:
+    * Expected total_calories≈268.75, got 225.25
+- RND-049 [RND]:
+    * Expected total_calories≈165.0, got 0.0
+- RND-051 [RND]:
+    * Expected total_calories≈143.0, got 78.0
+- RND-053 [RND]:
+    * Expected total_calories≈383.25, got 91.5
+- RND-055 [RND]:
+    * Expected total_calories≈850.0, got 320.0
+- RND-058 [RND]:
+    * Expected total_calories≈174.5, got 44.5
+- RND-059 [RND]:
+    * Expected total_calories≈147.5, got 0.0
+- RND-060 [RND]:
+    * Expected total_calories≈65.0, got 0.0
+- RND-062 [RND]:
+    * Expected total_calories≈782.25, got 0.0
+- RND-065 [RND]:
+    * Expected total_calories≈376.0, got 178.0
+- RND-070 [RND]:
+    * Expected total_calories≈393.0, got 0.0
+- RND-073 [RND]:
+    * Expected total_calories≈1195.0, got 222.5
+- RND-076 [RND]:
+    * Expected total_calories≈483.75, got 192.0
+- RND-082 [RND]:
+    * Expected total_calories≈327.5, got 0.0
+- RND-083 [RND]:
+    * Expected total_calories≈77.5, got 48.5
+- RND-086 [RND]:
+    * Expected total_calories≈82.5, got 0.0
+- RND-088 [RND]:
+    * Expected total_calories≈82.5, got 0.0
+- RND-090 [RND]:
+    * Expected total_calories≈311.0, got 97.0
+- RND-093 [RND]:
+    * Expected total_calories≈583.5, got 0.0
+- RND-097 [RND]:
+    * Expected total_calories≈434.25, got 72.75
+- RND-103 [RND]:
+    * Expected total_calories≈570.0, got 194.0
+- RND-107 [RND]:
+    * Expected total_calories≈387.5, got 242.5
+- RND-114 [RND]:
+    * Expected total_calories≈116.25, got 72.75
+- RND-115 [RND]:
+    * Expected total_calories≈455.0, got 368.0
+- RND-116 [RND]:
+    * Expected total_calories≈477.5, got 152.5
+- RND-118 [RND]:
+    * Expected total_calories≈707.5, got 562.5
+- RND-119 [RND]:
+    * Expected total_calories≈784.5, got 122.0
+- RND-122 [RND]:
+    * Expected total_calories≈776.5, got 242.5
+- RND-123 [RND]:
+    * Expected total_calories≈192.4, got 62.4
+- RND-124 [RND]:
+    * Expected total_calories≈265.0, got 0.0
+- RND-127 [RND]:
+    * Expected total_calories≈198.75, got 0.0
+- RND-129 [RND]:
+    * Expected total_calories≈198.0, got 0.0
+- RND-134 [RND]:
+    * Expected total_calories≈397.5, got 368.5
+- RND-136 [RND]:
+    * Expected total_calories≈397.5, got 0.0
+- RND-140 [RND]:
+    * Expected total_calories≈452.0, got 192.0
+- RND-141 [RND]:
+    * Expected total_calories≈595.5, got 0.0
+- RND-143 [RND]:
+    * Expected total_calories≈378.0, got 308.4
+- RND-144 [RND]:
+    * Expected total_calories≈1637.5, got 667.5
+- RND-145 [RND]:
+    * Expected total_calories≈663.5, got 133.5
+- RND-147 [RND]:
+    * Expected total_calories≈760.0, got 0.0
+- RND-149 [RND]:
+    * Expected total_calories≈466.8, got 0.0
+- RND-150 [RND]:
+    * Expected total_calories≈483.75, got 192.0
+- RND-153 [RND]:
+    * Expected total_calories≈1039.25, got 66.75
+- RND-161 [RND]:
+    * Expected total_calories≈910.5, got 0.0
+- RND-162 [RND]:
+    * Expected total_calories≈497.5, got 145.5
+- RND-163 [RND]:
+    * Expected total_calories≈333.2, got 73.2
+- RND-166 [RND]:
+    * Expected total_calories≈325.0, got 0.0
+- RND-168 [RND]:
+    * Expected total_calories≈198.0, got 0.0
+- RND-169 [RND]:
+    * Expected total_calories≈155.0, got 97.0
+- RND-171 [RND]:
+    * Expected total_calories≈545.0, got 0.0
+- RND-174 [RND]:
+    * Expected total_calories≈675.0, got 91.5
+- RND-177 [RND]:
+    * Expected total_calories≈255.5, got 61.0
+- RND-184 [RND]:
+    * Expected total_calories≈116.25, got 72.75
+- RND-186 [RND]:
+    * Expected total_calories≈234.0, got 39.0
+- RND-187 [RND]:
+    * Expected total_calories≈650.25, got 66.75
+- RND-189 [RND]:
+    * Expected total_calories≈635.0, got 222.5
+- RND-191 [RND]:
+    * Expected total_calories≈397.5, got 0.0
+- RND-193 [RND]:
+    * Expected total_calories≈304.5, got 44.5
+- RND-194 [RND]:
+    * Expected total_calories≈412.5, got 0.0

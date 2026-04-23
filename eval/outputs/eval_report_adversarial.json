@@ -1,0 +1,251 @@
+{
+  "dataset_path": "/workspaces/nutritiona_ssistant/eval/datasets/eval_cases_adversarial.json",
+  "summary": {
+    "total_cases": 50,
+    "passed_cases": 22,
+    "failed_cases": 28,
+    "pass_rate": 44.0,
+    "average_score": 80.0
+  },
+  "failed_cases": [
+    {
+      "case_id": "ADV-SINGLE-002",
+      "category": "ADV",
+      "input": "rice 75g pls",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈97.5, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-004",
+      "category": "ADV",
+      "input": "lol banana 75g maybe",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈66.75, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-005",
+      "category": "ADV",
+      "input": "lol apple 150g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈78.0, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-008",
+      "category": "ADV",
+      "input": "bread 75g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈198.75, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-010",
+      "category": "ADV",
+      "input": "grilled chicken 100 g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈165.0, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-011",
+      "category": "ADV",
+      "input": "hmm pizza 50g pls",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈133.0, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-012",
+      "category": "ADV",
+      "input": "maybe bread 200g uh",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈530.0, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-013",
+      "category": "ADV",
+      "input": "rice200g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈260.0, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-014",
+      "category": "ADV",
+      "input": "bread 50 g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈132.5, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-015",
+      "category": "ADV",
+      "input": "bread120g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈318.0, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-016",
+      "category": "ADV",
+      "input": "add egg 100g",
+      "errors": [
+        "Expected total_calories≈155.0, got 97.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-018",
+      "category": "ADV",
+      "input": "add rice 75g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈97.5, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-SINGLE-020",
+      "category": "ADV",
+      "input": "add rice 50g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈65.0, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-001",
+      "category": "ADV",
+      "input": "lol banana 150g with rice 200g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈393.5, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-002",
+      "category": "ADV",
+      "input": "avocado 75 g add oats 100 g",
+      "errors": [
+        "Expected total_calories≈509.0, got 120.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-003",
+      "category": "ADV",
+      "input": "lol grilled chicken 150g with avocado 120g lol",
+      "errors": [
+        "Expected total_calories≈439.5, got 192.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-005",
+      "category": "ADV",
+      "input": "avocado 150g with grilled chicken 120g",
+      "errors": [
+        "Expected total_calories≈438.0, got 240.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-006",
+      "category": "ADV",
+      "input": "pizza200g and bread100g",
+      "errors": [
+        "Expected total_calories≈797.0, got 534.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-007",
+      "category": "ADV",
+      "input": "oats 200g with apple 200g",
+      "errors": [
+        "Expected total_calories≈882.0, got 104.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-008",
+      "category": "ADV",
+      "input": "bread 150g add pizza 75g",
+      "errors": [
+        "Expected total_calories≈597.0, got 200.25"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-009",
+      "category": "ADV",
+      "input": "grilled chicken120g and egg50g",
+      "errors": [
+        "Expected total_calories≈275.5, got 48.5"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-010",
+      "category": "ADV",
+      "input": "apple 150g and rice 50g",
+      "errors": [
+        "Expected total_calories≈143.0, got 78.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-013",
+      "category": "ADV",
+      "input": "egg 150g and oats 120g",
+      "errors": [
+        "Expected total_calories≈699.3, got 145.5"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-014",
+      "category": "ADV",
+      "input": "egg 150g add apple 150g",
+      "errors": [
+        "Expected total_calories≈310.5, got 223.5"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-016",
+      "category": "ADV",
+      "input": "bread 75g add oats 150g maybe",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈782.25, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-017",
+      "category": "ADV",
+      "input": "pls rice 120g and oats 75g",
+      "errors": [
+        "Expected matched_items>=1, got 0",
+        "Expected total_calories≈447.75, got 0.0"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-018",
+      "category": "ADV",
+      "input": "egg 120g and avocado 120g",
+      "errors": [
+        "Expected total_calories≈378.0, got 308.4"
+      ]
+    },
+    {
+      "case_id": "ADV-MULTI-020",
+      "category": "ADV",
+      "input": "pizza75g add oats120g",
+      "errors": [
+        "Expected total_calories≈666.3, got 200.25"
+      ]
+    }
+  ]
+}

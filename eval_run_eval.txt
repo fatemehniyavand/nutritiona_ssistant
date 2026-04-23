@@ -1,0 +1,249 @@
+[0;93m2026-04-23 11:54:13.423616410 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/device:07/VMBUS:01/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+======================================================================
+Nutrition Assistant Evaluation Report
+======================================================================
+Dataset path    : /workspaces/nutritiona_ssistant/eval/datasets/eval_cases.json
+Total cases     : 100
+Passed cases    : 48
+Failed cases    : 52
+Pass rate       : 48.00%
+Average score   : 57.60%
+Report written  : /workspaces/nutritiona_ssistant/eval/outputs/eval_report.json
+======================================================================
+
+Category breakdown
+======================================================================
+Category     Total    Passed    Failed     Pass Rate     Avg Score
+----------------------------------------------------------------------
+CAL             30        16        14        53.33%        62.17%
+GRD             20        20         0       100.00%       100.00%
+MEM             15         0        15         0.00%        20.00%
+MUL             25         2        23         8.00%        23.80%
+QA              10        10         0       100.00%       100.00%
+======================================================================
+
+Failed cases:
+- CAL-002 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈97.5, got 0.0
+- CAL-004 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈198.0, got 0.0
+- CAL-006 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈195.0, got 0.0
+- CAL-008 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈156.0, got 0.0
+- CAL-014 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈165.0, got 0.0
+- CAL-015 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈583.5, got 0.0
+- CAL-017 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈412.5, got 0.0
+- CAL-018 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈123.75, got 0.0
+- CAL-020 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈132.5, got 0.0
+- CAL-022 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈778.0, got 0.0
+- CAL-024 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈260.0, got 0.0
+- CAL-028 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈530.0, got 0.0
+- CAL-029 [CAL]:
+    * Expected total_calories≈387.5, got 242.5
+- CAL-030 [CAL]:
+    * Expected matched_items=1, got 0
+    * Expected total_items=1, got 2
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈325.0, got 0.0
+- MEM-001 [MEM]:
+    * Expected meal_total≈235.0, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-002 [MEM]:
+    * Expected meal_total≈407.5, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-003 [MEM]:
+    * Expected meal_total≈970.0, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-004 [MEM]:
+    * Expected meal_total≈244.5, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-005 [MEM]:
+    * Expected meal_total≈596.0, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-006 [MEM]:
+    * Expected meal_total≈439.5, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-007 [MEM]:
+    * Expected meal_total≈311.25, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-008 [MEM]:
+    * Expected meal_total≈1017.0, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-009 [MEM]:
+    * Expected meal_total≈223.75, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-010 [MEM]:
+    * Expected meal_total≈298.8, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-011 [MEM]:
+    * Expected meal_total≈636.5, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-012 [MEM]:
+    * Expected meal_total≈636.0, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-013 [MEM]:
+    * Expected meal_total≈488.5, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-014 [MEM]:
+    * Expected meal_total≈261.8, got 0.0
+    * Expected matched_items>=2, got 0
+- MEM-015 [MEM]:
+    * Expected meal_total≈808.5, got 0.0
+    * Expected matched_items>=2, got 0
+- MUL-001 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈862.0, got 200.25
+- MUL-002 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈752.5, got 222.5
+- MUL-003 [MUL]:
+    * Expected matched_items=2, got 0
+    * Expected total_items=2, got 4
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈253.75, got 0.0
+- MUL-004 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈380.5, got 133.5
+- MUL-005 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈246.5, got 52.0
+- MUL-006 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈175.5, got 78.0
+- MUL-007 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈417.0, got 222.5
+- MUL-008 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈320.0, got 122.0
+- MUL-009 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈754.0, got 91.5
+- MUL-010 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈565.0, got 240.0
+- MUL-011 [MUL]:
+    * Expected matched_items=2, got 0
+    * Expected total_items=2, got 4
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈686.0, got 0.0
+- MUL-012 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈699.3, got 145.5
+- MUL-013 [MUL]:
+    * Expected matched_items=2, got 0
+    * Expected total_items=2, got 4
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈230.0, got 0.0
+- MUL-014 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈522.75, got 400.5
+- MUL-016 [MUL]:
+    * Expected matched_items=2, got 1
+    * Expected total_items=2, got 3
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈287.5, got 222.5
+- MUL-018 [MUL]:
+    * Expected matched_items=2, got 0
+    * Expected total_items=2, got 4
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈681.0, got 0.0
+- MUL-019 [MUL]:
+    * Expected matched_items=3, got 0
+    * Expected total_items=3, got 6
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈1204.3, got 0.0
+- MUL-020 [MUL]:
+    * Expected matched_items=3, got 2
+    * Expected total_items=3, got 4
+    * Expected coverage=1.0, got 0.5
+    * Expected total_calories≈632.8, got 373.8
+- MUL-021 [MUL]:
+    * Expected matched_items=3, got 1
+    * Expected coverage=1.0, got 0.3333
+    * Expected total_calories≈1202.0, got 320.0
+- MUL-022 [MUL]:
+    * Expected matched_items=3, got 2
+    * Expected total_items=3, got 2
+    * Expected total_calories≈607.5, got 530.0
+- MUL-023 [MUL]:
+    * Expected matched_items=3, got 0
+    * Expected total_items=3, got 4
+    * Expected coverage=1.0, got 0.0
+    * Expected total_calories≈587.25, got 0.0
+- MUL-024 [MUL]:
+    * Expected matched_items=3, got 1
+    * Expected total_items=3, got 5
+    * Expected coverage=1.0, got 0.2
+    * Expected total_calories≈1014.3, got 222.5
+- MUL-025 [MUL]:
+    * Expected matched_items=3, got 2
+    * Expected total_items=3, got 2
+    * Expected total_calories≈839.5, got 174.5

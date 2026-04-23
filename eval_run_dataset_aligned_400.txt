@@ -1,0 +1,50 @@
+[0;93m2026-04-23 11:58:45.615502054 [W:onnxruntime:Default, device_discovery.cc:132 GetPciBusId] Skipping pci_bus_id for PCI path at "/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/device:07/VMBUS:01/5620e0c7-8062-4dce-aeb7-520c7ef76171" because filename ""5620e0c7-8062-4dce-aeb7-520c7ef76171"" dit not match expected pattern of [0-9a-f]+:[0-9a-f]+:[0-9a-f]+[.][0-9a-f]+[m
+======================================================================
+Running dataset-aligned 400-case evaluation
+======================================================================
+Dataset written: /workspaces/nutritiona_ssistant/eval/datasets/eval_cases_dataset_aligned_400.json
+======================================================================
+Progress: 25/400 | passed=25 | failed=0
+Progress: 50/400 | passed=50 | failed=0
+Progress: 75/400 | passed=75 | failed=0
+Progress: 100/400 | passed=100 | failed=0
+Progress: 125/400 | passed=125 | failed=0
+Progress: 150/400 | passed=150 | failed=0
+Progress: 175/400 | passed=175 | failed=0
+Progress: 200/400 | passed=200 | failed=0
+Progress: 225/400 | passed=225 | failed=0
+Progress: 250/400 | passed=250 | failed=0
+Progress: 275/400 | passed=275 | failed=0
+Progress: 300/400 | passed=300 | failed=0
+Progress: 325/400 | passed=325 | failed=0
+Progress: 350/400 | passed=350 | failed=0
+Progress: 375/400 | passed=375 | failed=0
+Progress: 400/400 | passed=400 | failed=0
+======================================================================
+Nutrition Assistant Dataset-Aligned 400 Evaluation Report
+======================================================================
+Total cases     : 400
+Passed cases    : 400
+Failed cases    : 0
+Pass rate       : 100.00%
+Average score   : 100.00%
+Report written  : /workspaces/nutritiona_ssistant/eval/outputs/eval_report_dataset_aligned_400.json
+======================================================================
+
+Category breakdown
+======================================================================
+Category                   Total    Passed   Failed     Pass Rate    Avg Score
+------------------------------------------------------------------------------
+CAL_MULTI                    120       120        0       100.00%      100.00%
+CAL_SINGLE                   180       180        0       100.00%      100.00%
+GUARD_EMPTY                    2         2        0       100.00%      100.00%
+GUARD_FOOD_ONLY                2         2        0       100.00%      100.00%
+GUARD_GIBBERISH                2         2        0       100.00%      100.00%
+GUARD_NON_ENGLISH              2         2        0       100.00%      100.00%
+GUARD_NON_NUMERIC_QUANTITY       2         2        0       100.00%      100.00%
+GUARD_QUANTITY_ONLY            2         2        0       100.00%      100.00%
+QA                            85        85        0       100.00%      100.00%
+STATE_CLEAR                    1         1        0       100.00%      100.00%
+STATE_REMOVE                   1         1        0       100.00%      100.00%
+STATE_TOTAL                    1         1        0       100.00%      100.00%
+==============================================================================

@@ -171,9 +171,13 @@ class AnswerNutritionQuestion:
             if not answer:
                 continue
 
+            blob = f"{question} {answer}".lower()
+
             if query_entities:
-                blob = f"{question} {answer}".lower()
                 if not any(token in blob for token in query_entities):
+                    continue
+
+                if not self._is_direct_enough_match(query, question, answer):
                     continue
 
             answers.append(answer)
@@ -208,12 +212,15 @@ class AnswerNutritionQuestion:
             overlap_count = len(overlap)
             entity_overlap_count = len(entity_overlap)
 
+            relevance_bonus = self._direct_match_bonus(query, doc_question, doc_answer)
+
             relevant = self._is_relevant(
                 query_tokens=query_tokens,
                 query_entities=query_entities,
                 overlap_count=overlap_count,
                 entity_overlap_count=entity_overlap_count,
                 distance=distance,
+                relevance_bonus=relevance_bonus,
             )
 
             ranked.append(
@@ -222,6 +229,7 @@ class AnswerNutritionQuestion:
                     "distance": distance,
                     "overlap_count": overlap_count,
                     "entity_overlap_count": entity_overlap_count,
+                    "relevance_bonus": relevance_bonus,
                     "relevant": relevant,
                 }
             )
@@ -229,6 +237,7 @@ class AnswerNutritionQuestion:
         ranked.sort(
             key=lambda item: (
                 not item["relevant"],
+                -item["relevance_bonus"],
                 -item["entity_overlap_count"],
                 -item["overlap_count"],
                 item["distance"] if item["distance"] is not None else 999.0,
@@ -243,9 +252,13 @@ class AnswerNutritionQuestion:
         overlap_count: int,
         entity_overlap_count: int,
         distance: float | None,
+        relevance_bonus: int,
     ) -> bool:
         token_count = len(query_tokens)
         has_entity_requirement = len(query_entities) > 0
+
+        if relevance_bonus >= 2:
+            return True
 
         if has_entity_requirement and entity_overlap_count == 0:
             return False
@@ -288,6 +301,10 @@ class AnswerNutritionQuestion:
             if query_entities and not any(token in blob for token in query_entities):
                 continue
 
+            direct_bonus = self._direct_match_bonus(query, question, answer)
+            if direct_bonus == 0:
+                continue
+
             if distance is not None and distance <= 0.35:
                 kept.append(
                     {
@@ -295,11 +312,17 @@ class AnswerNutritionQuestion:
                         "distance": distance,
                         "overlap_count": 0,
                         "entity_overlap_count": len([t for t in query_entities if t in blob]),
+                        "relevance_bonus": direct_bonus,
                         "relevant": True,
                     }
                 )
 
-        kept.sort(key=lambda item: item["distance"] if item["distance"] is not None else 999.0)
+        kept.sort(
+            key=lambda item: (
+                -item["relevance_bonus"],
+                item["distance"] if item["distance"] is not None else 999.0,
+            )
+        )
         return kept[:2]
 
     def _extract_question(self, doc: str) -> str:
@@ -421,3 +444,51 @@ class AnswerNutritionQuestion:
             retrieved_contexts=[],
             final_message=reason,
         )
+
+    def _direct_match_bonus(self, query: str, question: str, answer: str) -> int:
+        bonus = 0
+        query_entities = self._entity_tokens(query)
+        q_lower = question.lower()
+        a_lower = answer.lower()
+
+        if not query_entities:
+            return bonus
+
+        if any(token in q_lower for token in query_entities):
+            bonus += 2
+
+        if any(token in a_lower for token in query_entities):
+            bonus += 1
+
+        return bonus
+
+    def _is_direct_enough_match(self, query: str, question: str, answer: str) -> bool:
+        query_entities = self._entity_tokens(query)
+        if not query_entities:
+            return True
+
+        q_lower = question.lower()
+        a_lower = answer.lower()
+
+        entity_in_question = any(token in q_lower for token in query_entities)
+        entity_in_answer = any(token in a_lower for token in query_entities)
+
+        if not (entity_in_question or entity_in_answer):
+            return False
+
+        normalized_query = normalize_food_key(query)
+        generic_health_patterns = [
+            "better health",
+            "for better health",
+            "healthy foods",
+            "sources that should be included for better health",
+            "dietary sources that should be included for better health",
+        ]
+
+        if "healthy" in normalized_query:
+            normalized_question = normalize_food_key(question)
+            if any(pattern in normalized_question for pattern in generic_health_patterns):
+                if not entity_in_question:
+                    return False
+
+        return True

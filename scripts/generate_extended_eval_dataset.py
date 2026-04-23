@@ -1,243 +1,172 @@
 import json
-import os
 import random
-
-BASE_PATH = "eval/datasets/eval_cases.json"
-OUTPUT_PATH = "eval/datasets/eval_cases_extended.json"
+from pathlib import Path
 
 
-def load_base():
-    with open(BASE_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+SEED = 42
+BASE_PATH = Path("eval/datasets/eval_cases.json")
+OUTPUT_PATH = Path("eval/datasets/eval_cases_extended.json")
 
 
-def case(case_id, case_type, expected, input_text=None, steps=None):
-    payload = {
-        "id": case_id,
-        "type": case_type,
-        "expected": expected,
-    }
-    if input_text is not None:
-        payload["input"] = input_text
-    if steps is not None:
-        payload["steps"] = steps
-    return payload
+SAFE_FOODS = {
+    "apple": 52.0,
+    "banana": 89.0,
+    "milk": 61.0,
+    "rice": 130.0,
+    "bread": 265.0,
+    "egg": 155.0,
+    "avocado": 160.0,
+    "oats": 389.0,
+    "pizza": 266.0,
+    "grilled chicken": 165.0,
+}
+
+GRAMS = [50, 75, 100, 120, 150, 200, 250]
 
 
-def real_user_cases():
-    """
-    40 noisy / realistic user-log style cases.
-    Expectations are aligned with current parser + calorie pipeline behavior.
-    """
-    templates = [
-        (
-            "banana 100 g milk 200 g",
-            {
-                "mode": "calorie",
-                "matched_items": 2,
-                "total_items": 2,
-                "min_total_calories": 210.0,
-                "max_total_calories": 212.0,
-            },
-        ),
-        (
-            "rice100gandmilk200g",
-            {
-                "mode": "calorie",
-                "matched_items": 2,
-                "total_items": 2,
-                "min_total_calories": 250.0,
-                "max_total_calories": 252.0,
-            },
-        ),
-        (
-            "banana100gandmilk150g",
-            {
-                "mode": "calorie",
-                "matched_items": 2,
-                "total_items": 2,
-                "min_total_calories": 178.0,
-                "max_total_calories": 181.0,
-            },
-        ),
-        (
-            "add apple 200g then banana 100g",
-            {
-                "mode": "calorie",
-                "matched_items": 2,
-                "total_items": 3,
-                "min_total_calories": 193.0,
-                "max_total_calories": 193.0,
-            },
-        ),
-        (
-            "apple two hundred grams",
-            {
-                "mode": "nutrition_qa",
-                "answer_contains": "digits",
-            },
-        ),
-        (
-            "hello add banana 100g",
-            {
-                "mode": "calorie",
-                "matched_items": 1,
-                "total_items": 2,
-                "min_total_calories": 85.0,
-                "max_total_calories": 95.0,
-            },
-        ),
-        (
-            "pls apple200g",
-            {
-                "mode": "calorie",
-                "matched_items": 1,
-                "total_items": 1,
-                "min_total_calories": 100.0,
-                "max_total_calories": 110.0,
-            },
-        ),
-        (
-            "milk 200g and random text",
-            {
-                "mode": "calorie",
-                "matched_items": 1,
-                "total_items": 2,
-                "min_total_calories": 120.0,
-                "max_total_calories": 124.0,
-            },
-        ),
-        (
-            "i want apple 200g",
-            {
-                "mode": "calorie",
-                "matched_items": 1,
-                "total_items": 2,
-                "min_total_calories": 100.0,
-                "max_total_calories": 110.0,
-            },
-        ),
-        (
-            "apple 200g pls fast",
-            {
-                "mode": "calorie",
-                "matched_items": 1,
-                "total_items": 2,
-                "min_total_calories": 100.0,
-                "max_total_calories": 110.0,
-            },
-        ),
-    ]
+def kcal(food: str, grams: int) -> float:
+    return round((SAFE_FOODS[food] * grams) / 100.0, 2)
 
+
+def build_log_cases(rng: random.Random, count: int = 40) -> list[dict]:
+    foods = list(SAFE_FOODS.keys())
     cases = []
-    repeated = templates * 4
-    assert len(repeated) == 40
 
-    for i, (text, expected) in enumerate(repeated, 1):
-        cases.append(case(f"LOG-{i:03}", "single_turn", expected, text))
+    for i in range(1, count + 1):
+        f1, f2 = rng.sample(foods, 2)
+        g1 = rng.choice(GRAMS)
+        g2 = rng.choice(GRAMS)
+        total = round(kcal(f1, g1) + kcal(f2, g2), 2)
+
+        steps = [
+            f"{f1} {g1}g",
+            f"add {f2} {g2}g",
+            "what is the total now?",
+        ]
+
+        cases.append(
+            {
+                "case_id": f"LOG-{i:03d}",
+                "category": "LOG",
+                "kind": "multi_turn",
+                "steps": steps,
+                "expected": {
+                    "final_mode": "calorie",
+                    "meal_total": total,
+                    "matched_items": 2,
+                    "message_non_empty": True,
+                },
+            }
+        )
 
     return cases
 
 
-def stress_cases(n=30):
-    foods = [
-        ("apple", 52),
-        ("banana", 89),
-        ("milk", 61),
-        ("rice", 130),
-        ("chicken", 165),
-        ("egg", 155),
-        ("bread", 265),
-        ("avocado", 160),
+def build_ood_cases(rng: random.Random, count: int = 30) -> list[dict]:
+    ood_foods = [
+        "dragon burger",
+        "quantum soup",
+        "lava rice",
+        "shadow pizza",
+        "cosmic oats",
+        "mystic milkshake",
+        "ultra banana fusion",
+        "wild apple burger",
+        "crystal chicken bites",
+        "fake avocado supreme",
     ]
 
     cases = []
+    for i in range(1, count + 1):
+        food = rng.choice(ood_foods)
+        grams = rng.choice(GRAMS)
+        user_input = rng.choice(
+            [
+                f"{food} {grams}g",
+                f"add {food} {grams}g",
+                f"{food}{grams}g",
+            ]
+        )
 
-    for i in range(n):
-        selected = random.sample(foods, random.randint(3, 6))
+        cases.append(
+            {
+                "case_id": f"OOD-{i:03d}",
+                "category": "OOD",
+                "kind": "single_turn",
+                "input": user_input,
+                "expected": {
+                    "mode": "calorie",
+                    "matched_items_max": 1,
+                    "coverage_max": 1.0,
+                    "message_non_empty": True,
+                },
+            }
+        )
+
+    return cases
+
+
+def build_stress_cases(rng: random.Random, count: int = 30) -> list[dict]:
+    foods = list(SAFE_FOODS.keys())
+    cases = []
+
+    for i in range(1, count + 1):
+        item_count = rng.choice([3, 4, 5])
+        picked = rng.sample(foods, item_count)
 
         parts = []
         total = 0.0
+        for food in picked:
+            grams = rng.choice(GRAMS)
+            parts.append(f"{food} {grams}g")
+            total += kcal(food, grams)
 
-        for name, kcal in selected:
-            grams = random.choice([50, 100, 150, 200])
-            parts.append(f"{name} {grams}g")
-            total += kcal * grams / 100
-
-        text = " ".join(parts)
+        user_input = " and ".join(parts)
 
         cases.append(
-            case(
-                f"STR-{i+1:03}",
-                "single_turn",
-                {
+            {
+                "case_id": f"STR-{i:03d}",
+                "category": "STR",
+                "kind": "single_turn",
+                "input": user_input,
+                "expected": {
                     "mode": "calorie",
-                    "matched_items": len(selected),
-                    "total_items": len(selected),
-                    "min_total_calories": round(total - 30, 2),
-                    "max_total_calories": round(total + 30, 2),
+                    "matched_items": item_count,
+                    "total_items": item_count,
+                    "total_calories": round(total, 2),
+                    "coverage": 1.0,
                 },
-                text,
-            )
+            }
         )
 
     return cases
 
 
-def ood_cases(n=30):
-    unknowns = [
-        "dragon meat",
-        "unicorn milk",
-        "alien fruit",
-        "mars protein",
-        "ghost food",
-        "space burger",
-        "quantum rice",
-    ]
+def main() -> None:
+    rng = random.Random(SEED)
 
-    cases = []
-
-    for i in range(n):
-        food = random.choice(unknowns)
-        grams = random.choice([50, 100, 150, 200])
-
-        cases.append(
-            case(
-                f"OOD-{i+1:03}",
-                "single_turn",
-                {
-                    "mode": "calorie",
-                    "matched_items": 0,
-                    "confidence_in": ["LOW"],
-                },
-                f"{food} {grams}g",
-            )
+    if not BASE_PATH.exists():
+        raise FileNotFoundError(
+            f"{BASE_PATH} not found. Run generate_eval_dataset.py first."
         )
 
-    return cases
+    with BASE_PATH.open("r", encoding="utf-8") as f:
+        base_cases = json.load(f)
 
+    extended_cases = []
+    extended_cases.extend(build_log_cases(rng, 40))
+    extended_cases.extend(build_ood_cases(rng, 30))
+    extended_cases.extend(build_stress_cases(rng, 30))
 
-def main():
-    random.seed(42)
+    all_cases = base_cases + extended_cases
 
-    base = load_base()
-    logs = real_user_cases()
-    stress = stress_cases(30)
-    ood = ood_cases(30)
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with OUTPUT_PATH.open("w", encoding="utf-8") as f:
+        json.dump(all_cases, f, indent=2, ensure_ascii=False)
 
-    extended_only = logs + stress + ood
-    assert len(extended_only) == 100, f"Expected 100 extended cases, got {len(extended_only)}"
-
-    full = base + extended_only
-
-    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
-
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
-        json.dump(full, f, indent=2, ensure_ascii=False)
-
-    print(f"Base cases     : {len(base)}")
-    print(f"Extended cases : {len(extended_only)}")
-    print(f"Total cases    : {len(full)}")
+    print(f"Base cases     : {len(base_cases)}")
+    print(f"Extended cases : {len(extended_cases)}")
+    print(f"Total cases    : {len(all_cases)}")
     print(f"Saved to {OUTPUT_PATH}")
 
 

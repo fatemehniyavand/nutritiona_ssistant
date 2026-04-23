@@ -1,54 +1,45 @@
 import re
 from difflib import SequenceMatcher
+from pathlib import Path
 from typing import Dict, List, Optional, Tuple
+
+import pandas as pd
 
 
 class FoodResolverService:
     """
-    Resolves noisy food names to a canonical food in the local calorie database.
-
-    Design goals:
-    - exact and alias matches should be deterministic
-    - spacing and hyphen differences should not matter
-    - typo tolerance should exist, but not be reckless
-    - suggestions should be meaningful and stable
-    - out-of-distribution foods should be rejected more safely
+    Conservative food resolver:
+    1) exact canonical
+    2) exact alias
+    3) compact exact
+    4) cleaned exact / compact
+    5) limited fuzzy matching with strong lexical gates
     """
 
+    QUERY_NOISE_WORDS = {
+        "fresh", "raw", "ripe", "plain", "regular", "normal", "just",
+        "some", "my", "the", "a", "an", "of", "food", "meal", "item", "items",
+    }
+
+    SAFE_DESCRIPTOR_WORDS = {
+        "whole", "skimmed", "lowfat", "low-fat", "full-fat",
+        "boiled", "fried", "grilled", "roasted", "baked", "steamed",
+        "white", "brown", "black", "green", "red",
+        "breast", "thigh", "fillet", "slice", "slices",
+    }
+
     def __init__(self):
-        self.food_db: Dict[str, float] = {
-            "apple": 52,
-            "banana": 89,
-            "milk": 61,
-            "brown rice": 111,
-            "rice": 130,
-            "chicken": 165,
-            "grilled chicken": 165,
-            "egg": 155,
-            "eggs": 155,
-            "avocado": 160,
-            "oats": 389,
-            "bread": 265,
-        }
+        self.food_db: Dict[str, float] = {}
+        self.food_key_to_food_item: Dict[str, str] = {}
+        self.aliases: Dict[str, str] = {}
 
-        self.aliases: Dict[str, str] = {
-            "apples": "apple",
-            "bananas": "banana",
-            "whole milk": "milk",
-            "white rice": "rice",
-            "brownrice": "brown rice",
-            "grilledchicken": "grilled chicken",
-            "chicken breast": "chicken",
-            "chicken breasts": "chicken",
-            "boiled egg": "egg",
-            "boiled eggs": "eggs",
-            "egg white": "egg",
-            "egg whites": "eggs",
-            "toast": "bread",
-            "porridge oats": "oats",
-        }
-
+        self._load_real_database()
         self._candidate_pool: Dict[str, str] = self._build_candidate_pool()
+
+        self._canonical_compact_index: Dict[str, str] = {}
+        self._alias_compact_index: Dict[str, str] = {}
+        self._token_set_index: Dict[str, set[str]] = {}
+        self._build_indexes()
 
     def resolve(self, food_name: str) -> dict:
         raw_food = (food_name or "").strip()
@@ -58,77 +49,110 @@ class FoodResolverService:
         if not normalized_food:
             return self._not_found_response()
 
-        # 1) Exact canonical match
+        # 1) Exact canonical
         if normalized_food in self.food_db:
             return self._build_match_response(
                 matched_food=normalized_food,
                 kcal_per_100g=self.food_db[normalized_food],
                 match_reason="Exact match found in local calorie database.",
-                match_source="local_demo_db",
+                match_source="local_calorie_db",
                 confidence="HIGH",
             )
 
-        # 2) Exact alias match
+        # 2) Exact alias
         if normalized_food in self.aliases:
             canonical = self.aliases[normalized_food]
             return self._build_match_response(
                 matched_food=canonical,
                 kcal_per_100g=self.food_db[canonical],
                 match_reason="Alias match found in local calorie database.",
-                match_source="local_demo_db",
+                match_source="local_calorie_db",
                 confidence="HIGH",
             )
 
-        # 3) Compact canonical match
-        for candidate in self.food_db.keys():
-            if compact_food == self._compact_food_key(candidate):
-                return self._build_match_response(
-                    matched_food=candidate,
-                    kcal_per_100g=self.food_db[candidate],
-                    match_reason="Normalized text match found in local calorie database.",
-                    match_source="local_demo_db",
-                    confidence="HIGH",
-                )
+        # 3) Compact exact
+        canonical_from_compact = self._canonical_compact_index.get(compact_food)
+        if canonical_from_compact:
+            return self._build_match_response(
+                matched_food=canonical_from_compact,
+                kcal_per_100g=self.food_db[canonical_from_compact],
+                match_reason="Normalized text match found in local calorie database.",
+                match_source="local_calorie_db",
+                confidence="HIGH",
+            )
 
-        # 4) Compact alias match
-        for alias, canonical in self.aliases.items():
-            if compact_food == self._compact_food_key(alias):
-                return self._build_match_response(
-                    matched_food=canonical,
-                    kcal_per_100g=self.food_db[canonical],
-                    match_reason="Normalized alias match found in local calorie database.",
-                    match_source="local_demo_db",
-                    confidence="HIGH",
-                )
+        canonical_from_alias_compact = self._alias_compact_index.get(compact_food)
+        if canonical_from_alias_compact:
+            return self._build_match_response(
+                matched_food=canonical_from_alias_compact,
+                kcal_per_100g=self.food_db[canonical_from_alias_compact],
+                match_reason="Normalized alias match found in local calorie database.",
+                match_source="local_calorie_db",
+                confidence="HIGH",
+            )
 
-        # 5) Safer fuzzy matching
-        fuzzy_match = self._find_best_fuzzy_match(normalized_food, compact_food)
+        # 4) Clean query and retry exact/compact only
+        cleaned_query = self._strip_query_noise(normalized_food)
+        cleaned_compact = self._compact_food_key(cleaned_query)
+
+        if cleaned_query and cleaned_query in self.food_db:
+            return self._build_match_response(
+                matched_food=cleaned_query,
+                kcal_per_100g=self.food_db[cleaned_query],
+                match_reason="Cleaned exact match found in local calorie database.",
+                match_source="local_calorie_db",
+                confidence="HIGH",
+            )
+
+        if cleaned_query and cleaned_query in self.aliases:
+            canonical = self.aliases[cleaned_query]
+            return self._build_match_response(
+                matched_food=canonical,
+                kcal_per_100g=self.food_db[canonical],
+                match_reason="Cleaned alias match found in local calorie database.",
+                match_source="local_calorie_db",
+                confidence="HIGH",
+            )
+
+        canonical_from_clean_compact = self._canonical_compact_index.get(cleaned_compact)
+        if canonical_from_clean_compact:
+            return self._build_match_response(
+                matched_food=canonical_from_clean_compact,
+                kcal_per_100g=self.food_db[canonical_from_clean_compact],
+                match_reason="Cleaned normalized match found in local calorie database.",
+                match_source="local_calorie_db",
+                confidence="HIGH",
+            )
+
+        canonical_from_clean_alias_compact = self._alias_compact_index.get(cleaned_compact)
+        if canonical_from_clean_alias_compact:
+            return self._build_match_response(
+                matched_food=canonical_from_clean_alias_compact,
+                kcal_per_100g=self.food_db[canonical_from_clean_alias_compact],
+                match_reason="Cleaned normalized alias match found in local calorie database.",
+                match_source="local_calorie_db",
+                confidence="HIGH",
+            )
+
+        # 5) Limited fuzzy match
+        fuzzy_match = self._find_best_fuzzy_match(
+            normalized_food=cleaned_query or normalized_food,
+            compact_food=cleaned_compact or compact_food,
+        )
         if fuzzy_match is not None:
             canonical, score, candidate_text = fuzzy_match
 
-            if score >= 0.93:
-                return self._build_match_response(
-                    matched_food=canonical,
-                    kcal_per_100g=self.food_db[canonical],
-                    match_reason=(
-                        f"Very high-similarity match found for '{candidate_text}' "
-                        f"(score={score:.2f})."
-                    ),
-                    match_source="local_demo_db",
-                    confidence="HIGH",
-                )
-
-            if score >= 0.88:
-                return self._build_match_response(
-                    matched_food=canonical,
-                    kcal_per_100g=self.food_db[canonical],
-                    match_reason=(
-                        f"High-similarity match found for '{candidate_text}' "
-                        f"(score={score:.2f})."
-                    ),
-                    match_source="local_demo_db",
-                    confidence="MEDIUM",
-                )
+            confidence = "HIGH" if score >= 0.96 else "MEDIUM"
+            return self._build_match_response(
+                matched_food=canonical,
+                kcal_per_100g=self.food_db[canonical],
+                match_reason=(
+                    f"High-similarity match found for '{candidate_text}' "
+                    f"(score={score:.2f})."
+                ),
+                match_source="local_calorie_db",
+                confidence=confidence,
+            )
 
         return self._not_found_response(suggestions=self.suggest(food_name))
 
@@ -139,6 +163,9 @@ class FoodResolverService:
         if not normalized_food:
             return []
 
+        cleaned_query = self._strip_query_noise(normalized_food)
+        cleaned_compact = self._compact_food_key(cleaned_query)
+
         scored: List[Tuple[str, float]] = []
         seen_canonical = set()
 
@@ -147,9 +174,9 @@ class FoodResolverService:
                 continue
 
             score = self._combined_similarity(
-                normalized_food,
-                compact_food,
-                candidate_text,
+                normalized_food=cleaned_query or normalized_food,
+                compact_food=cleaned_compact or compact_food,
+                candidate_text=candidate_text,
             )
             scored.append((canonical, score))
             seen_canonical.add(canonical)
@@ -166,6 +193,127 @@ class FoodResolverService:
 
         return suggestions
 
+    def _load_real_database(self) -> None:
+        csv_path = self._find_calorie_csv()
+
+        if csv_path is None:
+            self._load_fallback_demo_database()
+            return
+
+        df = pd.read_csv(csv_path)
+
+        required = {"food_item", "food_key", "calories_per_100g"}
+        missing = required - set(df.columns)
+        if missing:
+            self._load_fallback_demo_database()
+            return
+
+        for _, row in df.iterrows():
+            food_item = self._normalize_food_key(row["food_item"])
+            food_key = self._normalize_food_key(str(row["food_key"]).replace("_", " "))
+            kcal = float(row["calories_per_100g"])
+
+            if not food_item:
+                continue
+
+            self.food_db[food_item] = kcal
+
+            if food_key and food_key != food_item:
+                self.food_key_to_food_item[food_key] = food_item
+                self.aliases[food_key] = food_item
+
+            compact_item = self._compact_food_key(food_item)
+            if compact_item and compact_item != food_item:
+                self.aliases[compact_item] = food_item
+
+            self._register_simple_aliases(food_item)
+
+        for alias_key, canonical in self.food_key_to_food_item.items():
+            self.aliases[alias_key] = canonical
+
+    def _find_calorie_csv(self) -> Optional[Path]:
+        here = Path(__file__).resolve()
+
+        candidates = [
+            Path.cwd() / "data" / "processed" / "calories_cleaned.csv",
+            here.parents[1] / "data" / "processed" / "calories_cleaned.csv",
+            here.parents[2] / "data" / "processed" / "calories_cleaned.csv",
+            here.parents[3] / "data" / "processed" / "calories_cleaned.csv",
+            here.parents[4] / "data" / "processed" / "calories_cleaned.csv",
+        ]
+
+        for path in candidates:
+            if path.exists():
+                return path
+
+        return None
+
+    def _load_fallback_demo_database(self) -> None:
+        self.food_db = {
+            "apple": 52,
+            "banana": 89,
+            "milk": 61,
+            "brown rice": 111,
+            "rice": 130,
+            "chicken": 165,
+            "grilled chicken": 165,
+            "egg": 155,
+            "eggs": 155,
+            "avocado": 160,
+            "oats": 389,
+            "bread": 265,
+        }
+
+        self.aliases = {
+            "apples": "apple",
+            "bananas": "banana",
+            "whole milk": "milk",
+            "white rice": "rice",
+            "brownrice": "brown rice",
+            "grilledchicken": "grilled chicken",
+            "chicken breast": "chicken",
+            "chicken breasts": "chicken",
+            "boiled egg": "egg",
+            "boiled eggs": "eggs",
+            "egg white": "egg",
+            "egg whites": "eggs",
+            "toast": "bread",
+            "porridge oats": "oats",
+        }
+
+    def _register_simple_aliases(self, food_item: str) -> None:
+        tokens = food_item.split()
+        if not tokens:
+            return
+
+        compact = self._compact_food_key(food_item)
+        if compact and compact != food_item:
+            self.aliases.setdefault(compact, food_item)
+
+        if len(tokens) == 1:
+            token = tokens[0]
+            if token.endswith("s") and len(token) > 3:
+                self.aliases.setdefault(token[:-1], food_item)
+            else:
+                self.aliases.setdefault(token + "s", food_item)
+
+        if len(tokens) >= 2:
+            last = tokens[-1]
+            if last.endswith("s") and len(last) > 3:
+                variant = tokens[:-1] + [last[:-1]]
+                self.aliases.setdefault(" ".join(variant), food_item)
+            else:
+                variant = tokens[:-1] + [last + "s"]
+                self.aliases.setdefault(" ".join(variant), food_item)
+
+            # conservative descriptor-drop alias
+            filtered = [t for t in tokens if t not in self.SAFE_DESCRIPTOR_WORDS]
+            if filtered and filtered != tokens and len(filtered) >= 1:
+                alias_text = " ".join(filtered)
+                # only keep if alias is still not too short/ambiguous
+                if len(alias_text) >= 4:
+                    self.aliases.setdefault(alias_text, food_item)
+
     def _build_candidate_pool(self) -> Dict[str, str]:
         pool: Dict[str, str] = {}
 
@@ -177,23 +325,46 @@ class FoodResolverService:
 
         return pool
 
+    def _build_indexes(self) -> None:
+        for canonical in self.food_db.keys():
+            compact = self._compact_food_key(canonical)
+            if compact:
+                self._canonical_compact_index.setdefault(compact, canonical)
+
+        for alias, canonical in self.aliases.items():
+            compact = self._compact_food_key(alias)
+            if compact:
+                self._alias_compact_index.setdefault(compact, canonical)
+
+        all_texts = set(self.food_db.keys()) | set(self.aliases.keys())
+        for text in all_texts:
+            self._token_set_index[text] = set(self._meaningful_tokens(text))
+
     def _find_best_fuzzy_match(
         self,
         normalized_food: str,
         compact_food: str,
     ) -> Optional[Tuple[str, float, str]]:
+        query_tokens = self._meaningful_tokens(normalized_food)
+        if not query_tokens:
+            return None
+
         best_candidate_text = None
         best_canonical = None
         best_score = 0.0
 
         for candidate_text, canonical in self._candidate_pool.items():
+            candidate_tokens = self._token_set_index.get(candidate_text, set())
+            if not candidate_tokens:
+                continue
+
             score = self._combined_similarity(
                 normalized_food=normalized_food,
                 compact_food=compact_food,
                 candidate_text=candidate_text,
             )
 
-            if not self._passes_lexical_sanity(normalized_food, candidate_text, score):
+            if not self._passes_lexical_sanity(query_tokens, candidate_tokens, score):
                 continue
 
             if score > best_score:
@@ -205,6 +376,8 @@ class FoodResolverService:
             return None
 
         if not self._passes_final_acceptance_gate(
+            query_tokens=query_tokens,
+            candidate_tokens=self._token_set_index.get(best_candidate_text, set()),
             query=normalized_food,
             candidate=best_candidate_text,
             score=best_score,
@@ -213,83 +386,84 @@ class FoodResolverService:
 
         return best_canonical, best_score, best_candidate_text
 
-    def _passes_lexical_sanity(self, query: str, candidate: str, score: float) -> bool:
-        query_tokens = self._meaningful_tokens(query)
-        candidate_tokens = self._meaningful_tokens(candidate)
-
+    def _passes_lexical_sanity(
+        self,
+        query_tokens: List[str],
+        candidate_tokens: set[str],
+        score: float,
+    ) -> bool:
         if not query_tokens or not candidate_tokens:
             return False
 
-        if score >= 0.93:
-            return True
+        overlap = set(query_tokens) & candidate_tokens
 
-        overlap = set(query_tokens) & set(candidate_tokens)
-        if overlap:
-            return True
-
-        # Single-token typo tolerance
-        if len(query_tokens) == 1 and len(candidate_tokens) == 1:
+        if len(query_tokens) == 1:
             q = query_tokens[0]
-            c = candidate_tokens[0]
 
-            if len(q) >= 3 and len(c) >= 3 and q[:3] == c[:3]:
+            if q in candidate_tokens:
                 return True
 
-            if self._similarity(q, c) >= 0.86:
-                return True
+            if len(candidate_tokens) == 1:
+                c = list(candidate_tokens)[0]
+                if len(q) >= 3 and len(c) >= 3 and q[:3] == c[:3]:
+                    return score >= 0.88
+                return score >= 0.93
+
+            return False
+
+        # multi-token queries must have real overlap
+        if len(overlap) >= 2:
+            return score >= 0.82
+
+        if len(overlap) == 1:
+            return score >= 0.95
 
         return False
 
-    def _passes_final_acceptance_gate(self, query: str, candidate: str, score: float) -> bool:
-        query_tokens = self._meaningful_tokens(query)
-        candidate_tokens = self._meaningful_tokens(candidate)
-
+    def _passes_final_acceptance_gate(
+        self,
+        query_tokens: List[str],
+        candidate_tokens: set[str],
+        query: str,
+        candidate: str,
+        score: float,
+    ) -> bool:
         if not query_tokens or not candidate_tokens:
             return False
 
-        overlap = set(query_tokens) & set(candidate_tokens)
-        strong_overlap = {token for token in overlap if len(token) >= 4}
-        primary_query_token = self._primary_token(query_tokens)
+        overlap = set(query_tokens) & candidate_tokens
 
-        # Critical OOD protection for multi-token queries:
-        # the primary/distinctive token from the query must exist in the candidate.
-        if len(query_tokens) >= 2:
-            if primary_query_token is None:
-                return False
-
-            if primary_query_token not in candidate_tokens:
-                return False
-
-            if len(overlap) == 0:
-                return False
-
-            if len(strong_overlap) == 0 and score < 0.95:
-                return False
-
-        # Single-token typo tolerance remains allowed
-        if len(query_tokens) == 1 and len(candidate_tokens) == 1:
+        if len(query_tokens) == 1:
             q = query_tokens[0]
-            c = candidate_tokens[0]
 
-            if len(q) >= 3 and len(c) >= 3 and q[:3] == c[:3]:
+            if q in candidate_tokens:
                 return True
 
-            if self._similarity(q, c) >= 0.88:
-                return True
+            if len(candidate_tokens) == 1:
+                c = list(candidate_tokens)[0]
+                if len(q) >= 3 and len(c) >= 3 and q[:3] == c[:3]:
+                    return score >= 0.90
+                return score >= 0.95
 
-        if overlap:
-            return True
+            return False
 
-        return score >= 0.95
+        primary_query_token = max(query_tokens, key=len)
+
+        if primary_query_token not in candidate_tokens and score < 0.97:
+            return False
+
+        if len(overlap) >= 2:
+            return score >= 0.84
+
+        # one-token overlap for multi-word queries is too risky unless nearly exact
+        if len(overlap) == 1:
+            return score >= 0.97
+
+        return False
 
     def _meaningful_tokens(self, text: str) -> List[str]:
         tokens = self._normalize_food_key(text).split()
-        return [t for t in tokens if len(t) >= 2]
-
-    def _primary_token(self, tokens: List[str]) -> Optional[str]:
-        if not tokens:
-            return None
-        return max(tokens, key=len)
+        return [t for t in tokens if len(t) >= 2 and t not in self.QUERY_NOISE_WORDS]
 
     def _combined_similarity(
         self,
@@ -344,19 +518,25 @@ class FoodResolverService:
             "matched_food": None,
             "kcal_per_100g": None,
             "match_reason": "Food not found in local calorie database.",
-            "match_source": "local_demo_db",
+            "match_source": "local_calorie_db",
             "confidence": "LOW",
             "suggestions": suggestions or [],
         }
 
     def _normalize_food_key(self, text: str) -> str:
         text = (text or "").strip().lower()
+        text = text.replace("_", " ")
         text = re.sub(r"[^a-z\s\-]", "", text)
         text = re.sub(r"\s+", " ", text).strip()
         return text
 
     def _compact_food_key(self, text: str) -> str:
         return self._normalize_food_key(text).replace(" ", "").replace("-", "")
+
+    def _strip_query_noise(self, text: str) -> str:
+        tokens = self._normalize_food_key(text).split()
+        filtered = [t for t in tokens if t not in self.QUERY_NOISE_WORDS]
+        return " ".join(filtered).strip()
 
     def _similarity(self, a: str, b: str) -> float:
         return SequenceMatcher(None, a, b).ratio()

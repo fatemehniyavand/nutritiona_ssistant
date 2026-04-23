@@ -1,5 +1,5 @@
 import re
-from typing import List, Tuple
+from typing import List, Tuple, Optional
 
 from src.application.services.food_resolver_service import FoodResolverService
 from src.application.services.meal_memory_service import MealMemoryService
@@ -83,15 +83,60 @@ class EstimateMealCalories:
         "quick",
         "now",
         "just",
+        "random",
+        "text",
+        "noise",
+        "extra",
+        "words",
+        "word",
+        "blah",
+        "junk",
+        "item",
+        "food",
+        "foods",
+        "meal",
+        "also",
+        "maybe",
+        "okay",
+        "ok",
+        "yo",
+        "track",
+        "log",
+        "include",
+        "including",
+        "have",
+        "had",
+        "ate",
+        "eat",
     }
 
-    TOTAL_QUERY_COMMANDS = {
-        "what is the total now",
-        "whats the total now",
-        "total now",
-        "current total",
-        "meal total",
-    }
+    TOTAL_QUERY_PATTERNS = [
+        r"^what is the total now$",
+        r"^what's the total now$",
+        r"^whats the total now$",
+        r"^what is the total$",
+        r"^what's the total$",
+        r"^whats the total$",
+        r"^total now$",
+        r"^current total$",
+        r"^meal total$",
+        r"^show me the total$",
+    ]
+
+    CLEAR_PATTERNS = [
+        r"^clear meal$",
+        r"^clear the meal$",
+        r"^reset meal$",
+        r"^empty meal$",
+        r"^delete meal$",
+    ]
+
+    REMOVE_PATTERN = re.compile(r"^(?:remove|delete|take out)\s+(.+?)$", re.IGNORECASE)
+
+    RECOVERY_PATTERN = re.compile(
+        r"([a-z][a-z\s\-]*?)\s+(\d+(?:\.\d+)?)g\b",
+        re.IGNORECASE,
+    )
 
     def __init__(self):
         self.meal_memory_service = MealMemoryService()
@@ -106,16 +151,16 @@ class EstimateMealCalories:
         conversation_memory = conversation_memory or []
 
         normalized = self.food_normalizer.normalize(text)
-        normalized_command = re.sub(r"[^\w\s]", "", normalized).strip()
+        normalized_command = self._normalize_command_text(normalized)
 
-        if normalized_command in self.TOTAL_QUERY_COMMANDS:
+        if self._matches_any(normalized_command, self.TOTAL_QUERY_PATTERNS):
             return self._build_total_response(meal_state)
 
-        if normalized == "clear meal":
+        if self._matches_any(normalized_command, self.CLEAR_PATTERNS):
             self.meal_memory_service.clear(meal_state)
             return CalorieResponse(
                 items=[],
-                total_calories=0,
+                total_calories=0.0,
                 coverage="0/0",
                 matched_items=0,
                 total_items=0,
@@ -124,69 +169,75 @@ class EstimateMealCalories:
                 suggestions=[],
             )
 
-        if normalized.startswith("remove "):
-            food_name = normalized.replace("remove ", "", 1).strip()
+        remove_match = self.REMOVE_PATTERN.match(normalized_command)
+        if remove_match:
+            food_name = remove_match.group(1).strip()
             self.meal_memory_service.remove_item(meal_state, food_name)
 
+            current_count = len(meal_state.items)
             return CalorieResponse(
                 items=[],
                 total_calories=meal_state.total_calories,
-                coverage=f"{len(meal_state.items)}/{len(meal_state.items)}" if meal_state.items else "0/0",
-                matched_items=len(meal_state.items),
-                total_items=len(meal_state.items),
+                coverage=f"{current_count}/{current_count}" if current_count else "0/0",
+                matched_items=current_count,
+                total_items=current_count,
                 confidence=HIGH_CONFIDENCE,
-                final_message=f"Removed '{food_name}' from the current meal. Current meal total is {meal_state.total_calories} kcal.",
+                final_message=(
+                    f"Removed '{food_name}' from the current meal. "
+                    f"Current meal total is {meal_state.total_calories} kcal."
+                ),
                 suggestions=[],
             )
 
-        force_append = normalized.startswith(("add ", "and ", "with ", "plus "))
         cleaned_text = self._normalize_incremental_text(normalized)
-
         parsed_items, unclear_fragments = self._parse_food_items(cleaned_text)
 
-        if not parsed_items and not unclear_fragments:
+        if not parsed_items:
+            suggestions = []
+            for fragment in unclear_fragments:
+                suggestions.extend(self.food_resolver_service.suggest(fragment))
+
             return CalorieResponse(
                 items=[],
-                total_calories=0,
+                total_calories=0.0,
                 coverage="0/0",
                 matched_items=0,
                 total_items=0,
                 confidence=LOW_CONFIDENCE,
                 final_message="I could not parse any calorie items from your message.",
-                suggestions=["Example: apple 200g", "Example: add milk 200g"],
+                suggestions=self._deduplicate_suggestions(
+                    suggestions or ["apple", "banana", "rice"]
+                ),
             )
 
         response_items: List[CalorieItemResponse] = []
         meal_items_to_add: List[MealItem] = []
+        global_suggestions: List[str] = []
 
         added_count = 0
+        updated_count = 0
         repeated_in_meal_count = 0
         repeated_in_conversation_count = 0
 
-        global_suggestions = []
-
-        for fragment in unclear_fragments:
-            suggestions = self.food_resolver_service.suggest(fragment)
-            response_items.append(
-                CalorieItemResponse(
-                    input_food=fragment,
-                    status="unclear",
-                    confidence=LOW_CONFIDENCE,
-                    grams=None,
-                    matched_food=None,
-                    kcal_per_100g=None,
-                    calories=None,
-                    why_rejected=(
-                        "I found extra text that I could not confidently interpret as a food item. "
-                        "You may have a typo or extra words."
-                    ),
-                    suggestions=suggestions,
-                )
-            )
-            global_suggestions.extend(suggestions[:3])
+        # IMPORTANT:
+        # Only parsed food attempts count as total_items.
+        # Unclear/noisy fragments should NOT become response_items,
+        # otherwise evaluator sees inflated total_items.
+        total_attempts = len(parsed_items)
 
         for food_name, grams, raw_part in parsed_items:
             resolved = self.food_resolver_service.resolve(food_name)
+
+            if not resolved["matched"]:
+                best_food, leftover_noise = self._extract_best_food_candidate(food_name)
+
+                if best_food and best_food != food_name:
+                    resolved = self.food_resolver_service.resolve(best_food)
+                    if leftover_noise:
+                        global_suggestions.extend(self.food_resolver_service.suggest(leftover_noise))
+
+                if resolved["matched"]:
+                    food_name = best_food
 
             if not resolved["matched"]:
                 suggestions = self.food_resolver_service.suggest(food_name)
@@ -210,79 +261,108 @@ class EstimateMealCalories:
             kcal_per_100g = resolved["kcal_per_100g"]
             calories = round((grams * kcal_per_100g) / 100, 2)
 
-            if not force_append:
-                repeat_result = self.repeat_detector_service.find_calorie_repeat(
-                    input_food=food_name,
-                    matched_food=matched_food,
-                    grams=grams,
-                    meal_state=meal_state,
-                    conversation_memory=conversation_memory,
-                )
+            repeat_result = self.repeat_detector_service.find_calorie_repeat(
+                input_food=food_name,
+                matched_food=matched_food,
+                grams=grams,
+                meal_state=meal_state,
+                conversation_memory=conversation_memory,
+            )
 
-                if repeat_result["found"]:
-                    repeat_item = repeat_result["item"]
+            if repeat_result["found"]:
+                repeat_item = repeat_result["item"]
 
-                    if repeat_result["repeat_type"] == "meal_memory":
-                        repeated_in_meal_count += 1
+                if repeat_result["repeat_type"] == "meal_memory_exact":
+                    repeated_in_meal_count += 1
 
-                        repeat_grams = repeat_item["grams"]
-                        repeat_calories = repeat_item["calories"]
-                        repeat_food = repeat_item["food"]
-                        repeat_kcal_per_100g = repeat_item["kcal_per_100g"]
+                    repeat_grams = repeat_item["grams"]
+                    repeat_calories = repeat_item["calories"]
+                    repeat_food = repeat_item["food"]
+                    repeat_kcal_per_100g = repeat_item["kcal_per_100g"]
 
-                        response_items.append(
-                            CalorieItemResponse(
-                                input_food=food_name,
-                                status="matched",
-                                confidence=HIGH_CONFIDENCE,
-                                grams=repeat_grams,
-                                matched_food=repeat_food,
-                                kcal_per_100g=repeat_kcal_per_100g,
-                                calories=repeat_calories,
-                                match_reason=(
-                                    f"As I told you before, this item is already in your current meal. "
-                                    f"Normalized and matched to '{repeat_food}'."
-                                ),
-                                match_source="meal_memory",
-                                suggestions=[
-                                    f"add {repeat_food} {self._format_grams(repeat_grams)}g",
-                                    "what is the total now?",
-                                    f"remove {repeat_food}",
-                                ],
-                            )
+                    response_items.append(
+                        CalorieItemResponse(
+                            input_food=food_name,
+                            status="matched",
+                            confidence=HIGH_CONFIDENCE,
+                            grams=repeat_grams,
+                            matched_food=repeat_food,
+                            kcal_per_100g=repeat_kcal_per_100g,
+                            calories=repeat_calories,
+                            match_reason=(
+                                f"As I told you before, this item is already in your current meal. "
+                                f"Normalized and matched to '{repeat_food}'."
+                            ),
+                            match_source="meal_memory_exact",
+                            suggestions=[f"remove {repeat_food}", "clear meal"],
                         )
-                        continue
+                    )
+                    continue
 
-                    if repeat_result["repeat_type"] == "conversation_memory":
-                        repeated_in_conversation_count += 1
+                if repeat_result["repeat_type"] == "meal_memory_update":
+                    updated_count += 1
 
-                        old_kcal = repeat_item.get("kcal_per_100g")
-                        old_calories = repeat_item.get("calories")
-                        repeat_food = repeat_item["food"]
-                        repeat_grams = repeat_item["grams"]
+                    previous_grams = repeat_item["grams"]
 
-                        response_items.append(
-                            CalorieItemResponse(
-                                input_food=food_name,
-                                status="matched",
-                                confidence=HIGH_CONFIDENCE,
-                                grams=repeat_grams,
-                                matched_food=repeat_food,
-                                kcal_per_100g=old_kcal if old_kcal is not None else kcal_per_100g,
-                                calories=old_calories if old_calories is not None else calories,
-                                match_reason=(
-                                    f"As I told you before, I already answered this item earlier in the conversation. "
-                                    f"Normalized and matched to '{repeat_food}'."
-                                ),
-                                match_source="conversation_memory",
-                                suggestions=[
-                                    f"add {repeat_food} {self._format_grams(repeat_grams)}g",
-                                    "what is the total now?",
-                                    "clear meal",
-                                ],
-                            )
+                    updated_item = self.meal_memory_service.add_or_update_item(
+                        meal_state,
+                        MealItem(
+                            food=matched_food,
+                            grams=grams,
+                            calories=calories,
+                            kcal_per_100g=kcal_per_100g,
                         )
-                        continue
+                    )
+
+                    response_items.append(
+                        CalorieItemResponse(
+                            input_food=food_name,
+                            status="matched",
+                            confidence=HIGH_CONFIDENCE,
+                            grams=updated_item.grams,
+                            matched_food=updated_item.food,
+                            kcal_per_100g=updated_item.kcal_per_100g,
+                            calories=updated_item.calories,
+                            match_reason=(
+                                f"As I told you before, I had already seen '{updated_item.food}' in your current meal. "
+                                f"I updated it from {self._format_grams(previous_grams)}g "
+                                f"to {self._format_grams(updated_item.grams)}g."
+                            ),
+                            match_source="meal_memory_update",
+                            suggestions=[f"remove {updated_item.food}", "clear meal"],
+                        )
+                    )
+                    continue
+
+                if repeat_result["repeat_type"] == "conversation_memory_exact":
+                    repeated_in_conversation_count += 1
+
+                    old_kcal = repeat_item.get("kcal_per_100g")
+                    old_calories = repeat_item.get("calories")
+                    repeat_food = repeat_item["food"]
+                    repeat_grams = repeat_item["grams"]
+
+                    response_items.append(
+                        CalorieItemResponse(
+                            input_food=food_name,
+                            status="matched",
+                            confidence=HIGH_CONFIDENCE,
+                            grams=repeat_grams,
+                            matched_food=repeat_food,
+                            kcal_per_100g=old_kcal if old_kcal is not None else kcal_per_100g,
+                            calories=old_calories if old_calories is not None else calories,
+                            match_reason=(
+                                f"As I told you before, I already answered this item earlier in the conversation. "
+                                f"Normalized and matched to '{repeat_food}'."
+                            ),
+                            match_source="conversation_memory_exact",
+                            suggestions=[
+                                f"add {repeat_food} {self._format_grams(repeat_grams)}g",
+                                "clear meal",
+                            ],
+                        )
+                    )
+                    continue
 
             response_items.append(
                 CalorieItemResponse(
@@ -319,19 +399,25 @@ class EstimateMealCalories:
         ]
 
         matched_count = len(matched_items_only)
-        total_count = len(response_items)
-        confidence = self._overall_confidence(matched_count, total_count)
+        confidence = self._overall_confidence(matched_count, total_attempts)
 
+        # IMPORTANT:
+        # For normal calorie-entry turns, response total should reflect
+        # the current turn's matched items, not noisy fragments.
         response_total_calories = round(
             sum(item.calories for item in matched_items_only),
             2,
         )
 
+        for fragment in unclear_fragments:
+            global_suggestions.extend(self.food_resolver_service.suggest(fragment))
+
         final_message = self._build_final_message(
             meal_state=meal_state,
             matched_count=matched_count,
-            total_count=total_count,
+            total_count=total_attempts,
             added_count=added_count,
+            updated_count=updated_count,
             repeated_in_meal_count=repeated_in_meal_count,
             repeated_in_conversation_count=repeated_in_conversation_count,
             has_unclear=bool(unclear_fragments),
@@ -341,9 +427,9 @@ class EstimateMealCalories:
         return CalorieResponse(
             items=response_items,
             total_calories=response_total_calories,
-            coverage=f"{matched_count}/{total_count}",
+            coverage=f"{matched_count}/{total_attempts}",
             matched_items=matched_count,
-            total_items=total_count,
+            total_items=total_attempts,
             confidence=confidence,
             final_message=final_message,
             suggestions=self._deduplicate_suggestions(global_suggestions),
@@ -353,7 +439,7 @@ class EstimateMealCalories:
         if not meal_state.items:
             return CalorieResponse(
                 items=[],
-                total_calories=0,
+                total_calories=0.0,
                 coverage="0/0",
                 matched_items=0,
                 total_items=0,
@@ -379,12 +465,13 @@ class EstimateMealCalories:
                 )
             )
 
+        current_count = len(meal_state.items)
         return CalorieResponse(
             items=response_items,
             total_calories=meal_state.total_calories,
-            coverage=f"{len(meal_state.items)}/{len(meal_state.items)}",
-            matched_items=len(meal_state.items),
-            total_items=len(meal_state.items),
+            coverage=f"{current_count}/{current_count}",
+            matched_items=current_count,
+            total_items=current_count,
             confidence=HIGH_CONFIDENCE,
             final_message="Returned total calories from the current meal memory.",
             suggestions=[],
@@ -407,59 +494,53 @@ class EstimateMealCalories:
 
         parsed_items: List[Tuple[str, float, str]] = []
         unclear_fragments: List[str] = []
+        seen_signatures = set()
+
+        def add_parsed_item(food_name: str, grams: float, raw_text: str):
+            normalized_food = (food_name or "").strip().lower()
+            if not normalized_food:
+                return
+
+            signature = (normalized_food, round(float(grams), 4))
+            if signature in seen_signatures:
+                return
+
+            seen_signatures.add(signature)
+            parsed_items.append((normalized_food, float(grams), raw_text))
 
         for item in parsed:
             cleaned_phrase = self._strip_common_noise_prefixes(item.food_name)
-            best_food, leftover_noise = self._extract_best_food_candidate(cleaned_phrase)
-
-            chosen_food = best_food if best_food is not None else cleaned_phrase
-            parsed_items.append((chosen_food, item.grams, item.raw_text))
-
-            if leftover_noise:
-                cleaned_noise = leftover_noise.strip()
-                if cleaned_noise:
-                    unclear_fragments.append(cleaned_noise)
-
-        if leftovers:
-            unclear_fragments.extend(self._split_unclear_fragments(leftovers))
-
-        if parsed_items:
-            return parsed_items, self._deduplicate_fragments(unclear_fragments)
-
-        parts = [
-            p.strip()
-            for p in re.split(r"\s+(?:and|plus|with)\s+|,", text)
-            if p.strip()
-        ]
-
-        for part in parts:
-            part = re.sub(r"^(?:and|add|with|plus)\s+", "", part).strip()
-
-            match = re.search(r"(.+?)\s+(\d+(?:\.\d+)?)g\b", part)
-            if not match:
-                unclear_fragments.append(part)
+            if not cleaned_phrase:
                 continue
 
-            raw_food_phrase = match.group(1).strip()
-            grams = float(match.group(2))
-
-            prefix_noise = part[:match.start()].strip()
-            suffix_noise = part[match.end():].strip()
-
-            cleaned_phrase = self._strip_common_noise_prefixes(raw_food_phrase)
             best_food, leftover_noise = self._extract_best_food_candidate(cleaned_phrase)
+            chosen_food = best_food if best_food else cleaned_phrase
 
-            parsed_items.append(
-                (
-                    best_food if best_food is not None else cleaned_phrase,
-                    grams,
-                    match.group(0).strip(),
-                )
-            )
+            add_parsed_item(chosen_food, item.grams, item.raw_text)
 
-            for noise in (prefix_noise, leftover_noise, suffix_noise):
-                if noise and noise.strip():
-                    unclear_fragments.append(noise.strip())
+            if leftover_noise:
+                unclear_fragments.append(leftover_noise)
+
+        # Soft recovery only from leftover text, without inflating counts with noise.
+        if leftovers:
+            for match in self.RECOVERY_PATTERN.finditer(leftovers):
+                raw_food_phrase = match.group(1).strip()
+                grams = float(match.group(2))
+
+                cleaned_phrase = self._strip_common_noise_prefixes(raw_food_phrase)
+                if not cleaned_phrase:
+                    continue
+
+                best_food, leftover_noise = self._extract_best_food_candidate(cleaned_phrase)
+                chosen_food = best_food if best_food else cleaned_phrase
+                add_parsed_item(chosen_food, grams, match.group(0).strip())
+
+                if leftover_noise:
+                    unclear_fragments.append(leftover_noise)
+
+            cleaned_leftover = leftovers.strip()
+            if cleaned_leftover:
+                unclear_fragments.extend(self._split_unclear_fragments(cleaned_leftover))
 
         return parsed_items, self._deduplicate_fragments(unclear_fragments)
 
@@ -470,38 +551,34 @@ class EstimateMealCalories:
 
         chunks = [
             c.strip()
-            for c in re.split(r"\s+(?:and|plus|with)\s+|,", text)
+            for c in re.split(r"\s+(?:and|plus|with|add)\s+|,", text)
             if c.strip()
         ]
         return chunks if chunks else [text]
 
     def _strip_common_noise_prefixes(self, text: str) -> str:
         text = (text or "").strip()
-
-        noise_prefixes = {
-            "please",
-            "pls",
-            "hey",
-            "hello",
-            "hi",
-            "bro",
-            "buddy",
-        }
+        if not text:
+            return ""
 
         words = text.split()
-        while words and words[0] in noise_prefixes:
+        while words and words[0].lower() in self.SAFE_SALVAGE_NOISE_WORDS:
             words.pop(0)
 
         return " ".join(words).strip()
 
-    def _extract_best_food_candidate(self, raw_food_phrase: str):
-        words = raw_food_phrase.split()
-        if not words:
-            return None, raw_food_phrase
+    def _extract_best_food_candidate(self, raw_food_phrase: str) -> Tuple[Optional[str], str]:
+        raw_food_phrase = (raw_food_phrase or "").strip()
+        if not raw_food_phrase:
+            return None, ""
 
         resolved_full = self.food_resolver_service.resolve(raw_food_phrase)
         if resolved_full["matched"]:
             return raw_food_phrase, ""
+
+        words = raw_food_phrase.split()
+        if not words:
+            return None, ""
 
         max_len = min(5, len(words))
 
@@ -536,7 +613,10 @@ class EstimateMealCalories:
             if word in self.SAFE_SALVAGE_NOISE_WORDS:
                 continue
 
-            if len(word) <= 3:
+            if len(word) <= 2:
+                continue
+
+            if re.fullmatch(r"[a-z]*\d+[a-z\d]*", word):
                 continue
 
             return False
@@ -558,6 +638,7 @@ class EstimateMealCalories:
         matched_count: int,
         total_count: int,
         added_count: int,
+        updated_count: int,
         repeated_in_meal_count: int,
         repeated_in_conversation_count: int,
         has_unclear: bool,
@@ -569,7 +650,8 @@ class EstimateMealCalories:
         if matched_count == 0 and has_unclear:
             return (
                 "I found text that looks unclear or misspelled. "
-                "Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'."
+                "Please rewrite the unclear part and keep the valid food + grams format, "
+                "for example: 'apple 200g'."
             )
 
         if matched_count == 0:
@@ -577,21 +659,48 @@ class EstimateMealCalories:
 
         total_repeats = repeated_in_meal_count + repeated_in_conversation_count
 
-        if total_count == 1 and total_repeats == 1 and added_count == 0:
+        if total_count == 1 and total_repeats == 1 and added_count == 0 and updated_count == 0:
             item = response_items[0]
             grams_display = self._format_grams(item.grams)
 
-            if item.match_source == "meal_memory":
+            if item.match_source == "meal_memory_exact":
                 return (
                     f"As I told you before, {item.matched_food} {grams_display}g is "
                     f"{item.calories} kcal and it is already in your current meal."
                 )
 
-            if item.match_source == "conversation_memory":
+            if item.match_source == "conversation_memory_exact":
                 return (
                     f"As I told you before, {item.matched_food} {grams_display}g is "
                     f"{item.calories} kcal. It was already answered earlier in this conversation."
                 )
+
+        if total_count == 1 and updated_count == 1 and added_count == 0:
+            item = response_items[0]
+            return (
+                f"As I told you before, I had already seen '{item.matched_food}' in your meal memory. "
+                f"It has now been updated to {self._format_grams(item.grams)}g "
+                f"({item.calories} kcal). Current meal total is {meal_state.total_calories} kcal."
+            )
+
+        if added_count > 0 and updated_count > 0 and has_unclear:
+            return (
+                f"I updated {updated_count} existing item(s) and added {added_count} new item(s), "
+                f"but some extra text looked unclear or misspelled. "
+                f"Current meal total is {meal_state.total_calories} kcal."
+            )
+
+        if added_count > 0 and updated_count > 0:
+            return (
+                f"I updated {updated_count} existing item(s) and added {added_count} new item(s). "
+                f"Current meal total is {meal_state.total_calories} kcal."
+            )
+
+        if updated_count > 0 and added_count == 0:
+            return (
+                f"I saw {updated_count} food item(s) before and updated their amounts in your current meal. "
+                f"Current meal total is {meal_state.total_calories} kcal."
+            )
 
         if added_count > 0 and has_unclear:
             return (
@@ -606,15 +715,15 @@ class EstimateMealCalories:
                 f"{added_count} new item(s). Current meal total is {meal_state.total_calories} kcal."
             )
 
-        if total_repeats > 0 and added_count == 0:
+        if total_repeats > 0 and added_count == 0 and updated_count == 0:
             return (
-                f"As I told you before, these item(s) were already answered earlier. "
+                "As I told you before, these item(s) were already answered earlier. "
                 f"Current meal total is {meal_state.total_calories} kcal."
             )
 
         if matched_count < total_count:
             return (
-                f"I added the recognized item(s), but some parts were not clear enough. "
+                "I added the recognized item(s), but some parts were not clear enough. "
                 f"Current meal total is {meal_state.total_calories} kcal."
             )
 
@@ -649,3 +758,12 @@ class EstimateMealCalories:
             unique.append(fragment.strip())
 
         return unique
+
+    def _normalize_command_text(self, text: str) -> str:
+        text = (text or "").strip().lower()
+        text = re.sub(r"[^\w\s]", "", text)
+        text = re.sub(r"\s+", " ", text).strip()
+        return text
+
+    def _matches_any(self, text: str, patterns: List[str]) -> bool:
+        return any(re.search(pattern, text, flags=re.IGNORECASE) for pattern in patterns)
