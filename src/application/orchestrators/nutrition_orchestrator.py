@@ -25,7 +25,6 @@ class NutritionOrchestrator:
         self.repeat_detector_service = RepeatDetectorService()
         self.food_resolver_service = FoodResolverService()
 
-        # Internal session state for multi-turn flows when caller does not pass state explicitly
         self._session_history = []
         self._session_memory_entries = []
         self._session_meal_state = MealState()
@@ -51,7 +50,6 @@ class NutritionOrchestrator:
         meal_state=None,
         conversation_memory=None,
     ):
-        # Use caller-provided state when available; otherwise use persistent internal state.
         using_internal_history = history is None
         using_internal_memory_entries = memory_entries is None
         using_internal_meal_state = meal_state is None
@@ -70,6 +68,27 @@ class NutritionOrchestrator:
         original_text = (nlu_result.original_text or "").strip()
         normalized = (nlu_result.normalized_text or "").strip()
         intent = (nlu_result.intent or "").strip().lower()
+
+        pre_guard_class = self._pre_route_guard_class(original_text, normalized)
+
+        if pre_guard_class != "valid":
+            repeated_guard = self._find_repeated_non_answer_case(
+                normalized=normalized or original_text.lower().strip(),
+                conversation_memory=conversation_memory,
+            )
+            response = repeated_guard or self._build_guard_response(
+                pre_guard_class,
+                original_text or normalized,
+            )
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized or original_text.lower().strip(),
+                kind="guard",
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
 
         guard_bypass_intents = {"total_query", "clear_meal", "remove_item"}
 
@@ -99,7 +118,7 @@ class NutritionOrchestrator:
             self._record_turn(
                 user_input=text,
                 normalized_input=normalized or original_text.lower().strip(),
-                kind=QNA_MODE,
+                kind="guard",
                 response=response,
                 history=history,
                 conversation_memory=conversation_memory,
@@ -111,7 +130,7 @@ class NutritionOrchestrator:
             self._record_turn(
                 user_input=text,
                 normalized_input=normalized,
-                kind=QNA_MODE,
+                kind="guard",
                 response=response,
                 history=history,
                 conversation_memory=conversation_memory,
@@ -123,7 +142,7 @@ class NutritionOrchestrator:
             self._record_turn(
                 user_input=text,
                 normalized_input=normalized,
-                kind=QNA_MODE,
+                kind="guard",
                 response=response,
                 history=history,
                 conversation_memory=conversation_memory,
@@ -135,7 +154,7 @@ class NutritionOrchestrator:
             self._record_turn(
                 user_input=text,
                 normalized_input=normalized,
-                kind=QNA_MODE,
+                kind="guard",
                 response=response,
                 history=history,
                 conversation_memory=conversation_memory,
@@ -168,7 +187,7 @@ class NutritionOrchestrator:
             self._record_turn(
                 user_input=text,
                 normalized_input=normalized,
-                kind=QNA_MODE,
+                kind="guard",
                 response=response,
                 history=history,
                 conversation_memory=conversation_memory,
@@ -188,7 +207,7 @@ class NutritionOrchestrator:
                 self._record_turn(
                     user_input=text,
                     normalized_input=normalized,
-                    kind=QNA_MODE,
+                    kind="guard",
                     response=response,
                     history=history,
                     conversation_memory=conversation_memory,
@@ -246,7 +265,7 @@ class NutritionOrchestrator:
             self._record_turn(
                 user_input=text,
                 normalized_input=normalized,
-                kind=QNA_MODE,
+                kind="guard",
                 response=response,
                 history=history,
                 conversation_memory=conversation_memory,
@@ -257,12 +276,67 @@ class NutritionOrchestrator:
         self._record_turn(
             user_input=text,
             normalized_input=normalized,
-            kind=QNA_MODE,
+            kind="guard",
             response=response,
             history=history,
             conversation_memory=conversation_memory,
         )
         return response
+
+    def _pre_route_guard_class(self, original_text: str, normalized_text: str) -> str:
+        text = original_text or ""
+        normalized = (normalized_text or text).strip().lower()
+
+        if not text.strip():
+            return "empty"
+
+        if re.search(r"[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF۰-۹]", text):
+            return "non_english"
+
+        if re.search(r"\b[a-z][a-z\s'\-]*\s+-\d+(?:\.\d+)?\s*g\b", normalized):
+            return "invalid_quantity"
+
+        if re.search(r"\b[a-z][a-z\s'\-]*\s+0(?:\.0+)?\s*g\b", normalized):
+            return "invalid_quantity"
+
+        if re.search(
+            r"\b(one|two|three|four|five|six|seven|eight|nine|ten|hundred|thousand)\b.*\b(gram|grams|g)\b",
+            normalized,
+        ):
+            return "quantity_not_numeric"
+
+        if re.search(r"\b(one|two|three|a glass of|glass of|cup of|piece of)\b", normalized):
+            if not re.search(r"\d+(?:\.\d+)?\s*g\b", normalized):
+                return "quantity_not_numeric"
+
+        unsafe_patterns = [
+            r"\blose\s+\d+\s*kg\s+in\s+one\s+week\b",
+            r"\blose weight fast\b",
+            r"\bstarvation diet\b",
+            r"\bstop eating\b",
+            r"\bnot eating\b",
+            r"\bextreme diet\b",
+            r"\bdangerous diet\b",
+        ]
+        if any(re.search(pattern, normalized) for pattern in unsafe_patterns):
+            return "unsafe"
+
+        irrelevant_patterns = [
+            r"\bpresident\b",
+            r"\bfootball score\b",
+            r"\bweather\b",
+            r"\bpython code\b",
+            r"\bwrite me code\b",
+            r"\bhack\b",
+            r"\bpassword\b",
+            r"\bcrypto\b",
+            r"\bmovie\b",
+            r"\bgame\b",
+        ]
+        if any(re.search(pattern, normalized) for pattern in irrelevant_patterns):
+            return "out_of_domain"
+
+        return "valid"
 
     def _record_turn(
         self,
@@ -485,6 +559,18 @@ class NutritionOrchestrator:
 
         normalized = normalized.strip().lower()
 
+        allowed_previous_answers = {
+            "Your message is empty.",
+            "Please use English for food and nutrition queries.",
+            "I can see the quantity, but the food name is missing.",
+            "This looks like a food name, but I could not confidently match it.",
+            "I recognized a quantity expression, but it is not written with digits.",
+            "I could not confidently understand your input.",
+            "The quantity must be a positive number of grams.",
+            "This request may be unsafe and should not be answered as diet advice.",
+            "This assistant only handles food, calories, and nutrition.",
+        }
+
         for entry in reversed(list(conversation_memory or [])):
             previous_input = (entry.get("normalized_input") or "").strip().lower()
             previous_answer = (entry.get("answer") or "").strip()
@@ -492,26 +578,19 @@ class NutritionOrchestrator:
 
             if previous_input != normalized:
                 continue
-            if previous_kind != QNA_MODE:
+            if previous_kind not in {QNA_MODE, "guard"}:
                 continue
             if not previous_answer:
                 continue
 
-            if previous_answer not in {
-                "Your message is empty.",
-                "Please use English for food and nutrition queries.",
-                "I can see the quantity, but the food name is missing.",
-                "This looks like a food name, but I could not confidently match it.",
-                "I recognized a quantity expression, but it is not written with digits.",
-                "I could not confidently understand your input.",
-            } and not (
+            if previous_answer not in allowed_previous_answers and not (
                 previous_answer.startswith("I recognized '")
                 and "but I still need the quantity in grams." in previous_answer
             ):
                 continue
 
             return QAResponse(
-                mode=QNA_MODE,
+                mode="guard",
                 answer=previous_answer,
                 confidence=entry.get("confidence", LOW_CONFIDENCE),
                 sources_used=entry.get("sources_used", []) or [],
@@ -526,7 +605,7 @@ class NutritionOrchestrator:
 
         if input_class == "empty":
             return QAResponse(
-                mode=QNA_MODE,
+                mode="guard",
                 answer="Your message is empty.",
                 confidence=LOW_CONFIDENCE,
                 sources_used=[],
@@ -536,7 +615,7 @@ class NutritionOrchestrator:
 
         if input_class == "non_english":
             return QAResponse(
-                mode=QNA_MODE,
+                mode="guard",
                 answer="Please use English for food and nutrition queries.",
                 confidence=LOW_CONFIDENCE,
                 sources_used=[],
@@ -546,7 +625,7 @@ class NutritionOrchestrator:
 
         if input_class == "quantity_only":
             return QAResponse(
-                mode=QNA_MODE,
+                mode="guard",
                 answer="I can see the quantity, but the food name is missing.",
                 confidence=LOW_CONFIDENCE,
                 sources_used=[],
@@ -560,7 +639,7 @@ class NutritionOrchestrator:
             if resolved.get("matched"):
                 matched_food = resolved.get("matched_food") or clean_text
                 return QAResponse(
-                    mode=QNA_MODE,
+                    mode="guard",
                     answer=f"I recognized '{matched_food}', but I still need the quantity in grams.",
                     confidence=LOW_CONFIDENCE,
                     sources_used=[],
@@ -572,7 +651,7 @@ class NutritionOrchestrator:
             if suggestions:
                 suggestion_text = ", ".join([f"'{s}'" for s in suggestions[:3]])
                 return QAResponse(
-                    mode=QNA_MODE,
+                    mode="guard",
                     answer="This looks like a food name, but I could not confidently match it.",
                     confidence=LOW_CONFIDENCE,
                     sources_used=[],
@@ -584,7 +663,7 @@ class NutritionOrchestrator:
                 )
 
             return QAResponse(
-                mode=QNA_MODE,
+                mode="guard",
                 answer="This looks like a food name, but I could not confidently match it.",
                 confidence=LOW_CONFIDENCE,
                 sources_used=[],
@@ -594,7 +673,7 @@ class NutritionOrchestrator:
 
         if input_class == "quantity_not_numeric":
             return QAResponse(
-                mode=QNA_MODE,
+                mode="guard",
                 answer="I recognized a quantity expression, but it is not written with digits.",
                 confidence=LOW_CONFIDENCE,
                 sources_used=[],
@@ -602,9 +681,39 @@ class NutritionOrchestrator:
                 final_message="Please write the amount with digits, for example: 'apple 200g' instead of 'apple two hundred grams'.",
             )
 
+        if input_class == "invalid_quantity":
+            return QAResponse(
+                mode="guard",
+                answer="The quantity must be a positive number of grams.",
+                confidence=LOW_CONFIDENCE,
+                sources_used=[],
+                retrieved_contexts=[],
+                final_message="Please use a valid amount, for example: 'rice 100g'.",
+            )
+
+        if input_class == "unsafe":
+            return QAResponse(
+                mode="guard",
+                answer="This request may be unsafe and should not be answered as diet advice.",
+                confidence=LOW_CONFIDENCE,
+                sources_used=[],
+                retrieved_contexts=[],
+                final_message="Please ask a safe nutrition question or consult a qualified health professional.",
+            )
+
+        if input_class == "out_of_domain":
+            return QAResponse(
+                mode="guard",
+                answer="This assistant only handles food, calories, and nutrition.",
+                confidence=LOW_CONFIDENCE,
+                sources_used=[],
+                retrieved_contexts=[],
+                final_message="Try something like 'apple 200g' or 'What are good sources of protein?'",
+            )
+
         if input_class == "gibberish":
             return QAResponse(
-                mode=QNA_MODE,
+                mode="guard",
                 answer="I could not confidently understand your input.",
                 confidence=LOW_CONFIDENCE,
                 sources_used=[],
@@ -613,7 +722,7 @@ class NutritionOrchestrator:
             )
 
         return QAResponse(
-            mode=QNA_MODE,
+            mode="guard",
             answer="This assistant only handles food, calories, and nutrition.",
             confidence=LOW_CONFIDENCE,
             sources_used=[],
