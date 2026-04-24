@@ -15,14 +15,12 @@ class FoodNormalizer:
         text = self._protect_decimal_points(text)
         text = self._normalize_symbols(text)
 
-        # apple100gbanana200gmilk50g -> apple100g banana200g milk50g
         text = re.sub(
             r"(\d+(?:__DECIMAL__\d+)?)(?:g|gr|gram|grams)(?=[a-z])",
             r"\1g ",
             text,
         )
 
-        # rice100gandmilk200g -> rice100g and milk200g
         text = re.sub(
             rf"(\d+(?:__DECIMAL__\d+)?g)\s*({self._CONNECTOR_PATTERN})(?=[a-z])",
             r"\1 \2 ",
@@ -49,7 +47,13 @@ class FoodNormalizer:
         text = text.replace("&", " and ")
         text = text.replace("+", " plus ")
         text = re.sub(r"[^a-z0-9_\s\-']", " ", text)
+
+        # rice---100g -> rice 100g
+        text = re.sub(r"-{2,}", " ", text)
+
+        # keep single hyphen inside words like low-fat
         text = re.sub(r"\s*-\s*", "-", text)
+
         return text
 
     def _recover_glued_prefix_connectors(self, text: str) -> str:
