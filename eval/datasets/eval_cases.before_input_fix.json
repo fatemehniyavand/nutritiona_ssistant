@@ -1118,7 +1118,7 @@
     "case_id": "MUL-001",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "bread 250g and pizza 75g",
+    "input": "add bread 250g and pizza 75g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1136,15 +1136,14 @@
           "pizza",
           75
         ]
-      ],
-      "original_input_before_fix": "add bread 250g and pizza 75g"
+      ]
     }
   },
   {
     "case_id": "MUL-002",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "banana 250g and bread 200g",
+    "input": "add banana 250g and bread 200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1162,8 +1161,7 @@
           "bread",
           200
         ]
-      ],
-      "original_input_before_fix": "add banana 250g and bread 200g"
+      ]
     }
   },
   {
@@ -1195,7 +1193,7 @@
     "case_id": "MUL-004",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "pizza 50g and grilled chicken 150g",
+    "input": "pizza50g and grilled chicken150g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1213,15 +1211,14 @@
           "grilled chicken",
           150
         ]
-      ],
-      "original_input_before_fix": "pizza50g and grilled chicken150g"
+      ]
     }
   },
   {
     "case_id": "MUL-005",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "oats 50g and apple 100g",
+    "input": "oats50g and apple100g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1239,8 +1236,7 @@
           "apple",
           100
         ]
-      ],
-      "original_input_before_fix": "oats50g and apple100g"
+      ]
     }
   },
   {
@@ -1272,7 +1268,7 @@
     "case_id": "MUL-007",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "banana 250g and oats 50g",
+    "input": "add banana 250g and oats 50g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1290,15 +1286,14 @@
           "oats",
           50
         ]
-      ],
-      "original_input_before_fix": "add banana 250g and oats 50g"
+      ]
     }
   },
   {
     "case_id": "MUL-008",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "milk 200g and grilled chicken 120g",
+    "input": "add milk 200g and grilled chicken 120g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1316,15 +1311,14 @@
           "grilled chicken",
           120
         ]
-      ],
-      "original_input_before_fix": "add milk 200g and grilled chicken 120g"
+      ]
     }
   },
   {
     "case_id": "MUL-009",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "milk 150g and bread 250g",
+    "input": "add milk 150g and bread 250g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1342,15 +1336,14 @@
           "bread",
           250
         ]
-      ],
-      "original_input_before_fix": "add milk 150g and bread 250g"
+      ]
     }
   },
   {
     "case_id": "MUL-010",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "avocado 150g and rice 250g",
+    "input": "add avocado 150g and rice 250g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1368,15 +1361,14 @@
           "rice",
           250
         ]
-      ],
-      "original_input_before_fix": "add avocado 150g and rice 250g"
+      ]
     }
   },
   {
     "case_id": "MUL-011",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "rice 120g and bread 200g",
+    "input": "add rice 120g and bread 200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1394,8 +1386,7 @@
           "bread",
           200
         ]
-      ],
-      "original_input_before_fix": "add rice 120g and bread 200g"
+      ]
     }
   },
   {
@@ -1502,7 +1493,7 @@
     "case_id": "MUL-016",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "rice 50g and banana 250g",
+    "input": "rice50g and banana250g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1520,15 +1511,14 @@
           "banana",
           250
         ]
-      ],
-      "original_input_before_fix": "rice50g and banana250g"
+      ]
     }
   },
   {
     "case_id": "MUL-017",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "banana 75g and pizza 100g",
+    "input": "add banana 75g and pizza 100g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1546,15 +1536,14 @@
           "pizza",
           100
         ]
-      ],
-      "original_input_before_fix": "add banana 75g and pizza 100g"
+      ]
     }
   },
   {
     "case_id": "MUL-018",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "oats 150g and rice 75g",
+    "input": "add oats 150g and rice 75g",
     "expected": {
       "mode": "calorie",
       "matched_items": 2,
@@ -1572,8 +1561,7 @@
           "rice",
           75
         ]
-      ],
-      "original_input_before_fix": "add oats 150g and rice 75g"
+      ]
     }
   },
   {
@@ -1638,7 +1626,7 @@
     "case_id": "MUL-021",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "avocado 200g and oats 200g and apple 200g",
+    "input": "avocado 200g and oats 200g",
     "expected": {
       "mode": "calorie",
       "matched_items": 3,
@@ -1660,15 +1648,14 @@
           "apple",
           200
         ]
-      ],
-      "original_input_before_fix": "avocado 200g and oats 200g"
+      ]
     }
   },
   {
     "case_id": "MUL-022",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "apple 250g and avocado 250g and egg 50g",
+    "input": "apple250g and avocado250g",
     "expected": {
       "mode": "calorie",
       "matched_items": 3,
@@ -1690,15 +1677,14 @@
           "egg",
           50
         ]
-      ],
-      "original_input_before_fix": "apple250g and avocado250g"
+      ]
     }
   },
   {
     "case_id": "MUL-023",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "rice 75g and grilled chicken 120g and oats 75g",
+    "input": "add rice 75g and grilled chicken 120g",
     "expected": {
       "mode": "calorie",
       "matched_items": 3,
@@ -1720,15 +1706,14 @@
           "oats",
           75
         ]
-      ],
-      "original_input_before_fix": "add rice 75g and grilled chicken 120g"
+      ]
     }
   },
   {
     "case_id": "MUL-024",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "oats 120g and rice 250g and banana 250g",
+    "input": "add oats 120g and rice 250g and banana 250g",
     "expected": {
       "mode": "calorie",
       "matched_items": 3,
@@ -1750,15 +1735,14 @@
           "banana",
           250
         ]
-      ],
-      "original_input_before_fix": "add oats 120g and rice 250g and banana 250g"
+      ]
     }
   },
   {
     "case_id": "MUL-025",
     "category": "MUL",
     "kind": "single_turn",
-    "input": "banana 50g and apple 250g and pizza 250g",
+    "input": "banana50g and apple250g",
     "expected": {
       "mode": "calorie",
       "matched_items": 3,
@@ -1780,8 +1764,7 @@
           "pizza",
           250
         ]
-      ],
-      "original_input_before_fix": "banana50g and apple250g"
+      ]
     }
   },
   {
