@@ -73,6 +73,10 @@ class EstimateMealCalories:
         "extra", "words", "word", "blah", "junk", "item", "food",
         "foods", "meal", "also", "maybe", "okay", "ok", "yo",
         "track", "log", "include", "including", "have", "had", "ate", "eat",
+        "can", "you", "could", "would", "please", "thanks", "thank", "today",
+        "my", "for", "like",
+        "can", "you", "could", "would", "please", "thanks", "thank", "today",
+        "my", "for", "like",
     }
 
     TOTAL_QUERY_PATTERNS = [

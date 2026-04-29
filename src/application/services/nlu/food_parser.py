@@ -21,6 +21,8 @@ class FoodParser:
         "have", "eat", "ate", "eaten",
         "log", "track", "include", "including",
         "i", "want", "to", "for", "meal", "hello", "hi", "hey",
+        "can", "you", "could", "would", "today", "thanks", "thank", "like",
+        "can", "you", "could", "would", "today", "thanks", "thank", "like",
     }
 
     ITEM_PATTERN = re.compile(
