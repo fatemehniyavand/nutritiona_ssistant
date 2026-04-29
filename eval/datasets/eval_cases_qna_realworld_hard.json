@@ -1,0 +1,2602 @@
+[
+  {
+    "id": "QNA_HARD_001",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "I forgot exactly what I ate this week. How do nutrition studies usually estimate intake for a chosen period?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_002",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "When someone says they estimated their intake for a time period, what are they actually doing?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_003",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How can a person reconstruct everything they ate and drank during a specific window?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_004",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "For diet tracking research, how is intake over a defined period usually collected?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_005",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "If I need to report what I consumed over a past interval, what method is normally used?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_006",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How do researchers help people estimate food and drink intake for a set time span?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_007",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "What does dietary intake estimation over a specific period involve?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_008",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How can someone remember all foods and beverages consumed during a recall period?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_009",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "What is the basic idea behind estimating intake for a selected time window?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_010",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How are foods and drinks remembered when estimating intake for a certain period?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_011",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "In simple words, how does someone estimate what they consumed during a period?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_012",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "What should a person include when recalling intake for a defined time range?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_013",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "If a nutritionist asks about my intake for a period, what information should I give?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_014",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How can visual aids support intake estimation for a specific period?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_015",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "What makes dietary recall for a time period more accurate?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_016",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How is food intake usually estimated when direct measurement is not available?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_017",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "What is meant by recalling foods and beverages for a time interval?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_018",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How can portion references help someone estimate what they ate over a period?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_019",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "What kind of process is used to estimate diet over a past time window?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_020",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How do you explain dietary recall for a specific period to a beginner?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_021",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "If someone cannot remember exact portions, what can help them estimate intake?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_022",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How can measuring tools improve reporting of food intake from memory?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_023",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "What does a dietary recall period ask a person to remember?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_024",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "How do people estimate both food and beverage intake from a past period?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_025",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "dietary_recall_period",
+    "input": "Why are visual aids useful when estimating what someone consumed?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "recall",
+      "foods",
+      "beverages",
+      "period",
+      "visual aids",
+      "measurement",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A person estimates intake for a specific period by recalling all foods and beverages consumed during that time. Visual aids, portion references, or measurement tools can improve accuracy."
+  },
+  {
+    "id": "QNA_HARD_026",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How would I explain what I ate yesterday in a nutrition interview?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_027",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What does someone usually report in a previous-day food recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_028",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "If a dietitian asks about the last day, what should the person remember?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_029",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How do people reconstruct yesterday's meals, snacks, and drinks?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_030",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What is the usual approach for remembering food intake from the past day?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_031",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How can someone recall drinks and snacks from yesterday more accurately?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_032",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What does a 1-day diet recall normally include?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_033",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How are yesterday's eating habits usually collected in nutrition studies?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_034",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "If I am asked about my diet over the past 24 hours, what should I list?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_035",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What should be included when reporting the previous day's intake?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_036",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How can visual aids help someone remember what they ate yesterday?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_037",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What tools can make yesterday's food recall more accurate?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_038",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How does a person remember meals from the day before?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_039",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What does past-day dietary recall mean?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_040",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How can someone estimate portions from yesterday's meals?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_041",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "When recalling yesterday's diet, why are snacks and beverages important?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_042",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What information is needed in a previous-day nutrition recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_043",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How can someone report yesterday's breakfast, lunch, dinner, and snacks?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_044",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What is the process for remembering the last 24 hours of eating?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_045",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How can portion guides help with remembering yesterday's intake?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_046",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What are common steps in recalling food from the previous day?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_047",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How should a person describe food and drink consumed yesterday?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_048",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "What makes a past-day recall more reliable?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_049",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "How can measuring tools support a 24-hour food recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_050",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "previous_day_recall",
+    "input": "Why is it useful to think through meals and snacks from yesterday?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "previous day",
+      "past day",
+      "meals",
+      "snacks",
+      "drinks",
+      "recall",
+      "portion"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "People remember dietary habits over the past day by recalling meals, snacks, and drinks from the previous day. Visual aids and measuring tools can help with portion estimation."
+  },
+  {
+    "id": "QNA_HARD_051",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What can help someone estimate portion sizes from memory?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_052",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "Which tools are useful if a person cannot remember how much they ate?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_053",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "How do pictures of foods help during dietary recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_054",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What aids make recent food intake recall more accurate?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_055",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "Can measuring cups help with remembering food portions?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_056",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What should researchers use to help people estimate serving sizes?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_057",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "Which visual tools support better dietary recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_058",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "How can portion-size references improve food intake reports?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_059",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What practical tools help someone recall meals more accurately?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_060",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "Why would a scale or measuring cup be useful in nutrition recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_061",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What can a dietitian show someone to help estimate portions?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_062",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "How can visual examples improve reporting of recent intake?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_063",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What resources are helpful for remembering food quantities?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_064",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "Which aids are used to estimate food intake when memory is uncertain?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_065",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "How can food photos support a dietary recall interview?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_066",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What tools improve accuracy when recalling snacks and meals?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_067",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What helps people avoid guessing portion sizes too randomly?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_068",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "How can someone estimate servings without exact measurements?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_069",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What type of aids help with portion-size estimation?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_070",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "Why are visual aids important in dietary assessment?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_071",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What can make a food recall less dependent on pure memory?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_072",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "How do portion guides help in nutrition studies?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_073",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "Which objects can help estimate how much food was eaten?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_074",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "What could someone use to remember recent food intake better?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_075",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_tools",
+    "input": "How can measurement tools improve dietary recall accuracy?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "pictures",
+      "portion",
+      "measuring",
+      "cups",
+      "scales",
+      "visual aids",
+      "accuracy"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "Tools that help dietary recall include food pictures, portion-size references, measuring cups, scales, and other visual aids. These tools support more accurate portion and intake estimation."
+  },
+  {
+    "id": "QNA_HARD_076",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why is one day of food data not always enough?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_077",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What is a problem with relying only on yesterday's diet?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_078",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why might a 24-hour recall fail to show someone's normal eating pattern?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_079",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What weakness does the 24-hour recall method have in nutrition research?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_080",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "How can memory affect a previous-day diet recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_081",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why can self-reported food intake be inaccurate?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_082",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What is one limitation of asking people what they ate in the last 24 hours?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_083",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why does a single day not always represent usual intake?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_084",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What can go wrong when people report yesterday's food from memory?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_085",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why should researchers be careful with 24-hour recall results?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_086",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What makes 24-hour dietary recall imperfect?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_087",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why might someone underreport or forget foods in a 24-hour recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_088",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What is the risk of using only one recall day?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_089",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why can a previous-day recall contain errors?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_090",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "How does forgetfulness affect dietary assessment?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_091",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why might yesterday's intake be different from normal intake?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_092",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What is a weakness of using just one day to assess diet?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_093",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why can the 24-hour recall method be unreliable sometimes?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_094",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What limitation comes from depending on memory in diet recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_095",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why is usual intake hard to infer from one 24-hour recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_096",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What problem happens if the recalled day was unusual?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_097",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why is dietary recall not always perfectly accurate?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_098",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What should be considered when interpreting a single 24-hour recall?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_099",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "Why may one-day recall need repeated measurements?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  },
+  {
+    "id": "QNA_HARD_100",
+    "category": "QNA_REALWORLD_HARD",
+    "topic": "recall_limitation",
+    "input": "What is the main concern with 24-hour recall data quality?",
+    "expected_intent": "nutrition_qa",
+    "expected_contains_any": [
+      "limitation",
+      "24-hour",
+      "one day",
+      "usual intake",
+      "memory",
+      "self-reporting",
+      "error"
+    ],
+    "should_not_contain": [
+      "calories per 100g",
+      "matched food",
+      "meal memory",
+      "I could not find",
+      "Please include the food name",
+      "Please provide the food quantity"
+    ],
+    "min_similarity_to_reference": 0.85,
+    "reference_answer": "A limitation of 24-hour recall is that one day may not represent usual intake. The method also depends on memory and accurate self-reporting, so errors can occur."
+  }
+]
