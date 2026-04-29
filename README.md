@@ -1,217 +1,167 @@
-# 🥗 Nutrition Assistant
+# 🥗 Nutrition Assistant (AI)
 
-An intelligent nutrition assistant that supports two main capabilities:
-
-1. Calorie Estimation (structured input)
-2. Nutrition Question Answering (RAG-based)
-
-The system is designed with a clean architecture, strong evaluation coverage, and explainable outputs.
+An intelligent nutrition assistant designed with a strong focus on **robustness, safety, explainability, and rigorous evaluation**.
 
 ---
 
-## 🎯 Project Goals
+## 🚀 Overview
 
-This project was designed to:
+This project implements a dual-mode AI system for nutrition assistance:
 
-- Build a robust natural language interface for food tracking
-- Combine structured estimation (calories) with unstructured QA (RAG)
-- Ensure grounded, explainable outputs
-- Maintain stateful interaction through meal memory
-- Evaluate the system under standard, randomized, and adversarial conditions
-
-The focus was not only on functionality, but also on reliability, interpretability, and evaluation.
-
----
-
-## 🚀 Features
-
-### 🍽️ Calorie Mode
-- Accepts inputs like:
-  - apple 200g
-  - banana 100g and rice 150g
-- Calculates total calories
+### 1. Calorie Estimation Mode
+- Database-based (no hallucination)
+- Accepts multiple food items with quantities
 - Maintains meal memory
-- Supports:
-  - Add items (and, add, with)
-  - Remove items (remove apple)
-  - Clear meal (clear meal)
-- Provides:
-  - Per-item breakdown
-  - Total calories
-  - Confidence score
-  - Coverage (matched vs total items)
+- Provides structured and explainable output
+
+### 2. Nutrition QA Mode
+- Retrieval-based (RAG)
+- Grounded answers only
+- Resistant to adversarial and noisy inputs
+- Safe response generation
 
 ---
 
-### 📚 Nutrition QA Mode (RAG)
-- Answers questions like:
-  - Is avocado healthy?
-  - What are good sources of protein?
-- Uses a nutrition Q&A dataset
-- Retrieves relevant contexts
-- Returns:
-  - Answer
-  - Confidence
-  - Sources used
-  - Retrieved context snippets
+## 🧠 System Architecture
+
+User Input  
+↓  
+NLU Layer (Normalization + Parsing + Intent Detection)  
+↓  
+QA Safety Router (Pre-RAG Guard Layer)  
+↓  
+
+Calorie Mode (Database Logic)  
+OR  
+QA Mode (Retrieval with ChromaDB)  
+
+↓  
+Response Formatter  
+↓  
+Chainlit Interface  
 
 ---
 
-### 🧠 Memory & Repetition Handling
-- Detects repeated questions
-- Reuses previous answers when appropriate
-- Supports meal memory for multi-turn calorie tracking
+## 🔒 Safety & Reliability
+
+A dedicated **QA Safety Router** is used before retrieval:
+
+- Detects misinformation
+- Handles out-of-domain queries
+- Identifies ambiguous inputs
+- Separates mixed intents (calorie + question)
+
+This design ensures:
+- No hallucinated answers
+- Controlled and grounded responses
+- Consistent system behavior
 
 ---
 
-### ⚠️ Input Guard System
-Handles invalid inputs:
-- Empty input
-- Non-English input
-- Food without quantity
-- Quantity without food
-- Non-numeric quantities
-- Gibberish input
+## 🧪 Evaluation Framework
+
+A custom evaluation pipeline was implemented with two independent layers:
+
+### 1. Behavior Evaluation (Strict)
+
+Tests system robustness against:
+- Adversarial queries
+- Typo and noisy inputs
+- Mixed intent queries
+- Out-of-domain requests
+- Nutrition misinformation
+
+### 2. Gold QA Evaluation
+
+- Paraphrased questions
+- High similarity thresholds
+- Focus on semantic correctness
 
 ---
 
-## 🧱 Architecture
+## 📊 Results
 
-The project follows a clean, modular architecture:
+| Test Type   | Cases | Pass Rate |
+|------------|------|----------|
+| Behavior   | 60   | 100%     |
+| Gold QA    | 50   | 100%     |
 
-src/
-├── application/
-│   ├── orchestrators/
-│   ├── services/
-│   ├── use_cases/
-│   └── dto/
-├── domain/
-│   └── services/
-├── infrastructure/
-├── presentation/
-│   └── chainlit_app.py
-└── shared/
-
-### Key Components
-
-- NLU Service
-  - Normalization
-  - Parsing
-  - Intent classification
-
-- Orchestrator
-  - Routes between Calorie Mode and QA Mode
-
-- Meal Memory Service
-  - Tracks current meal state
-
-- Memory Service
-  - Stores previous interactions
-
-- RAG Pipeline
-  - Retrieves and answers nutrition questions
+The system demonstrates:
+- Zero hallucination behavior
+- Strong robustness under noisy and adversarial inputs
+- High semantic accuracy in QA
 
 ---
 
-## 📊 Evaluation Results
+## 📈 Visualization
 
-The system was evaluated using multiple datasets:
-
-- Extended Evaluation: 99.5% pass rate
-- Randomized Evaluation: 100% pass rate
-- Adversarial Evaluation: 96% pass rate
-
-These results demonstrate strong robustness, especially under noisy and adversarial inputs.
+![Evaluation Results](eval/outputs/eval_plot.png)
 
 ---
 
-## 🔍 Explainability
+## 🧾 Example Queries
 
-Each calorie estimation includes:
+### Calorie Mode
+apple 200g  
+apple200g  
+and banana 100g  
+what is the total now?  
+clear meal  
 
-- Match reason
-- Match source
-- Confidence level
-- Coverage (matched items / total items)
-- Suggestions for low-confidence matches
+### QA Mode
+Is fruit sugar bad?  
+Are carbohydrates unhealthy?  
+Can protein replace meals?  
+Why is fiber important?  
 
-This ensures transparency and interpretability of results.
-
----
-
-## ⚙️ Installation & Run
-
-```bash
-git clone https://github.com/your-username/nutritiona_ssistant.git
-cd nutritiona_ssistant
-pip install -r requirements.txt
-export PYTHONPATH=.
-chainlit run src/presentation/chainlit_app.py -w
-```
+### Robustness Tests
+iz carbz always badd?  
+milk 200g is sugar bad?  
+pizza is vegetable?  
 
 ---
 
-## 🧪 Evaluation
+## ⚙️ How to Run
 
-```bash
-PYTHONPATH=. python scripts/run_eval.py
-PYTHONPATH=. python scripts/run_extended_eval.py
-PYTHONPATH=. python scripts/run_randomized_eval.py
-PYTHONPATH=. python scripts/run_adversarial_eval.py
-```
+pip install -r requirements.txt  
+PYTHONPATH=. chainlit run src/presentation/chainlit_app.py -w  
 
 ---
 
-## 💡 Example Usage
+## 🧪 Evaluation Commands
 
-Calorie Mode:
-
-```text
-apple 200g
-and banana 100g
-```
-
-QA Mode:
-
-```text
-Is avocado healthy?
-What are good sources of protein?
-```
+PYTHONPATH=. python eval/evaluate_any.py eval/datasets/eval_cases_qna_behavior.json  
+PYTHONPATH=. python eval/evaluate_any.py eval/datasets/eval_cases_qna_gold.json  
 
 ---
 
-## ⚠️ Limitations
+## 🧩 Key Design Decisions
 
-- Noisy inputs may slightly reduce parsing accuracy in adversarial cases
-- QA repeat detection depends on similarity thresholds
-- Calorie database is static (no live updates)
+- Separation of behavior and content evaluation
+- Pre-RAG safety layer to eliminate hallucination
+- Deterministic calorie estimation using structured data
+- Explainable outputs (confidence, match reasoning)
+- Modular architecture (NLU / Router / Retrieval / UI)
 
 ---
 
-## 🔮 Future Improvements
+## 🎯 Key Insight
 
-- Better handling of noisy and mixed inputs
-- Integration with live nutrition APIs
-- Personalized meal recommendations
-- Advanced semantic matching
+This project focuses not only on achieving high accuracy, but on building a **safe, robust, and explainable AI system**.
 
 ---
 
 ## 👩‍💻 Author
 
-**Fatemeh Niyavand**  
-MSc Data Science Student  
-University of Naples Federico II
+Fatemeh Niyavand  
+University of Naples Federico II  
+MSc Data Science
 
 ---
 
-## 📌 Conclusion
+## 📌 Notes
 
-This project demonstrates:
+- Designed for academic evaluation and real-world robustness
+- Handles noisy, ambiguous, and adversarial inputs
+- Fully reproducible evaluation pipeline
 
-- Strong NLU design
-- Robust routing between multiple modes
-- Reliable evaluation performance
-- Clear and explainable outputs
-
-It is built to be both practical and academically solid.

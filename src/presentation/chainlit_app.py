@@ -201,11 +201,15 @@ def build_item_block(item, idx: int) -> str:
     if getattr(item, "calories", None) is not None:
         details.append(f"- **Estimated calories:** `{format_number(item.calories)} kcal`")
 
-    if getattr(item, "match_reason", None):
-        details.append(f"- **Match reason:** {item.match_reason}")
-
-    if getattr(item, "match_source", None):
-        details.append(f"- **Match source:** `{item.match_source}`")
+    if getattr(item, "match_reason", None) or getattr(item, "match_source", None):
+        details.append("")
+        details.append("### 🔍 Why this match?")
+        
+        if getattr(item, "match_reason", None):
+            details.append(f"- Reason: {item.match_reason}")
+        
+        if getattr(item, "match_source", None):
+            details.append(f"- Source: `{item.match_source}`")
 
     if getattr(item, "why_rejected", None):
         details.append(f"- **Why rejected:** {item.why_rejected}")

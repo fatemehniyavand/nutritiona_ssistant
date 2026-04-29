@@ -1,0 +1,1541 @@
+{
+  "dataset_path": "/workspaces/nutritiona_ssistant/eval/datasets/eval_cases_qna_gold.json",
+  "total_cases": 50,
+  "passed_cases": 50,
+  "failed_cases": [],
+  "pass_rate": 100.0,
+  "pass_threshold": 0.8,
+  "category_breakdown": {
+    "QNA_GOLD": {
+      "total": 50,
+      "passed": 50,
+      "failed": 0
+    }
+  },
+  "case_type_breakdown": {
+    "gold_content": {
+      "total": 50,
+      "passed": 50,
+      "failed": 0
+    }
+  },
+  "all_results": [
+    {
+      "id": "GOLD_001",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "24_hour_recall_limitation",
+      "input": "What is one limitation of 24-hour dietary recall?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.7667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.7667,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
+      }
+    },
+    {
+      "id": "GOLD_002",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "24_hour_recall_limitation",
+      "input": "Why can a 24-hour food recall be inaccurate?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8554,
+      "behavior_score": 1.0,
+      "content_score": 0.1475,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1475,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.148 < 0.350",
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "The 24-hour recall method can be influenced by short-term memory, meaning it may not accurately represent an individual's typical dietary habits. To counter this issue, conducting several recalls over consecutive days is recommended for a more accurate picture.\nAnswer generated from retrieved nutrition Q&A context.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "The 24-hour recall method can be influenced by short-term memory, meaning it may not accurately represent an individual's typical dietary habits. To counter this issue, conducting several recalls over consecutive days is recommended for a more accurate picture.",
+        "confidence": "HIGH",
+        "sources_used": [
+          "qna_doc_1",
+          "qna_doc_2",
+          "qna_doc_3"
+        ],
+        "retrieved_contexts": [
+          "Question: Why might the 24-hour recall method fail to reflect someone's usual eating patterns?\nAnswer: The 24-hour recall method can be influenced by short-term memory, meaning it may not accurately represent an individual's typical dietary habits. To counter this issue, conducting several recalls over consecutive days is recommended for a more accurate picture.",
+          "Question: Why could multiple days of 24-hour food recalls result in a more accurate representation?\nAnswer: Using repeated 24-hour food recall assessments leads to better data because they consider the variability that happens daily. A single recall might not accurately depict an individual's regular dietary habits as their consumption patterns may differ from day to day.",
+          "Question: Why could multiple 24-hour food recalls result in more precise estimates?\nAnswer: Multiple 24-hour food recalls can offer a better representation of one's typical dietary intake since it considers the variation that occurs daily. A single recall might not capture an individual's regular eating habits accurately as their consumption patterns may change on the day assessed."
+        ],
+        "final_message": "Answer generated from retrieved nutrition Q&A context."
+      }
+    },
+    {
+      "id": "GOLD_003",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "24_hour_recall_limitation",
+      "input": "Why might one day of diet data not represent normal eating?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.7667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.7667,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
+      }
+    },
+    {
+      "id": "GOLD_004",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "24_hour_recall_limitation",
+      "input": "What is a weakness of asking people what they ate yesterday?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.7667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.7667,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
+      }
+    },
+    {
+      "id": "GOLD_005",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "24_hour_recall_limitation",
+      "input": "How does memory affect 24-hour dietary recall?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.7667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.7667,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
+      }
+    },
+    {
+      "id": "GOLD_006",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "dietary_recall_tools",
+      "input": "What tools help improve dietary recall accuracy?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.85,
+      "behavior_score": 1.0,
+      "content_score": 0.14,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.14,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.140 < 0.350",
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Someone recalling their recent dietary intake can use methods like recounting meals and snacks from the previous day. Tools such as pictures of food items or portion size references may be helpful.\nAnswer generated from retrieved nutrition Q&A context.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Someone recalling their recent dietary intake can use methods like recounting meals and snacks from the previous day. Tools such as pictures of food items or portion size references may be helpful.",
+        "confidence": "MEDIUM",
+        "sources_used": [
+          "qna_doc_1",
+          "qna_doc_2",
+          "qna_doc_3"
+        ],
+        "retrieved_contexts": [
+          "Question: What tools might help someone recall what they've eaten recently?\nAnswer: Someone recalling their recent dietary intake can use methods like recounting meals and snacks from the previous day. Tools such as pictures of food items or portion size references may be helpful.",
+          "Question: How do repeated 24-hour recalls improve accuracy in measuring food intake?\nAnswer: By considering fluctuations in daily dietary habits and not relying on a single day's data.",
+          "Question: What strategy does dietary assessment typically employ?\nAnswer: Dietary assessment often uses a 24-hour recall method. This technique requires an individual to remember and report all food and drink consumed in the previous day, from one midnight to another."
+        ],
+        "final_message": "Answer generated from retrieved nutrition Q&A context."
+      }
+    },
+    {
+      "id": "GOLD_007",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "dietary_recall_tools",
+      "input": "How can people estimate portions more accurately during recall?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.6667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.6667,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately."
+      }
+    },
+    {
+      "id": "GOLD_008",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "dietary_recall_tools",
+      "input": "Which aids help someone remember what they ate?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.6667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.6667,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately."
+      }
+    },
+    {
+      "id": "GOLD_009",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "dietary_recall_tools",
+      "input": "Why are food pictures useful in dietary recall?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.6667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.6667,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately."
+      }
+    },
+    {
+      "id": "GOLD_010",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "dietary_recall_tools",
+      "input": "How can measuring cups or scales support dietary assessment?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.6667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.6667,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately."
+      }
+    },
+    {
+      "id": "GOLD_011",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "balanced_diet",
+      "input": "Why is a balanced diet important?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9474,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9474,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
+      }
+    },
+    {
+      "id": "GOLD_012",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "balanced_diet",
+      "input": "What does a balanced diet provide?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9474,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9474,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
+      }
+    },
+    {
+      "id": "GOLD_013",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "balanced_diet",
+      "input": "How does dietary variety support health?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9474,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9474,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
+      }
+    },
+    {
+      "id": "GOLD_014",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "balanced_diet",
+      "input": "Why should people eat different food groups?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9474,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9474,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
+      }
+    },
+    {
+      "id": "GOLD_015",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "balanced_diet",
+      "input": "How can a balanced diet help prevent deficiencies?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9474,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9474,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
+      }
+    },
+    {
+      "id": "GOLD_016",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "extreme_diets",
+      "input": "Can extreme diets be harmful?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.8696,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.8696,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
+      }
+    },
+    {
+      "id": "GOLD_017",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "extreme_diets",
+      "input": "Why are very restrictive diets risky?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.8696,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.8696,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
+      }
+    },
+    {
+      "id": "GOLD_018",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "extreme_diets",
+      "input": "What problems can happen from cutting out many foods?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.8696,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.8696,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
+      }
+    },
+    {
+      "id": "GOLD_019",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "extreme_diets",
+      "input": "Why should people avoid extreme dieting?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.8696,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.8696,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
+      }
+    },
+    {
+      "id": "GOLD_020",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "extreme_diets",
+      "input": "How can restrictive diets affect health?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.8696,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.8696,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
+      }
+    },
+    {
+      "id": "GOLD_021",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "carbohydrates",
+      "input": "Are carbohydrates always bad?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8161,
+      "behavior_score": 1.0,
+      "content_score": 0.0926,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0926,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.093 < 0.350",
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "GOLD_022",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "carbohydrates",
+      "input": "Why do people need carbohydrates?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.5517,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.5517,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context."
+      }
+    },
+    {
+      "id": "GOLD_023",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "carbohydrates",
+      "input": "Are all carbs unhealthy?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.5517,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.5517,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context."
+      }
+    },
+    {
+      "id": "GOLD_024",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "carbohydrates",
+      "input": "How should someone think about carbs in a diet?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.5517,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.5517,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context."
+      }
+    },
+    {
+      "id": "GOLD_025",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "carbohydrates",
+      "input": "Do carbs always cause weight gain?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8161,
+      "behavior_score": 1.0,
+      "content_score": 0.0926,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0926,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.093 < 0.350",
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "GOLD_026",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fruit_sugar",
+      "input": "Is fruit bad because it has sugar?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.8077,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.8077,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks."
+      }
+    },
+    {
+      "id": "GOLD_027",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fruit_sugar",
+      "input": "Should people avoid fruit sugar completely?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.8077,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.8077,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks."
+      }
+    },
+    {
+      "id": "GOLD_028",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fruit_sugar",
+      "input": "Why is whole fruit different from sugary drinks?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.8077,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.8077,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks."
+      }
+    },
+    {
+      "id": "GOLD_029",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fruit_sugar",
+      "input": "Can fruit be part of a healthy diet?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.832,
+      "behavior_score": 1.0,
+      "content_score": 0.1148,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1148,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.115 < 0.350",
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fruits are an integral part of a balanced diet due to their low fat content and high nutritional value. They contain various vitamins, such as vitamin C, which has been proven to protect our bodies from potential damage caused by free radicals.\nAnswer generated from retrieved nutrition Q&A context.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fruits are an integral part of a balanced diet due to their low fat content and high nutritional value. They contain various vitamins, such as vitamin C, which has been proven to protect our bodies from potential damage caused by free radicals.",
+        "confidence": "MEDIUM",
+        "sources_used": [
+          "qna_doc_1",
+          "qna_doc_2",
+          "qna_doc_3"
+        ],
+        "retrieved_contexts": [
+          "Question: Can you explain the role of fruits in maintaining a healthy diet?\nAnswer: Fruits are an integral part of a balanced diet due to their low fat content and high nutritional value. They contain various vitamins, such as vitamin C, which has been proven to protect our bodies from potential damage caused by free radicals.",
+          "Question: How do fruits contribute to a balanced diet?\nAnswer: Fruits are essential for a healthy diet as they are low in fat and calories, while being rich in vital nutrients. They contain antioxidants like vitamins C and E that protect against damage from free radicals.",
+          "Question: How do fruits contribute to a balanced diet?\nAnswer: Fruits play a significant role in maintaining a healthy diet due to their low fat and calorie content, as well as their richness in essential nutrients like vitamin C."
+        ],
+        "final_message": "Answer generated from retrieved nutrition Q&A context."
+      }
+    },
+    {
+      "id": "GOLD_030",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fruit_sugar",
+      "input": "What nutrients does fruit provide besides sugar?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.834,
+      "behavior_score": 1.0,
+      "content_score": 0.1176,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1176,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.118 < 0.350",
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fruit such as oranges, strawberries, and blueberries can help.\nAnswer generated from retrieved nutrition Q&A context.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fruit such as oranges, strawberries, and blueberries can help.",
+        "confidence": "MEDIUM",
+        "sources_used": [
+          "qna_doc_1",
+          "qna_doc_2",
+          "qna_doc_3"
+        ],
+        "retrieved_contexts": [
+          "Question: What are some specific fruits that provide essential nutrients for our body?\nAnswer: Fruit such as oranges, strawberries, and blueberries can help.",
+          "Question: Which fruits and vegetables can provide additional nutrients to those found in food category 3?\nAnswer: Fruits like melons, grapes, apples, pears, chikkus, bananas, and berries, as well as vegetables such as cucumber, capsicum, pumpkin, lady finger, brinjal, and all gourds supply the minerals, vitamins, and fiber that complement group 3 in our diet. These foods aid in waste elimination from the digestive system.",
+          "Question: Why is consuming fruits and vegetables crucial for acquiring vital nutrients?\nAnswer: Fruits and vegetables contain essential vitamins and minerals that are vital for maintaining good health. They are rich in a variety of micronutrients, including fat-soluble and water-soluble vitamins, which can help prevent diseases and maintain overall well-being."
+        ],
+        "final_message": "Answer generated from retrieved nutrition Q&A context."
+      }
+    },
+    {
+      "id": "GOLD_031",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "protein",
+      "input": "Why is protein important?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4857,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4857,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
+      }
+    },
+    {
+      "id": "GOLD_032",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "protein",
+      "input": "What does protein do in the body?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4857,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4857,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
+      }
+    },
+    {
+      "id": "GOLD_033",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "protein",
+      "input": "Does everyone need the same amount of protein?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4857,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4857,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
+      }
+    },
+    {
+      "id": "GOLD_034",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "protein",
+      "input": "How does protein support muscles?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4857,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4857,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
+      }
+    },
+    {
+      "id": "GOLD_035",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "protein",
+      "input": "Why is protein needed for health?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4857,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4857,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
+      }
+    },
+    {
+      "id": "GOLD_036",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fiber",
+      "input": "Why is fiber important?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9048,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9048,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
+      }
+    },
+    {
+      "id": "GOLD_037",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fiber",
+      "input": "How does fiber help digestion?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9048,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9048,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
+      }
+    },
+    {
+      "id": "GOLD_038",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fiber",
+      "input": "Can fiber help people feel full?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9048,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9048,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
+      }
+    },
+    {
+      "id": "GOLD_039",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fiber",
+      "input": "What are benefits of dietary fiber?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9048,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9048,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
+      }
+    },
+    {
+      "id": "GOLD_040",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "fiber",
+      "input": "Why should someone eat fiber-rich foods?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9048,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9048,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
+      }
+    },
+    {
+      "id": "GOLD_041",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "hydration",
+      "input": "Why is water important for the body?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 1.0,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal."
+      }
+    },
+    {
+      "id": "GOLD_042",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "hydration",
+      "input": "What does hydration help with?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 1.0,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal."
+      }
+    },
+    {
+      "id": "GOLD_043",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "hydration",
+      "input": "Why do humans need water?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 1.0,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal."
+      }
+    },
+    {
+      "id": "GOLD_044",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "hydration",
+      "input": "How does water support normal body function?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8545,
+      "behavior_score": 1.0,
+      "content_score": 0.1463,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1463,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.146 < 0.350",
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Water supports our body's functions by aiding in the processing and distribution of nutrients, regulating temperature, and assisting in waste elimination through its role in kidney function.\nAnswer generated from retrieved nutrition Q&A context.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Water supports our body's functions by aiding in the processing and distribution of nutrients, regulating temperature, and assisting in waste elimination through its role in kidney function.",
+        "confidence": "MEDIUM",
+        "sources_used": [
+          "qna_doc_1",
+          "qna_doc_2",
+          "qna_doc_3"
+        ],
+        "retrieved_contexts": [
+          "Question: What are some ways that water supports our body's functions?\nAnswer: Water supports our body's functions by aiding in the processing and distribution of nutrients, regulating temperature, and assisting in waste elimination through its role in kidney function.",
+          "Question: What function does water have within our bodies?\nAnswer: Water has numerous functions within our bodies. It makes up a significant portion of our weight, approximately 60 to 65 percent. Water assists in transporting food into the body, supports digestion and absorption processes, facilitates waste elimination, regulates body temperature, acts as a lubricant for joints, and prevents friction.",
+          "Question: What are the primary roles water plays in maintaining human health?\nAnswer: Water has numerous vital functions within our body. It comprises around 60-65% of our weight, facilitates food entry, supports digestion and absorption, ensures waste expulsion, maintains temperature, lubricates joints, and inhibits friction."
+        ],
+        "final_message": "Answer generated from retrieved nutrition Q&A context."
+      }
+    },
+    {
+      "id": "GOLD_045",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "hydration",
+      "input": "What are the roles of water in health?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 1.0,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal."
+      }
+    },
+    {
+      "id": "GOLD_046",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "processed_foods",
+      "input": "Are all processed foods bad?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9259,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9259,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
+      }
+    },
+    {
+      "id": "GOLD_047",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "processed_foods",
+      "input": "Should processed foods always be avoided?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9259,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9259,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
+      }
+    },
+    {
+      "id": "GOLD_048",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "processed_foods",
+      "input": "How should people think about processed foods?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9259,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9259,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
+      }
+    },
+    {
+      "id": "GOLD_049",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "processed_foods",
+      "input": "Why are some highly processed foods less healthy?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9259,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9259,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
+      }
+    },
+    {
+      "id": "GOLD_050",
+      "category": "QNA_GOLD",
+      "case_type": "gold_content",
+      "topic": "processed_foods",
+      "input": "Can processed foods fit into a balanced diet?",
+      "expected_intent": "nutrition_qa",
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.9259,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.9259,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
+      }
+    }
+  ]
+}
