@@ -3,6 +3,7 @@ from typing import Any, Iterable
 
 from src.application.dto.responses import QAResponse
 from src.application.services.calorie_insight_service import CalorieInsightService
+from src.application.services.calorie_goal_service import CalorieGoalService
 from src.application.services.daily_calorie_service import DailyCalorieService
 from src.application.services.food_resolver_service import FoodResolverService
 from src.application.services.meal_memory_service import MealMemoryService
@@ -14,10 +15,12 @@ from src.application.use_cases.estimate_meal_calories import EstimateMealCalorie
 from src.domain.models.meal_state import MealState
 from src.domain.services.input_guard_service import InputGuardService
 from src.shared.constants import CALORIE_MODE, LOW_CONFIDENCE, QNA_MODE
+from src.application.services.safety.qa_safety_router import QASafetyRouter
 
 
 class NutritionOrchestrator:
     def __init__(self):
+        self.qa_router = QASafetyRouter()
         self.calorie_use_case = EstimateMealCalories()
         self.qa_use_case = AnswerNutritionQuestion()
         self.input_guard = InputGuardService()
@@ -27,6 +30,7 @@ class NutritionOrchestrator:
         self.repeat_detector_service = RepeatDetectorService()
         self.food_resolver_service = FoodResolverService()
         self.daily_calorie_service = DailyCalorieService()
+        self.calorie_goal_service = CalorieGoalService()
         self.calorie_insight_service = CalorieInsightService()
 
         self._session_history = []
@@ -54,6 +58,10 @@ class NutritionOrchestrator:
         meal_state=None,
         conversation_memory=None,
     ):
+        qa_safety = self.qa_router.route(str(text))
+        if qa_safety.get("route") != "normal":
+            return self.qa_router.build_response(qa_safety.get("route"))
+
         using_internal_history = history is None
         using_internal_memory_entries = memory_entries is None
         using_internal_meal_state = meal_state is None
@@ -210,6 +218,20 @@ class NutritionOrchestrator:
                 conversation_memory=conversation_memory,
             )
             return response
+
+        
+        if re.match(r"set goal \d+", normalized):
+            value = float(re.findall(r"\d+", normalized)[0])
+            self.calorie_goal_service.set_goal(value)
+
+            return QAResponse(
+                mode="daily_tracking",
+                answer=f"Daily calorie goal set to {value} kcal.",
+                confidence="HIGH",
+                sources_used=[],
+                retrieved_contexts=[],
+                final_message="Goal stored successfully.",
+            )
 
         if intent == "nutrition_qa":
             guard_input = normalized if normalized else original_text
@@ -431,11 +453,11 @@ class NutritionOrchestrator:
     def _build_daily_response(self, command: str) -> QAResponse:
         if command == "today":
             summary = self.daily_calorie_service.get_today_summary()
-            return self._format_day_summary("Today", summary)
+            return self._format_day_summary("Today", summary, include_goal=True)
 
         if command == "yesterday":
             summary = self.daily_calorie_service.get_yesterday_summary()
-            return self._format_day_summary("Yesterday", summary)
+            return self._format_day_summary("Yesterday", summary, include_goal=False)
 
         if command == "compare":
             comparison = self.daily_calorie_service.compare_today_yesterday()
@@ -489,20 +511,51 @@ class NutritionOrchestrator:
 
         return self._build_guard_response("out_of_domain", "")
 
-    def _format_day_summary(self, label: str, summary: dict) -> QAResponse:
+    def _format_day_summary(self, label: str, summary: dict, include_goal: bool = False) -> QAResponse:
         items = summary.get("items", []) or []
-        total = summary.get("total_calories", 0.0)
+        total = float(summary.get("total_calories", 0.0) or 0.0)
         log_date = summary.get("date", "")
 
         if not items:
-            answer = f"{label} ({log_date}): 0 kcal. No logged food items yet."
+            lines = [f"{label} ({log_date}): 0 kcal. No logged food items yet."]
         else:
             lines = [f"{label} ({log_date}): {total} kcal"]
             for idx, item in enumerate(items, start=1):
                 lines.append(
                     f"{idx}. {item['food']} - {item['grams']}g - {item['calories']} kcal"
                 )
-            answer = "\n".join(lines)
+
+        if include_goal:
+            progress = self.calorie_goal_service.build_progress(total)
+            if progress:
+                remaining = progress["remaining"]
+                if remaining > 0:
+                    remaining_text = f"{remaining} kcal remaining"
+                elif remaining < 0:
+                    remaining_text = f"{abs(remaining)} kcal over goal"
+                else:
+                    remaining_text = "goal reached exactly"
+
+                lines.extend(
+                    [
+                        "",
+                        "Goal Tracking:",
+                        f"Goal: {progress['goal']} kcal",
+                        f"Current: {progress['current']} kcal",
+                        f"Remaining: {remaining_text}",
+                        f"Progress: {progress['progress']}%",
+                    ]
+                )
+            else:
+                lines.extend(
+                    [
+                        "",
+                        "Goal Tracking:",
+                        "No daily calorie goal is set yet. Try: set goal 2000",
+                    ]
+                )
+
+        answer = "\n".join(lines)
 
         return QAResponse(
             mode="daily_tracking",
