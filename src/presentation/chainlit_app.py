@@ -8,6 +8,9 @@ from types import SimpleNamespace
 
 import chainlit as cl
 
+from src.application.services.calorie_chart_service import CalorieChartService
+from src.application.services.daily_calorie_service import DailyCalorieService
+
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
@@ -45,6 +48,22 @@ CLEAR_MEAL_COMMANDS = {
 }
 
 REMOVE_PREFIXES = ("remove ", "delete ", "take out ")
+
+
+
+def build_weekly_chart_element(normalized_command: str):
+    if normalized_command not in {"weekly summary", "week summary", "show weekly summary", "weekly calories", "show week"}:
+        return None
+
+    week = DailyCalorieService().get_week_summary()
+    if not week:
+        return None
+
+    chart_path = CalorieChartService().build_weekly_bar_chart(week)
+    if not chart_path:
+        return None
+
+    return cl.Image(name="weekly_calories_chart", path=chart_path, display="inline")
 
 
 def get_meal_state():
@@ -695,9 +714,17 @@ async def handle_query(user_text: str, thinking_message: cl.Message):
 
     set_last_debug_payload(debug_payload)
 
+    elements = []
+    weekly_chart = build_weekly_chart_element(normalized_command)
+    if weekly_chart is not None:
+        elements.append(weekly_chart)
+
+    if is_debug_enabled():
+        elements.append(build_debug_element(debug_payload))
+
     thinking_message.content = formatted
     thinking_message.actions = get_debug_actions()
-    thinking_message.elements = [build_debug_element(debug_payload)] if is_debug_enabled() else []
+    thinking_message.elements = elements
     await thinking_message.update()
 
     history.append({"role": "user", "content": original_user_text})

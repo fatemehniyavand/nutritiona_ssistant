@@ -2,6 +2,7 @@ import re
 from typing import Any, Iterable
 
 from src.application.dto.responses import QAResponse
+from src.application.services.calorie_insight_service import CalorieInsightService
 from src.application.services.daily_calorie_service import DailyCalorieService
 from src.application.services.food_resolver_service import FoodResolverService
 from src.application.services.meal_memory_service import MealMemoryService
@@ -26,6 +27,7 @@ class NutritionOrchestrator:
         self.repeat_detector_service = RepeatDetectorService()
         self.food_resolver_service = FoodResolverService()
         self.daily_calorie_service = DailyCalorieService()
+        self.calorie_insight_service = CalorieInsightService()
 
         self._session_history = []
         self._session_memory_entries = []
@@ -466,11 +468,14 @@ class NutritionOrchestrator:
             if not week:
                 answer = "No weekly calorie history is available yet."
             else:
+                insight = self.calorie_insight_service.build_weekly_insight(week)
                 lines = ["Weekly calorie summary:"]
                 for row in reversed(week):
                     bar_count = max(1, int(row["total_calories"] // 100)) if row["total_calories"] > 0 else 0
                     bar = "█" * min(bar_count, 30)
                     lines.append(f"{row['date']}: {row['total_calories']} kcal {bar}")
+
+                lines.extend(["", "Insight:", insight["message"]])
                 answer = "\n".join(lines)
 
             return QAResponse(
@@ -479,7 +484,7 @@ class NutritionOrchestrator:
                 confidence="HIGH",
                 sources_used=[],
                 retrieved_contexts=[],
-                final_message="Weekly summary returned from persistent SQLite history.",
+                final_message="Weekly summary returned from persistent SQLite history with insight analysis.",
             )
 
         return self._build_guard_response("out_of_domain", "")
