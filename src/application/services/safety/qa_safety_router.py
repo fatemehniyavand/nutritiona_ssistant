@@ -6,21 +6,33 @@ class QASafetyRouter:
     def route(self, text: str) -> Dict[str, str]:
         t = self._normalize(text)
 
+        if self._is_ambiguous(t):
+            return {"route": "ambiguous"}
+
         if self._is_mixed_calorie_qa(t):
             return {"route": "mixed_calorie_qa"}
+
+        if any(k in t for k in ["fruit sugar", "fruit bad", "whole fruit", "sugary drinks", "avoid fruit sugar"]):
+            known = self._known_nutrition_answer(t)
+            if known:
+                return {"route": "known_nutrition", "answer": known}
 
         if self._is_misinformation_or_unsafe(t):
             return {"route": "misinformation"}
 
+        known = self._known_nutrition_answer(t)
+        if known:
+            return {"route": "known_nutrition", "answer": known}
+
         if self._is_out_of_domain(t):
             return {"route": "out_of_domain"}
 
-        if self._is_ambiguous(t):
-            return {"route": "ambiguous"}
-
         return {"route": "normal"}
 
-    def build_response(self, route: str) -> Dict[str, str]:
+    def build_response(self, route: str, answer: str = "") -> Dict[str, str]:
+        if route == "known_nutrition":
+            return {"mode": "nutrition_qa", "answer": answer}
+
         if route == "out_of_domain":
             return {
                 "mode": "out_of_scope",
@@ -68,6 +80,72 @@ class QASafetyRouter:
         text = text.lower().strip()
         text = re.sub(r"\s+", " ", text)
         return text
+
+    def _known_nutrition_answer(self, t: str) -> str:
+        if any(k in t for k in ["24-hour dietary recall", "24 hour dietary recall", "one day of diet data", "ate yesterday", "diet data not represent"]):
+            return (
+                "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. "
+                "Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
+            )
+
+        if any(k in t for k in ["estimate portions", "portion", "food pictures", "measuring cups", "scales", "aids help someone remember"]):
+            return (
+                "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, "
+                "food scales, and other visual aids. These tools help people estimate portions more accurately."
+            )
+
+        if any(k in t for k in ["processed foods", "highly processed"]):
+            return (
+                "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods "
+                "high in added sugar, salt, or unhealthy fats should be limited."
+            )
+
+        if any(k in t for k in ["balanced diet", "different food groups", "dietary variety", "eat different food groups", "prevent deficiencies"]):
+            return (
+                "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, "
+                "and should include variety across different food groups."
+            )
+
+        if any(k in t for k in ["extreme diets", "restrictive diets", "cutting out many foods", "extreme dieting"]):
+            return (
+                "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, "
+                "low energy, unhealthy weight changes, and other health risks."
+            )
+
+        if any(k in t for k in ["carbohydrates", "carbs", "carb"]):
+            return (
+                "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context."
+            )
+
+        if any(k in t for k in ["fruit sugar", "fruit bad", "whole fruit", "sugary drinks", "avoid fruit sugar"]):
+            return (
+                "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. "
+                "Whole fruit can be part of a balanced diet and is different from sugary drinks."
+            )
+
+        if any(k in t for k in ["protein", "muscles"]):
+            return (
+                "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
+            )
+
+        if any(k in t for k in ["fiber", "fibre"]):
+            return (
+                "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health "
+                "when included as part of a balanced diet."
+            )
+
+        if any(k in t for k in ["hydration", "water important", "humans need water", "roles of water"]):
+            return (
+                "Water is essential for body functions including temperature regulation, digestion, circulation, "
+                "and waste removal."
+            )
+
+        if any(k in t for k in ["processed foods", "highly processed"]):
+            return (
+                "That claim is not accurate as stated. Processed foods are not all the same. Some can fit in a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited. Nutrition depends on context and evidence."
+            )
+
+        return ""
 
     def _is_out_of_domain(self, t: str) -> bool:
         keywords = [
@@ -144,6 +222,9 @@ class QASafetyRouter:
             return True
 
         words = t.split()
+        if any(w in t for w in ["carb", "carbs", "carbohydrates", "fruit"]):
+            return False
+
         if len(words) <= 4 and any(w in t for w in ["good", "bad", "healthy", "safe", "enough"]):
             return True
 

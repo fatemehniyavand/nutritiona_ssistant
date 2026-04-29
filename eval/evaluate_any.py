@@ -268,11 +268,17 @@ def evaluate_case(answer: str, mode: str, case: Dict[str, Any]) -> Dict[str, Any
     component_scores.append(behavior_score)
 
     final_score = sum(component_scores) / len(component_scores)
-    passed = len(failures) == 0
+    case_category = str(case.get("category", ""))
+    if case_category == "QNA_GOLD":
+        passed = len(failures) == 0 and final_score + EPSILON >= PASS_THRESHOLD
+    else:
+        passed = len(failures) == 0
 
     return {
         "passed": passed,
         "score": round(final_score, 4),
+        "behavior_score": round(details.get("behavior_score", 1.0), 4),
+        "content_score": round(sim if "sim" in locals() else 1.0, 4),
         "failures": failures,
         "details": details,
     }
@@ -303,6 +309,8 @@ async def main_async(dataset_path: Path) -> None:
             "detected_mode": mode,
             "passed": evaluation["passed"],
             "score": evaluation["score"],
+            "behavior_score": evaluation.get("behavior_score"),
+            "content_score": evaluation.get("content_score"),
             "failures": evaluation["failures"],
             "details": evaluation["details"],
             "answer": answer,

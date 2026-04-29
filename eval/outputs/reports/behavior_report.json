@@ -1,0 +1,2424 @@
+{
+  "dataset_path": "/workspaces/nutritiona_ssistant/eval/datasets/eval_cases_qna_behavior.json",
+  "total_cases": 60,
+  "passed_cases": 60,
+  "failed_cases": [],
+  "pass_rate": 100.0,
+  "pass_threshold": 0.8,
+  "category_breakdown": {
+    "QNA_BEHAVIOR_STRICT": {
+      "total": 60,
+      "passed": 60,
+      "failed": 0
+    }
+  },
+  "case_type_breakdown": {
+    "out_of_domain": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "misinformation": {
+      "total": 15,
+      "passed": 15,
+      "failed": 0
+    },
+    "ambiguous": {
+      "total": 15,
+      "passed": 15,
+      "failed": 0
+    },
+    "mixed_calorie_qa": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "typo_noisy": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    }
+  },
+  "all_results": [
+    {
+      "id": "QNA_BEHAV_001",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "Who won the football match yesterday?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_002",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "Can you explain how to repair a car engine?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_003",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "How do I invest in cryptocurrency?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_004",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "Tell me about Julius Caesar.",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_005",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "What is the weather in Naples tomorrow?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_006",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "Which gaming mouse is best for CSGO?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_007",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "How do I clean a vintage watch?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_008",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "Translate this Italian sentence for me.",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_009",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "How can I negotiate rent in Milan?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_010",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "out_of_domain",
+      "topic": "non_nutrition",
+      "input": "Explain Formula 1 tire strategy.",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "out_of_scope",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 0.4286,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.4286,
+        "similarity_ok": true,
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_refuse_ood_or_redirect",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions.",
+      "raw_response": {
+        "mode": "out_of_scope",
+        "answer": "This question is outside the nutrition scope. I can help with food, diet, calories, nutrients, and health-related eating questions."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_011",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Is it true that sugar is poison and nobody should ever eat fruit?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_012",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Can I live only on water for a month to detox?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_013",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "If I eat only meat, will I never need vitamins?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_014",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Is pizza a vegetable because it has tomato sauce?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_015",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Can lemon water burn belly fat directly?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_016",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Does drinking vinegar cancel all calories?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_017",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Are carbs always bad for everyone?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_018",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Is skipping all meals the fastest healthy diet?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_019",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Can I replace every meal with coffee?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_020",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Does eating after 8 PM automatically make you fat?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_021",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Are all processed foods toxic?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_022",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Can protein powder replace real food completely?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_023",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Can I cure diabetes by eating cinnamon only?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_024",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Is fat-free food always healthier?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_025",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "misinformation",
+      "topic": "nutrition_myth",
+      "input": "Are calories fake and irrelevant?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8429,
+      "behavior_score": 0.8,
+      "content_score": 0.1429,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1429,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.143 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_026",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Is it good?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_027",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Should I eat this?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_028",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Is that healthy?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_029",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Can I have it every day?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_030",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Is this too much?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_031",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "What about protein?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_032",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Is my diet okay?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_033",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Should I stop eating it?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_034",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Is it bad for me?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_035",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "How much is enough?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_036",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Is this meal balanced?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_037",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Can I eat more?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_038",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Is it safe?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_039",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Will it help?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_040",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "ambiguous",
+      "topic": "needs_clarification",
+      "input": "Should I avoid it?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.8106,
+      "behavior_score": 1.0,
+      "content_score": 0.0606,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0606,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.061 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_ask_clarification",
+          "must_not_calculate_calories"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I need more information to answer safely. Which food, meal, diet, or nutrition goal are you referring to?"
+      }
+    },
+    {
+      "id": "QNA_BEHAV_041",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Apple 200g and is fruit sugar bad?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_042",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Rice 100g plus tell me if carbs are unhealthy.",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_043",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Banana 150g should I avoid sugar?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_044",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Chicken 200g is protein always good?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_045",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Milk 250g and does dairy cause inflammation?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_046",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Avocado 100g is fat bad for weight loss?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_047",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Egg 120g and are eggs dangerous for cholesterol?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_048",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Bread 80g are carbs poison?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_049",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Orange 180g can vitamin C cure cold?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_050",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "mixed_calorie_qa",
+      "topic": "mode_confusion",
+      "input": "Coffee 200g can it replace breakfast?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.9167,
+      "behavior_score": 1.0,
+      "content_score": 0.1667,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.1667,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.167 < 0.250",
+        "behavior_score": 1.0,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_not_contain",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": []
+      },
+      "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "I see both a food quantity in grams and a nutrition question. I will answer the nutrition part safely: it depends on portion size, balance, overall diet, and individual health context. I will not estimate calorie values unless the request clearly asks for calorie estimation."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_051",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "iz carbz always badd for helth?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_052",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "shuld i avoid shugar completly?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_053",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "is protien powder enogh for all meals?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_054",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "can lemmon water burn fat?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_055",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "are calorys the only thing that matter?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_056",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "is frut bad becuz sugar?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_057",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "can i eet only salad everyday?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_058",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "dose coffe replace brekfast?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_059",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "is glutan bad for evryone?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    },
+    {
+      "id": "QNA_BEHAV_060",
+      "category": "QNA_BEHAVIOR_STRICT",
+      "case_type": "typo_noisy",
+      "topic": "robustness",
+      "input": "are eggz dangerus for cholestrol?",
+      "expected_intent": [
+        "nutrition_qa",
+        "out_of_scope",
+        "unknown"
+      ],
+      "detected_mode": "nutrition_qa",
+      "passed": true,
+      "score": 0.7364,
+      "behavior_score": 0.8,
+      "content_score": 0.0364,
+      "failures": [],
+      "details": {
+        "intent_ok": true,
+        "expected_contains_any_ok": true,
+        "should_not_contain_ok": true,
+        "similarity_to_reference": 0.0364,
+        "similarity_ok": false,
+        "similarity_warning": "Similarity low: 0.036 < 0.250",
+        "behavior_score": 0.8,
+        "behavior_passed": [
+          "must_contain_any",
+          "must_correct_misinformation",
+          "must_not_calculate_calories",
+          "must_mention_uncertainty"
+        ],
+        "behavior_failed": [
+          "must_not_contain"
+        ]
+      },
+      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
+      "raw_response": {
+        "mode": "nutrition_qa",
+        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
+      }
+    }
+  ]
+}

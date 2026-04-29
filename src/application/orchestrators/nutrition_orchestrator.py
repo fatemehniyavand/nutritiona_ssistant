@@ -60,7 +60,7 @@ class NutritionOrchestrator:
     ):
         qa_safety = self.qa_router.route(str(text))
         if qa_safety.get("route") != "normal":
-            return self.qa_router.build_response(qa_safety.get("route"))
+            return self.qa_router.build_response(qa_safety.get("route"), qa_safety.get("answer", ""))
 
         using_internal_history = history is None
         using_internal_memory_entries = memory_entries is None
