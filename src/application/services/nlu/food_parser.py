@@ -20,7 +20,7 @@ class FoodParser:
         "please", "the", "a", "an", "my", "some",
         "have", "eat", "ate", "eaten",
         "log", "track", "include", "including",
-        "i", "want", "to",
+        "i", "want", "to", "for", "meal", "hello", "hi", "hey",
     }
 
     ITEM_PATTERN = re.compile(
@@ -64,6 +64,9 @@ class FoodParser:
         r"\bmeal total\b",
     ]
 
+    def parse(self, text: str) -> List[ParsedFoodItem]:
+        return self.parse_food_items(text)
+
     def parse_food_items(self, text: str) -> List[ParsedFoodItem]:
         text = self._prepare_text(text)
         if not text:
@@ -78,6 +81,9 @@ class FoodParser:
             grams = float(match.group("grams"))
 
             if not food_name:
+                continue
+
+            if grams <= 0:
                 continue
 
             if self._looks_like_command(food_name):
@@ -121,7 +127,7 @@ class FoodParser:
         if current < len(protected_text):
             leftovers.append(protected_text[current:])
 
-        return self._clean_leftover_text(" ".join(leftovers).replace(" | ", " "))
+        return self._clean_leftover_text(" ".join(leftovers))
 
     def looks_like_food_only(self, text: str) -> bool:
         text = self._prepare_text(text)
@@ -135,6 +141,8 @@ class FoodParser:
         if self._looks_like_command(text):
             return False
         if "?" in text:
+            return False
+        if re.search(r"\d", text):
             return False
 
         cleaned = self._clean_food_name(text)
@@ -156,11 +164,6 @@ class FoodParser:
         return self.QUANTITY_ONLY_PATTERN.match(text) is not None
 
     def _protect_item_boundaries(self, text: str) -> str:
-        """
-        Helps parse:
-        apple 100g banana 200g milk 50g
-        apple100gbanana200g after normalization
-        """
         text = re.sub(r"(\d+(?:\.\d+)?g)\s+(?=[a-z])", r"\1 | ", text)
         text = text.replace(" | and ", " and ")
         text = text.replace(" | add ", " add ")
@@ -187,6 +190,7 @@ class FoodParser:
         text = text.replace("|", " ")
         words = self._prepare_text(text).split()
         words = [word for word in words if word not in self.LEADING_FILLERS]
+        words = [word for word in words if word not in self.CONNECTORS]
         return " ".join(words).strip()
 
     def _deduplicate_items(self, items: List[ParsedFoodItem]) -> List[ParsedFoodItem]:

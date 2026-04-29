@@ -593,7 +593,7 @@
     "case_id": "GRD-009",
     "category": "GRD",
     "kind": "single_turn",
-    "input": "سلام خوبی",
+    "input": "\u0633\u0644\u0627\u0645 \u062e\u0648\u0628\u06cc",
     "expected": {
       "message_non_empty": true,
       "semantic_guard": "non_english"
@@ -1629,10 +1629,10 @@
     "input": "avocado 200g and oats 200g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
+      "matched_items": 2,
+      "total_items": 2,
       "coverage": 1.0,
-      "total_calories": 1202.0
+      "total_calories": 1098.0
     },
     "meta": {
       "items": [
@@ -1642,10 +1642,6 @@
         ],
         [
           "oats",
-          200
-        ],
-        [
-          "apple",
           200
         ]
       ]
@@ -1658,10 +1654,10 @@
     "input": "apple250g and avocado250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
+      "matched_items": 2,
+      "total_items": 2,
       "coverage": 1.0,
-      "total_calories": 607.5
+      "total_calories": 530.0
     },
     "meta": {
       "items": [
@@ -1672,10 +1668,6 @@
         [
           "avocado",
           250
-        ],
-        [
-          "egg",
-          50
         ]
       ]
     }
@@ -1687,10 +1679,10 @@
     "input": "add rice 75g and grilled chicken 120g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
+      "matched_items": 2,
+      "total_items": 2,
       "coverage": 1.0,
-      "total_calories": 587.25
+      "total_calories": 295.5
     },
     "meta": {
       "items": [
@@ -1701,10 +1693,6 @@
         [
           "grilled chicken",
           120
-        ],
-        [
-          "oats",
-          75
         ]
       ]
     }
@@ -1745,10 +1733,10 @@
     "input": "banana50g and apple250g",
     "expected": {
       "mode": "calorie",
-      "matched_items": 3,
-      "total_items": 3,
+      "matched_items": 2,
+      "total_items": 2,
       "coverage": 1.0,
-      "total_calories": 839.5
+      "total_calories": 174.5
     },
     "meta": {
       "items": [
@@ -1758,10 +1746,6 @@
         ],
         [
           "apple",
-          250
-        ],
-        [
-          "pizza",
           250
         ]
       ]

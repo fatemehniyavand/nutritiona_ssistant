@@ -19,7 +19,7 @@ class Settings(BaseModel):
     calorie_collection: str = os.getenv("CALORIE_COLLECTION", "nutrition_db")
     qna_collection: str = os.getenv("QNA_COLLECTION", "nutrition_qna")
 
-    calorie_csv_path: str = os.getenv("CALORIE_CSV_PATH", "data/raw/calories.csv")
+    calorie_csv_path: str = os.getenv("CALORIE_CSV_PATH", "data/processed/calories_cleaned.csv")
     qna_text_path: str = os.getenv("QNA_TEXT_PATH", "data/raw/questions_output.txt")
 
     top_k_calorie: int = int(os.getenv("TOP_K_CALORIE", "3"))

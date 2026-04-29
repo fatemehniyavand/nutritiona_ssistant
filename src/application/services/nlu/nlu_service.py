@@ -52,7 +52,7 @@ class NutritionNLUService:
     ]
 
     QUESTION_HINT_PATTERN = re.compile(
-        r"\b(what|which|why|how|is|are|can|should|do|does|healthy|protein|fat|vitamin|fiber|diet|nutrition|calories)\b",
+        r"\b(what|which|why|how|is|are|can|should|do|does|healthy|protein|fat|vitamin|fiber|diet|nutrition|calories|carbs|sugar)\b",
         re.IGNORECASE,
     )
 
@@ -77,6 +77,7 @@ class NutritionNLUService:
         "the", "a", "an", "my", "some",
         "track", "log", "include", "including",
         "i", "want", "to", "eat", "ate", "have",
+        "for", "meal",
     }
 
     def __init__(self):
@@ -117,7 +118,9 @@ class NutritionNLUService:
                 intent="calorie_input",
                 parsed_items=parsed_items,
                 confidence="HIGH" if not clean_unparsed else "MEDIUM",
-                warnings=[] if not clean_unparsed else [f"Some text could not be confidently parsed: '{clean_unparsed}'."],
+                warnings=[] if not clean_unparsed else [
+                    f"Some text could not be confidently parsed: '{clean_unparsed}'."
+                ],
                 unparsed_text=clean_unparsed,
             )
 

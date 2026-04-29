@@ -309,10 +309,35 @@ class NutritionOrchestrator:
             if not re.search(r"\d+(?:\.\d+)?\s*g\b", normalized):
                 return "quantity_not_numeric"
 
+        prompt_injection_patterns = [
+            r"\bignore\s+(all\s+)?(previous\s+)?rules\b",
+            r"\bignore\s+(all\s+)?instructions\b",
+            r"\bsystem\s+prompt\b",
+            r"\bdeveloper\s+message\b",
+            r"\bjailbreak\b",
+            r"\boverride\s+(the\s+)?rules\b",
+            r"\bsay\s+.+\s+has\s+zero\s+calories\b",
+            r"\bzero\s+calories\b",
+        ]
+        if any(re.search(pattern, normalized) for pattern in prompt_injection_patterns):
+            return "unsafe"
+
+        destructive_patterns = [
+            r"\bdelete\s+(your\s+)?database\b",
+            r"\bdrop\s+database\b",
+            r"\berase\s+(your\s+)?database\b",
+            r"\bremove\s+(all\s+)?data\b",
+            r"\bdelete\s+(all\s+)?data\b",
+        ]
+        if any(re.search(pattern, normalized) for pattern in destructive_patterns):
+            return "unsafe"
+
         unsafe_patterns = [
             r"\blose\s+\d+\s*kg\s+in\s+one\s+week\b",
             r"\blose weight fast\b",
             r"\bstarvation diet\b",
+            r"\bstarve\s+myself\b",
+            r"\bto\s+starve\s+myself\b",
             r"\bstop eating\b",
             r"\bnot eating\b",
             r"\bextreme diet\b",
@@ -322,8 +347,13 @@ class NutritionOrchestrator:
             return "unsafe"
 
         irrelevant_patterns = [
-            r"\bpresident\b",
+            r"\bwhat\s+time\s+is\s+it\b",
+            r"\bcurrent\s+time\b",
+            r"\bwho\s+won\s+the\s+tennis\s+match\b",
+            r"\btennis\s+match\b",
+            r"\bsports?\s+score\b",
             r"\bfootball score\b",
+            r"\bpresident\b",
             r"\bweather\b",
             r"\bpython code\b",
             r"\bwrite me code\b",
