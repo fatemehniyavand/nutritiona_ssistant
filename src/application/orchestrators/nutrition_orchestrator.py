@@ -2,6 +2,7 @@ import re
 from typing import Any, Iterable
 
 from src.application.dto.responses import QAResponse
+from src.application.services.daily_calorie_service import DailyCalorieService
 from src.application.services.food_resolver_service import FoodResolverService
 from src.application.services.meal_memory_service import MealMemoryService
 from src.application.services.memory_service import MemoryService
@@ -24,6 +25,7 @@ class NutritionOrchestrator:
         self.nlu_service = NutritionNLUService()
         self.repeat_detector_service = RepeatDetectorService()
         self.food_resolver_service = FoodResolverService()
+        self.daily_calorie_service = DailyCalorieService()
 
         self._session_history = []
         self._session_memory_entries = []
@@ -68,6 +70,19 @@ class NutritionOrchestrator:
         original_text = (nlu_result.original_text or "").strip()
         normalized = (nlu_result.normalized_text or "").strip()
         intent = (nlu_result.intent or "").strip().lower()
+
+        daily_command = self._detect_daily_command(normalized or original_text)
+        if daily_command:
+            response = self._build_daily_response(daily_command)
+            self._record_turn(
+                user_input=text,
+                normalized_input=normalized or original_text.lower().strip(),
+                kind="daily_tracking",
+                response=response,
+                history=history,
+                conversation_memory=conversation_memory,
+            )
+            return response
 
         pre_guard_class = self._pre_route_guard_class(original_text, normalized)
 
@@ -367,6 +382,131 @@ class NutritionOrchestrator:
             return "out_of_domain"
 
         return "valid"
+
+
+    def _detect_daily_command(self, text: str) -> str:
+        normalized = re.sub(r"\s+", " ", (text or "").strip().lower())
+
+        if normalized in {
+            "today summary",
+            "today calories",
+            "show today",
+            "show today summary",
+            "what did i eat today",
+            "what did i eat today?",
+        }:
+            return "today"
+
+        if normalized in {
+            "yesterday summary",
+            "yesterday calories",
+            "show yesterday",
+            "show yesterday summary",
+            "what did i eat yesterday",
+            "what did i eat yesterday?",
+        }:
+            return "yesterday"
+
+        if normalized in {
+            "compare today with yesterday",
+            "compare today and yesterday",
+            "today vs yesterday",
+            "compare calories",
+        }:
+            return "compare"
+
+        if normalized in {
+            "weekly summary",
+            "week summary",
+            "show weekly summary",
+            "weekly calories",
+            "show week",
+        }:
+            return "week"
+
+        return ""
+
+    def _build_daily_response(self, command: str) -> QAResponse:
+        if command == "today":
+            summary = self.daily_calorie_service.get_today_summary()
+            return self._format_day_summary("Today", summary)
+
+        if command == "yesterday":
+            summary = self.daily_calorie_service.get_yesterday_summary()
+            return self._format_day_summary("Yesterday", summary)
+
+        if command == "compare":
+            comparison = self.daily_calorie_service.compare_today_yesterday()
+            today_total = comparison["today"]["total_calories"]
+            yesterday_total = comparison["yesterday"]["total_calories"]
+            diff = comparison["difference"]
+
+            if diff > 0:
+                direction = f"{diff} kcal more than yesterday"
+            elif diff < 0:
+                direction = f"{abs(diff)} kcal less than yesterday"
+            else:
+                direction = "the same as yesterday"
+
+            return QAResponse(
+                mode="daily_tracking",
+                answer=(
+                    f"Today: {today_total} kcal\n"
+                    f"Yesterday: {yesterday_total} kcal\n"
+                    f"Difference: {direction}."
+                ),
+                confidence="HIGH",
+                sources_used=[],
+                retrieved_contexts=[],
+                final_message="Daily calorie comparison returned from persistent SQLite history.",
+            )
+
+        if command == "week":
+            week = self.daily_calorie_service.get_week_summary()
+            if not week:
+                answer = "No weekly calorie history is available yet."
+            else:
+                lines = ["Weekly calorie summary:"]
+                for row in reversed(week):
+                    bar_count = max(1, int(row["total_calories"] // 100)) if row["total_calories"] > 0 else 0
+                    bar = "█" * min(bar_count, 30)
+                    lines.append(f"{row['date']}: {row['total_calories']} kcal {bar}")
+                answer = "\n".join(lines)
+
+            return QAResponse(
+                mode="daily_tracking",
+                answer=answer,
+                confidence="HIGH",
+                sources_used=[],
+                retrieved_contexts=[],
+                final_message="Weekly summary returned from persistent SQLite history.",
+            )
+
+        return self._build_guard_response("out_of_domain", "")
+
+    def _format_day_summary(self, label: str, summary: dict) -> QAResponse:
+        items = summary.get("items", []) or []
+        total = summary.get("total_calories", 0.0)
+        log_date = summary.get("date", "")
+
+        if not items:
+            answer = f"{label} ({log_date}): 0 kcal. No logged food items yet."
+        else:
+            lines = [f"{label} ({log_date}): {total} kcal"]
+            for idx, item in enumerate(items, start=1):
+                lines.append(
+                    f"{idx}. {item['food']} - {item['grams']}g - {item['calories']} kcal"
+                )
+            answer = "\n".join(lines)
+
+        return QAResponse(
+            mode="daily_tracking",
+            answer=answer,
+            confidence="HIGH",
+            sources_used=[],
+            retrieved_contexts=[],
+            final_message="Daily summary returned from persistent SQLite history.",
+        )
 
     def _record_turn(
         self,

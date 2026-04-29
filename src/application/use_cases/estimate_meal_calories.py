@@ -2,6 +2,7 @@ import re
 from typing import List, Tuple, Optional
 
 from src.application.services.canonical_calorie_service import CanonicalCalorieService
+from src.application.services.daily_calorie_service import DailyCalorieService
 from src.application.services.food_resolver_service import FoodResolverService
 from src.application.services.meal_memory_service import MealMemoryService
 from src.application.services.nlu.food_normalizer import FoodNormalizer
@@ -108,6 +109,7 @@ class EstimateMealCalories:
         self.repeat_detector_service = RepeatDetectorService()
         self.food_normalizer = FoodNormalizer()
         self.food_parser = FoodParser()
+        self.daily_calorie_service = DailyCalorieService()
 
     def run(self, text: str, history=None, meal_state=None, conversation_memory=None):
         history = history or []
@@ -345,6 +347,7 @@ class EstimateMealCalories:
 
         if meal_items_to_add:
             self.meal_memory_service.add_items(meal_state, meal_items_to_add)
+            self.daily_calorie_service.log_items_today(meal_items_to_add)
             meal_state.last_input = text
 
         matched_items_only = [
