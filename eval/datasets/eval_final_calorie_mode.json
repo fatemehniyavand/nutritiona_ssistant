@@ -1,0 +1,2078 @@
+[
+  {
+    "case_id": "CAL_FINAL_001",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "applesauce 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 31.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "applesauce",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_002",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "applesauce 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 62.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "applesauce",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_003",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "applesauce 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 124.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "applesauce",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_004",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned apricots 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 24.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned apricots",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_005",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned apricots 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 48.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned apricots",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_006",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned apricots 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 96.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned apricots",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_007",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned blackberries 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 46.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned blackberries",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_008",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned blackberries 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 92.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned blackberries",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_009",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned blackberries 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 184.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned blackberries",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_010",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned blueberries 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 44.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned blueberries",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_011",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned blueberries 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 88.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned blueberries",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_012",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned blueberries 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 176.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned blueberries",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_013",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned cherries 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 27.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned cherries",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_014",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned cherries 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 54.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned cherries",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_015",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned cherries 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 108.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned cherries",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_016",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned cranberries 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 89.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned cranberries",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_017",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned cranberries 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 178.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned cranberries",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_018",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned cranberries 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 356.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned cranberries",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_019",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned crushed pineapple 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 26.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned crushed pineapple",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_020",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned crushed pineapple 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 53.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned crushed pineapple",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_021",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned crushed pineapple 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 106.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned crushed pineapple",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_022",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned figs 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 53.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned figs",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_023",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned figs 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 107.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned figs",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_024",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned figs 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 214.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned figs",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_025",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned fruit cocktail 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 40.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned fruit cocktail",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_026",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned fruit cocktail 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 81.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned fruit cocktail",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_027",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned fruit cocktail 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 162.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned fruit cocktail",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_028",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned fruit salad 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 25.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned fruit salad",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_029",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned fruit salad 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 50.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned fruit salad",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_030",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned fruit salad 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 100.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned fruit salad",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_031",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned grapefruit 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 18.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned grapefruit",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_032",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned grapefruit 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 37.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned grapefruit",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_033",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned grapefruit 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 74.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned grapefruit",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_034",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned grapes 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 38.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned grapes",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_035",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned grapes 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 76.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned grapes",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_036",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned grapes 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 152.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned grapes",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_037",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned mandarin oranges 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 35.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned mandarin oranges",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_038",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned mandarin oranges 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 71.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned mandarin oranges",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_039",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned mandarin oranges 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 142.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned mandarin oranges",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_040",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned mango 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 32.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned mango",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_041",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned mango 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 65.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned mango",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_042",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned mango 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 130.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned mango",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_043",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned pineapple 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 30.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_044",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned pineapple 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 60.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_045",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned pineapple 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 120.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_046",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned peaches 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 27.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned peaches",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_047",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned peaches 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 54.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned peaches",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_048",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned peaches 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 108.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned peaches",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_049",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned pears 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 17.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pears",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_050",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned pears 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 35.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pears",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_051",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned pears 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 70.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pears",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_052",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned raspberries 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 45.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned raspberries",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_053",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned raspberries 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 91.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned raspberries",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_054",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned raspberries 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 182.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned raspberries",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_055",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned sliced pineapple 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 26.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned sliced pineapple",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_056",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned sliced pineapple 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 53.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned sliced pineapple",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_057",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "canned sliced pineapple 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 106.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned sliced pineapple",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_058",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "apple 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 26.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_059",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "apple 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 52.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_060",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "apple 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 104.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_061",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "avocado 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 80.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_062",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "avocado 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 160.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_063",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "avocado 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 320.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_064",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "banana 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 44.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_065",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "banana 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 89.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_066",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "banana 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 178.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_067",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "blueberries 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 28.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "blueberries",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_068",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "blueberries 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 57.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "blueberries",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_069",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "blueberries 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 114.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "blueberries",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_070",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "mango 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 30.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mango",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_071",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "mango 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 60.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mango",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_072",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "mango 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 120.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mango",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_073",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "pineapple 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 25.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "pineapple",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_074",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "pineapple 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 50.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "pineapple",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_075",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "pineapple 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 100.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "pineapple",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_076",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "potato 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 38.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_077",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "potato 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 77.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_078",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "potato 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 154.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_079",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "baked potato 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 46.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "baked potato",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_080",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "baked potato 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 93.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "baked potato",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_081",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "baked potato 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 186.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "baked potato",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_082",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "boiled potatoes 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 43.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "boiled potatoes",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_083",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "boiled potatoes 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 87.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "boiled potatoes",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_084",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "boiled potatoes 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 174.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "boiled potatoes",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_085",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "french fries 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 156.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_086",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "french fries 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 312.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_087",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "french fries 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 624.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_088",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "mashed potatoes 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 44.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_089",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "mashed potatoes 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 89.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_090",
+    "category": "CAL_EXACT",
+    "kind": "single_turn",
+    "input": "mashed potatoes 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 178.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_091",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "apple100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 52.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 100,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_092",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "apple200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 104.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 200,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_093",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "banana100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 89.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 100,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_094",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "banana200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 178.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 200,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_095",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "avocado100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 160.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 100,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_096",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "avocado200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 320.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 200,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_097",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "cannedpineapple100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 60.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 100,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_098",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "cannedpineapple200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 120.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 200,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_099",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "frenchfries100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 312.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 100,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_100",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "frenchfries200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 624.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 200,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_101",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "mashedpotatoes100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 89.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 100,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_102",
+    "category": "CAL_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "mashedpotatoes200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 178.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 200,
+      "normalization": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_103",
+    "category": "CAL_MULTI",
+    "kind": "single_turn",
+    "input": "apple 200g and banana 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 193.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "apple",
+          200
+        ],
+        [
+          "banana",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_104",
+    "category": "CAL_MULTI",
+    "kind": "single_turn",
+    "input": "canned pineapple 100g and mango 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 180.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "canned pineapple",
+          100
+        ],
+        [
+          "mango",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_105",
+    "category": "CAL_MULTI",
+    "kind": "single_turn",
+    "input": "french fries 150g and potato salad 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 611.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "french fries",
+          150
+        ],
+        [
+          "potato salad",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_106",
+    "category": "CAL_MULTI",
+    "kind": "single_turn",
+    "input": "avocado 120g and blueberries 75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 234.75,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "avocado",
+          120
+        ],
+        [
+          "blueberries",
+          75
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_107",
+    "category": "CAL_MULTI",
+    "kind": "single_turn",
+    "input": "baked potato 200g and canned peaches 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 240.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "baked potato",
+          200
+        ],
+        [
+          "canned peaches",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_108",
+    "category": "CAL_MULTI",
+    "kind": "single_turn",
+    "input": "mashed potatoes 150g and gnocchi 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 399.5,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "mashed potatoes",
+          150
+        ],
+        [
+          "gnocchi",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_109",
+    "category": "CAL_MEMORY",
+    "kind": "multi_turn",
+    "steps": [
+      "apple 200g",
+      "banana 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "mode": "calorie",
+      "meal_total": 193.0,
+      "matched_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "memory_test": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_110",
+    "category": "CAL_MEMORY",
+    "kind": "multi_turn",
+    "steps": [
+      "avocado 100g",
+      "canned pineapple 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "mode": "calorie",
+      "meal_total": 280.0,
+      "matched_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "memory_test": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_111",
+    "category": "CAL_MEMORY",
+    "kind": "multi_turn",
+    "steps": [
+      "french fries 100g",
+      "potato wedges 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "mode": "calorie",
+      "meal_total": 435.0,
+      "matched_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "memory_test": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_112",
+    "category": "CAL_MEMORY",
+    "kind": "multi_turn",
+    "steps": [
+      "mashed potatoes 200g",
+      "canned peaches 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "mode": "calorie",
+      "meal_total": 232.0,
+      "matched_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "memory_test": true
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_113",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "empty"
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_114",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "200g",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "quantity_only"
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_115",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "apple",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "food_only"
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_116",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "apple two hundred grams",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "non_numeric_quantity"
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_117",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "سیب ۲۰۰ گرم",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "non_english"
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_118",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "asd qwe zzz",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "gibberish"
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_119",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "dragon meat 100g",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "unknown_food"
+    }
+  },
+  {
+    "case_id": "CAL_FINAL_120",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "cloud soup 200g",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "unknown_food"
+    }
+  }
+]

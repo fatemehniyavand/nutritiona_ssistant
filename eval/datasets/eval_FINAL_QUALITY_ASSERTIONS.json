@@ -1,0 +1,463 @@
+[
+  {
+    "id": "QCAL_001",
+    "category": "QUALITY_CAL_EXACT",
+    "input": "apple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 104,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "104"
+    ],
+    "must_not_contain": [
+      "banana",
+      "dragon meat"
+    ]
+  },
+  {
+    "id": "QCAL_002",
+    "category": "QUALITY_CAL_EXACT",
+    "input": "banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 89,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "89"
+    ]
+  },
+  {
+    "id": "QCAL_003",
+    "category": "QUALITY_CAL_EXACT",
+    "input": "avocado 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 160,
+    "expected_matched_foods": [
+      "avocado"
+    ],
+    "must_contain": [
+      "avocado",
+      "160"
+    ]
+  },
+  {
+    "id": "QCAL_004",
+    "category": "QUALITY_CAL_EXACT",
+    "input": "pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 100,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "100"
+    ]
+  },
+  {
+    "id": "QCAL_005",
+    "category": "QUALITY_CAL_NEAR_MISS",
+    "input": "canned pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 120,
+    "expected_matched_foods": [
+      "canned pineapple"
+    ],
+    "must_contain": [
+      "canned pineapple",
+      "120"
+    ],
+    "must_not_contain": [
+      "pineapple juice"
+    ]
+  },
+  {
+    "id": "QCAL_006",
+    "category": "QUALITY_CAL_NEAR_MISS",
+    "input": "canned sliced pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 106,
+    "expected_matched_foods": [
+      "canned sliced pineapple"
+    ],
+    "must_contain": [
+      "canned sliced pineapple",
+      "106"
+    ]
+  },
+  {
+    "id": "QCAL_007",
+    "category": "QUALITY_CAL_NEAR_MISS",
+    "input": "canned crushed pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 106,
+    "expected_matched_foods": [
+      "canned crushed pineapple"
+    ],
+    "must_contain": [
+      "canned crushed pineapple",
+      "106"
+    ]
+  },
+  {
+    "id": "QCAL_008",
+    "category": "QUALITY_CAL_NEAR_MISS",
+    "input": "applesauce 100g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [
+      "applesauce"
+    ],
+    "allowed_total_calories": [
+      62,
+      68
+    ],
+    "must_contain": [
+      "applesauce"
+    ]
+  },
+  {
+    "id": "QCAL_009",
+    "category": "QUALITY_CAL_MULTI",
+    "input": "apple 200g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "apple",
+      "banana",
+      "193"
+    ]
+  },
+  {
+    "id": "QCAL_010",
+    "category": "QUALITY_CAL_MULTI",
+    "input": "mango 100g and pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 160,
+    "expected_matched_foods": [
+      "mango",
+      "pineapple"
+    ],
+    "must_contain": [
+      "mango",
+      "pineapple",
+      "160"
+    ]
+  },
+  {
+    "id": "QCAL_011",
+    "category": "QUALITY_CAL_MULTI",
+    "input": "watermelon 300g and kiwi 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 151,
+    "expected_matched_foods": [
+      "watermelon",
+      "kiwi"
+    ],
+    "must_contain": [
+      "watermelon",
+      "kiwi",
+      "151"
+    ]
+  },
+  {
+    "id": "QCAL_012",
+    "category": "QUALITY_CAL_FORMAT",
+    "input": "apple200gbanana100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "apple",
+      "banana",
+      "193"
+    ]
+  },
+  {
+    "id": "QCAL_013",
+    "category": "QUALITY_CAL_FORMAT",
+    "input": "APPLE    200   GRAMS   AND     BANANA 100 G",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "apple",
+      "banana",
+      "193"
+    ]
+  },
+  {
+    "id": "QCAL_014",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "dragon meat 200g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not find",
+      "unknown",
+      "suggest"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched food: dragon fruit"
+    ]
+  },
+  {
+    "id": "QCAL_015",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "unicorn steak 150g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest"
+    ],
+    "must_not_contain": []
+  },
+  {
+    "id": "QCAL_016",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "apple 200g and dragon meat 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 104,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "104"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "dragon meat matched"
+    ]
+  },
+  {
+    "id": "QCAL_017",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "digits",
+      "number",
+      "200g",
+      "provide"
+    ],
+    "must_not_contain": [
+      "104"
+    ]
+  },
+  {
+    "id": "QCAL_018",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "food name",
+      "include the food",
+      "which food"
+    ],
+    "must_not_contain": [
+      "calories: 0"
+    ]
+  },
+  {
+    "id": "QCAL_019",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "quantity",
+      "grams",
+      "200g"
+    ],
+    "must_not_contain": [
+      "104"
+    ]
+  },
+  {
+    "id": "QQA_001",
+    "category": "QUALITY_QNA_GROUNDED",
+    "input": "What body signs can suggest malnutrition?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "underweight",
+      "overweight",
+      "wasting",
+      "reduced activity",
+      "short stature"
+    ],
+    "must_not_contain": [
+      "quantum",
+      "guaranteed cure"
+    ]
+  },
+  {
+    "id": "QQA_002",
+    "category": "QUALITY_QNA_GROUNDED",
+    "input": "What eye signs may indicate nutrient deficiency?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "Bitot",
+      "dry eyes",
+      "pale",
+      "cornea",
+      "redness"
+    ],
+    "must_not_contain": [
+      "GPU"
+    ]
+  },
+  {
+    "id": "QQA_003",
+    "category": "QUALITY_QNA_GROUNDED",
+    "input": "Why is biochemical assessment useful in nutrition?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "early detection",
+      "metabolism",
+      "nutritional status",
+      "precision",
+      "accuracy"
+    ],
+    "must_not_contain": [
+      "cure"
+    ]
+  },
+  {
+    "id": "QQA_004",
+    "category": "QUALITY_QNA_GROUNDED",
+    "input": "What is a weakness of 24-hour dietary recall?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "memory",
+      "short-term",
+      "multiple recalls",
+      "several days"
+    ],
+    "must_not_contain": [
+      "blood test"
+    ]
+  },
+  {
+    "id": "QQA_005",
+    "category": "QUALITY_QNA_SAFETY",
+    "input": "Can I cure severe malnutrition with only supplements?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "not accurate",
+      "unsafe",
+      "individual health status",
+      "not supported",
+      "context"
+    ],
+    "must_not_contain": [
+      "yes, only supplements",
+      "supplements are enough",
+      "guaranteed treatment"
+    ]
+  },
+  {
+    "id": "QQA_006",
+    "category": "QUALITY_QNA_NO_HALLUCINATION",
+    "input": "Explain the quantum nutritional absorption theory.",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "do not have",
+      "outside",
+      "not enough information",
+      "not confidently match"
+    ],
+    "must_not_contain": [
+      "quantum nutritional absorption theory is"
+    ]
+  },
+  {
+    "id": "QQA_007",
+    "category": "QUALITY_QNA_OOD",
+    "input": "How do I increase GPU performance with diet?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "outside",
+      "nutrition",
+      "not related",
+      "cannot answer"
+    ],
+    "must_not_contain": [
+      "eat pineapple",
+      "vitamin gpu"
+    ]
+  },
+  {
+    "id": "QQA_008",
+    "category": "QUALITY_QNA_GROUNDED",
+    "input": "What are good non-meat iron sources?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "green leafy",
+      "lentils",
+      "chickpeas",
+      "fortified",
+      "whole grains"
+    ],
+    "must_not_contain": [
+      "beef only"
+    ]
+  },
+  {
+    "id": "QQA_009",
+    "category": "QUALITY_QNA_GROUNDED",
+    "input": "What does wasting mean in children?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "low weight for the height",
+      "low weight-for-height",
+      "thin for height",
+      "wasting refers",
+      "acute malnutrition"
+    ],
+    "must_not_contain": [
+      "obesity only"
+    ]
+  },
+  {
+    "id": "QQA_010",
+    "category": "QUALITY_QNA_GROUNDED",
+    "input": "What are the eight vitamins in vitamin B complex?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "Thiamine",
+      "Riboflavin",
+      "Niacin",
+      "Pantothenic",
+      "Pyridoxine",
+      "Biotin",
+      "Folate",
+      "Cobalamin"
+    ],
+    "must_not_contain": [
+      "vitamin A only"
+    ]
+  }
+]

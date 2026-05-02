@@ -1,0 +1,151 @@
+[
+  {
+    "id": "FB_001",
+    "category": "CAL_PARSING",
+    "input": "apple 200g banana",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_002",
+    "category": "CAL_PARSING",
+    "input": "apple200gbanana100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_003",
+    "category": "CAL_FAKE",
+    "input": "dragon meat 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_004",
+    "category": "CAL_FAKE",
+    "input": "unicorn steak 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_005",
+    "category": "CAL_NOISE",
+    "input": "APPLE    200   GRAMS   AND     BANANA 100 G",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_006",
+    "category": "CAL_NUMERIC",
+    "input": "apple 2oo g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_007",
+    "category": "CAL_NUMERIC",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_008",
+    "category": "CAL_MIXED",
+    "input": "ok I ate apple 200g and banana 100g and dragon meat 200g lol",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_009",
+    "category": "CAL_LONG",
+    "input": "today: apple 200g; banana 100g; also phone 300g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_010",
+    "category": "CAL_EDGE",
+    "input": "apple -200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_011",
+    "category": "CAL_EDGE",
+    "input": "apple 0g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_012",
+    "category": "CAL_EDGE",
+    "input": "apple 0.5g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_013",
+    "category": "CAL_UNIT",
+    "input": "apple 200kg",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_014",
+    "category": "CAL_UNIT",
+    "input": "apple 200mg",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_015",
+    "category": "MEMORY",
+    "input": "apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_016",
+    "category": "MEMORY",
+    "input": "apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "FB_017",
+    "category": "MEMORY",
+    "input": "what is the total now?",
+    "expected_mode": "total_query"
+  },
+  {
+    "id": "FB_018",
+    "category": "MEMORY",
+    "input": "remove apple",
+    "expected_mode": "remove_item"
+  },
+  {
+    "id": "FB_019",
+    "category": "MEMORY",
+    "input": "clear meal",
+    "expected_mode": "clear_meal"
+  },
+  {
+    "id": "FB_020",
+    "category": "QNA",
+    "input": "What bodily signs might hint at nutrient deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "FB_021",
+    "category": "QNA",
+    "input": "wht r sm syptoms of malnutrtion???",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "FB_022",
+    "category": "QNA",
+    "input": "Explain the quantum nutritional absorption theory.",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "FB_023",
+    "category": "QNA",
+    "input": "Can I cure malnutrition with only supplements?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "FB_024",
+    "category": "QNA",
+    "input": "What is the best diet for increasing GPU performance?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "FB_025",
+    "category": "FINAL_BOSS",
+    "input": "apple200gbanana100ganddragonmeat200gplusmilk300gandalsowhat are symptoms of malnutrition???"
+  }
+]

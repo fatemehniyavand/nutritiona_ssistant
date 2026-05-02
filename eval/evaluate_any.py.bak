@@ -292,16 +292,7 @@ async def main_async(dataset_path: Path) -> None:
     passed_count = 0
 
     for case in cases:
-        if case.get("kind") == "multi_turn":
-            turns = case.get("steps") or case.get("turns")
-            if not turns:
-                raise KeyError(f"Multi-turn case has no steps/turns: {case}")
-
-            raw = None
-            for turn in turns:
-                raw = await call_orchestrator(orchestrator, turn)
-        else:
-            raw = await call_orchestrator(orchestrator, case["input"])
+        raw = await call_orchestrator(orchestrator, case["input"])
         answer, mode, raw_data = extract_answer_and_mode(raw)
 
         evaluation = evaluate_case(answer, mode, case)

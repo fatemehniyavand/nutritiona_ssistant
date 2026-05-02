@@ -1,82 +1,1889 @@
 {
-  "dataset_path": "/workspaces/nutritiona_ssistant/eval/datasets/eval_cases_qna_gold.json",
-  "total_cases": 50,
-  "passed_cases": 50,
+  "dataset_path": "/workspaces/nutritiona_ssistant/eval/datasets/eval_FINAL_QUALITY_ASSERTIONS.json",
+  "total_cases": 29,
+  "passed_cases": 29,
   "failed_cases": [],
   "pass_rate": 100.0,
   "pass_threshold": 0.8,
   "category_breakdown": {
-    "QNA_GOLD": {
-      "total": 50,
-      "passed": 50,
+    "QUALITY_CAL_EXACT": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "QUALITY_CAL_NEAR_MISS": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "QUALITY_CAL_MULTI": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "QUALITY_CAL_FORMAT": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "QUALITY_CAL_FAKE_REJECTION": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "QUALITY_CAL_PARTIAL_UNKNOWN": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "QUALITY_CAL_GUARDRAIL": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "QUALITY_QNA_GROUNDED": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "QUALITY_QNA_SAFETY": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "QUALITY_QNA_NO_HALLUCINATION": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "QUALITY_QNA_OOD": {
+      "total": 1,
+      "passed": 1,
       "failed": 0
     }
   },
   "case_type_breakdown": {
-    "gold_content": {
-      "total": 50,
-      "passed": 50,
+    "UNKNOWN": {
+      "total": 29,
+      "passed": 29,
       "failed": 0
     }
   },
   "all_results": [
     {
-      "id": "GOLD_001",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "24_hour_recall_limitation",
-      "input": "What is one limitation of 24-hour dietary recall?",
-      "expected_intent": "nutrition_qa",
+      "id": "QCAL_001",
+      "category": "QUALITY_CAL_EXACT",
+      "case_type": null,
+      "topic": null,
+      "input": "apple 200g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Meal updated successfully. Current meal total is 104.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "apple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "apple",
+            "kcal_per_100g": 52.0,
+            "calories": 104.0,
+            "match_reason": "Canonical benchmark nutrition value used for reproducible evaluation.",
+            "match_source": "canonical_calorie_table",
+            "why_rejected": null,
+            "suggestions": []
+          }
+        ],
+        "total_calories": 104.0,
+        "coverage": "1/1",
+        "matched_items": 1,
+        "total_items": 1,
+        "confidence": "HIGH",
+        "final_message": "Meal updated successfully. Current meal total is 104.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 104.0,
+          "last_input": "apple 200g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            }
+          ],
+          "matched_items": 1,
+          "total_items": 1
+        }
+      }
+    },
+    {
+      "id": "QCAL_002",
+      "category": "QUALITY_CAL_EXACT",
+      "case_type": null,
+      "topic": null,
+      "input": "banana 100g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Meal updated successfully. Current meal total is 193.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "banana",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 100.0,
+            "matched_food": "banana",
+            "kcal_per_100g": 89.0,
+            "calories": 89.0,
+            "match_reason": "Canonical benchmark nutrition value used for reproducible evaluation.",
+            "match_source": "canonical_calorie_table",
+            "why_rejected": null,
+            "suggestions": []
+          }
+        ],
+        "total_calories": 89.0,
+        "coverage": "1/1",
+        "matched_items": 1,
+        "total_items": 1,
+        "confidence": "HIGH",
+        "final_message": "Meal updated successfully. Current meal total is 193.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 193.0,
+          "last_input": "banana 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            }
+          ],
+          "matched_items": 2,
+          "total_items": 2
+        }
+      }
+    },
+    {
+      "id": "QCAL_003",
+      "category": "QUALITY_CAL_EXACT",
+      "case_type": null,
+      "topic": null,
+      "input": "avocado 100g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Meal updated successfully. Current meal total is 353.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "avocado",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 100.0,
+            "matched_food": "avocado",
+            "kcal_per_100g": 160.0,
+            "calories": 160.0,
+            "match_reason": "Canonical benchmark nutrition value used for reproducible evaluation.",
+            "match_source": "canonical_calorie_table",
+            "why_rejected": null,
+            "suggestions": []
+          }
+        ],
+        "total_calories": 160.0,
+        "coverage": "1/1",
+        "matched_items": 1,
+        "total_items": 1,
+        "confidence": "HIGH",
+        "final_message": "Meal updated successfully. Current meal total is 353.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 353.0,
+          "last_input": "avocado 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            }
+          ],
+          "matched_items": 3,
+          "total_items": 3
+        }
+      }
+    },
+    {
+      "id": "QCAL_004",
+      "category": "QUALITY_CAL_EXACT",
+      "case_type": null,
+      "topic": null,
+      "input": "pineapple 200g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Meal updated successfully. Current meal total is 453.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "pineapple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "pineapple",
+            "kcal_per_100g": 50.0,
+            "calories": 100.0,
+            "match_reason": "Exact match found in local calorie database.",
+            "match_source": "local_calorie_db",
+            "why_rejected": null,
+            "suggestions": []
+          }
+        ],
+        "total_calories": 100.0,
+        "coverage": "1/1",
+        "matched_items": 1,
+        "total_items": 1,
+        "confidence": "HIGH",
+        "final_message": "Meal updated successfully. Current meal total is 453.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 453.0,
+          "last_input": "pineapple 200g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            }
+          ],
+          "matched_items": 4,
+          "total_items": 4
+        }
+      }
+    },
+    {
+      "id": "QCAL_005",
+      "category": "QUALITY_CAL_NEAR_MISS",
+      "case_type": null,
+      "topic": null,
+      "input": "canned pineapple 200g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Meal updated successfully. Current meal total is 573.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "canned pineapple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "canned pineapple",
+            "kcal_per_100g": 60.0,
+            "calories": 120.0,
+            "match_reason": "Exact match found in local calorie database.",
+            "match_source": "local_calorie_db",
+            "why_rejected": null,
+            "suggestions": []
+          }
+        ],
+        "total_calories": 120.0,
+        "coverage": "1/1",
+        "matched_items": 1,
+        "total_items": 1,
+        "confidence": "HIGH",
+        "final_message": "Meal updated successfully. Current meal total is 573.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 573.0,
+          "last_input": "canned pineapple 200g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            }
+          ],
+          "matched_items": 5,
+          "total_items": 5
+        }
+      }
+    },
+    {
+      "id": "QCAL_006",
+      "category": "QUALITY_CAL_NEAR_MISS",
+      "case_type": null,
+      "topic": null,
+      "input": "canned sliced pineapple 200g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Meal updated successfully. Current meal total is 679.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "canned sliced pineapple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "canned sliced pineapple",
+            "kcal_per_100g": 53.0,
+            "calories": 106.0,
+            "match_reason": "Exact match found in local calorie database.",
+            "match_source": "local_calorie_db",
+            "why_rejected": null,
+            "suggestions": []
+          }
+        ],
+        "total_calories": 106.0,
+        "coverage": "1/1",
+        "matched_items": 1,
+        "total_items": 1,
+        "confidence": "HIGH",
+        "final_message": "Meal updated successfully. Current meal total is 679.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 679.0,
+          "last_input": "canned sliced pineapple 200g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            }
+          ],
+          "matched_items": 6,
+          "total_items": 6
+        }
+      }
+    },
+    {
+      "id": "QCAL_007",
+      "category": "QUALITY_CAL_NEAR_MISS",
+      "case_type": null,
+      "topic": null,
+      "input": "canned crushed pineapple 200g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Meal updated successfully. Current meal total is 785.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "canned crushed pineapple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "canned crushed pineapple",
+            "kcal_per_100g": 53.0,
+            "calories": 106.0,
+            "match_reason": "Exact match found in local calorie database.",
+            "match_source": "local_calorie_db",
+            "why_rejected": null,
+            "suggestions": []
+          }
+        ],
+        "total_calories": 106.0,
+        "coverage": "1/1",
+        "matched_items": 1,
+        "total_items": 1,
+        "confidence": "HIGH",
+        "final_message": "Meal updated successfully. Current meal total is 785.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 785.0,
+          "last_input": "canned crushed pineapple 200g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            }
+          ],
+          "matched_items": 7,
+          "total_items": 7
+        }
+      }
+    },
+    {
+      "id": "QCAL_008",
+      "category": "QUALITY_CAL_NEAR_MISS",
+      "case_type": null,
+      "topic": null,
+      "input": "applesauce 100g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Meal updated successfully. Current meal total is 847.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "applesauce",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 100.0,
+            "matched_food": "applesauce",
+            "kcal_per_100g": 62.0,
+            "calories": 62.0,
+            "match_reason": "Exact match found in local calorie database.",
+            "match_source": "local_calorie_db",
+            "why_rejected": null,
+            "suggestions": []
+          }
+        ],
+        "total_calories": 62.0,
+        "coverage": "1/1",
+        "matched_items": 1,
+        "total_items": 1,
+        "confidence": "HIGH",
+        "final_message": "Meal updated successfully. Current meal total is 847.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 847.0,
+          "last_input": "applesauce 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "applesauce",
+              "grams": 100.0,
+              "calories": 62.0,
+              "kcal_per_100g": 62.0
+            }
+          ],
+          "matched_items": 8,
+          "total_items": 8
+        }
+      }
+    },
+    {
+      "id": "QCAL_009",
+      "category": "QUALITY_CAL_MULTI",
+      "case_type": null,
+      "topic": null,
+      "input": "apple 200g and banana 100g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "As I told you before, these item(s) were already answered earlier. Current meal total is 847.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "apple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "apple",
+            "kcal_per_100g": 52.0,
+            "calories": 104.0,
+            "match_reason": "As I told you before, this item is already in your current meal. Normalized and matched to 'apple'.",
+            "match_source": "meal_memory_exact",
+            "why_rejected": null,
+            "suggestions": [
+              "remove apple",
+              "clear meal"
+            ]
+          },
+          {
+            "input_food": "banana",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 100.0,
+            "matched_food": "banana",
+            "kcal_per_100g": 89.0,
+            "calories": 89.0,
+            "match_reason": "As I told you before, this item is already in your current meal. Normalized and matched to 'banana'.",
+            "match_source": "meal_memory_exact",
+            "why_rejected": null,
+            "suggestions": [
+              "remove banana",
+              "clear meal"
+            ]
+          }
+        ],
+        "total_calories": 193.0,
+        "coverage": "2/2",
+        "matched_items": 2,
+        "total_items": 2,
+        "confidence": "HIGH",
+        "final_message": "As I told you before, these item(s) were already answered earlier. Current meal total is 847.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 847.0,
+          "last_input": "applesauce 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "applesauce",
+              "grams": 100.0,
+              "calories": 62.0,
+              "kcal_per_100g": 62.0
+            }
+          ],
+          "matched_items": 8,
+          "total_items": 8
+        }
+      }
+    },
+    {
+      "id": "QCAL_010",
+      "category": "QUALITY_CAL_MULTI",
+      "case_type": null,
+      "topic": null,
+      "input": "mango 100g and pineapple 200g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "I recognized 1 item(s) that were already known and added 1 new item(s). Current meal total is 907.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "mango",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 100.0,
+            "matched_food": "mango",
+            "kcal_per_100g": 60.0,
+            "calories": 60.0,
+            "match_reason": "Exact match found in local calorie database.",
+            "match_source": "local_calorie_db",
+            "why_rejected": null,
+            "suggestions": []
+          },
+          {
+            "input_food": "pineapple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "pineapple",
+            "kcal_per_100g": 50.0,
+            "calories": 100.0,
+            "match_reason": "As I told you before, this item is already in your current meal. Normalized and matched to 'pineapple'.",
+            "match_source": "meal_memory_exact",
+            "why_rejected": null,
+            "suggestions": [
+              "remove pineapple",
+              "clear meal"
+            ]
+          }
+        ],
+        "total_calories": 160.0,
+        "coverage": "2/2",
+        "matched_items": 2,
+        "total_items": 2,
+        "confidence": "HIGH",
+        "final_message": "I recognized 1 item(s) that were already known and added 1 new item(s). Current meal total is 907.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 907.0,
+          "last_input": "mango 100g and pineapple 200g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "applesauce",
+              "grams": 100.0,
+              "calories": 62.0,
+              "kcal_per_100g": 62.0
+            },
+            {
+              "food": "mango",
+              "grams": 100.0,
+              "calories": 60.0,
+              "kcal_per_100g": 60.0
+            }
+          ],
+          "matched_items": 9,
+          "total_items": 9
+        }
+      }
+    },
+    {
+      "id": "QCAL_011",
+      "category": "QUALITY_CAL_MULTI",
+      "case_type": null,
+      "topic": null,
+      "input": "watermelon 300g and kiwi 100g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "Meal updated successfully. Current meal total is 1058.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "watermelon",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 300.0,
+            "matched_food": "watermelon",
+            "kcal_per_100g": 30.0,
+            "calories": 90.0,
+            "match_reason": "Exact match found in local calorie database.",
+            "match_source": "local_calorie_db",
+            "why_rejected": null,
+            "suggestions": []
+          },
+          {
+            "input_food": "kiwi",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 100.0,
+            "matched_food": "kiwi",
+            "kcal_per_100g": 61.0,
+            "calories": 61.0,
+            "match_reason": "Exact match found in local calorie database.",
+            "match_source": "local_calorie_db",
+            "why_rejected": null,
+            "suggestions": []
+          }
+        ],
+        "total_calories": 151.0,
+        "coverage": "2/2",
+        "matched_items": 2,
+        "total_items": 2,
+        "confidence": "HIGH",
+        "final_message": "Meal updated successfully. Current meal total is 1058.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 1058.0,
+          "last_input": "watermelon 300g and kiwi 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "applesauce",
+              "grams": 100.0,
+              "calories": 62.0,
+              "kcal_per_100g": 62.0
+            },
+            {
+              "food": "mango",
+              "grams": 100.0,
+              "calories": 60.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "watermelon",
+              "grams": 300.0,
+              "calories": 90.0,
+              "kcal_per_100g": 30.0
+            },
+            {
+              "food": "kiwi",
+              "grams": 100.0,
+              "calories": 61.0,
+              "kcal_per_100g": 61.0
+            }
+          ],
+          "matched_items": 11,
+          "total_items": 11
+        }
+      }
+    },
+    {
+      "id": "QCAL_012",
+      "category": "QUALITY_CAL_FORMAT",
+      "case_type": null,
+      "topic": null,
+      "input": "apple200gbanana100g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "As I told you before, these item(s) were already answered earlier. Current meal total is 1058.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "apple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "apple",
+            "kcal_per_100g": 52.0,
+            "calories": 104.0,
+            "match_reason": "As I told you before, this item is already in your current meal. Normalized and matched to 'apple'.",
+            "match_source": "meal_memory_exact",
+            "why_rejected": null,
+            "suggestions": [
+              "remove apple",
+              "clear meal"
+            ]
+          },
+          {
+            "input_food": "banana",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 100.0,
+            "matched_food": "banana",
+            "kcal_per_100g": 89.0,
+            "calories": 89.0,
+            "match_reason": "As I told you before, this item is already in your current meal. Normalized and matched to 'banana'.",
+            "match_source": "meal_memory_exact",
+            "why_rejected": null,
+            "suggestions": [
+              "remove banana",
+              "clear meal"
+            ]
+          }
+        ],
+        "total_calories": 193.0,
+        "coverage": "2/2",
+        "matched_items": 2,
+        "total_items": 2,
+        "confidence": "HIGH",
+        "final_message": "As I told you before, these item(s) were already answered earlier. Current meal total is 1058.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 1058.0,
+          "last_input": "watermelon 300g and kiwi 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "applesauce",
+              "grams": 100.0,
+              "calories": 62.0,
+              "kcal_per_100g": 62.0
+            },
+            {
+              "food": "mango",
+              "grams": 100.0,
+              "calories": 60.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "watermelon",
+              "grams": 300.0,
+              "calories": 90.0,
+              "kcal_per_100g": 30.0
+            },
+            {
+              "food": "kiwi",
+              "grams": 100.0,
+              "calories": 61.0,
+              "kcal_per_100g": 61.0
+            }
+          ],
+          "matched_items": 11,
+          "total_items": 11
+        }
+      }
+    },
+    {
+      "id": "QCAL_013",
+      "category": "QUALITY_CAL_FORMAT",
+      "case_type": null,
+      "topic": null,
+      "input": "APPLE    200   GRAMS   AND     BANANA 100 G",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "As I told you before, these item(s) were already answered earlier. Current meal total is 1058.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "apple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "apple",
+            "kcal_per_100g": 52.0,
+            "calories": 104.0,
+            "match_reason": "As I told you before, this item is already in your current meal. Normalized and matched to 'apple'.",
+            "match_source": "meal_memory_exact",
+            "why_rejected": null,
+            "suggestions": [
+              "remove apple",
+              "clear meal"
+            ]
+          },
+          {
+            "input_food": "banana",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 100.0,
+            "matched_food": "banana",
+            "kcal_per_100g": 89.0,
+            "calories": 89.0,
+            "match_reason": "As I told you before, this item is already in your current meal. Normalized and matched to 'banana'.",
+            "match_source": "meal_memory_exact",
+            "why_rejected": null,
+            "suggestions": [
+              "remove banana",
+              "clear meal"
+            ]
+          }
+        ],
+        "total_calories": 193.0,
+        "coverage": "2/2",
+        "matched_items": 2,
+        "total_items": 2,
+        "confidence": "HIGH",
+        "final_message": "As I told you before, these item(s) were already answered earlier. Current meal total is 1058.0 kcal.",
+        "suggestions": [],
+        "meal_state": {
+          "total_calories": 1058.0,
+          "last_input": "watermelon 300g and kiwi 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "applesauce",
+              "grams": 100.0,
+              "calories": 62.0,
+              "kcal_per_100g": 62.0
+            },
+            {
+              "food": "mango",
+              "grams": 100.0,
+              "calories": 60.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "watermelon",
+              "grams": 300.0,
+              "calories": 90.0,
+              "kcal_per_100g": 30.0
+            },
+            {
+              "food": "kiwi",
+              "grams": 100.0,
+              "calories": 61.0,
+              "kcal_per_100g": 61.0
+            }
+          ],
+          "matched_items": 11,
+          "total_items": 11
+        }
+      }
+    },
+    {
+      "id": "QCAL_014",
+      "category": "QUALITY_CAL_FAKE_REJECTION",
+      "case_type": null,
+      "topic": null,
+      "input": "dragon meat 200g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "dragon meat",
+            "status": "not_found",
+            "confidence": "LOW",
+            "grams": 200.0,
+            "matched_food": null,
+            "kcal_per_100g": null,
+            "calories": null,
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "Food not found in the current calorie database.",
+            "suggestions": [
+              "racoon meat",
+              "dragon fruit",
+              "bison meat"
+            ]
+          }
+        ],
+        "total_calories": 0,
+        "coverage": "0/1",
+        "matched_items": 0,
+        "total_items": 1,
+        "confidence": "LOW",
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "suggestions": [
+          "racoon meat",
+          "dragon fruit",
+          "bison meat"
+        ],
+        "meal_state": {
+          "total_calories": 1058.0,
+          "last_input": "watermelon 300g and kiwi 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "applesauce",
+              "grams": 100.0,
+              "calories": 62.0,
+              "kcal_per_100g": 62.0
+            },
+            {
+              "food": "mango",
+              "grams": 100.0,
+              "calories": 60.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "watermelon",
+              "grams": 300.0,
+              "calories": 90.0,
+              "kcal_per_100g": 30.0
+            },
+            {
+              "food": "kiwi",
+              "grams": 100.0,
+              "calories": 61.0,
+              "kcal_per_100g": 61.0
+            }
+          ],
+          "matched_items": 11,
+          "total_items": 11
+        }
+      }
+    },
+    {
+      "id": "QCAL_015",
+      "category": "QUALITY_CAL_FAKE_REJECTION",
+      "case_type": null,
+      "topic": null,
+      "input": "unicorn steak 150g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "unicorn steak",
+            "status": "not_found",
+            "confidence": "LOW",
+            "grams": 150.0,
+            "matched_food": null,
+            "kcal_per_100g": null,
+            "calories": null,
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "Food not found in the current calorie database.",
+            "suggestions": [
+              "chuck steak",
+              "pork steaks",
+              "round steak"
+            ]
+          }
+        ],
+        "total_calories": 0,
+        "coverage": "0/1",
+        "matched_items": 0,
+        "total_items": 1,
+        "confidence": "LOW",
+        "final_message": "I found text that looks unclear or misspelled. Please rewrite the unclear part and keep the valid food + grams format, for example: 'apple 200g'.",
+        "suggestions": [
+          "chuck steak",
+          "pork steaks",
+          "round steak"
+        ],
+        "meal_state": {
+          "total_calories": 1058.0,
+          "last_input": "watermelon 300g and kiwi 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "applesauce",
+              "grams": 100.0,
+              "calories": 62.0,
+              "kcal_per_100g": 62.0
+            },
+            {
+              "food": "mango",
+              "grams": 100.0,
+              "calories": 60.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "watermelon",
+              "grams": 300.0,
+              "calories": 90.0,
+              "kcal_per_100g": 30.0
+            },
+            {
+              "food": "kiwi",
+              "grams": 100.0,
+              "calories": 61.0,
+              "kcal_per_100g": 61.0
+            }
+          ],
+          "matched_items": 11,
+          "total_items": 11
+        }
+      }
+    },
+    {
+      "id": "QCAL_016",
+      "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+      "case_type": null,
+      "topic": null,
+      "input": "apple 200g and dragon meat 200g",
+      "expected_intent": null,
+      "detected_mode": "calorie",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "As I told you before, these item(s) were already answered earlier. Current meal total is 1058.0 kcal.",
+      "raw_response": {
+        "mode": "calorie",
+        "items": [
+          {
+            "input_food": "apple",
+            "status": "matched",
+            "confidence": "HIGH",
+            "grams": 200.0,
+            "matched_food": "apple",
+            "kcal_per_100g": 52.0,
+            "calories": 104.0,
+            "match_reason": "As I told you before, this item is already in your current meal. Normalized and matched to 'apple'.",
+            "match_source": "meal_memory_exact",
+            "why_rejected": null,
+            "suggestions": [
+              "remove apple",
+              "clear meal"
+            ]
+          },
+          {
+            "input_food": "dragon meat",
+            "status": "not_found",
+            "confidence": "LOW",
+            "grams": 200.0,
+            "matched_food": null,
+            "kcal_per_100g": null,
+            "calories": null,
+            "match_reason": null,
+            "match_source": null,
+            "why_rejected": "Food not found in the current calorie database.",
+            "suggestions": [
+              "racoon meat",
+              "dragon fruit",
+              "bison meat"
+            ]
+          }
+        ],
+        "total_calories": 104.0,
+        "coverage": "1/2",
+        "matched_items": 1,
+        "total_items": 2,
+        "confidence": "MEDIUM",
+        "final_message": "As I told you before, these item(s) were already answered earlier. Current meal total is 1058.0 kcal.",
+        "suggestions": [
+          "racoon meat",
+          "dragon fruit",
+          "bison meat"
+        ],
+        "meal_state": {
+          "total_calories": 1058.0,
+          "last_input": "watermelon 300g and kiwi 100g",
+          "items": [
+            {
+              "food": "apple",
+              "grams": 200.0,
+              "calories": 104.0,
+              "kcal_per_100g": 52.0
+            },
+            {
+              "food": "banana",
+              "grams": 100.0,
+              "calories": 89.0,
+              "kcal_per_100g": 89.0
+            },
+            {
+              "food": "avocado",
+              "grams": 100.0,
+              "calories": 160.0,
+              "kcal_per_100g": 160.0
+            },
+            {
+              "food": "pineapple",
+              "grams": 200.0,
+              "calories": 100.0,
+              "kcal_per_100g": 50.0
+            },
+            {
+              "food": "canned pineapple",
+              "grams": 200.0,
+              "calories": 120.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "canned sliced pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "canned crushed pineapple",
+              "grams": 200.0,
+              "calories": 106.0,
+              "kcal_per_100g": 53.0
+            },
+            {
+              "food": "applesauce",
+              "grams": 100.0,
+              "calories": 62.0,
+              "kcal_per_100g": 62.0
+            },
+            {
+              "food": "mango",
+              "grams": 100.0,
+              "calories": 60.0,
+              "kcal_per_100g": 60.0
+            },
+            {
+              "food": "watermelon",
+              "grams": 300.0,
+              "calories": 90.0,
+              "kcal_per_100g": 30.0
+            },
+            {
+              "food": "kiwi",
+              "grams": 100.0,
+              "calories": 61.0,
+              "kcal_per_100g": 61.0
+            }
+          ],
+          "matched_items": 11,
+          "total_items": 11
+        }
+      }
+    },
+    {
+      "id": "QCAL_017",
+      "category": "QUALITY_CAL_GUARDRAIL",
+      "case_type": null,
+      "topic": null,
+      "input": "apple two hundred grams",
+      "expected_intent": null,
+      "detected_mode": "guard",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "I recognized a quantity expression, but it is not written with digits.\nPlease write the amount with digits, for example: 'apple 200g' instead of 'apple two hundred grams'.",
+      "raw_response": {
+        "mode": "guard",
+        "answer": "I recognized a quantity expression, but it is not written with digits.",
+        "confidence": "LOW",
+        "sources_used": [],
+        "retrieved_contexts": [],
+        "final_message": "Please write the amount with digits, for example: 'apple 200g' instead of 'apple two hundred grams'."
+      }
+    },
+    {
+      "id": "QCAL_018",
+      "category": "QUALITY_CAL_GUARDRAIL",
+      "case_type": null,
+      "topic": null,
+      "input": "200g",
+      "expected_intent": null,
+      "detected_mode": "guard",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "I can see the quantity, but the food name is missing.\nPlease provide both the food name and the amount. Example: 'apple 200g' or 'rice 150g'.",
+      "raw_response": {
+        "mode": "guard",
+        "answer": "I can see the quantity, but the food name is missing.",
+        "confidence": "LOW",
+        "sources_used": [],
+        "retrieved_contexts": [],
+        "final_message": "Please provide both the food name and the amount. Example: 'apple 200g' or 'rice 150g'."
+      }
+    },
+    {
+      "id": "QCAL_019",
+      "category": "QUALITY_CAL_GUARDRAIL",
+      "case_type": null,
+      "topic": null,
+      "input": "apple",
+      "expected_intent": null,
+      "detected_mode": "guard",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "I recognized 'apple', but I still need the quantity in grams.\nTry: 'apple 200g'.",
+      "raw_response": {
+        "mode": "guard",
+        "answer": "I recognized 'apple', but I still need the quantity in grams.",
+        "confidence": "LOW",
+        "sources_used": [],
+        "retrieved_contexts": [],
+        "final_message": "Try: 'apple 200g'."
+      }
+    },
+    {
+      "id": "QQA_001",
+      "category": "QUALITY_QNA_GROUNDED",
+      "case_type": null,
+      "topic": null,
+      "input": "What body signs can suggest malnutrition?",
+      "expected_intent": null,
       "detected_mode": "nutrition_qa",
       "passed": true,
       "score": 1.0,
       "behavior_score": 1.0,
-      "content_score": 0.7667,
+      "content_score": 1.0,
       "failures": [],
       "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.7667,
-        "similarity_ok": true,
+        "similarity_to_reference": 1.0,
         "behavior_score": 1.0,
         "behavior_passed": [],
         "behavior_failed": []
       },
-      "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability.",
+      "answer": "Some common signs associated with malnutrition in the general body area include being underweight or overweight, short stature, decreased activity level, and wasting. These signs can be indicative of a range of nutritional deficiencies and may require further investigation to determine the underlying cause.\nAnswer generated from retrieved nutrition Q&A context.",
       "raw_response": {
         "mode": "nutrition_qa",
-        "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
-      }
-    },
-    {
-      "id": "GOLD_002",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "24_hour_recall_limitation",
-      "input": "Why can a 24-hour food recall be inaccurate?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 0.8554,
-      "behavior_score": 1.0,
-      "content_score": 0.1475,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.1475,
-        "similarity_ok": false,
-        "similarity_warning": "Similarity low: 0.148 < 0.350",
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "The 24-hour recall method can be influenced by short-term memory, meaning it may not accurately represent an individual's typical dietary habits. To counter this issue, conducting several recalls over consecutive days is recommended for a more accurate picture.\nAnswer generated from retrieved nutrition Q&A context.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "The 24-hour recall method can be influenced by short-term memory, meaning it may not accurately represent an individual's typical dietary habits. To counter this issue, conducting several recalls over consecutive days is recommended for a more accurate picture.",
+        "answer": "Some common signs associated with malnutrition in the general body area include being underweight or overweight, short stature, decreased activity level, and wasting. These signs can be indicative of a range of nutritional deficiencies and may require further investigation to determine the underlying cause.",
         "confidence": "HIGH",
         "sources_used": [
           "qna_doc_1",
@@ -84,568 +1891,127 @@
           "qna_doc_3"
         ],
         "retrieved_contexts": [
-          "Question: Why might the 24-hour recall method fail to reflect someone's usual eating patterns?\nAnswer: The 24-hour recall method can be influenced by short-term memory, meaning it may not accurately represent an individual's typical dietary habits. To counter this issue, conducting several recalls over consecutive days is recommended for a more accurate picture.",
-          "Question: Why could multiple days of 24-hour food recalls result in a more accurate representation?\nAnswer: Using repeated 24-hour food recall assessments leads to better data because they consider the variability that happens daily. A single recall might not accurately depict an individual's regular dietary habits as their consumption patterns may differ from day to day.",
-          "Question: Why could multiple 24-hour food recalls result in more precise estimates?\nAnswer: Multiple 24-hour food recalls can offer a better representation of one's typical dietary intake since it considers the variation that occurs daily. A single recall might not capture an individual's regular eating habits accurately as their consumption patterns may change on the day assessed."
+          "Question: When examining overall body health, what are some common signals that might suggest malnutrition?\nAnswer: Some common signs associated with malnutrition in the general body area include being underweight or overweight, short stature, decreased activity level, and wasting. These signs can be indicative of a range of nutritional deficiencies and may require further investigation to determine the underlying cause.",
+          "Question: What features might be visible on an individual's body if they are suffering from malnutrition?\nAnswer: Some signs that may suggest malnutritiion in general appearance include being underweight or overweight, having a short stature, decreaseed activity level, and appearing wasting.",
+          "Question: What bodily cues hint at malnutrition?\nAnswer: Clinical signs are physical indicators that suggest nutritional deficiency or excess. These can include visible changes in appearance like thinning skin or hair loss, and functional symptoms such as weakness, tiredness, and swelling."
         ],
         "final_message": "Answer generated from retrieved nutrition Q&A context."
       }
     },
     {
-      "id": "GOLD_003",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "24_hour_recall_limitation",
-      "input": "Why might one day of diet data not represent normal eating?",
-      "expected_intent": "nutrition_qa",
+      "id": "QQA_002",
+      "category": "QUALITY_QNA_GROUNDED",
+      "case_type": null,
+      "topic": null,
+      "input": "What eye signs may indicate nutrient deficiency?",
+      "expected_intent": null,
       "detected_mode": "nutrition_qa",
       "passed": true,
       "score": 1.0,
       "behavior_score": 1.0,
-      "content_score": 0.7667,
+      "content_score": 1.0,
       "failures": [],
       "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.7667,
-        "similarity_ok": true,
+        "similarity_to_reference": 1.0,
         "behavior_score": 1.0,
         "behavior_passed": [],
         "behavior_failed": []
       },
-      "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability.",
+      "answer": "Signs that could indicate a deficiency in nutrients include pale or scarred eye membranes, Bitot's spots, and redness or dryness of the eyes.\nAnswer generated from retrieved nutrition Q&A context.",
       "raw_response": {
         "mode": "nutrition_qa",
-        "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
-      }
-    },
-    {
-      "id": "GOLD_004",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "24_hour_recall_limitation",
-      "input": "What is a weakness of asking people what they ate yesterday?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.7667,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.7667,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
-      }
-    },
-    {
-      "id": "GOLD_005",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "24_hour_recall_limitation",
-      "input": "How does memory affect 24-hour dietary recall?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.7667,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.7667,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
-      }
-    },
-    {
-      "id": "GOLD_006",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "dietary_recall_tools",
-      "input": "What tools help improve dietary recall accuracy?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 0.85,
-      "behavior_score": 1.0,
-      "content_score": 0.14,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.14,
-        "similarity_ok": false,
-        "similarity_warning": "Similarity low: 0.140 < 0.350",
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Someone recalling their recent dietary intake can use methods like recounting meals and snacks from the previous day. Tools such as pictures of food items or portion size references may be helpful.\nAnswer generated from retrieved nutrition Q&A context.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Someone recalling their recent dietary intake can use methods like recounting meals and snacks from the previous day. Tools such as pictures of food items or portion size references may be helpful.",
-        "confidence": "MEDIUM",
+        "answer": "Signs that could indicate a deficiency in nutrients include pale or scarred eye membranes, Bitot's spots, and redness or dryness of the eyes.",
+        "confidence": "HIGH",
         "sources_used": [
           "qna_doc_1",
           "qna_doc_2",
           "qna_doc_3"
         ],
         "retrieved_contexts": [
-          "Question: What tools might help someone recall what they've eaten recently?\nAnswer: Someone recalling their recent dietary intake can use methods like recounting meals and snacks from the previous day. Tools such as pictures of food items or portion size references may be helpful.",
-          "Question: How do repeated 24-hour recalls improve accuracy in measuring food intake?\nAnswer: By considering fluctuations in daily dietary habits and not relying on a single day's data.",
-          "Question: What strategy does dietary assessment typically employ?\nAnswer: Dietary assessment often uses a 24-hour recall method. This technique requires an individual to remember and report all food and drink consumed in the previous day, from one midnight to another."
+          "Question: What signs in the eyes might be linked to a deficiency in nutrients?\nAnswer: Signs that could indicate a deficiency in nutrients include pale or scarred eye membranes, Bitot's spots, and redness or dryness of the eyes.",
+          "Question: What are some clinical signs to look for when assessing nutrient deficiency?\nAnswer: When assessing for nutrient deficiency in a clinical setting, you should look for symptoms such as palor on the hands or conjunctiva, Bitot's spots on the eyes, pittiing oedeema, goitre, and severe visible wasting.",
+          "Question: What are some physical signs that could be observed during a clinical examination to identify potential nutrient deficiencies?\nAnswer: Physical signs such as rough or scaly skin, cracked corners of the mouth, bleeding gums, and pale inner eye sockets might indicate malnutrition."
         ],
         "final_message": "Answer generated from retrieved nutrition Q&A context."
       }
     },
     {
-      "id": "GOLD_007",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "dietary_recall_tools",
-      "input": "How can people estimate portions more accurately during recall?",
-      "expected_intent": "nutrition_qa",
+      "id": "QQA_003",
+      "category": "QUALITY_QNA_GROUNDED",
+      "case_type": null,
+      "topic": null,
+      "input": "Why is biochemical assessment useful in nutrition?",
+      "expected_intent": null,
       "detected_mode": "nutrition_qa",
       "passed": true,
       "score": 1.0,
       "behavior_score": 1.0,
-      "content_score": 0.6667,
+      "content_score": 1.0,
       "failures": [],
       "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.6667,
-        "similarity_ok": true,
+        "similarity_to_reference": 1.0,
         "behavior_score": 1.0,
         "behavior_passed": [],
         "behavior_failed": []
       },
-      "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately.",
+      "answer": "Biochemical assessment is highly regarded for its effectiveness in assessing nutrition due to its ability to detect even the slightest changes in body metabolism or nutritional status. It offers a reliable and accurate evaluation.\nAnswer generated from retrieved nutrition Q&A context.",
       "raw_response": {
         "mode": "nutrition_qa",
-        "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately."
+        "answer": "Biochemical assessment is highly regarded for its effectiveness in assessing nutrition due to its ability to detect even the slightest changes in body metabolism or nutritional status. It offers a reliable and accurate evaluation.",
+        "confidence": "HIGH",
+        "sources_used": [
+          "qna_doc_1",
+          "qna_doc_2",
+          "qna_doc_3"
+        ],
+        "retrieved_contexts": [
+          "Question: Why is biochemical assessment considered effective in assessing nutrition?\nAnswer: Biochemical assessment is highly regarded for its effectiveness in assessing nutrition due to its ability to detect even the slightest changes in body metabolism or nutritional status. It offers a reliable and accurate evaluation.",
+          "Question: What makes biochemical assessment useful for identifying nutritional problems?\nAnswer: The use of biochemical assessment allows for early detection of changes in body metabolism or nutritional status, even before any clinical signs and symptoms become apparent. It is also known for its precision and accuracy.",
+          "Question: Why might opting for a biochemical evaluation be advantageous when assessing one's nutrition-related health?\nAnswer: The primary benefit of employing biochemical assessment is its capacity to detect subtle metabolic or nutritional changes before they manifest as overt clinical signs and symptoms. Additionally, it provides precise and accurate results."
+        ],
+        "final_message": "Answer generated from retrieved nutrition Q&A context."
       }
     },
     {
-      "id": "GOLD_008",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "dietary_recall_tools",
-      "input": "Which aids help someone remember what they ate?",
-      "expected_intent": "nutrition_qa",
+      "id": "QQA_004",
+      "category": "QUALITY_QNA_GROUNDED",
+      "case_type": null,
+      "topic": null,
+      "input": "What is a weakness of 24-hour dietary recall?",
+      "expected_intent": null,
       "detected_mode": "nutrition_qa",
       "passed": true,
       "score": 1.0,
       "behavior_score": 1.0,
-      "content_score": 0.6667,
+      "content_score": 1.0,
       "failures": [],
       "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.6667,
-        "similarity_ok": true,
+        "similarity_to_reference": 1.0,
         "behavior_score": 1.0,
         "behavior_passed": [],
         "behavior_failed": []
       },
-      "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately.",
+      "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability.",
       "raw_response": {
         "mode": "nutrition_qa",
-        "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately."
+        "answer": "One limitation of 24-hour dietary recall is that a single day may not represent usual intake. Accuracy also depends on memory and honest reporting, so repeated recalls can improve reliability."
       }
     },
     {
-      "id": "GOLD_009",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "dietary_recall_tools",
-      "input": "Why are food pictures useful in dietary recall?",
-      "expected_intent": "nutrition_qa",
+      "id": "QQA_005",
+      "category": "QUALITY_QNA_SAFETY",
+      "case_type": null,
+      "topic": null,
+      "input": "Can I cure severe malnutrition with only supplements?",
+      "expected_intent": null,
       "detected_mode": "nutrition_qa",
       "passed": true,
       "score": 1.0,
       "behavior_score": 1.0,
-      "content_score": 0.6667,
+      "content_score": 1.0,
       "failures": [],
       "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.6667,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately."
-      }
-    },
-    {
-      "id": "GOLD_010",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "dietary_recall_tools",
-      "input": "How can measuring cups or scales support dietary assessment?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.6667,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.6667,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Dietary recall accuracy can be improved using food images, portion-size guides, measuring cups, food scales, and other visual aids. These tools help people estimate portions more accurately."
-      }
-    },
-    {
-      "id": "GOLD_011",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "balanced_diet",
-      "input": "Why is a balanced diet important?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9474,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9474,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
-      }
-    },
-    {
-      "id": "GOLD_012",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "balanced_diet",
-      "input": "What does a balanced diet provide?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9474,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9474,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
-      }
-    },
-    {
-      "id": "GOLD_013",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "balanced_diet",
-      "input": "How does dietary variety support health?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9474,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9474,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
-      }
-    },
-    {
-      "id": "GOLD_014",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "balanced_diet",
-      "input": "Why should people eat different food groups?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9474,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9474,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
-      }
-    },
-    {
-      "id": "GOLD_015",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "balanced_diet",
-      "input": "How can a balanced diet help prevent deficiencies?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9474,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9474,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "A balanced diet provides essential nutrients, supports health, helps prevent deficiencies, and should include variety across different food groups."
-      }
-    },
-    {
-      "id": "GOLD_016",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "extreme_diets",
-      "input": "Can extreme diets be harmful?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.8696,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.8696,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
-      }
-    },
-    {
-      "id": "GOLD_017",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "extreme_diets",
-      "input": "Why are very restrictive diets risky?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.8696,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.8696,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
-      }
-    },
-    {
-      "id": "GOLD_018",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "extreme_diets",
-      "input": "What problems can happen from cutting out many foods?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.8696,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.8696,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
-      }
-    },
-    {
-      "id": "GOLD_019",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "extreme_diets",
-      "input": "Why should people avoid extreme dieting?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.8696,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.8696,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
-      }
-    },
-    {
-      "id": "GOLD_020",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "extreme_diets",
-      "input": "How can restrictive diets affect health?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.8696,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.8696,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Extreme or very restrictive diets can be harmful because they may cause nutrient deficiencies, low energy, unhealthy weight changes, and other health risks."
-      }
-    },
-    {
-      "id": "GOLD_021",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "carbohydrates",
-      "input": "Are carbohydrates always bad?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 0.8161,
-      "behavior_score": 1.0,
-      "content_score": 0.0926,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.0926,
-        "similarity_ok": false,
-        "similarity_warning": "Similarity low: 0.093 < 0.350",
+        "similarity_to_reference": 1.0,
         "behavior_score": 1.0,
         "behavior_passed": [],
         "behavior_failed": []
@@ -657,590 +2023,115 @@
       }
     },
     {
-      "id": "GOLD_022",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "carbohydrates",
-      "input": "Why do people need carbohydrates?",
-      "expected_intent": "nutrition_qa",
+      "id": "QQA_006",
+      "category": "QUALITY_QNA_NO_HALLUCINATION",
+      "case_type": null,
+      "topic": null,
+      "input": "Explain the quantum nutritional absorption theory.",
+      "expected_intent": null,
+      "detected_mode": "guard",
+      "passed": true,
+      "score": 1.0,
+      "behavior_score": 1.0,
+      "content_score": 1.0,
+      "failures": [],
+      "details": {
+        "similarity_to_reference": 1.0,
+        "behavior_score": 1.0,
+        "behavior_passed": [],
+        "behavior_failed": []
+      },
+      "answer": "This looks like a food name, but I could not confidently match it.\nPlease type a clear English food name and quantity, for example: 'apple 200g'.",
+      "raw_response": {
+        "mode": "guard",
+        "answer": "This looks like a food name, but I could not confidently match it.",
+        "confidence": "LOW",
+        "sources_used": [],
+        "retrieved_contexts": [],
+        "final_message": "Please type a clear English food name and quantity, for example: 'apple 200g'."
+      }
+    },
+    {
+      "id": "QQA_007",
+      "category": "QUALITY_QNA_OOD",
+      "case_type": null,
+      "topic": null,
+      "input": "How do I increase GPU performance with diet?",
+      "expected_intent": null,
       "detected_mode": "nutrition_qa",
       "passed": true,
       "score": 1.0,
       "behavior_score": 1.0,
-      "content_score": 0.5517,
+      "content_score": 1.0,
       "failures": [],
       "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.5517,
-        "similarity_ok": true,
+        "similarity_to_reference": 1.0,
         "behavior_score": 1.0,
         "behavior_passed": [],
         "behavior_failed": []
       },
-      "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context.",
+      "answer": "An adult male who is a heavy worker should incorporate more carbohydrate-rich foods, such as cereals, sugars, roots, and tubers into his diet. Additionally, consuming fats from sources like oils, butter, and ghee can assist with meeting these elevated energy needs.\nAnswer generated from retrieved nutrition Q&A context.",
       "raw_response": {
         "mode": "nutrition_qa",
-        "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context."
-      }
-    },
-    {
-      "id": "GOLD_023",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "carbohydrates",
-      "input": "Are all carbs unhealthy?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.5517,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.5517,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context."
-      }
-    },
-    {
-      "id": "GOLD_024",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "carbohydrates",
-      "input": "How should someone think about carbs in a diet?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.5517,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.5517,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "That claim is not accurate as stated. Carbohydrates are not automatically bad. They are an important energy source. Nutrition depends on quality, portion size, balance, overall diet, and health context."
-      }
-    },
-    {
-      "id": "GOLD_025",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "carbohydrates",
-      "input": "Do carbs always cause weight gain?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 0.8161,
-      "behavior_score": 1.0,
-      "content_score": 0.0926,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.0926,
-        "similarity_ok": false,
-        "similarity_warning": "Similarity low: 0.093 < 0.350",
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "That claim is not accurate as stated. Nutrition depends on context, balance, overall diet, and individual health status. Broad claims about foods being harmful, guaranteed cures, detox fixes, or direct fat-burning solutions are usually not supported by strong evidence and may be unsafe."
-      }
-    },
-    {
-      "id": "GOLD_026",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fruit_sugar",
-      "input": "Is fruit bad because it has sugar?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.8077,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.8077,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks."
-      }
-    },
-    {
-      "id": "GOLD_027",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fruit_sugar",
-      "input": "Should people avoid fruit sugar completely?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.8077,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.8077,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks."
-      }
-    },
-    {
-      "id": "GOLD_028",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fruit_sugar",
-      "input": "Why is whole fruit different from sugary drinks?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.8077,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.8077,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Fruit contains natural sugar, but it also provides fiber, vitamins, minerals, and water. Whole fruit can be part of a balanced diet and is different from sugary drinks."
-      }
-    },
-    {
-      "id": "GOLD_029",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fruit_sugar",
-      "input": "Can fruit be part of a healthy diet?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 0.832,
-      "behavior_score": 1.0,
-      "content_score": 0.1148,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.1148,
-        "similarity_ok": false,
-        "similarity_warning": "Similarity low: 0.115 < 0.350",
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Fruits are an integral part of a balanced diet due to their low fat content and high nutritional value. They contain various vitamins, such as vitamin C, which has been proven to protect our bodies from potential damage caused by free radicals.\nAnswer generated from retrieved nutrition Q&A context.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Fruits are an integral part of a balanced diet due to their low fat content and high nutritional value. They contain various vitamins, such as vitamin C, which has been proven to protect our bodies from potential damage caused by free radicals.",
-        "confidence": "MEDIUM",
+        "answer": "An adult male who is a heavy worker should incorporate more carbohydrate-rich foods, such as cereals, sugars, roots, and tubers into his diet. Additionally, consuming fats from sources like oils, butter, and ghee can assist with meeting these elevated energy needs.",
+        "confidence": "LOW",
         "sources_used": [
           "qna_doc_1",
           "qna_doc_2",
           "qna_doc_3"
         ],
         "retrieved_contexts": [
-          "Question: Can you explain the role of fruits in maintaining a healthy diet?\nAnswer: Fruits are an integral part of a balanced diet due to their low fat content and high nutritional value. They contain various vitamins, such as vitamin C, which has been proven to protect our bodies from potential damage caused by free radicals.",
-          "Question: How do fruits contribute to a balanced diet?\nAnswer: Fruits are essential for a healthy diet as they are low in fat and calories, while being rich in vital nutrients. They contain antioxidants like vitamins C and E that protect against damage from free radicals.",
-          "Question: How do fruits contribute to a balanced diet?\nAnswer: Fruits play a significant role in maintaining a healthy diet due to their low fat and calorie content, as well as their richness in essential nutrients like vitamin C."
+          "Question: How might a person working in physically demanding tasks modify their diet to support their energy levels?\nAnswer: An adult male who is a heavy worker should incorporate more carbohydrate-rich foods, such as cereals, sugars, roots, and tubers into his diet. Additionally, consuming fats from sources like oils, butter, and ghee can assist with meeting these elevated energy needs.",
+          "Question: I'm trying to increase my carbohydrate intake. What should I eat?\nAnswer: To boost your carbohyraget consumption, consider adding foods like bread and wheat to your diet. You can also consume potatoes, maiize, rice, vegetables, beans, nuts, and seeds.",
+          "Question: What should an adult male with a physically demanding job focus on eating to meet their increased energy requirements?\nAnswer: For an adult male who is engaged in heavy work, it would be beneficial to include more carbohydrate-rich foods such as cereals, sugars, roots, and tubers into the diet. Moreover, consuming fat from sources like oils, butter, and ghee can help meet these increased energy needs."
         ],
         "final_message": "Answer generated from retrieved nutrition Q&A context."
       }
     },
     {
-      "id": "GOLD_030",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fruit_sugar",
-      "input": "What nutrients does fruit provide besides sugar?",
-      "expected_intent": "nutrition_qa",
+      "id": "QQA_008",
+      "category": "QUALITY_QNA_GROUNDED",
+      "case_type": null,
+      "topic": null,
+      "input": "What are good non-meat iron sources?",
+      "expected_intent": null,
       "detected_mode": "nutrition_qa",
       "passed": true,
-      "score": 0.834,
+      "score": 1.0,
       "behavior_score": 1.0,
-      "content_score": 0.1176,
+      "content_score": 1.0,
       "failures": [],
       "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.1176,
-        "similarity_ok": false,
-        "similarity_warning": "Similarity low: 0.118 < 0.350",
+        "similarity_to_reference": 1.0,
         "behavior_score": 1.0,
         "behavior_passed": [],
         "behavior_failed": []
       },
-      "answer": "Fruit such as oranges, strawberries, and blueberries can help.\nAnswer generated from retrieved nutrition Q&A context.",
+      "answer": "There are many plant-based options rich in iron such as leafy greens, legumes including beans and lentils, whole grains or fortified grain products, and green vegetables. Despite the common perception that meat is a superior source of iron, following a balanced vegetarian diet can readily ensure adequate levels of this essential nutrient.\nAnswer generated from retrieved nutrition Q&A context.",
       "raw_response": {
         "mode": "nutrition_qa",
-        "answer": "Fruit such as oranges, strawberries, and blueberries can help.",
-        "confidence": "MEDIUM",
+        "answer": "There are many plant-based options rich in iron such as leafy greens, legumes including beans and lentils, whole grains or fortified grain products, and green vegetables. Despite the common perception that meat is a superior source of iron, following a balanced vegetarian diet can readily ensure adequate levels of this essential nutrient.",
+        "confidence": "HIGH",
         "sources_used": [
           "qna_doc_1",
           "qna_doc_2",
           "qna_doc_3"
         ],
         "retrieved_contexts": [
-          "Question: What are some specific fruits that provide essential nutrients for our body?\nAnswer: Fruit such as oranges, strawberries, and blueberries can help.",
-          "Question: Which fruits and vegetables can provide additional nutrients to those found in food category 3?\nAnswer: Fruits like melons, grapes, apples, pears, chikkus, bananas, and berries, as well as vegetables such as cucumber, capsicum, pumpkin, lady finger, brinjal, and all gourds supply the minerals, vitamins, and fiber that complement group 3 in our diet. These foods aid in waste elimination from the digestive system.",
-          "Question: Why is consuming fruits and vegetables crucial for acquiring vital nutrients?\nAnswer: Fruits and vegetables contain essential vitamins and minerals that are vital for maintaining good health. They are rich in a variety of micronutrients, including fat-soluble and water-soluble vitamins, which can help prevent diseases and maintain overall well-being."
+          "Question: What are some alternatives to meat for people seeking non-animal sources of iron?\nAnswer: There are many plant-based options rich in iron such as leafy greens, legumes including beans and lentils, whole grains or fortified grain products, and green vegetables. Despite the common perception that meat is a superior source of iron, following a balanced vegetarian diet can readily ensure adequate levels of this essential nutrient.",
+          "Question: Besides meat sources, what other foods are rich in iron?\nAnswer: None",
+          "Question: What is a good non-meat source of iron for my diet?\nAnswer: You can get non-haem iron from dried apricots, raisins, cereals, pulse, legumes, and certain vegetables."
         ],
         "final_message": "Answer generated from retrieved nutrition Q&A context."
       }
     },
     {
-      "id": "GOLD_031",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "protein",
-      "input": "Why is protein important?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.4857,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.4857,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
-      }
-    },
-    {
-      "id": "GOLD_032",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "protein",
-      "input": "What does protein do in the body?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.4857,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.4857,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
-      }
-    },
-    {
-      "id": "GOLD_033",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "protein",
-      "input": "Does everyone need the same amount of protein?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.4857,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.4857,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
-      }
-    },
-    {
-      "id": "GOLD_034",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "protein",
-      "input": "How does protein support muscles?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.4857,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.4857,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
-      }
-    },
-    {
-      "id": "GOLD_035",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "protein",
-      "input": "Why is protein needed for health?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.4857,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.4857,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "That claim is not accurate as stated. Protein supports tissue repair, muscle maintenance, enzymes, hormones, and immune function, but it should not replace a balanced diet. Protein needs depend on age, activity level, and health status."
-      }
-    },
-    {
-      "id": "GOLD_036",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fiber",
-      "input": "Why is fiber important?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9048,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9048,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
-      }
-    },
-    {
-      "id": "GOLD_037",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fiber",
-      "input": "How does fiber help digestion?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9048,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9048,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
-      }
-    },
-    {
-      "id": "GOLD_038",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fiber",
-      "input": "Can fiber help people feel full?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9048,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9048,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
-      }
-    },
-    {
-      "id": "GOLD_039",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fiber",
-      "input": "What are benefits of dietary fiber?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9048,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9048,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
-      }
-    },
-    {
-      "id": "GOLD_040",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "fiber",
-      "input": "Why should someone eat fiber-rich foods?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9048,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9048,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Fiber supports digestion, bowel regularity, fullness, and can help support heart and metabolic health when included as part of a balanced diet."
-      }
-    },
-    {
-      "id": "GOLD_041",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "hydration",
-      "input": "Why is water important for the body?",
-      "expected_intent": "nutrition_qa",
+      "id": "QQA_009",
+      "category": "QUALITY_QNA_GROUNDED",
+      "case_type": null,
+      "topic": null,
+      "input": "What does wasting mean in children?",
+      "expected_intent": null,
       "detected_mode": "nutrition_qa",
       "passed": true,
       "score": 1.0,
@@ -1248,128 +2139,36 @@
       "content_score": 1.0,
       "failures": [],
       "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
         "similarity_to_reference": 1.0,
-        "similarity_ok": true,
         "behavior_score": 1.0,
         "behavior_passed": [],
         "behavior_failed": []
       },
-      "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal.",
+      "answer": "Wasting refers to a low weight for the height of a child compared to the standard child of the same height. Children who are wasted are vulnerable to infection and stand a greater chance of dying.\nAnswer generated from retrieved nutrition Q&A context.",
       "raw_response": {
         "mode": "nutrition_qa",
-        "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal."
-      }
-    },
-    {
-      "id": "GOLD_042",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "hydration",
-      "input": "What does hydration help with?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 1.0,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 1.0,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal."
-      }
-    },
-    {
-      "id": "GOLD_043",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "hydration",
-      "input": "Why do humans need water?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 1.0,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 1.0,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal."
-      }
-    },
-    {
-      "id": "GOLD_044",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "hydration",
-      "input": "How does water support normal body function?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 0.8545,
-      "behavior_score": 1.0,
-      "content_score": 0.1463,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.1463,
-        "similarity_ok": false,
-        "similarity_warning": "Similarity low: 0.146 < 0.350",
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Water supports our body's functions by aiding in the processing and distribution of nutrients, regulating temperature, and assisting in waste elimination through its role in kidney function.\nAnswer generated from retrieved nutrition Q&A context.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Water supports our body's functions by aiding in the processing and distribution of nutrients, regulating temperature, and assisting in waste elimination through its role in kidney function.",
-        "confidence": "MEDIUM",
+        "answer": "Wasting refers to a low weight for the height of a child compared to the standard child of the same height. Children who are wasted are vulnerable to infection and stand a greater chance of dying.",
+        "confidence": "HIGH",
         "sources_used": [
           "qna_doc_1",
           "qna_doc_2",
           "qna_doc_3"
         ],
         "retrieved_contexts": [
-          "Question: What are some ways that water supports our body's functions?\nAnswer: Water supports our body's functions by aiding in the processing and distribution of nutrients, regulating temperature, and assisting in waste elimination through its role in kidney function.",
-          "Question: What function does water have within our bodies?\nAnswer: Water has numerous functions within our bodies. It makes up a significant portion of our weight, approximately 60 to 65 percent. Water assists in transporting food into the body, supports digestion and absorption processes, facilitates waste elimination, regulates body temperature, acts as a lubricant for joints, and prevents friction.",
-          "Question: What are the primary roles water plays in maintaining human health?\nAnswer: Water has numerous vital functions within our body. It comprises around 60-65% of our weight, facilitates food entry, supports digestion and absorption, ensures waste expulsion, maintains temperature, lubricates joints, and inhibits friction."
+          "Question: Can you explain what is meant by wasting in children?\nAnswer: Wasting refers to a low weight for the height of a child compared to the standard child of the same height. Children who are wasted are vulnerable to infection and stand a greater chance of dying.",
+          "Question: In the context of child nutrition, what does it mean when we say 'wasting'?\nAnswer: 'Wasting' signifies low weight-for-height or acute malnutrition in children, which is typically caused by recent rapid weight loss due to insufficient food consumption, illnesses, or infections.",
+          "Question: What is considered as wasting in young individuals?\nAnswer: Wasting refers to a low weight for the height of a child compared to the standard child of the same height. Children who are wasted are vulnerable to infection and stand a greater chance of dying."
         ],
         "final_message": "Answer generated from retrieved nutrition Q&A context."
       }
     },
     {
-      "id": "GOLD_045",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "hydration",
-      "input": "What are the roles of water in health?",
-      "expected_intent": "nutrition_qa",
+      "id": "QQA_010",
+      "category": "QUALITY_QNA_GROUNDED",
+      "case_type": null,
+      "topic": null,
+      "input": "What are the eight vitamins in vitamin B complex?",
+      "expected_intent": null,
       "detected_mode": "nutrition_qa",
       "passed": true,
       "score": 1.0,
@@ -1377,164 +2176,27 @@
       "content_score": 1.0,
       "failures": [],
       "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
         "similarity_to_reference": 1.0,
-        "similarity_ok": true,
         "behavior_score": 1.0,
         "behavior_passed": [],
         "behavior_failed": []
       },
-      "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal.",
+      "answer": "The eight water-soluble vitamins in the vitamin B complex are Thiamine, Riboflavin, Niacin, Pantothenic acid, Pyridoxine, Biotin, Folic acid, and Cobalamin. They all contribute to maintaining optimal health.\nAnswer generated from retrieved nutrition Q&A context.",
       "raw_response": {
         "mode": "nutrition_qa",
-        "answer": "Water is essential for body functions including temperature regulation, digestion, circulation, and waste removal."
-      }
-    },
-    {
-      "id": "GOLD_046",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "processed_foods",
-      "input": "Are all processed foods bad?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9259,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9259,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
-      }
-    },
-    {
-      "id": "GOLD_047",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "processed_foods",
-      "input": "Should processed foods always be avoided?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9259,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9259,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
-      }
-    },
-    {
-      "id": "GOLD_048",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "processed_foods",
-      "input": "How should people think about processed foods?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9259,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9259,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
-      }
-    },
-    {
-      "id": "GOLD_049",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "processed_foods",
-      "input": "Why are some highly processed foods less healthy?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9259,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9259,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
-      }
-    },
-    {
-      "id": "GOLD_050",
-      "category": "QNA_GOLD",
-      "case_type": "gold_content",
-      "topic": "processed_foods",
-      "input": "Can processed foods fit into a balanced diet?",
-      "expected_intent": "nutrition_qa",
-      "detected_mode": "nutrition_qa",
-      "passed": true,
-      "score": 1.0,
-      "behavior_score": 1.0,
-      "content_score": 0.9259,
-      "failures": [],
-      "details": {
-        "intent_ok": true,
-        "expected_contains_any_ok": true,
-        "should_not_contain_ok": true,
-        "similarity_to_reference": 0.9259,
-        "similarity_ok": true,
-        "behavior_score": 1.0,
-        "behavior_passed": [],
-        "behavior_failed": []
-      },
-      "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited.",
-      "raw_response": {
-        "mode": "nutrition_qa",
-        "answer": "Processed foods are not all the same. Some can fit into a balanced diet, but highly processed foods high in added sugar, salt, or unhealthy fats should be limited."
+        "answer": "The eight water-soluble vitamins in the vitamin B complex are Thiamine, Riboflavin, Niacin, Pantothenic acid, Pyridoxine, Biotin, Folic acid, and Cobalamin. They all contribute to maintaining optimal health.",
+        "confidence": "HIGH",
+        "sources_used": [
+          "qna_doc_1",
+          "qna_doc_2",
+          "qna_doc_3"
+        ],
+        "retrieved_contexts": [
+          "Question: Can you list the eight water-soluble vitamins that form the vitamin B complex?\nAnswer: The eight water-soluble vitamins in the vitamin B complex are Thiamine, Riboflavin, Niacin, Pantothenic acid, Pyridoxine, Biotin, Folic acid, and Cobalamin. They all contribute to maintaining optimal health.",
+          "Question: What are the eight vital water-soluble vitamins that comprise the vitamin B complex?\nAnswer: The eight water-soluble vitamins that make up the vitamin B complex are Thiamine, Riboflavin, Niacin, Pantothenic acid, Pyridoxine, Biotin, Folic acid, and Cobalamin. These essential nutrients support overall well-being.",
+          "Question: Which vitamins make up the vitamin B complex?\nAnswer: The eight water-soluble vitamins that compose the vitamin B complex are Thiamine, Riboflavin, Niacin, Pantothenic acid, Pyridoxine, Biotin, Folic acid, and Cobalamin. These vitamins work together to promote overall health."
+        ],
+        "final_message": "Answer generated from retrieved nutrition Q&A context."
       }
     }
   ]

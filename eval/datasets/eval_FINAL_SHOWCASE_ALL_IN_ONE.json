@@ -1,0 +1,1076 @@
+[
+  {
+    "id": "SHOWCASE_001",
+    "category": "CAL_EXACT_MATCH",
+    "input": "apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_002",
+    "category": "CAL_EXACT_MATCH",
+    "input": "banana 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_003",
+    "category": "CAL_EXACT_MATCH",
+    "input": "milk 250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_004",
+    "category": "CAL_EXACT_MATCH",
+    "input": "rice 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_005",
+    "category": "CAL_EXACT_MATCH",
+    "input": "pasta 180g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_006",
+    "category": "CAL_EXACT_MATCH",
+    "input": "orange 120g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_007",
+    "category": "CAL_EXACT_MATCH",
+    "input": "egg 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_008",
+    "category": "CAL_EXACT_MATCH",
+    "input": "chicken breast 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_009",
+    "category": "CAL_EXACT_MATCH",
+    "input": "potato 250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_010",
+    "category": "CAL_EXACT_MATCH",
+    "input": "yogurt 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_011",
+    "category": "CAL_EXACT_MATCH",
+    "input": "bread 80g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_012",
+    "category": "CAL_EXACT_MATCH",
+    "input": "cheese 50g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_013",
+    "category": "CAL_EXACT_MATCH",
+    "input": "tomato 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_014",
+    "category": "CAL_EXACT_MATCH",
+    "input": "carrot 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_015",
+    "category": "CAL_EXACT_MATCH",
+    "input": "beef 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_016",
+    "category": "CAL_EXACT_MATCH",
+    "input": "salmon 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_017",
+    "category": "CAL_EXACT_MATCH",
+    "input": "tuna 120g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_018",
+    "category": "CAL_EXACT_MATCH",
+    "input": "avocado 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_019",
+    "category": "CAL_EXACT_MATCH",
+    "input": "strawberry 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_020",
+    "category": "CAL_EXACT_MATCH",
+    "input": "pineapple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_021",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "APPLE 200G",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_022",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "banana   100   g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_023",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "Milk 250 grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_024",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "rice150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_025",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "pasta180g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_026",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "orange120grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_027",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "egg100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_028",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "chickenbreast200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_029",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "apple200gandbanana100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_030",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "rice150gandmilk250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_031",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "apple 200 g and banana 100 g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_032",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "APPLE    200   GRAMS   AND BANANA 100 G",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_033",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "add apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_034",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "addbanana100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_035",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "with milk 250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_036",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "plus rice 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_037",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "apple 200g and banana100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_038",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "apple200g plus milk250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_039",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "today I ate apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_040",
+    "category": "CAL_FORMAT_NOISE",
+    "input": "I had banana 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_041",
+    "category": "CAL_MULTI_ITEM",
+    "input": "apple 200g and banana 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_042",
+    "category": "CAL_MULTI_ITEM",
+    "input": "rice 150g and chicken breast 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_043",
+    "category": "CAL_MULTI_ITEM",
+    "input": "milk 250g and cereal 50g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_044",
+    "category": "CAL_MULTI_ITEM",
+    "input": "pasta 180g and tomato 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_045",
+    "category": "CAL_MULTI_ITEM",
+    "input": "bread 80g and cheese 50g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_046",
+    "category": "CAL_MULTI_ITEM",
+    "input": "egg 100g and potato 250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_047",
+    "category": "CAL_MULTI_ITEM",
+    "input": "salmon 150g and rice 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_048",
+    "category": "CAL_MULTI_ITEM",
+    "input": "tuna 120g and avocado 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_049",
+    "category": "CAL_MULTI_ITEM",
+    "input": "orange 120g and strawberry 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_050",
+    "category": "CAL_MULTI_ITEM",
+    "input": "pineapple 200g and yogurt 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_051",
+    "category": "CAL_MULTI_ITEM",
+    "input": "apple 200g plus banana 100g plus milk 250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_052",
+    "category": "CAL_MULTI_ITEM",
+    "input": "rice 150g with chicken breast 200g and tomato 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_053",
+    "category": "CAL_MULTI_ITEM",
+    "input": "pasta 180g plus cheese 50g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_054",
+    "category": "CAL_MULTI_ITEM",
+    "input": "bread 80g with egg 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_055",
+    "category": "CAL_MULTI_ITEM",
+    "input": "milk 250g plus banana 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_056",
+    "category": "CAL_MULTI_ITEM",
+    "input": "apple200gbanana100gmilk250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_057",
+    "category": "CAL_MULTI_ITEM",
+    "input": "rice150gchicken200gtomato100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_058",
+    "category": "CAL_MULTI_ITEM",
+    "input": "banana100gandmilk250gandcereal50g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_059",
+    "category": "CAL_MULTI_ITEM",
+    "input": "pasta180gandcheese50gandtomato100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_060",
+    "category": "CAL_MULTI_ITEM",
+    "input": "egg100gandbread80g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_061",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_062",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "   ",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_063",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_064",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "100 grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_065",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "apple",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_066",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "banana",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_067",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_068",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "banana one hundred g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_069",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "apple 2oo g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_070",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "apple 200..g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_071",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "apple -200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_072",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "apple 0g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_073",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "apple 200kg",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_074",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "apple 200mg",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_075",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "سلام سیب ۲۰۰ گرم",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_076",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "سیب 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_077",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "asdfghjkl",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_078",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "!!!!!!",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_079",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "123456",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_080",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "food food food",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_081",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "I ate something",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_082",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "how much calories",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_083",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "calculate this",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_084",
+    "category": "CAL_INVALID_GUARDRAILS",
+    "input": "grams only 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_085",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "dragon meat 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_086",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "unicorn steak 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_087",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "alien fruit 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_088",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "moon cheese 90g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_089",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "robot soup 250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_090",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "cyber banana 120g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_091",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "apple laptop 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_092",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "banana spaceship 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_093",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "phone 300g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_094",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "car 1000g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_095",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "plastic rice 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_096",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "quantum bread 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_097",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "ghost milk 250g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_098",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "invisible pasta 180g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_099",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "magic egg 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_100",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "dragon fruit meat 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_101",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "cloud protein 300g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_102",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "battery carbonara 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_103",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "stone soup 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_104",
+    "category": "CAL_UNKNOWN_FAKE_FOOD",
+    "input": "wood apple 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_105",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "pineapple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_106",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "canned pineapple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_107",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "pineapple juice 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_108",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_109",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "apple juice 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_110",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "apple pie 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_111",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "milk 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_112",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "soy milk 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_113",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "almond milk 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_114",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "chicken 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_115",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "chicken breast 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_116",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "fried chicken 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_117",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "rice 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_118",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "fried rice 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_119",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "brown rice 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_120",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "potato 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_121",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "sweet potato 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_122",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "french fries 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_123",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "tomato 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_124",
+    "category": "CAL_NEAR_MISS_DISTINCTION",
+    "input": "tomato sauce 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_125",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "clear meal",
+    "expected_mode": "clear_meal"
+  },
+  {
+    "id": "SHOWCASE_126",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_127",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_128",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "what is the total now?",
+    "expected_mode": "total_query"
+  },
+  {
+    "id": "SHOWCASE_129",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "banana 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_130",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "what is the total now?",
+    "expected_mode": "total_query"
+  },
+  {
+    "id": "SHOWCASE_131",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "remove apple",
+    "expected_mode": "remove_item"
+  },
+  {
+    "id": "SHOWCASE_132",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "what is the total now?",
+    "expected_mode": "total_query"
+  },
+  {
+    "id": "SHOWCASE_133",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "remove pizza",
+    "expected_mode": "remove_item"
+  },
+  {
+    "id": "SHOWCASE_134",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "clear meal",
+    "expected_mode": "clear_meal"
+  },
+  {
+    "id": "SHOWCASE_135",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "what is the total now?",
+    "expected_mode": "total_query"
+  },
+  {
+    "id": "SHOWCASE_136",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "rice 150g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_137",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "chicken breast 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_138",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "remove rice",
+    "expected_mode": "remove_item"
+  },
+  {
+    "id": "SHOWCASE_139",
+    "category": "CAL_MEMORY_STATEFUL",
+    "input": "clear meal",
+    "expected_mode": "clear_meal"
+  },
+  {
+    "id": "SHOWCASE_140",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "ok today I ate apple 200g and banana 100g and dragon meat 200g lol",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_141",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "today: apple 200g; banana 100g; also phone 300g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_142",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "rice 150g and pasta 150g and car 1000g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_143",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "I had apple200gbanana100gandmilk250g but also robot soup 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_144",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "banana100gbanana100gbanana100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_145",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "apple 200g and apple 200g and apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_146",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "pizza 300g and pizza 30Og",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_147",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "This is not food: apple computer 200g, but banana 100g is food",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_148",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "apple200gbanana100ganddragonmeat200gplusmilk300g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_149",
+    "category": "CAL_LONG_STRESS_ADVERSARIAL",
+    "input": "I ate maybe apple 200g maybe banana 100g idk and some unknown thing 500g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_150",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "What are symptoms of malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_151",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "What bodily signs might hint at nutrient deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_152",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "What are signs of malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_153",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "How can you tell someone might be malnourished?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_154",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "wht r sm syptoms of malnutrtion???",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_155",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "What physical symptoms could indicate poor nutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_156",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "Compare clinical symptoms and biochemical markers of malnutrition.",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_157",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "What are biochemical signs of malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_158",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "Are blood tests enough to diagnose malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_159",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "Can malnutrition happen if someone is overweight?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_160",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "Is tiredness alone enough to say malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_161",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "Can I cure malnutrition with only supplements?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_162",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "Give me a guaranteed treatment plan for malnutrition.",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_163",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "Should I stop eating carbs completely to lose weight fast?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_164",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "I ate nothing but supplements for 10 days, is that safe?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_165",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "What is the best diet for increasing GPU performance?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_166",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "Explain the quantum nutritional absorption theory.",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_167",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "Who won the World Cup?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_168",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "How do I fix my laptop battery?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_169",
+    "category": "QNA_HARD_SAFETY_HALLUCINATION",
+    "input": "What is the capital of Italy?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "SHOWCASE_170",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "what are symptoms of malnutrition and apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_171",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "clear meal and what are signs of malnutrition?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_172",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "remove apple and banana 100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_173",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "apple 200g then tell me how to treat severe malnutrition",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_174",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "apple200gbanana100ganddragonmeat200gplusmilk300gandalsowhat are symptoms of malnutrition???",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_175",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "banana 100g and explain malnutrition",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_176",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "what is the total now and is avocado healthy?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_177",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "remove rice and what are good protein sources?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_178",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "clear meal and apple 200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "SHOWCASE_179",
+    "category": "FINAL_MIXED_MODE_TRAPS",
+    "input": "how many calories in apple 200g and what is malnutrition?",
+    "expected_mode": "calorie_input"
+  }
+]

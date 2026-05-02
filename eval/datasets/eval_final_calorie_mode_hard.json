@@ -1,0 +1,2143 @@
+[
+  {
+    "case_id": "CAL_HARD_0001",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "apple 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 26.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0002",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "apple 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 52.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0003",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "apple 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 78.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0004",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "apple 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 104.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0005",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "apple 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 130.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0006",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "banana 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 44.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0007",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "banana 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 89.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0008",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "banana 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 133.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0009",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "banana 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 178.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0010",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "banana 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 222.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0011",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "avocado 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 80.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0012",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "avocado 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 160.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0013",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "avocado 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 240.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0014",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "avocado 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 320.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0015",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "avocado 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 400.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0016",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mango 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 30.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mango",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0017",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mango 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 60.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mango",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0018",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mango 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 90.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mango",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0019",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mango 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 120.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mango",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0020",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mango 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 150.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mango",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0021",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "pineapple 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 25.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "pineapple",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0022",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "pineapple 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 50.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "pineapple",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0023",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "pineapple 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 75.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "pineapple",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0024",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "pineapple 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 100.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "pineapple",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0025",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "pineapple 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 125.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "pineapple",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0026",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pineapple 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 30.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0027",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pineapple 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 60.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0028",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pineapple 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 90.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0029",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pineapple 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 120.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0030",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pineapple 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 150.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0031",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned peaches 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 27.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned peaches",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0032",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned peaches 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 54.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned peaches",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0033",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned peaches 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 81.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned peaches",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0034",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned peaches 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 108.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned peaches",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0035",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned peaches 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 135.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned peaches",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0036",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pears 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 17.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pears",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0037",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pears 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 35.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pears",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0038",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pears 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 52.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pears",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0039",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pears 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 70.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pears",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0040",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "canned pears 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 87.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pears",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0041",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mashed potatoes 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 44.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0042",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mashed potatoes 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 89.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0043",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mashed potatoes 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 133.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0044",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mashed potatoes 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 178.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0045",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "mashed potatoes 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 222.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0046",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "french fries 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 156.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0047",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "french fries 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 312.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0048",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "french fries 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 468.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0049",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "french fries 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 624.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0050",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "french fries 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 780.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0051",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "potato salad 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 71.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato salad",
+      "grams": 50
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0052",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "potato salad 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 143.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato salad",
+      "grams": 100
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0053",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "potato salad 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 214.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato salad",
+      "grams": 150
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0054",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "potato salad 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 286.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato salad",
+      "grams": 200
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0055",
+    "category": "CAL_EXACT_MATCH",
+    "kind": "single_turn",
+    "input": "potato salad 250g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 357.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato salad",
+      "grams": 250
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0056",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "apple75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 39.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 75,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0057",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "apple120g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 62.4,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 120,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0058",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "apple200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 104.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 200,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0059",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "banana75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 66.75,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 75,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0060",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "banana120g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 106.8,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 120,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0061",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "banana200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 178.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 200,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0062",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "avocado75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 120.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 75,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0063",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "avocado120g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 192.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 120,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0064",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "avocado200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 320.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 200,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0065",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "cannedpineapple75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 45.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 75,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0066",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "cannedpineapple120g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 72.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 120,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0067",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "cannedpineapple200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 120.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 200,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0068",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "cannedslicedpineapple75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 39.75,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned sliced pineapple",
+      "grams": 75,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0069",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "cannedslicedpineapple120g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 63.6,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned sliced pineapple",
+      "grams": 120,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0070",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "cannedslicedpineapple200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 106.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned sliced pineapple",
+      "grams": 200,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0071",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "mashedpotatoes75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 66.75,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 75,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0072",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "mashedpotatoes120g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 106.8,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 120,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0073",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "mashedpotatoes200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 178.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 200,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0074",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "frenchfries75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 234.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 75,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0075",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "frenchfries120g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 374.4,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 120,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0076",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "frenchfries200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 624.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 200,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0077",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "potatosalad75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 107.25,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato salad",
+      "grams": 75,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0078",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "potatosalad120g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 171.6,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato salad",
+      "grams": 120,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0079",
+    "category": "CAL_NO_SPACE_NORMALIZATION",
+    "kind": "single_turn",
+    "input": "potatosalad200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 286.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "potato salad",
+      "grams": 200,
+      "noise": "missing_spaces"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0080",
+    "category": "CAL_FORMAT_NOISE",
+    "kind": "single_turn",
+    "input": "Apple 200G",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 104.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "apple",
+      "grams": 200,
+      "noise": "case_units_spacing"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0081",
+    "category": "CAL_FORMAT_NOISE",
+    "kind": "single_turn",
+    "input": "BANANA 100 grams",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 89.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "banana",
+      "grams": 100,
+      "noise": "case_units_spacing"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0082",
+    "category": "CAL_FORMAT_NOISE",
+    "kind": "single_turn",
+    "input": "  avocado     150g   ",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 240.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "avocado",
+      "grams": 150,
+      "noise": "case_units_spacing"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0083",
+    "category": "CAL_FORMAT_NOISE",
+    "kind": "single_turn",
+    "input": "Canned Pineapple 200 grams",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 120.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "canned pineapple",
+      "grams": 200,
+      "noise": "case_units_spacing"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0084",
+    "category": "CAL_FORMAT_NOISE",
+    "kind": "single_turn",
+    "input": "French Fries 75G",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 234.0,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "french fries",
+      "grams": 75,
+      "noise": "case_units_spacing"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0085",
+    "category": "CAL_FORMAT_NOISE",
+    "kind": "single_turn",
+    "input": "Mashed Potatoes     250 grams",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 222.5,
+      "matched_items": 1,
+      "total_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "food": "mashed potatoes",
+      "grams": 250,
+      "noise": "case_units_spacing"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0086",
+    "category": "CAL_MULTI_ITEM",
+    "kind": "single_turn",
+    "input": "apple 200g and banana 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 193.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "apple",
+          200
+        ],
+        [
+          "banana",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0087",
+    "category": "CAL_MULTI_ITEM",
+    "kind": "single_turn",
+    "input": "avocado 100g and canned pineapple 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 280.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "avocado",
+          100
+        ],
+        [
+          "canned pineapple",
+          200
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0088",
+    "category": "CAL_MULTI_ITEM",
+    "kind": "single_turn",
+    "input": "french fries 150g and potato salad 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 611.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "french fries",
+          150
+        ],
+        [
+          "potato salad",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0089",
+    "category": "CAL_MULTI_ITEM",
+    "kind": "single_turn",
+    "input": "mashed potatoes 200g and canned peaches 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 232.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "mashed potatoes",
+          200
+        ],
+        [
+          "canned peaches",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0090",
+    "category": "CAL_MULTI_ITEM",
+    "kind": "single_turn",
+    "input": "mango 150g and pineapple 150g and blueberries 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 222.0,
+      "matched_items": 3,
+      "total_items": 3,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "mango",
+          150
+        ],
+        [
+          "pineapple",
+          150
+        ],
+        [
+          "blueberries",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0091",
+    "category": "CAL_MULTI_ITEM",
+    "kind": "single_turn",
+    "input": "canned sliced pineapple 200g and canned pears 150g and kiwi 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 219.5,
+      "matched_items": 3,
+      "total_items": 3,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "canned sliced pineapple",
+          200
+        ],
+        [
+          "canned pears",
+          150
+        ],
+        [
+          "kiwi",
+          100
+        ]
+      ]
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0092",
+    "category": "CAL_MULTI_NOISY",
+    "kind": "single_turn",
+    "input": "apple200gandbanana100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 193.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "apple",
+          200
+        ],
+        [
+          "banana",
+          100
+        ]
+      ],
+      "noise": "glued_multi_item"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0093",
+    "category": "CAL_MULTI_NOISY",
+    "kind": "single_turn",
+    "input": "cannedpineapple100gandmango200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 180.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "canned pineapple",
+          100
+        ],
+        [
+          "mango",
+          200
+        ]
+      ],
+      "noise": "glued_multi_item"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0094",
+    "category": "CAL_MULTI_NOISY",
+    "kind": "single_turn",
+    "input": "frenchfries150gandpotatosalad100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 611.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "french fries",
+          150
+        ],
+        [
+          "potato salad",
+          100
+        ]
+      ],
+      "noise": "glued_multi_item"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0095",
+    "category": "CAL_MULTI_NOISY",
+    "kind": "single_turn",
+    "input": "addbanana100gwithapple200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 193.0,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "banana",
+          100
+        ],
+        [
+          "apple",
+          200
+        ]
+      ],
+      "noise": "glued_multi_item"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0096",
+    "category": "CAL_MULTI_NOISY",
+    "kind": "single_turn",
+    "input": "withavocado120gandblueberries75g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 234.75,
+      "matched_items": 2,
+      "total_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "avocado",
+          120
+        ],
+        [
+          "blueberries",
+          75
+        ]
+      ],
+      "noise": "glued_multi_item"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0097",
+    "category": "CAL_PARTIAL_UNKNOWN",
+    "kind": "single_turn",
+    "input": "apple 200g and dragon meat 100g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 104.0,
+      "matched_items": 1,
+      "total_items": 2,
+      "coverage": 0.5
+    },
+    "meta": {
+      "matched": [
+        [
+          "apple",
+          200
+        ]
+      ],
+      "unknown_item_expected": true
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0098",
+    "category": "CAL_PARTIAL_UNKNOWN",
+    "kind": "single_turn",
+    "input": "banana 100g and cloud soup 200g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 89.0,
+      "matched_items": 1,
+      "total_items": 2,
+      "coverage": 0.5
+    },
+    "meta": {
+      "matched": [
+        [
+          "banana",
+          100
+        ]
+      ],
+      "unknown_item_expected": true
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0099",
+    "category": "CAL_PARTIAL_UNKNOWN",
+    "kind": "single_turn",
+    "input": "canned pineapple 100g and invisible rice 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 60.0,
+      "matched_items": 1,
+      "total_items": 2,
+      "coverage": 0.5
+    },
+    "meta": {
+      "matched": [
+        [
+          "canned pineapple",
+          100
+        ]
+      ],
+      "unknown_item_expected": true
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0100",
+    "category": "CAL_PARTIAL_UNKNOWN",
+    "kind": "single_turn",
+    "input": "french fries 100g and alien burger 150g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 312.0,
+      "matched_items": 1,
+      "total_items": 2,
+      "coverage": 0.5
+    },
+    "meta": {
+      "matched": [
+        [
+          "french fries",
+          100
+        ]
+      ],
+      "unknown_item_expected": true
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0101",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "empty"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0102",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "     ",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "empty"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0103",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "200g",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "quantity_only"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0104",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "100 grams",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "quantity_only"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0105",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "apple",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "food_only"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0106",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "canned pineapple",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "food_only"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0107",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "apple two hundred grams",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "non_numeric_quantity"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0108",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "banana one hundred g",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "non_numeric_quantity"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0109",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "سیب ۲۰۰ گرم",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "non_english"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0110",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "موز ۱۰۰ گرم",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "non_english"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0111",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "asd qwe zzz",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "gibberish"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0112",
+    "category": "CAL_GUARDRAIL",
+    "kind": "single_turn",
+    "input": "!!! ??? ###",
+    "expected": {
+      "mode": "guardrail",
+      "should_reject": true
+    },
+    "meta": {
+      "reason": "gibberish"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0113",
+    "category": "CAL_MEMORY_TOTAL",
+    "kind": "multi_turn",
+    "steps": [
+      "apple 200g",
+      "banana 100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "mode": "calorie",
+      "meal_total": 193.0,
+      "matched_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "memory": "total_query"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0114",
+    "category": "CAL_MEMORY_TOTAL_NOISY",
+    "kind": "multi_turn",
+    "steps": [
+      "cannedpineapple200g",
+      "and mango100g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "mode": "calorie",
+      "meal_total": 180.0,
+      "matched_items": 2,
+      "coverage": 1.0
+    },
+    "meta": {
+      "memory": "noisy_total_query"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0115",
+    "category": "CAL_MEMORY_REMOVE",
+    "kind": "multi_turn",
+    "steps": [
+      "apple 200g",
+      "banana 100g",
+      "remove apple",
+      "what is the total now?"
+    ],
+    "expected": {
+      "mode": "calorie",
+      "meal_total": 89.0,
+      "matched_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "memory": "remove_item"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0116",
+    "category": "CAL_MEMORY_CLEAR",
+    "kind": "multi_turn",
+    "steps": [
+      "avocado 100g",
+      "banana 100g",
+      "clear meal",
+      "what is the total now?"
+    ],
+    "expected": {
+      "mode": "calorie",
+      "meal_total": 0.0,
+      "matched_items": 0,
+      "coverage": 1.0
+    },
+    "meta": {
+      "memory": "clear_meal"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0117",
+    "category": "CAL_MEMORY_REPEAT",
+    "kind": "multi_turn",
+    "steps": [
+      "apple 200g",
+      "apple 200g",
+      "what is the total now?"
+    ],
+    "expected": {
+      "mode": "calorie",
+      "meal_total": 104.0,
+      "matched_items": 1,
+      "coverage": 1.0
+    },
+    "meta": {
+      "memory": "repeat_detection"
+    }
+  },
+  {
+    "case_id": "CAL_HARD_0118",
+    "category": "CAL_STRESS_LONG_MULTI",
+    "kind": "single_turn",
+    "input": "apple 100g and banana 100g and avocado 50g and canned pineapple 100g and french fries 50g",
+    "expected": {
+      "mode": "calorie",
+      "total_calories": 437.0,
+      "matched_items": 5,
+      "total_items": 5,
+      "coverage": 1.0
+    },
+    "meta": {
+      "items": [
+        [
+          "apple",
+          100
+        ],
+        [
+          "banana",
+          100
+        ],
+        [
+          "avocado",
+          50
+        ],
+        [
+          "canned pineapple",
+          100
+        ],
+        [
+          "french fries",
+          50
+        ]
+      ]
+    }
+  }
+]

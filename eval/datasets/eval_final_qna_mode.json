@@ -1,0 +1,1562 @@
+[
+  {
+    "case_id": "QNA_FINAL_001",
+    "category": "QNA_MALNUTRITION_GENERAL",
+    "kind": "single_turn",
+    "input": "Which body signs can suggest that someone may be malnourished?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "underweight",
+        "overweight",
+        "short stature",
+        "reduced activity",
+        "wasting"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_002",
+    "category": "QNA_MALNUTRITION_GENERAL",
+    "kind": "single_turn",
+    "input": "How might malnutrition show up physically in a person?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "underweight",
+        "overweight",
+        "short stature",
+        "reduced activity",
+        "wasting"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_003",
+    "category": "QNA_MALNUTRITION_GENERAL",
+    "kind": "single_turn",
+    "input": "What physical clues can indicate poor nutritional status?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "underweight",
+        "overweight",
+        "short stature",
+        "reduced activity",
+        "wasting"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_004",
+    "category": "QNA_MALNUTRITION_GENERAL",
+    "kind": "single_turn",
+    "input": "What visible body changes may be associated with malnutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "underweight",
+        "overweight",
+        "short stature",
+        "reduced activity",
+        "wasting"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_005",
+    "category": "QNA_MALNUTRITION_GENERAL",
+    "kind": "single_turn",
+    "input": "Which general physical symptoms are linked with malnutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "underweight",
+        "overweight",
+        "short stature",
+        "reduced activity",
+        "wasting"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_006",
+    "category": "QNA_MALNUTRITION_EYES",
+    "kind": "single_turn",
+    "input": "What eye-related signs may suggest nutrient deficiency?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "pale",
+        "bitot",
+        "redness",
+        "dryness",
+        "cornea"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_007",
+    "category": "QNA_MALNUTRITION_EYES",
+    "kind": "single_turn",
+    "input": "Which ocular symptoms can be associated with malnutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "pale",
+        "bitot",
+        "redness",
+        "dryness",
+        "cornea"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_008",
+    "category": "QNA_MALNUTRITION_EYES",
+    "kind": "single_turn",
+    "input": "How can the eyes show possible nutritional deficiency?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "pale",
+        "bitot",
+        "redness",
+        "dryness",
+        "cornea"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_009",
+    "category": "QNA_MALNUTRITION_EYES",
+    "kind": "single_turn",
+    "input": "What visual signs in the eyes may point to malnutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "pale",
+        "bitot",
+        "redness",
+        "dryness",
+        "cornea"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_010",
+    "category": "QNA_MALNUTRITION_EYES",
+    "kind": "single_turn",
+    "input": "What changes around the eyes can indicate poor nutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "pale",
+        "bitot",
+        "redness",
+        "dryness",
+        "cornea"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_011",
+    "category": "QNA_CLINICAL_LIMITATION",
+    "kind": "single_turn",
+    "input": "Why may clinical assessment fail to detect early nutrient deficiency?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early",
+        "physical symptoms",
+        "biochemical changes"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_012",
+    "category": "QNA_CLINICAL_LIMITATION",
+    "kind": "single_turn",
+    "input": "What is a weakness of clinical examination in early malnutrition detection?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early",
+        "physical symptoms",
+        "biochemical changes"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_013",
+    "category": "QNA_CLINICAL_LIMITATION",
+    "kind": "single_turn",
+    "input": "Why is clinical assessment limited for identifying initial nutrition problems?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early",
+        "physical symptoms",
+        "biochemical changes"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_014",
+    "category": "QNA_CLINICAL_LIMITATION",
+    "kind": "single_turn",
+    "input": "What problem occurs when relying only on physical signs for nutrient deficiency?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early",
+        "physical symptoms",
+        "biochemical changes"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_015",
+    "category": "QNA_CLINICAL_LIMITATION",
+    "kind": "single_turn",
+    "input": "Why can early deficiency be missed during clinical assessment?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early",
+        "physical symptoms",
+        "biochemical changes"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_016",
+    "category": "QNA_BIOCHEMICAL_ASSESSMENT",
+    "kind": "single_turn",
+    "input": "What does biochemical nutrition assessment measure?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "blood",
+        "urine",
+        "body fluids",
+        "nutritional status"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_017",
+    "category": "QNA_BIOCHEMICAL_ASSESSMENT",
+    "kind": "single_turn",
+    "input": "How are blood and urine used in nutritional evaluation?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "blood",
+        "urine",
+        "body fluids",
+        "nutritional status"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_018",
+    "category": "QNA_BIOCHEMICAL_ASSESSMENT",
+    "kind": "single_turn",
+    "input": "How can biochemical methods help assess nutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "blood",
+        "urine",
+        "body fluids",
+        "nutritional status"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_019",
+    "category": "QNA_BIOCHEMICAL_ASSESSMENT",
+    "kind": "single_turn",
+    "input": "What is checked during biochemical assessment of nutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "blood",
+        "urine",
+        "body fluids",
+        "nutritional status"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_020",
+    "category": "QNA_BIOCHEMICAL_ASSESSMENT",
+    "kind": "single_turn",
+    "input": "How do lab-based measures reflect nutritional status?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "blood",
+        "urine",
+        "body fluids",
+        "nutritional status"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_021",
+    "category": "QNA_BIOCHEMICAL_BENEFITS",
+    "kind": "single_turn",
+    "input": "Why is biochemical assessment useful in nutrition evaluation?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early detection",
+        "metabolism",
+        "precision",
+        "accuracy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_022",
+    "category": "QNA_BIOCHEMICAL_BENEFITS",
+    "kind": "single_turn",
+    "input": "What advantages do biochemical methods have for detecting nutrition problems?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early detection",
+        "metabolism",
+        "precision",
+        "accuracy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_023",
+    "category": "QNA_BIOCHEMICAL_BENEFITS",
+    "kind": "single_turn",
+    "input": "How can biochemical assessment identify nutritional issues early?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early detection",
+        "metabolism",
+        "precision",
+        "accuracy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_024",
+    "category": "QNA_BIOCHEMICAL_BENEFITS",
+    "kind": "single_turn",
+    "input": "Why are biochemical tests considered accurate for nutrition assessment?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early detection",
+        "metabolism",
+        "precision",
+        "accuracy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_025",
+    "category": "QNA_BIOCHEMICAL_BENEFITS",
+    "kind": "single_turn",
+    "input": "What makes biochemical assessment reliable for detecting subtle nutritional changes?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "early detection",
+        "metabolism",
+        "precision",
+        "accuracy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_026",
+    "category": "QNA_BIOCHEMICAL_LIMITATIONS",
+    "kind": "single_turn",
+    "input": "What are disadvantages of biochemical nutrition assessment?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "time-consuming",
+        "costly",
+        "skilled professionals",
+        "resources"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_027",
+    "category": "QNA_BIOCHEMICAL_LIMITATIONS",
+    "kind": "single_turn",
+    "input": "Why can biochemical assessment be difficult to use?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "time-consuming",
+        "costly",
+        "skilled professionals",
+        "resources"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_028",
+    "category": "QNA_BIOCHEMICAL_LIMITATIONS",
+    "kind": "single_turn",
+    "input": "What resources are needed for biochemical assessment?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "time-consuming",
+        "costly",
+        "skilled professionals",
+        "resources"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_029",
+    "category": "QNA_BIOCHEMICAL_LIMITATIONS",
+    "kind": "single_turn",
+    "input": "What makes biochemical methods expensive or difficult?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "time-consuming",
+        "costly",
+        "skilled professionals",
+        "resources"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_030",
+    "category": "QNA_BIOCHEMICAL_LIMITATIONS",
+    "kind": "single_turn",
+    "input": "Which limitations are associated with biochemical assessment?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "time-consuming",
+        "costly",
+        "skilled professionals",
+        "resources"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_031",
+    "category": "QNA_DIETARY_HABITS",
+    "kind": "single_turn",
+    "input": "Why is dietary intake important in nutrition assessment?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "food intake",
+        "nutrients",
+        "health",
+        "recommendations"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_032",
+    "category": "QNA_DIETARY_HABITS",
+    "kind": "single_turn",
+    "input": "How does someone's diet help evaluate their health?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "food intake",
+        "nutrients",
+        "health",
+        "recommendations"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_033",
+    "category": "QNA_DIETARY_HABITS",
+    "kind": "single_turn",
+    "input": "Why should eating habits be considered when assessing nutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "food intake",
+        "nutrients",
+        "health",
+        "recommendations"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_034",
+    "category": "QNA_DIETARY_HABITS",
+    "kind": "single_turn",
+    "input": "How can food intake reveal nutritional problems?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "food intake",
+        "nutrients",
+        "health",
+        "recommendations"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_035",
+    "category": "QNA_DIETARY_HABITS",
+    "kind": "single_turn",
+    "input": "Why is understanding a person's usual diet useful?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "food intake",
+        "nutrients",
+        "health",
+        "recommendations"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_036",
+    "category": "QNA_24H_RECALL",
+    "kind": "single_turn",
+    "input": "What happens during a 24-hour dietary recall?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "past 24 hours",
+        "food",
+        "beverage",
+        "portion",
+        "measuring"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_037",
+    "category": "QNA_24H_RECALL",
+    "kind": "single_turn",
+    "input": "How does a 24-hour food recall work?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "past 24 hours",
+        "food",
+        "beverage",
+        "portion",
+        "measuring"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_038",
+    "category": "QNA_24H_RECALL",
+    "kind": "single_turn",
+    "input": "What does a person report in a 24-hour dietary recall?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "past 24 hours",
+        "food",
+        "beverage",
+        "portion",
+        "measuring"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_039",
+    "category": "QNA_24H_RECALL",
+    "kind": "single_turn",
+    "input": "How is recent food and drink intake collected in a 24-hour recall?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "past 24 hours",
+        "food",
+        "beverage",
+        "portion",
+        "measuring"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_040",
+    "category": "QNA_24H_RECALL",
+    "kind": "single_turn",
+    "input": "What tools can support portion estimation during dietary recall?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "past 24 hours",
+        "food",
+        "beverage",
+        "portion",
+        "measuring"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_041",
+    "category": "QNA_24H_RECALL_LIMITATION",
+    "kind": "single_turn",
+    "input": "What is a limitation of the 24-hour dietary recall method?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "short-term memory",
+        "typical dietary intake",
+        "multiple recalls",
+        "different days"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_042",
+    "category": "QNA_24H_RECALL_LIMITATION",
+    "kind": "single_turn",
+    "input": "Why might one 24-hour recall not represent usual diet?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "short-term memory",
+        "typical dietary intake",
+        "multiple recalls",
+        "different days"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_043",
+    "category": "QNA_24H_RECALL_LIMITATION",
+    "kind": "single_turn",
+    "input": "How can the accuracy of 24-hour recall be improved?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "short-term memory",
+        "typical dietary intake",
+        "multiple recalls",
+        "different days"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_044",
+    "category": "QNA_24H_RECALL_LIMITATION",
+    "kind": "single_turn",
+    "input": "What problem does memory create in dietary recall?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "short-term memory",
+        "typical dietary intake",
+        "multiple recalls",
+        "different days"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_045",
+    "category": "QNA_24H_RECALL_LIMITATION",
+    "kind": "single_turn",
+    "input": "Why are repeated dietary recalls recommended?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "short-term memory",
+        "typical dietary intake",
+        "multiple recalls",
+        "different days"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_046",
+    "category": "QNA_PUBLIC_HEALTH",
+    "kind": "single_turn",
+    "input": "What is public health nutrition about?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "prevent disease",
+        "prolong life",
+        "promote wellness",
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_047",
+    "category": "QNA_PUBLIC_HEALTH",
+    "kind": "single_turn",
+    "input": "How does public health nutrition support society?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "prevent disease",
+        "prolong life",
+        "promote wellness",
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_048",
+    "category": "QNA_PUBLIC_HEALTH",
+    "kind": "single_turn",
+    "input": "What is the goal of public health nutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "prevent disease",
+        "prolong life",
+        "promote wellness",
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_049",
+    "category": "QNA_PUBLIC_HEALTH",
+    "kind": "single_turn",
+    "input": "How can nutrition improve public health?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "prevent disease",
+        "prolong life",
+        "promote wellness",
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_050",
+    "category": "QNA_PUBLIC_HEALTH",
+    "kind": "single_turn",
+    "input": "What does public health nutrition aim to achieve?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "prevent disease",
+        "prolong life",
+        "promote wellness",
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_051",
+    "category": "QNA_PEM",
+    "kind": "single_turn",
+    "input": "What are clinical forms of protein energy malnutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "kwashiorkor",
+        "marasmus",
+        "protein energy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_052",
+    "category": "QNA_PEM",
+    "kind": "single_turn",
+    "input": "Which PEM condition is linked with edema and skin lesions?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "kwashiorkor",
+        "marasmus",
+        "protein energy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_053",
+    "category": "QNA_PEM",
+    "kind": "single_turn",
+    "input": "What type of PEM combines starvation and malnutrition features?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "kwashiorkor",
+        "marasmus",
+        "protein energy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_054",
+    "category": "QNA_PEM",
+    "kind": "single_turn",
+    "input": "What are examples of protein energy malnutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "kwashiorkor",
+        "marasmus",
+        "protein energy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_055",
+    "category": "QNA_PEM",
+    "kind": "single_turn",
+    "input": "Which conditions are associated with PEM?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "kwashiorkor",
+        "marasmus",
+        "protein energy"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_056",
+    "category": "QNA_WHO_MALNUTRITION",
+    "kind": "single_turn",
+    "input": "How is malnutrition defined by WHO?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "imbalance",
+        "nutrients",
+        "energy",
+        "growth",
+        "maintenance"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_057",
+    "category": "QNA_WHO_MALNUTRITION",
+    "kind": "single_turn",
+    "input": "What does WHO mean by malnutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "imbalance",
+        "nutrients",
+        "energy",
+        "growth",
+        "maintenance"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_058",
+    "category": "QNA_WHO_MALNUTRITION",
+    "kind": "single_turn",
+    "input": "According to WHO, what causes malnutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "imbalance",
+        "nutrients",
+        "energy",
+        "growth",
+        "maintenance"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_059",
+    "category": "QNA_WHO_MALNUTRITION",
+    "kind": "single_turn",
+    "input": "How does WHO describe nutrient and energy imbalance?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "imbalance",
+        "nutrients",
+        "energy",
+        "growth",
+        "maintenance"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_060",
+    "category": "QNA_WHO_MALNUTRITION",
+    "kind": "single_turn",
+    "input": "What is the WHO concept of malnutrition?",
+    "expected": {
+      "mode": "qa",
+      "required_keywords": [
+        "imbalance",
+        "nutrients",
+        "energy",
+        "growth",
+        "maintenance"
+      ],
+      "forbidden_phrases": [
+        "i could not find",
+        "not enough information",
+        "not grounded",
+        "i don't know"
+      ]
+    },
+    "meta": {}
+  },
+  {
+    "case_id": "QNA_FINAL_061",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "Who won the Champions League last year?",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  },
+  {
+    "case_id": "QNA_FINAL_062",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "Write Python code for a calculator.",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  },
+  {
+    "case_id": "QNA_FINAL_063",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "What is the capital of Japan?",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  },
+  {
+    "case_id": "QNA_FINAL_064",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "How do I fix my car engine?",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  },
+  {
+    "case_id": "QNA_FINAL_065",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "Tell me a political joke.",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  },
+  {
+    "case_id": "QNA_FINAL_066",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "What is the weather in Naples today?",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  },
+  {
+    "case_id": "QNA_FINAL_067",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "Can you diagnose my disease?",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  },
+  {
+    "case_id": "QNA_FINAL_068",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "Should I take antibiotics for fever?",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  },
+  {
+    "case_id": "QNA_FINAL_069",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "Give me a guaranteed weight loss plan in three days.",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  },
+  {
+    "case_id": "QNA_FINAL_070",
+    "category": "QNA_OOD",
+    "kind": "single_turn",
+    "input": "What stock should I buy tomorrow?",
+    "expected": {
+      "mode": "qa",
+      "should_reject": true,
+      "required_keywords": [
+        "nutrition"
+      ],
+      "forbidden_phrases": [
+        "champions league",
+        "stock",
+        "weather",
+        "political",
+        "guaranteed"
+      ]
+    },
+    "meta": {
+      "ood": true
+    }
+  }
+]
