@@ -1,30 +1,23 @@
 FROM python:3.12-slim
 
-# Environment configs
-ENV PYTHONUNBUFFERED=1 \
-    PYTHONDONTWRITEBYTECODE=1 \
-    PIP_NO_CACHE_DIR=1
-
 WORKDIR /app
 
-# System dependencies
-RUN apt-get update && apt-get install -y \
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=/app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python dependencies
 COPY requirements.txt .
-RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Copy project files
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
 COPY . .
 
-# Create storage folder
-RUN mkdir -p storage/chroma
-
-# Expose port
 EXPOSE 8000
 
-# Run application
-CMD ["chainlit", "run", "src/presentation/chainlit_app.py", "-w", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["chainlit", "run", "src/presentation/chainlit_app.py", "--host", "0.0.0.0", "--port", "8000"]
