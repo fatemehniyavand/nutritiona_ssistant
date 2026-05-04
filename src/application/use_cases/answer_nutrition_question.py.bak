@@ -2,48 +2,34 @@ import re
 from typing import Any, Iterable
 
 from src.application.dto.responses import QAResponse
-from src.application.services.calorie_insight_service import CalorieInsightService
 from src.application.services.calorie_goal_service import CalorieGoalService
+from src.application.services.calorie_insight_service import CalorieInsightService
 from src.application.services.daily_calorie_service import DailyCalorieService
 from src.application.services.food_resolver_service import FoodResolverService
 from src.application.services.meal_memory_service import MealMemoryService
 from src.application.services.memory_service import MemoryService
 from src.application.services.nlu.nlu_service import NutritionNLUService
 from src.application.services.repeat_detector_service import RepeatDetectorService
-from src.application.use_cases.answer_nutrition_question import AnswerNutritionQuestion
+from src.application.services.safety.qa_safety_router import QASafetyRouter
 from src.application.use_cases.estimate_meal_calories import EstimateMealCalories
 from src.domain.models.meal_state import MealState
 from src.domain.services.input_guard_service import InputGuardService
 from src.shared.constants import CALORIE_MODE, LOW_CONFIDENCE, QNA_MODE
-from src.application.services.safety.qa_safety_router import QASafetyRouter
 
 
 class NutritionOrchestrator:
-    def _ensure_qa_response(self, r):
-        from src.application.dto.responses import QAResponse
-        from src.shared.constants import QNA_MODE
-
-        if isinstance(r, dict):
-            return QAResponse(
-                mode=r.get("mode") or QNA_MODE,
-                answer=r.get("answer") or "I could not find enough grounded information.",
-                confidence=r.get("confidence") or "LOW",
-                sources_used=r.get("sources_used", []) or [],
-                retrieved_contexts=r.get("retrieved_contexts", []) or [],
-                final_message=r.get("final_message") or "No grounded answer found in the nutrition dataset.",
-            )
-        return r
-
     def __init__(self):
         self.qa_router = QASafetyRouter()
         self.calorie_use_case = EstimateMealCalories()
         self.qa_use_case = AnswerNutritionQuestion()
         self.input_guard = InputGuardService()
+
         self.memory_service = MemoryService(similarity_threshold=0.82)
         self.meal_memory_service = MealMemoryService()
         self.nlu_service = NutritionNLUService()
         self.repeat_detector_service = RepeatDetectorService()
         self.food_resolver_service = FoodResolverService()
+
         self.daily_calorie_service = DailyCalorieService()
         self.calorie_goal_service = CalorieGoalService()
         self.calorie_insight_service = CalorieInsightService()
@@ -52,6 +38,18 @@ class NutritionOrchestrator:
         self._session_memory_entries = []
         self._session_meal_state = MealState()
         self._session_conversation_memory = []
+
+    def _ensure_qa_response(self, r):
+        if isinstance(r, dict):
+            return QAResponse(
+                mode=r.get("mode") or QNA_MODE,
+                answer=r.get("answer") or "I could not find enough grounded information.",
+                confidence=r.get("confidence") or LOW_CONFIDENCE,
+                sources_used=r.get("sources_used", []) or [],
+                retrieved_contexts=r.get("retrieved_contexts", []) or [],
+                final_message=r.get("final_message") or "No grounded answer found in the nutrition dataset.",
+            )
+        return r
 
     def reset_session_state(self) -> None:
         self._session_history = []
@@ -74,8 +72,14 @@ class NutritionOrchestrator:
         conversation_memory=None,
     ):
         qa_safety = self.qa_router.route(str(text))
+
         if qa_safety.get("route") != "normal":
-            return self.qa_router.build_response(qa_safety.get("route"), qa_safety.get("answer", ""))
+            return self._ensure_qa_response(
+                self.qa_router.build_response(
+                    qa_safety.get("route"),
+                    qa_safety.get("answer", ""),
+                )
+            )
 
         using_internal_history = history is None
         using_internal_memory_entries = memory_entries is None
@@ -99,14 +103,7 @@ class NutritionOrchestrator:
         daily_command = self._detect_daily_command(normalized or original_text)
         if daily_command:
             response = self._build_daily_response(daily_command)
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized or original_text.lower().strip(),
-                kind="daily_tracking",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized or original_text.lower().strip(), "daily_tracking", response, history, conversation_memory)
             return response
 
         pre_guard_class = self._pre_route_guard_class(original_text, normalized)
@@ -116,18 +113,8 @@ class NutritionOrchestrator:
                 normalized=normalized or original_text.lower().strip(),
                 conversation_memory=conversation_memory,
             )
-            response = repeated_guard or self._build_guard_response(
-                pre_guard_class,
-                original_text or normalized,
-            )
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized or original_text.lower().strip(),
-                kind="guard",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            response = repeated_guard or self._build_guard_response(pre_guard_class, original_text or normalized)
+            self._record_turn(text, normalized or original_text.lower().strip(), "guard", response, history, conversation_memory)
             return response
 
         guard_bypass_intents = {"total_query", "clear_meal", "remove_item"}
@@ -139,14 +126,7 @@ class NutritionOrchestrator:
                 meal_state=meal_state,
                 conversation_memory=conversation_memory,
             )
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized,
-                kind="calorie",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized, "calorie", response, history, conversation_memory)
             return response
 
         if intent == "empty":
@@ -155,50 +135,22 @@ class NutritionOrchestrator:
                 conversation_memory=conversation_memory,
             )
             response = repeated_guard or self._build_guard_response("empty", original_text)
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized or original_text.lower().strip(),
-                kind="guard",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized or original_text.lower().strip(), "guard", response, history, conversation_memory)
             return response
 
         if nlu_result.is_quantity_not_numeric:
             response = self._build_guard_response("quantity_not_numeric", original_text)
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized,
-                kind="guard",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized, "guard", response, history, conversation_memory)
             return response
 
         if nlu_result.is_quantity_only:
             response = self._build_guard_response("quantity_only", original_text)
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized,
-                kind="guard",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized, "guard", response, history, conversation_memory)
             return response
 
         if nlu_result.is_food_only:
             response = self._build_guard_response("food_only", normalized or original_text)
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized,
-                kind="guard",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized, "guard", response, history, conversation_memory)
             return response
 
         if intent == "calorie_input" and nlu_result.parsed_items:
@@ -208,14 +160,7 @@ class NutritionOrchestrator:
                 meal_state=meal_state,
                 conversation_memory=conversation_memory,
             )
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized,
-                kind="calorie",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized, "calorie", response, history, conversation_memory)
             return response
 
         if intent == "calorie_input" and not nlu_result.parsed_items:
@@ -224,17 +169,9 @@ class NutritionOrchestrator:
                 conversation_memory=conversation_memory,
             )
             response = repeated_guard or self._build_guard_response("gibberish", original_text or normalized)
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized,
-                kind="guard",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized, "guard", response, history, conversation_memory)
             return response
 
-        
         if re.match(r"set goal \d+", normalized):
             value = float(re.findall(r"\d+", normalized)[0])
             self.calorie_goal_service.set_goal(value)
@@ -258,14 +195,7 @@ class NutritionOrchestrator:
                     conversation_memory=conversation_memory,
                 )
                 response = repeated_guard or self._build_guard_response(input_class, original_text or normalized)
-                self._record_turn(
-                    user_input=text,
-                    normalized_input=normalized,
-                    kind="guard",
-                    response=response,
-                    history=history,
-                    conversation_memory=conversation_memory,
-                )
+                self._record_turn(text, normalized, "guard", response, history, conversation_memory)
                 return response
 
             repeated_qa = self._try_reuse_previous_qa(
@@ -273,15 +203,9 @@ class NutritionOrchestrator:
                 memory_entries=memory_entries,
                 conversation_memory=conversation_memory,
             )
+
             if repeated_qa is not None:
-                self._record_turn(
-                    user_input=text,
-                    normalized_input=normalized,
-                    kind=QNA_MODE,
-                    response=repeated_qa,
-                    history=history,
-                    conversation_memory=conversation_memory,
-                )
+                self._record_turn(text, normalized, QNA_MODE, repeated_qa, history, conversation_memory)
                 return repeated_qa
 
             qa_response = self.qa_use_case.run(
@@ -295,18 +219,10 @@ class NutritionOrchestrator:
                 qa_response=qa_response,
                 conversation_memory=conversation_memory,
             )
-            response = fallback_repeat or qa_response
-            response = self._ensure_qa_response(response)
 
+            response = self._ensure_qa_response(fallback_repeat or qa_response)
 
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized,
-                kind=QNA_MODE,
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized, QNA_MODE, response, history, conversation_memory)
             return response
 
         guard_input = normalized if normalized else original_text
@@ -318,25 +234,11 @@ class NutritionOrchestrator:
                 conversation_memory=conversation_memory,
             )
             response = repeated_guard or self._build_guard_response(input_class, original_text or normalized)
-            self._record_turn(
-                user_input=text,
-                normalized_input=normalized,
-                kind="guard",
-                response=response,
-                history=history,
-                conversation_memory=conversation_memory,
-            )
+            self._record_turn(text, normalized, "guard", response, history, conversation_memory)
             return response
 
         response = self._build_guard_response("gibberish", original_text or normalized)
-        self._record_turn(
-            user_input=text,
-            normalized_input=normalized,
-            kind="guard",
-            response=response,
-            history=history,
-            conversation_memory=conversation_memory,
-        )
+        self._record_turn(text, normalized, "guard", response, history, conversation_memory)
         return response
 
     def _pre_route_guard_class(self, original_text: str, normalized_text: str) -> str:
@@ -375,6 +277,7 @@ class NutritionOrchestrator:
             r"\bsay\s+.+\s+has\s+zero\s+calories\b",
             r"\bzero\s+calories\b",
         ]
+
         if any(re.search(pattern, normalized) for pattern in prompt_injection_patterns):
             return "unsafe"
 
@@ -385,6 +288,7 @@ class NutritionOrchestrator:
             r"\bremove\s+(all\s+)?data\b",
             r"\bdelete\s+(all\s+)?data\b",
         ]
+
         if any(re.search(pattern, normalized) for pattern in destructive_patterns):
             return "unsafe"
 
@@ -399,6 +303,7 @@ class NutritionOrchestrator:
             r"\bextreme diet\b",
             r"\bdangerous diet\b",
         ]
+
         if any(re.search(pattern, normalized) for pattern in unsafe_patterns):
             return "unsafe"
 
@@ -419,11 +324,11 @@ class NutritionOrchestrator:
             r"\bmovie\b",
             r"\bgame\b",
         ]
+
         if any(re.search(pattern, normalized) for pattern in irrelevant_patterns):
             return "out_of_domain"
 
         return "valid"
-
 
     def _detect_daily_command(self, text: str) -> str:
         normalized = re.sub(r"\s+", " ", (text or "").strip().lower())
@@ -504,11 +409,13 @@ class NutritionOrchestrator:
 
         if command == "week":
             week = self.daily_calorie_service.get_week_summary()
+
             if not week:
                 answer = "No weekly calorie history is available yet."
             else:
                 insight = self.calorie_insight_service.build_weekly_insight(week)
                 lines = ["Weekly calorie summary:"]
+
                 for row in reversed(week):
                     bar_count = max(1, int(row["total_calories"] // 100)) if row["total_calories"] > 0 else 0
                     bar = "█" * min(bar_count, 30)
@@ -538,14 +445,14 @@ class NutritionOrchestrator:
         else:
             lines = [f"{label} ({log_date}): {total} kcal"]
             for idx, item in enumerate(items, start=1):
-                lines.append(
-                    f"{idx}. {item['food']} - {item['grams']}g - {item['calories']} kcal"
-                )
+                lines.append(f"{idx}. {item['food']} - {item['grams']}g - {item['calories']} kcal")
 
         if include_goal:
             progress = self.calorie_goal_service.build_progress(total)
+
             if progress:
                 remaining = progress["remaining"]
+
                 if remaining > 0:
                     remaining_text = f"{remaining} kcal remaining"
                 elif remaining < 0:
@@ -572,11 +479,9 @@ class NutritionOrchestrator:
                     ]
                 )
 
-        answer = "\n".join(lines)
-
         return QAResponse(
             mode="daily_tracking",
-            answer=answer,
+            answer="\n".join(lines),
             confidence="HIGH",
             sources_used=[],
             retrieved_contexts=[],
@@ -615,6 +520,7 @@ class NutritionOrchestrator:
             "final_message": response_dict.get("final_message", ""),
             "mode": response_dict.get("mode", ""),
         }
+
         conversation_memory.append(conversation_entry)
 
     def _response_to_dict(self, response) -> dict:
@@ -622,29 +528,40 @@ class NutritionOrchestrator:
             return response
 
         data = {}
+
         for key in dir(response):
             if key.startswith("_"):
                 continue
+
             value = getattr(response, key, None)
+
             if callable(value):
                 continue
+
             data[key] = value
 
         if "items" in data and data["items"]:
             normalized_items = []
+
             for item in data["items"]:
                 if isinstance(item, dict):
                     normalized_items.append(item)
                 else:
                     item_dict = {}
+
                     for k in dir(item):
                         if k.startswith("_"):
                             continue
+
                         v = getattr(item, k, None)
+
                         if callable(v):
                             continue
+
                         item_dict[k] = v
+
                     normalized_items.append(item_dict)
+
             data["items"] = normalized_items
 
         return data
@@ -660,11 +577,9 @@ class NutritionOrchestrator:
             old_entry = repeat_match["item"]
 
             if self._is_reusable_qa_entry_dict(old_entry):
-                reused_answer = old_entry.get("answer", "")
-
                 return QAResponse(
                     mode=QNA_MODE,
-                    answer=reused_answer,
+                    answer=old_entry.get("answer", ""),
                     confidence=old_entry.get("confidence", LOW_CONFIDENCE),
                     sources_used=old_entry.get("sources_used", []) or [],
                     retrieved_contexts=old_entry.get("retrieved_contexts", []) or [],
@@ -682,9 +597,7 @@ class NutritionOrchestrator:
 
         if memory_match.found and memory_match.matched_entry:
             if self._is_reusable_memory_entry(memory_match.matched_entry):
-                reused_answer = self.memory_service.build_memory_based_answer(
-                    memory_match.matched_entry
-                )
+                reused_answer = self.memory_service.build_memory_based_answer(memory_match.matched_entry)
 
                 return QAResponse(
                     mode=QNA_MODE,
@@ -731,8 +644,10 @@ class NutritionOrchestrator:
 
             if previous_input != normalized:
                 continue
+
             if previous_kind != QNA_MODE:
                 continue
+
             if not self._is_reusable_qa_entry_dict(entry):
                 continue
 
@@ -754,8 +669,10 @@ class NutritionOrchestrator:
 
         if not answer:
             return False
+
         if not sources_used:
             return False
+
         if not retrieved_contexts:
             return False
 
@@ -778,6 +695,7 @@ class NutritionOrchestrator:
 
         if not answer:
             return False
+
         if not sources_used:
             return False
 
@@ -823,8 +741,10 @@ class NutritionOrchestrator:
 
             if previous_input != normalized:
                 continue
+
             if previous_kind not in {QNA_MODE, "guard"}:
                 continue
+
             if not previous_answer:
                 continue
 
@@ -883,6 +803,7 @@ class NutritionOrchestrator:
 
             if resolved.get("matched"):
                 matched_food = resolved.get("matched_food") or clean_text
+
                 return QAResponse(
                     mode="guard",
                     answer=f"I recognized '{matched_food}', but I still need the quantity in grams.",
@@ -893,8 +814,10 @@ class NutritionOrchestrator:
                 )
 
             suggestions = resolved.get("suggestions", []) or []
+
             if suggestions:
                 suggestion_text = ", ".join([f"'{s}'" for s in suggestions[:3]])
+
                 return QAResponse(
                     mode="guard",
                     answer="This looks like a food name, but I could not confidently match it.",

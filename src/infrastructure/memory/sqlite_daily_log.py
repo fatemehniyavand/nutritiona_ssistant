@@ -64,6 +64,13 @@ class SQLiteDailyLog:
             cur = conn.cursor()
 
             cur.execute("""
+            INSERT INTO daily_logs (log_date, total_calories)
+            VALUES (?, 0)
+            ON CONFLICT(log_date)
+            DO NOTHING
+            """, (log_date,))
+
+            cur.execute("""
             INSERT INTO daily_log_items (log_date, food, grams, calories, kcal_per_100g)
             VALUES (?, ?, ?, ?, ?)
             ON CONFLICT(log_date, food)
@@ -80,6 +87,26 @@ class SQLiteDailyLog:
             ))
 
             total = self._compute_day_total(cur, log_date)
+
+            cur.execute("""
+            UPDATE daily_logs
+            SET total_calories = ?
+            WHERE log_date = ?
+            """, (total, log_date))
+
+            conn.commit()
+
+    def delete_item(self, log_date: str, food: str) -> None:
+        with self._connect() as conn:
+            cur = conn.cursor()
+
+            cur.execute("""
+            DELETE FROM daily_log_items
+            WHERE log_date = ? AND LOWER(food) = LOWER(?)
+            """, (log_date, food))
+
+            total = self._compute_day_total(cur, log_date)
+
             cur.execute("""
             INSERT INTO daily_logs (log_date, total_calories)
             VALUES (?, ?)
@@ -89,10 +116,32 @@ class SQLiteDailyLog:
 
             conn.commit()
 
+    def clear_day(self, log_date: str) -> None:
+        with self._connect() as conn:
+            cur = conn.cursor()
+
+            cur.execute("""
+            DELETE FROM daily_log_items
+            WHERE log_date = ?
+            """, (log_date,))
+
+            cur.execute("""
+            INSERT INTO daily_logs (log_date, total_calories)
+            VALUES (?, 0)
+            ON CONFLICT(log_date)
+            DO UPDATE SET total_calories = 0
+            """, (log_date,))
+
+            conn.commit()
+
     def get_day_total(self, log_date: str) -> float:
         with self._connect() as conn:
             cur = conn.cursor()
-            cur.execute("SELECT total_calories FROM daily_logs WHERE log_date = ?", (log_date,))
+            cur.execute("""
+            SELECT total_calories
+            FROM daily_logs
+            WHERE log_date = ?
+            """, (log_date,))
             row = cur.fetchone()
             return float(row[0]) if row else 0.0
 
@@ -126,6 +175,17 @@ class SQLiteDailyLog:
             ORDER BY log_date DESC
             LIMIT ?
             """, (int(limit),))
+            return [(row[0], float(row[1])) for row in cur.fetchall()]
+
+    def get_range_totals(self, start_date: str, end_date: str) -> List[Tuple[str, float]]:
+        with self._connect() as conn:
+            cur = conn.cursor()
+            cur.execute("""
+            SELECT log_date, total_calories
+            FROM daily_logs
+            WHERE log_date BETWEEN ? AND ?
+            ORDER BY log_date ASC
+            """, (start_date, end_date))
             return [(row[0], float(row[1])) for row in cur.fetchall()]
 
     def _compute_day_total(self, cur, log_date: str) -> float:

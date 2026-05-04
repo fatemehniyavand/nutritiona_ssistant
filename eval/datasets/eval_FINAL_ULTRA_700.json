@@ -1,0 +1,6252 @@
+[
+  {
+    "id": "ULTRA_001",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "banana 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 65,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "65"
+    ]
+  },
+  {
+    "id": "ULTRA_002",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "kiwi 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 84,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "84"
+    ]
+  },
+  {
+    "id": "ULTRA_003",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pineapple 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 68,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "68"
+    ]
+  },
+  {
+    "id": "ULTRA_004",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "banana 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 88,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "88"
+    ]
+  },
+  {
+    "id": "ULTRA_005",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "banana 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 88,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "88"
+    ]
+  },
+  {
+    "id": "ULTRA_006",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "grapes 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "expected_matched_foods": [
+      "grapes"
+    ],
+    "must_contain": [
+      "grapes",
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_007",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "apple 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 38,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "38"
+    ]
+  },
+  {
+    "id": "ULTRA_008",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pineapple 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 68,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "68"
+    ]
+  },
+  {
+    "id": "ULTRA_009",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "apple 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 51,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "51"
+    ]
+  },
+  {
+    "id": "ULTRA_010",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pineapple 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_011",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "grapes 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 95,
+    "expected_matched_foods": [
+      "grapes"
+    ],
+    "must_contain": [
+      "grapes",
+      "95"
+    ]
+  },
+  {
+    "id": "ULTRA_012",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pear 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 56,
+    "expected_matched_foods": [
+      "pear"
+    ],
+    "must_contain": [
+      "pear",
+      "56"
+    ]
+  },
+  {
+    "id": "ULTRA_013",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "kiwi 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 45,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "45"
+    ]
+  },
+  {
+    "id": "ULTRA_014",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "mango 212g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 127,
+    "expected_matched_foods": [
+      "mango"
+    ],
+    "must_contain": [
+      "mango",
+      "127"
+    ]
+  },
+  {
+    "id": "ULTRA_015",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "orange 155.5g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 73,
+    "expected_matched_foods": [
+      "orange"
+    ],
+    "must_contain": [
+      "orange",
+      "73"
+    ]
+  },
+  {
+    "id": "ULTRA_016",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "mango 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 82,
+    "expected_matched_foods": [
+      "mango"
+    ],
+    "must_contain": [
+      "mango",
+      "82"
+    ]
+  },
+  {
+    "id": "ULTRA_017",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "orange 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 34,
+    "expected_matched_foods": [
+      "orange"
+    ],
+    "must_contain": [
+      "orange",
+      "34"
+    ]
+  },
+  {
+    "id": "ULTRA_018",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "banana 212g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 189,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "189"
+    ]
+  },
+  {
+    "id": "ULTRA_019",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "banana 155.5g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 138,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "138"
+    ]
+  },
+  {
+    "id": "ULTRA_020",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "orange 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 47,
+    "expected_matched_foods": [
+      "orange"
+    ],
+    "must_contain": [
+      "orange",
+      "47"
+    ]
+  },
+  {
+    "id": "ULTRA_021",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "kiwi 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 45,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "45"
+    ]
+  },
+  {
+    "id": "ULTRA_022",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pear 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 56,
+    "expected_matched_foods": [
+      "pear"
+    ],
+    "must_contain": [
+      "pear",
+      "56"
+    ]
+  },
+  {
+    "id": "ULTRA_023",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "banana 212g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 189,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "189"
+    ]
+  },
+  {
+    "id": "ULTRA_024",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "banana 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 88,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "88"
+    ]
+  },
+  {
+    "id": "ULTRA_025",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "kiwi 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "60"
+    ]
+  },
+  {
+    "id": "ULTRA_026",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "orange 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 47,
+    "expected_matched_foods": [
+      "orange"
+    ],
+    "must_contain": [
+      "orange",
+      "47"
+    ]
+  },
+  {
+    "id": "ULTRA_027",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pineapple 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 36,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "36"
+    ]
+  },
+  {
+    "id": "ULTRA_028",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "apple 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 71,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "71"
+    ]
+  },
+  {
+    "id": "ULTRA_029",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "kiwi 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 45,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "45"
+    ]
+  },
+  {
+    "id": "ULTRA_030",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pineapple 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 36,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "36"
+    ]
+  },
+  {
+    "id": "ULTRA_031",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "grapes 155.5g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 107,
+    "expected_matched_foods": [
+      "grapes"
+    ],
+    "must_contain": [
+      "grapes",
+      "107"
+    ]
+  },
+  {
+    "id": "ULTRA_032",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pear 155.5g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 89,
+    "expected_matched_foods": [
+      "pear"
+    ],
+    "must_contain": [
+      "pear",
+      "89"
+    ]
+  },
+  {
+    "id": "ULTRA_033",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "mango 155.5g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 93,
+    "expected_matched_foods": [
+      "mango"
+    ],
+    "must_contain": [
+      "mango",
+      "93"
+    ]
+  },
+  {
+    "id": "ULTRA_034",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "orange 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 64,
+    "expected_matched_foods": [
+      "orange"
+    ],
+    "must_contain": [
+      "orange",
+      "64"
+    ]
+  },
+  {
+    "id": "ULTRA_035",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "kiwi 73g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 45,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "45"
+    ]
+  },
+  {
+    "id": "ULTRA_036",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "mango 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 59,
+    "expected_matched_foods": [
+      "mango"
+    ],
+    "must_contain": [
+      "mango",
+      "59"
+    ]
+  },
+  {
+    "id": "ULTRA_037",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pineapple 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 68,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "68"
+    ]
+  },
+  {
+    "id": "ULTRA_038",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pear 212g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 121,
+    "expected_matched_foods": [
+      "pear"
+    ],
+    "must_contain": [
+      "pear",
+      "121"
+    ]
+  },
+  {
+    "id": "ULTRA_039",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "kiwi 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "60"
+    ]
+  },
+  {
+    "id": "ULTRA_040",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pineapple 155.5g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 78,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "78"
+    ]
+  },
+  {
+    "id": "ULTRA_041",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "apple 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 71,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "71"
+    ]
+  },
+  {
+    "id": "ULTRA_042",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "apple 155.5g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 81,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "81"
+    ]
+  },
+  {
+    "id": "ULTRA_043",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "grapes 155.5g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 107,
+    "expected_matched_foods": [
+      "grapes"
+    ],
+    "must_contain": [
+      "grapes",
+      "107"
+    ]
+  },
+  {
+    "id": "ULTRA_044",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "banana 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 122,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "122"
+    ]
+  },
+  {
+    "id": "ULTRA_045",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "orange 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 64,
+    "expected_matched_foods": [
+      "orange"
+    ],
+    "must_contain": [
+      "orange",
+      "64"
+    ]
+  },
+  {
+    "id": "ULTRA_046",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pear 212g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 121,
+    "expected_matched_foods": [
+      "pear"
+    ],
+    "must_contain": [
+      "pear",
+      "121"
+    ]
+  },
+  {
+    "id": "ULTRA_047",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pear 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 78,
+    "expected_matched_foods": [
+      "pear"
+    ],
+    "must_contain": [
+      "pear",
+      "78"
+    ]
+  },
+  {
+    "id": "ULTRA_048",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "kiwi 137g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 84,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "84"
+    ]
+  },
+  {
+    "id": "ULTRA_049",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "pineapple 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_050",
+    "category": "CAL_EXACT_DECIMAL",
+    "input": "kiwi 99g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "60"
+    ]
+  },
+  {
+    "id": "ULTRA_051",
+    "category": "CAL_MULTI",
+    "input": "grapes 150g and grapes 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 138,
+    "must_contain": [
+      "138"
+    ]
+  },
+  {
+    "id": "ULTRA_052",
+    "category": "CAL_MULTI",
+    "input": "mango 100g and pear 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 88,
+    "must_contain": [
+      "88"
+    ]
+  },
+  {
+    "id": "ULTRA_053",
+    "category": "CAL_MULTI",
+    "input": "banana 200g and mango 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 208,
+    "must_contain": [
+      "208"
+    ]
+  },
+  {
+    "id": "ULTRA_054",
+    "category": "CAL_MULTI",
+    "input": "grapes 150g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "must_contain": [
+      "193"
+    ]
+  },
+  {
+    "id": "ULTRA_055",
+    "category": "CAL_MULTI",
+    "input": "pear 200g and kiwi 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 144,
+    "must_contain": [
+      "144"
+    ]
+  },
+  {
+    "id": "ULTRA_056",
+    "category": "CAL_MULTI",
+    "input": "banana 200g and kiwi 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 239,
+    "must_contain": [
+      "239"
+    ]
+  },
+  {
+    "id": "ULTRA_057",
+    "category": "CAL_MULTI",
+    "input": "banana 150g and kiwi 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 164,
+    "must_contain": [
+      "164"
+    ]
+  },
+  {
+    "id": "ULTRA_058",
+    "category": "CAL_MULTI",
+    "input": "pear 200g and apple 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 166,
+    "must_contain": [
+      "166"
+    ]
+  },
+  {
+    "id": "ULTRA_059",
+    "category": "CAL_MULTI",
+    "input": "mango 200g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 209,
+    "must_contain": [
+      "209"
+    ]
+  },
+  {
+    "id": "ULTRA_060",
+    "category": "CAL_MULTI",
+    "input": "pineapple 150g and mango 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 105,
+    "must_contain": [
+      "105"
+    ]
+  },
+  {
+    "id": "ULTRA_061",
+    "category": "CAL_MULTI",
+    "input": "apple 150g and orange 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 102,
+    "must_contain": [
+      "102"
+    ]
+  },
+  {
+    "id": "ULTRA_062",
+    "category": "CAL_MULTI",
+    "input": "banana 150g and orange 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 158,
+    "must_contain": [
+      "158"
+    ]
+  },
+  {
+    "id": "ULTRA_063",
+    "category": "CAL_MULTI",
+    "input": "apple 200g and pineapple 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 129,
+    "must_contain": [
+      "129"
+    ]
+  },
+  {
+    "id": "ULTRA_064",
+    "category": "CAL_MULTI",
+    "input": "banana 100g and pear 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 117,
+    "must_contain": [
+      "117"
+    ]
+  },
+  {
+    "id": "ULTRA_065",
+    "category": "CAL_MULTI",
+    "input": "mango 200g and pear 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 148,
+    "must_contain": [
+      "148"
+    ]
+  },
+  {
+    "id": "ULTRA_066",
+    "category": "CAL_MULTI",
+    "input": "kiwi 100g and grapes 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 95,
+    "must_contain": [
+      "95"
+    ]
+  },
+  {
+    "id": "ULTRA_067",
+    "category": "CAL_MULTI",
+    "input": "kiwi 200g and grapes 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 191,
+    "must_contain": [
+      "191"
+    ]
+  },
+  {
+    "id": "ULTRA_068",
+    "category": "CAL_MULTI",
+    "input": "pear 100g and pear 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 85,
+    "must_contain": [
+      "85"
+    ]
+  },
+  {
+    "id": "ULTRA_069",
+    "category": "CAL_MULTI",
+    "input": "pineapple 150g and banana 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 119,
+    "must_contain": [
+      "119"
+    ]
+  },
+  {
+    "id": "ULTRA_070",
+    "category": "CAL_MULTI",
+    "input": "pineapple 100g and pineapple 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 75,
+    "must_contain": [
+      "75"
+    ]
+  },
+  {
+    "id": "ULTRA_071",
+    "category": "CAL_MULTI",
+    "input": "apple 100g and pineapple 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 77,
+    "must_contain": [
+      "77"
+    ]
+  },
+  {
+    "id": "ULTRA_072",
+    "category": "CAL_MULTI",
+    "input": "orange 200g and banana 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 138,
+    "must_contain": [
+      "138"
+    ]
+  },
+  {
+    "id": "ULTRA_073",
+    "category": "CAL_MULTI",
+    "input": "kiwi 100g and pear 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 89,
+    "must_contain": [
+      "89"
+    ]
+  },
+  {
+    "id": "ULTRA_074",
+    "category": "CAL_MULTI",
+    "input": "pear 150g and pineapple 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 136,
+    "must_contain": [
+      "136"
+    ]
+  },
+  {
+    "id": "ULTRA_075",
+    "category": "CAL_MULTI",
+    "input": "pineapple 100g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 139,
+    "must_contain": [
+      "139"
+    ]
+  },
+  {
+    "id": "ULTRA_076",
+    "category": "CAL_MULTI",
+    "input": "orange 150g and grapes 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 139,
+    "must_contain": [
+      "139"
+    ]
+  },
+  {
+    "id": "ULTRA_077",
+    "category": "CAL_MULTI",
+    "input": "apple 100g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 141,
+    "must_contain": [
+      "141"
+    ]
+  },
+  {
+    "id": "ULTRA_078",
+    "category": "CAL_MULTI",
+    "input": "orange 100g and banana 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 91,
+    "must_contain": [
+      "91"
+    ]
+  },
+  {
+    "id": "ULTRA_079",
+    "category": "CAL_MULTI",
+    "input": "pineapple 100g and pear 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 107,
+    "must_contain": [
+      "107"
+    ]
+  },
+  {
+    "id": "ULTRA_080",
+    "category": "CAL_MULTI",
+    "input": "mango 150g and kiwi 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 120,
+    "must_contain": [
+      "120"
+    ]
+  },
+  {
+    "id": "ULTRA_081",
+    "category": "CAL_MULTI",
+    "input": "banana 200g and pear 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 206,
+    "must_contain": [
+      "206"
+    ]
+  },
+  {
+    "id": "ULTRA_082",
+    "category": "CAL_MULTI",
+    "input": "apple 100g and apple 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 78,
+    "must_contain": [
+      "78"
+    ]
+  },
+  {
+    "id": "ULTRA_083",
+    "category": "CAL_MULTI",
+    "input": "mango 150g and grapes 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 159,
+    "must_contain": [
+      "159"
+    ]
+  },
+  {
+    "id": "ULTRA_084",
+    "category": "CAL_MULTI",
+    "input": "pineapple 100g and grapes 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 84,
+    "must_contain": [
+      "84"
+    ]
+  },
+  {
+    "id": "ULTRA_085",
+    "category": "CAL_MULTI",
+    "input": "grapes 150g and apple 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 156,
+    "must_contain": [
+      "156"
+    ]
+  },
+  {
+    "id": "ULTRA_086",
+    "category": "CAL_MULTI",
+    "input": "pear 150g and kiwi 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 147,
+    "must_contain": [
+      "147"
+    ]
+  },
+  {
+    "id": "ULTRA_087",
+    "category": "CAL_MULTI",
+    "input": "mango 150g and pineapple 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 115,
+    "must_contain": [
+      "115"
+    ]
+  },
+  {
+    "id": "ULTRA_088",
+    "category": "CAL_MULTI",
+    "input": "apple 200g and apple 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 156,
+    "must_contain": [
+      "156"
+    ]
+  },
+  {
+    "id": "ULTRA_089",
+    "category": "CAL_MULTI",
+    "input": "apple 200g and apple 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 156,
+    "must_contain": [
+      "156"
+    ]
+  },
+  {
+    "id": "ULTRA_090",
+    "category": "CAL_MULTI",
+    "input": "mango 200g and apple 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 146,
+    "must_contain": [
+      "146"
+    ]
+  },
+  {
+    "id": "ULTRA_091",
+    "category": "CAL_MULTI",
+    "input": "mango 200g and banana 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 164,
+    "must_contain": [
+      "164"
+    ]
+  },
+  {
+    "id": "ULTRA_092",
+    "category": "CAL_MULTI",
+    "input": "pineapple 100g and grapes 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 84,
+    "must_contain": [
+      "84"
+    ]
+  },
+  {
+    "id": "ULTRA_093",
+    "category": "CAL_MULTI",
+    "input": "apple 150g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 167,
+    "must_contain": [
+      "167"
+    ]
+  },
+  {
+    "id": "ULTRA_094",
+    "category": "CAL_MULTI",
+    "input": "kiwi 200g and pineapple 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 172,
+    "must_contain": [
+      "172"
+    ]
+  },
+  {
+    "id": "ULTRA_095",
+    "category": "CAL_MULTI",
+    "input": "pineapple 150g and kiwi 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 105,
+    "must_contain": [
+      "105"
+    ]
+  },
+  {
+    "id": "ULTRA_096",
+    "category": "CAL_MULTI",
+    "input": "kiwi 150g and pear 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 120,
+    "must_contain": [
+      "120"
+    ]
+  },
+  {
+    "id": "ULTRA_097",
+    "category": "CAL_MULTI",
+    "input": "apple 200g and pear 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 132,
+    "must_contain": [
+      "132"
+    ]
+  },
+  {
+    "id": "ULTRA_098",
+    "category": "CAL_MULTI",
+    "input": "banana 200g and pineapple 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 228,
+    "must_contain": [
+      "228"
+    ]
+  },
+  {
+    "id": "ULTRA_099",
+    "category": "CAL_MULTI",
+    "input": "mango 100g and orange 50g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 84,
+    "must_contain": [
+      "84"
+    ]
+  },
+  {
+    "id": "ULTRA_100",
+    "category": "CAL_MULTI",
+    "input": "orange 100g and kiwi 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 108,
+    "must_contain": [
+      "108"
+    ]
+  },
+  {
+    "id": "ULTRA_101",
+    "category": "CAL_NOISY",
+    "input": "KIWI100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "kiwi"
+    ]
+  },
+  {
+    "id": "ULTRA_102",
+    "category": "CAL_NOISY",
+    "input": "KIWI100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "kiwi"
+    ]
+  },
+  {
+    "id": "ULTRA_103",
+    "category": "CAL_NOISY",
+    "input": "MANGO200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "mango"
+    ]
+  },
+  {
+    "id": "ULTRA_104",
+    "category": "CAL_NOISY",
+    "input": "BANANA100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "banana"
+    ]
+  },
+  {
+    "id": "ULTRA_105",
+    "category": "CAL_NOISY",
+    "input": "MANGO200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "mango"
+    ]
+  },
+  {
+    "id": "ULTRA_106",
+    "category": "CAL_NOISY",
+    "input": "KIWI100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "kiwi"
+    ]
+  },
+  {
+    "id": "ULTRA_107",
+    "category": "CAL_NOISY",
+    "input": "ORANGE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "orange"
+    ]
+  },
+  {
+    "id": "ULTRA_108",
+    "category": "CAL_NOISY",
+    "input": "KIWI200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "kiwi"
+    ]
+  },
+  {
+    "id": "ULTRA_109",
+    "category": "CAL_NOISY",
+    "input": "KIWI100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "kiwi"
+    ]
+  },
+  {
+    "id": "ULTRA_110",
+    "category": "CAL_NOISY",
+    "input": "BANANA200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "banana"
+    ]
+  },
+  {
+    "id": "ULTRA_111",
+    "category": "CAL_NOISY",
+    "input": "KIWI100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "kiwi"
+    ]
+  },
+  {
+    "id": "ULTRA_112",
+    "category": "CAL_NOISY",
+    "input": "APPLE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "apple"
+    ]
+  },
+  {
+    "id": "ULTRA_113",
+    "category": "CAL_NOISY",
+    "input": "MANGO200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "mango"
+    ]
+  },
+  {
+    "id": "ULTRA_114",
+    "category": "CAL_NOISY",
+    "input": "MANGO200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "mango"
+    ]
+  },
+  {
+    "id": "ULTRA_115",
+    "category": "CAL_NOISY",
+    "input": "GRAPES100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "grapes"
+    ]
+  },
+  {
+    "id": "ULTRA_116",
+    "category": "CAL_NOISY",
+    "input": "BANANA100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "banana"
+    ]
+  },
+  {
+    "id": "ULTRA_117",
+    "category": "CAL_NOISY",
+    "input": "MANGO100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "mango"
+    ]
+  },
+  {
+    "id": "ULTRA_118",
+    "category": "CAL_NOISY",
+    "input": "ORANGE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "orange"
+    ]
+  },
+  {
+    "id": "ULTRA_119",
+    "category": "CAL_NOISY",
+    "input": "GRAPES100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "grapes"
+    ]
+  },
+  {
+    "id": "ULTRA_120",
+    "category": "CAL_NOISY",
+    "input": "APPLE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "apple"
+    ]
+  },
+  {
+    "id": "ULTRA_121",
+    "category": "CAL_NOISY",
+    "input": "ORANGE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "orange"
+    ]
+  },
+  {
+    "id": "ULTRA_122",
+    "category": "CAL_NOISY",
+    "input": "ORANGE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "orange"
+    ]
+  },
+  {
+    "id": "ULTRA_123",
+    "category": "CAL_NOISY",
+    "input": "PINEAPPLE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "pineapple"
+    ]
+  },
+  {
+    "id": "ULTRA_124",
+    "category": "CAL_NOISY",
+    "input": "ORANGE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "orange"
+    ]
+  },
+  {
+    "id": "ULTRA_125",
+    "category": "CAL_NOISY",
+    "input": "MANGO100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "mango"
+    ]
+  },
+  {
+    "id": "ULTRA_126",
+    "category": "CAL_NOISY",
+    "input": "MANGO100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "mango"
+    ]
+  },
+  {
+    "id": "ULTRA_127",
+    "category": "CAL_NOISY",
+    "input": "GRAPES100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "grapes"
+    ]
+  },
+  {
+    "id": "ULTRA_128",
+    "category": "CAL_NOISY",
+    "input": "MANGO200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "mango"
+    ]
+  },
+  {
+    "id": "ULTRA_129",
+    "category": "CAL_NOISY",
+    "input": "GRAPES100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "grapes"
+    ]
+  },
+  {
+    "id": "ULTRA_130",
+    "category": "CAL_NOISY",
+    "input": "KIWI100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "kiwi"
+    ]
+  },
+  {
+    "id": "ULTRA_131",
+    "category": "CAL_NOISY",
+    "input": "BANANA200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "banana"
+    ]
+  },
+  {
+    "id": "ULTRA_132",
+    "category": "CAL_NOISY",
+    "input": "APPLE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "apple"
+    ]
+  },
+  {
+    "id": "ULTRA_133",
+    "category": "CAL_NOISY",
+    "input": "PINEAPPLE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "pineapple"
+    ]
+  },
+  {
+    "id": "ULTRA_134",
+    "category": "CAL_NOISY",
+    "input": "PEAR200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "pear"
+    ]
+  },
+  {
+    "id": "ULTRA_135",
+    "category": "CAL_NOISY",
+    "input": "KIWI100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "kiwi"
+    ]
+  },
+  {
+    "id": "ULTRA_136",
+    "category": "CAL_NOISY",
+    "input": "PINEAPPLE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "pineapple"
+    ]
+  },
+  {
+    "id": "ULTRA_137",
+    "category": "CAL_NOISY",
+    "input": "PINEAPPLE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "pineapple"
+    ]
+  },
+  {
+    "id": "ULTRA_138",
+    "category": "CAL_NOISY",
+    "input": "ORANGE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "orange"
+    ]
+  },
+  {
+    "id": "ULTRA_139",
+    "category": "CAL_NOISY",
+    "input": "BANANA200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "banana"
+    ]
+  },
+  {
+    "id": "ULTRA_140",
+    "category": "CAL_NOISY",
+    "input": "ORANGE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "orange"
+    ]
+  },
+  {
+    "id": "ULTRA_141",
+    "category": "CAL_NOISY",
+    "input": "ORANGE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "orange"
+    ]
+  },
+  {
+    "id": "ULTRA_142",
+    "category": "CAL_NOISY",
+    "input": "BANANA200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "banana"
+    ]
+  },
+  {
+    "id": "ULTRA_143",
+    "category": "CAL_NOISY",
+    "input": "MANGO200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "mango"
+    ]
+  },
+  {
+    "id": "ULTRA_144",
+    "category": "CAL_NOISY",
+    "input": "APPLE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "apple"
+    ]
+  },
+  {
+    "id": "ULTRA_145",
+    "category": "CAL_NOISY",
+    "input": "GRAPES200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "grapes"
+    ]
+  },
+  {
+    "id": "ULTRA_146",
+    "category": "CAL_NOISY",
+    "input": "ORANGE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "orange"
+    ]
+  },
+  {
+    "id": "ULTRA_147",
+    "category": "CAL_NOISY",
+    "input": "BANANA200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "banana"
+    ]
+  },
+  {
+    "id": "ULTRA_148",
+    "category": "CAL_NOISY",
+    "input": "PINEAPPLE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "pineapple"
+    ]
+  },
+  {
+    "id": "ULTRA_149",
+    "category": "CAL_NOISY",
+    "input": "APPLE200Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "apple"
+    ]
+  },
+  {
+    "id": "ULTRA_150",
+    "category": "CAL_NOISY",
+    "input": "APPLE100Gandbanana100g",
+    "expected_mode": "calorie_input",
+    "must_contain": [
+      "apple"
+    ]
+  },
+  {
+    "id": "ULTRA_151",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_152",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_153",
+    "category": "CAL_FAKE",
+    "input": "dragon meat 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_154",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_155",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_156",
+    "category": "CAL_FAKE",
+    "input": "cyber banana 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_157",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_158",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_159",
+    "category": "CAL_FAKE",
+    "input": "dragon meat 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_160",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_161",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_162",
+    "category": "CAL_FAKE",
+    "input": "cyber banana 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_163",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_164",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_165",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_166",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_167",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_168",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_169",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_170",
+    "category": "CAL_FAKE",
+    "input": "cyber banana 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_171",
+    "category": "CAL_FAKE",
+    "input": "robot soup 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_172",
+    "category": "CAL_FAKE",
+    "input": "robot soup 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_173",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_174",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_175",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_176",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_177",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_178",
+    "category": "CAL_FAKE",
+    "input": "robot soup 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_179",
+    "category": "CAL_FAKE",
+    "input": "cyber banana 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_180",
+    "category": "CAL_FAKE",
+    "input": "cyber banana 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_181",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_182",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_183",
+    "category": "CAL_FAKE",
+    "input": "cyber banana 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_184",
+    "category": "CAL_FAKE",
+    "input": "dragon meat 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_185",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_186",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_187",
+    "category": "CAL_FAKE",
+    "input": "robot soup 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_188",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_189",
+    "category": "CAL_FAKE",
+    "input": "cyber banana 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_190",
+    "category": "CAL_FAKE",
+    "input": "cyber banana 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_191",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_192",
+    "category": "CAL_FAKE",
+    "input": "alien fruit 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_193",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_194",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_195",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_196",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_197",
+    "category": "CAL_FAKE",
+    "input": "robot soup 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_198",
+    "category": "CAL_FAKE",
+    "input": "cyber banana 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_199",
+    "category": "CAL_FAKE",
+    "input": "quantum bread 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_200",
+    "category": "CAL_FAKE",
+    "input": "ghost milk 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "not found",
+      "could not",
+      "unclear"
+    ]
+  },
+  {
+    "id": "ULTRA_201",
+    "category": "CAL_PARTIAL",
+    "input": "mango 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "must_contain": [
+      "60"
+    ]
+  },
+  {
+    "id": "ULTRA_202",
+    "category": "CAL_PARTIAL",
+    "input": "banana 100g and alien fruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 89,
+    "must_contain": [
+      "89"
+    ]
+  },
+  {
+    "id": "ULTRA_203",
+    "category": "CAL_PARTIAL",
+    "input": "orange 100g and dragon meat 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 47,
+    "must_contain": [
+      "47"
+    ]
+  },
+  {
+    "id": "ULTRA_204",
+    "category": "CAL_PARTIAL",
+    "input": "pineapple 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "must_contain": [
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_205",
+    "category": "CAL_PARTIAL",
+    "input": "kiwi 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 61,
+    "must_contain": [
+      "61"
+    ]
+  },
+  {
+    "id": "ULTRA_206",
+    "category": "CAL_PARTIAL",
+    "input": "pineapple 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "must_contain": [
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_207",
+    "category": "CAL_PARTIAL",
+    "input": "apple 100g and dragon meat 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 52,
+    "must_contain": [
+      "52"
+    ]
+  },
+  {
+    "id": "ULTRA_208",
+    "category": "CAL_PARTIAL",
+    "input": "pineapple 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "must_contain": [
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_209",
+    "category": "CAL_PARTIAL",
+    "input": "banana 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 89,
+    "must_contain": [
+      "89"
+    ]
+  },
+  {
+    "id": "ULTRA_210",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_211",
+    "category": "CAL_PARTIAL",
+    "input": "pineapple 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "must_contain": [
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_212",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_213",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_214",
+    "category": "CAL_PARTIAL",
+    "input": "mango 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "must_contain": [
+      "60"
+    ]
+  },
+  {
+    "id": "ULTRA_215",
+    "category": "CAL_PARTIAL",
+    "input": "apple 100g and dragon meat 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 52,
+    "must_contain": [
+      "52"
+    ]
+  },
+  {
+    "id": "ULTRA_216",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_217",
+    "category": "CAL_PARTIAL",
+    "input": "mango 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "must_contain": [
+      "60"
+    ]
+  },
+  {
+    "id": "ULTRA_218",
+    "category": "CAL_PARTIAL",
+    "input": "pear 100g and dragon meat 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "must_contain": [
+      "57"
+    ]
+  },
+  {
+    "id": "ULTRA_219",
+    "category": "CAL_PARTIAL",
+    "input": "pineapple 100g and dragon meat 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "must_contain": [
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_220",
+    "category": "CAL_PARTIAL",
+    "input": "pear 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "must_contain": [
+      "57"
+    ]
+  },
+  {
+    "id": "ULTRA_221",
+    "category": "CAL_PARTIAL",
+    "input": "pear 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "must_contain": [
+      "57"
+    ]
+  },
+  {
+    "id": "ULTRA_222",
+    "category": "CAL_PARTIAL",
+    "input": "orange 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 47,
+    "must_contain": [
+      "47"
+    ]
+  },
+  {
+    "id": "ULTRA_223",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and cyber banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_224",
+    "category": "CAL_PARTIAL",
+    "input": "pear 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "must_contain": [
+      "57"
+    ]
+  },
+  {
+    "id": "ULTRA_225",
+    "category": "CAL_PARTIAL",
+    "input": "pear 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "must_contain": [
+      "57"
+    ]
+  },
+  {
+    "id": "ULTRA_226",
+    "category": "CAL_PARTIAL",
+    "input": "kiwi 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 61,
+    "must_contain": [
+      "61"
+    ]
+  },
+  {
+    "id": "ULTRA_227",
+    "category": "CAL_PARTIAL",
+    "input": "kiwi 100g and cyber banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 61,
+    "must_contain": [
+      "61"
+    ]
+  },
+  {
+    "id": "ULTRA_228",
+    "category": "CAL_PARTIAL",
+    "input": "pear 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "must_contain": [
+      "57"
+    ]
+  },
+  {
+    "id": "ULTRA_229",
+    "category": "CAL_PARTIAL",
+    "input": "pineapple 100g and alien fruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "must_contain": [
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_230",
+    "category": "CAL_PARTIAL",
+    "input": "pear 100g and dragon meat 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "must_contain": [
+      "57"
+    ]
+  },
+  {
+    "id": "ULTRA_231",
+    "category": "CAL_PARTIAL",
+    "input": "kiwi 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 61,
+    "must_contain": [
+      "61"
+    ]
+  },
+  {
+    "id": "ULTRA_232",
+    "category": "CAL_PARTIAL",
+    "input": "kiwi 100g and alien fruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 61,
+    "must_contain": [
+      "61"
+    ]
+  },
+  {
+    "id": "ULTRA_233",
+    "category": "CAL_PARTIAL",
+    "input": "orange 100g and cyber banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 47,
+    "must_contain": [
+      "47"
+    ]
+  },
+  {
+    "id": "ULTRA_234",
+    "category": "CAL_PARTIAL",
+    "input": "banana 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 89,
+    "must_contain": [
+      "89"
+    ]
+  },
+  {
+    "id": "ULTRA_235",
+    "category": "CAL_PARTIAL",
+    "input": "mango 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "must_contain": [
+      "60"
+    ]
+  },
+  {
+    "id": "ULTRA_236",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_237",
+    "category": "CAL_PARTIAL",
+    "input": "mango 100g and ghost milk 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "must_contain": [
+      "60"
+    ]
+  },
+  {
+    "id": "ULTRA_238",
+    "category": "CAL_PARTIAL",
+    "input": "pineapple 100g and dragon meat 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "must_contain": [
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_239",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_240",
+    "category": "CAL_PARTIAL",
+    "input": "orange 100g and cyber banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 47,
+    "must_contain": [
+      "47"
+    ]
+  },
+  {
+    "id": "ULTRA_241",
+    "category": "CAL_PARTIAL",
+    "input": "pear 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "must_contain": [
+      "57"
+    ]
+  },
+  {
+    "id": "ULTRA_242",
+    "category": "CAL_PARTIAL",
+    "input": "apple 100g and robot soup 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 52,
+    "must_contain": [
+      "52"
+    ]
+  },
+  {
+    "id": "ULTRA_243",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_244",
+    "category": "CAL_PARTIAL",
+    "input": "apple 100g and cyber banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 52,
+    "must_contain": [
+      "52"
+    ]
+  },
+  {
+    "id": "ULTRA_245",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_246",
+    "category": "CAL_PARTIAL",
+    "input": "apple 100g and alien fruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 52,
+    "must_contain": [
+      "52"
+    ]
+  },
+  {
+    "id": "ULTRA_247",
+    "category": "CAL_PARTIAL",
+    "input": "kiwi 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 61,
+    "must_contain": [
+      "61"
+    ]
+  },
+  {
+    "id": "ULTRA_248",
+    "category": "CAL_PARTIAL",
+    "input": "grapes 100g and cyber banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "must_contain": [
+      "69"
+    ]
+  },
+  {
+    "id": "ULTRA_249",
+    "category": "CAL_PARTIAL",
+    "input": "pineapple 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "must_contain": [
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_250",
+    "category": "CAL_PARTIAL",
+    "input": "pineapple 100g and alien fruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "must_contain": [
+      "50"
+    ]
+  },
+  {
+    "id": "ULTRA_251",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_252",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_253",
+    "category": "CAL_GUARD",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_254",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_255",
+    "category": "CAL_GUARD",
+    "input": "apple",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_256",
+    "category": "CAL_GUARD",
+    "input": "apple -200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_257",
+    "category": "CAL_GUARD",
+    "input": "apple -200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_258",
+    "category": "CAL_GUARD",
+    "input": "banana g100",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_259",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_260",
+    "category": "CAL_GUARD",
+    "input": "apple -200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_261",
+    "category": "CAL_GUARD",
+    "input": "200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_262",
+    "category": "CAL_GUARD",
+    "input": "banana g100",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_263",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_264",
+    "category": "CAL_GUARD",
+    "input": "200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_265",
+    "category": "CAL_GUARD",
+    "input": "   ",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_266",
+    "category": "CAL_GUARD",
+    "input": "   ",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_267",
+    "category": "CAL_GUARD",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_268",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_269",
+    "category": "CAL_GUARD",
+    "input": "   ",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_270",
+    "category": "CAL_GUARD",
+    "input": "   ",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_271",
+    "category": "CAL_GUARD",
+    "input": "apple -200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_272",
+    "category": "CAL_GUARD",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_273",
+    "category": "CAL_GUARD",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_274",
+    "category": "CAL_GUARD",
+    "input": "apple -200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_275",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_276",
+    "category": "CAL_GUARD",
+    "input": "200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_277",
+    "category": "CAL_GUARD",
+    "input": "banana g100",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_278",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_279",
+    "category": "CAL_GUARD",
+    "input": "200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_280",
+    "category": "CAL_GUARD",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_281",
+    "category": "CAL_GUARD",
+    "input": "apple",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_282",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_283",
+    "category": "CAL_GUARD",
+    "input": "apple",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_284",
+    "category": "CAL_GUARD",
+    "input": "200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_285",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_286",
+    "category": "CAL_GUARD",
+    "input": "apple",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_287",
+    "category": "CAL_GUARD",
+    "input": "apple",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_288",
+    "category": "CAL_GUARD",
+    "input": "banana g100",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_289",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_290",
+    "category": "CAL_GUARD",
+    "input": "apple",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_291",
+    "category": "CAL_GUARD",
+    "input": "banana g100",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_292",
+    "category": "CAL_GUARD",
+    "input": "banana g100",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_293",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_294",
+    "category": "CAL_GUARD",
+    "input": "apple",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_295",
+    "category": "CAL_GUARD",
+    "input": "banana g100",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_296",
+    "category": "CAL_GUARD",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_297",
+    "category": "CAL_GUARD",
+    "input": "",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_298",
+    "category": "CAL_GUARD",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_299",
+    "category": "CAL_GUARD",
+    "input": "apple -200g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_300",
+    "category": "CAL_GUARD",
+    "input": "   ",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_301",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_302",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_303",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_304",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_305",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_306",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_307",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_308",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_309",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_310",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_311",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_312",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_313",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_314",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_315",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_316",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_317",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_318",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_319",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_320",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_321",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_322",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_323",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_324",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_325",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_326",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_327",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_328",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_329",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_330",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_331",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_332",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_333",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_334",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_335",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_336",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_337",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_338",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_339",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_340",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_341",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_342",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_343",
+    "category": "QNA_GROUNDED",
+    "input": "What is malnutrition?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_344",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_345",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_346",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_347",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_348",
+    "category": "QNA_GROUNDED",
+    "input": "What is stunting?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_349",
+    "category": "QNA_GROUNDED",
+    "input": "What are protein sources?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_350",
+    "category": "QNA_GROUNDED",
+    "input": "What are vitamin deficiencies?",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_351",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_352",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_353",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_354",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_355",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_356",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_357",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_358",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_359",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_360",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_361",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_362",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_363",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_364",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_365",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_366",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_367",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_368",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_369",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_370",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_371",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_372",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_373",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_374",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_375",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_376",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_377",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_378",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_379",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_380",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_381",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_382",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_383",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_384",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_385",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_386",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_387",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_388",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_389",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_390",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_391",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_392",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_393",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_394",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_395",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_396",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_397",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_398",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_399",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_400",
+    "category": "QNA_PARAPHRASE",
+    "input": "foods good for protein",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_401",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_402",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_403",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_404",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_405",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_406",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_407",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_408",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_409",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_410",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_411",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_412",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_413",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_414",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_415",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_416",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_417",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_418",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_419",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_420",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_421",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_422",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_423",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_424",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_425",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_426",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_427",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_428",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_429",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_430",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_431",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_432",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_433",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_434",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_435",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_436",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_437",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_438",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_439",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_440",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_441",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_442",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_443",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_444",
+    "category": "QNA_OOD",
+    "input": "quantum nutrition theory",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_445",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_446",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_447",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_448",
+    "category": "QNA_OOD",
+    "input": "football result yesterday",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_449",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_450",
+    "category": "QNA_OOD",
+    "input": "how to boost GPU with diet",
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_451",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_452",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_453",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_454",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_455",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_456",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_457",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_458",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_459",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_460",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_461",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_462",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_463",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_464",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_465",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_466",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_467",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_468",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_469",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_470",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_471",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_472",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_473",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_474",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_475",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_476",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_477",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_478",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_479",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_480",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_481",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_482",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_483",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_484",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_485",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_486",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_487",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_488",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_489",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_490",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_491",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_492",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_493",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_494",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_495",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_496",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_497",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_498",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_499",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_500",
+    "category": "MEMORY_QA",
+    "steps": [
+      {
+        "input": "What is protein?"
+      },
+      {
+        "input": "What is protein again?"
+      }
+    ],
+    "expected_mode": "nutrition_qa"
+  },
+  {
+    "id": "ULTRA_501",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_502",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_503",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_504",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_505",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_506",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_507",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_508",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_509",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_510",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_511",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_512",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_513",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_514",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_515",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_516",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_517",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_518",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_519",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_520",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_521",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_522",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_523",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_524",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_525",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_526",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_527",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_528",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_529",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_530",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_531",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_532",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_533",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_534",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_535",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_536",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_537",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_538",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_539",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_540",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_541",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_542",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_543",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_544",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_545",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_546",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_547",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_548",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_549",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_550",
+    "category": "MEAL_MEMORY",
+    "steps": [
+      {
+        "input": "apple 100g"
+      },
+      {
+        "input": "banana 100g"
+      },
+      {
+        "input": "what is total now?"
+      }
+    ],
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_551",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_552",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_553",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_554",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_555",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_556",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_557",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_558",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_559",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_560",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_561",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_562",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_563",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_564",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_565",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_566",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_567",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_568",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_569",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_570",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_571",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_572",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_573",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_574",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_575",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_576",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_577",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_578",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_579",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_580",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_581",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_582",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_583",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_584",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_585",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_586",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_587",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_588",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_589",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_590",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_591",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_592",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_593",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_594",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_595",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_596",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_597",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_598",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_599",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_600",
+    "category": "MIXED",
+    "input": "apple 100g and what is protein?",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_601",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_602",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_603",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_604",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_605",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_606",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_607",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_608",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_609",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_610",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_611",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_612",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_613",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_614",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_615",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_616",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_617",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_618",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_619",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_620",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_621",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_622",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_623",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_624",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_625",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_626",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_627",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_628",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_629",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_630",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_631",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_632",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_633",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_634",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_635",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_636",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_637",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_638",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_639",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_640",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_641",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_642",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_643",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_644",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_645",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_646",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_647",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_648",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_649",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_650",
+    "category": "DAILY_TRACKING",
+    "input": "show weekly report",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_651",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_652",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_653",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_654",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_655",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_656",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_657",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_658",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_659",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_660",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_661",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_662",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_663",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_664",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_665",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_666",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_667",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_668",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_669",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_670",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_671",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_672",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_673",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_674",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_675",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_676",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_677",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_678",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_679",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_680",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_681",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_682",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_683",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_684",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_685",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_686",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_687",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_688",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_689",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_690",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_691",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_692",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_693",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_694",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_695",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_696",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_697",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_698",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_699",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  },
+  {
+    "id": "ULTRA_700",
+    "category": "STRESS",
+    "input": "apple100gbanana200gmango300gkiwi100g",
+    "expected_mode": "calorie_input"
+  }
+]

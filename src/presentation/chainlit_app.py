@@ -4,12 +4,10 @@ import re
 import json
 import traceback
 from datetime import datetime
+from difflib import SequenceMatcher
 from types import SimpleNamespace
 
 import chainlit as cl
-
-from src.application.services.calorie_chart_service import CalorieChartService
-from src.application.services.daily_calorie_service import DailyCalorieService
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 if ROOT_DIR not in sys.path:
@@ -22,10 +20,18 @@ try:
     from src.application.orchestrators.nutrition_orchestrator import NutritionOrchestrator
     from src.domain.models.conversation_memory import MemoryEntry
     from src.domain.models.meal_state import MealState
+    from src.application.dto.responses import QAResponse
+    from src.shared.constants import QNA_MODE
+    from src.application.services.calorie_chart_service import CalorieChartService
+    from src.application.services.daily_calorie_service import DailyCalorieService
 except Exception as e:
     NutritionOrchestrator = None
     MemoryEntry = None
     MealState = None
+    QAResponse = None
+    QNA_MODE = "nutrition_qa"
+    CalorieChartService = None
+    DailyCalorieService = None
     IMPORT_ERROR = str(e)
     IMPORT_TRACEBACK = traceback.format_exc()
 
@@ -50,26 +56,42 @@ CLEAR_MEAL_COMMANDS = {
 REMOVE_PREFIXES = ("remove ", "delete ", "take out ")
 
 
+def ensure_response_object(response):
+    if QAResponse is None:
+        return response
 
-def build_weekly_chart_element(normalized_command: str):
-    if normalized_command not in {"weekly summary", "week summary", "show weekly summary", "weekly calories", "show week"}:
-        return None
+    if isinstance(response, QAResponse):
+        if not getattr(response, "confidence", None):
+            response.confidence = "LOW"
 
-    week = DailyCalorieService().get_week_summary()
-    if not week:
-        return None
+        if not getattr(response, "final_message", None):
+            response.final_message = "Answer generated from retrieved nutrition dataset."
 
-    chart_path = CalorieChartService().build_weekly_bar_chart(week)
-    if not chart_path:
-        return None
+        return response
 
-    return cl.Image(name="weekly_calories_chart", path=chart_path, display="inline")
+    if isinstance(response, dict):
+        return QAResponse(
+            mode=response.get("mode") or QNA_MODE,
+            answer=response.get("answer") or "No grounded answer found in the nutrition dataset.",
+            confidence=response.get("confidence") or "LOW",
+            sources_used=response.get("sources_used", []) or [],
+            retrieved_contexts=response.get("retrieved_contexts", []) or [],
+            final_message=response.get("final_message") or "Answer generated from retrieved nutrition dataset.",
+        )
+
+    return response
 
 
 def get_meal_state():
     if MealState is None:
         return None
-    return cl.user_session.get("meal_state") or MealState()
+
+    state = cl.user_session.get("meal_state")
+    if state is None:
+        state = MealState()
+        cl.user_session.set("meal_state", state)
+
+    return state
 
 
 def badge_confidence(confidence: str) -> str:
@@ -98,10 +120,75 @@ def badge_status(status: str) -> str:
     return f"• {status or 'Unknown'}"
 
 
-def format_suggestions_inline(suggestions) -> str:
-    if not suggestions:
-        return ""
-    return " | ".join([f"`{item}`" for item in suggestions])
+def format_number(value) -> str:
+    if value is None:
+        return "Unknown"
+
+    try:
+        number = float(value)
+        return str(int(number)) if number.is_integer() else str(round(number, 2))
+    except Exception:
+        return str(value)
+
+
+def normalize_text(text: str) -> str:
+    text = (text or "").lower().strip()
+    text = re.sub(r"([a-zA-Z])(\d)", r"\1 \2", text)
+    text = re.sub(r"(\d)([a-zA-Z])", r"\1 \2", text)
+    text = re.sub(r"(\d+(?:\.\d+)?)\s*(grams|gram|g)\b", r"\1g", text)
+    text = re.sub(r"(\d+(?:\.\d+)?g)(and|add|with|plus)\b", r"\1 \2", text)
+    text = re.sub(r"\b(and|add|with|plus)([a-z])", r"\1 \2", text)
+    text = re.sub(r"[,\;\|]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def normalize_for_memory(text: str) -> str:
+    text = normalize_text(text)
+    text = re.sub(r"[^\w\s]", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def memory_similarity(a: str, b: str) -> float:
+    a = normalize_for_memory(a)
+    b = normalize_for_memory(b)
+
+    if not a or not b:
+        return 0.0
+
+    sequence = SequenceMatcher(None, a, b).ratio()
+
+    a_tokens = set(a.split())
+    b_tokens = set(b.split())
+
+    if not a_tokens or not b_tokens:
+        return sequence
+
+    jaccard = len(a_tokens & b_tokens) / len(a_tokens | b_tokens)
+
+    return round((0.65 * sequence) + (0.35 * jaccard), 4)
+
+
+def normalize_command(text: str) -> str:
+    text = normalize_text(text)
+    text = re.sub(r"[^\w\s]", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+def is_clear_meal_query(text: str) -> bool:
+    return normalize_command(text) in CLEAR_MEAL_COMMANDS
+
+
+def get_remove_target(text: str) -> str:
+    normalized = normalize_command(text)
+
+    for prefix in REMOVE_PREFIXES:
+        if normalized.startswith(prefix):
+            return normalized[len(prefix):].strip()
+
+    return ""
 
 
 def get_last_debug_payload() -> str:
@@ -136,45 +223,36 @@ def build_debug_element(debug_payload: str) -> cl.Text:
     )
 
 
-def format_number(value) -> str:
-    if value is None:
-        return "Unknown"
-    try:
-        number = float(value)
-        return str(int(number)) if number.is_integer() else str(round(number, 2))
-    except Exception:
-        return str(value)
+def build_weekly_chart_element(normalized_command: str):
+    if DailyCalorieService is None or CalorieChartService is None:
+        return None
+
+    weekly_commands = {
+        "weekly summary",
+        "week summary",
+        "show weekly summary",
+        "weekly calories",
+        "show week",
+    }
+
+    if normalized_command not in weekly_commands:
+        return None
+
+    week = DailyCalorieService().get_week_summary()
+    if not week:
+        return None
+
+    chart_path = CalorieChartService().build_weekly_bar_chart(week)
+    if not chart_path:
+        return None
+
+    return cl.Image(name="weekly_calories_chart", path=chart_path, display="inline")
 
 
-def normalize_text(text: str) -> str:
-    text = (text or "").lower().strip()
-    text = re.sub(r"([a-zA-Z])(\d)", r"\1 \2", text)
-    text = re.sub(r"(\d)([a-zA-Z])", r"\1 \2", text)
-    text = re.sub(r"(\d+(?:\.\d+)?)\s*(grams|gram|g)\b", r"\1g", text)
-    text = re.sub(r"(\d+(?:\.\d+)?g)(and|add|with|plus)\b", r"\1 \2", text)
-    text = re.sub(r"\b(and|add|with|plus)([a-z])", r"\1 \2", text)
-    text = re.sub(r"[,\;\|]+", " ", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
-
-
-def normalize_command(text: str) -> str:
-    text = normalize_text(text)
-    text = re.sub(r"[^\w\s]", "", text)
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
-
-
-def is_clear_meal_query(text: str) -> bool:
-    return normalize_command(text) in CLEAR_MEAL_COMMANDS
-
-
-def get_remove_target(text: str) -> str:
-    normalized = normalize_command(text)
-    for prefix in REMOVE_PREFIXES:
-        if normalized.startswith(prefix):
-            return normalized[len(prefix):].strip()
-    return ""
+def format_suggestions_inline(suggestions) -> str:
+    if not suggestions:
+        return ""
+    return " | ".join([f"`{item}`" for item in suggestions])
 
 
 def build_item_block(item, idx: int) -> str:
@@ -204,10 +282,10 @@ def build_item_block(item, idx: int) -> str:
     if getattr(item, "match_reason", None) or getattr(item, "match_source", None):
         details.append("")
         details.append("### 🔍 Why this match?")
-        
+
         if getattr(item, "match_reason", None):
             details.append(f"- Reason: {item.match_reason}")
-        
+
         if getattr(item, "match_source", None):
             details.append(f"- Source: `{item.match_source}`")
 
@@ -230,12 +308,10 @@ def build_current_meal_block(meal_state) -> str:
 
     items = getattr(meal_state, "items", []) or []
     if not items:
-        return (
-            "### Current Meal Memory\n\n"
-            "- *(empty)*\n"
-        )
+        return "### Current Meal Memory\n\n- *(empty)*\n"
 
     lines = ["### Current Meal Memory", ""]
+
     for item in items:
         lines.append(
             f"- `{item.food}` — `{format_number(item.grams)} g` → `{format_number(item.calories)} kcal`"
@@ -266,6 +342,7 @@ def format_calorie_response(response, meal_state=None) -> str:
     if items:
         lines.append("### Item Breakdown")
         lines.append("")
+
         for idx, item in enumerate(items, start=1):
             lines.append(build_item_block(item, idx))
             lines.append("")
@@ -279,6 +356,7 @@ def format_calorie_response(response, meal_state=None) -> str:
     if suggestions:
         lines.append("")
         lines.append("### Global Suggestions")
+
         for suggestion in suggestions:
             lines.append(f"- `{suggestion}`")
 
@@ -294,88 +372,10 @@ def format_guard_or_simple_qa_response(response) -> str:
     answer = (getattr(response, "answer", "") or "").strip()
     final_message = (getattr(response, "final_message", "") or "").strip()
 
-    if answer == NON_ENGLISH_MESSAGE:
-        return (
-            "# ⚠️ Please use English\n\n"
-            "This assistant supports **English food and nutrition queries** for reliable parsing.\n\n"
-            "### Try these examples\n"
-            "- `apple 200g`\n"
-            "- `rice 150g`\n"
-            "- `Is avocado healthy?`\n\n"
-            "**Meal memory:** not changed."
-        )
-
-    if answer == EMPTY_MESSAGE:
-        return (
-            "# ⚠️ Your message is empty\n\n"
-            "Please type a food query or a nutrition question in English.\n\n"
-            "### Examples\n"
-            "- `apple 200g`\n"
-            "- `brown rice 150g and milk 200g`\n"
-            "- `What are good sources of protein?`\n\n"
-            "**Meal memory:** not changed."
-        )
-
-    if answer == QUANTITY_ONLY_MESSAGE:
-        return (
-            "# ⚠️ Food name missing\n\n"
-            "I can see the quantity, but I still need the **food name**.\n\n"
-            "### Examples\n"
-            "- `apple 200g`\n"
-            "- `rice 150g`\n\n"
-            "**Meal memory:** not changed."
-        )
-
-    if answer.startswith("I recognized '") and "but I still need the quantity in grams." in answer:
-        food_name = (
-            answer
-            .replace("I recognized '", "")
-            .replace("', but I still need the quantity in grams.", "")
-        )
-        return (
-            "# ⚠️ Quantity missing\n\n"
-            f"I recognized **{food_name}**, but I still need the amount in grams.\n\n"
-            "### Example\n"
-            f"- `{food_name} 200g`\n\n"
-            "**Meal memory:** not changed."
-        )
-
-    if answer == FOOD_NOT_CONFIDENT_MESSAGE:
-        return (
-            "# ⚠️ Food not recognized confidently\n\n"
-            "This looks like a food name, but I could not confidently match it in the current calorie database.\n\n"
-            "### Try these examples\n"
-            "- `apple 200g`\n"
-            "- `banana 100g`\n"
-            "- `brown rice 150g`\n\n"
-            "**Meal memory:** not changed."
-        )
-
-    if answer == NON_DIGIT_QUANTITY_MESSAGE:
-        return (
-            "# ⚠️ Quantity must use digits\n\n"
-            "I recognized the quantity expression, but it must be written with digits for calorie estimation.\n\n"
-            "### Correct examples\n"
-            "- `apple 200g`\n"
-            "- `banana 100g`\n"
-            "- `rice 150g`\n\n"
-            "> Write `200g`, not `two hundred grams`.\n\n"
-            "**Meal memory:** not changed."
-        )
-
-    if answer == UNCLEAR_MESSAGE:
-        return (
-            "# ⚠️ Input unclear\n\n"
-            "I could not confidently understand your input.\n\n"
-            "### Try one of these\n"
-            "- `banana 120g`\n"
-            "- `chicken 200g and rice 100g`\n"
-            "- `Is rice good for weight loss?`\n\n"
-            "**Meal memory:** not changed."
-        )
-
     lines = [
         "# 🥗 Nutrition Assistant",
+        "",
+        "## 📌 Answer",
         "",
         answer,
         "",
@@ -383,7 +383,7 @@ def format_guard_or_simple_qa_response(response) -> str:
     ]
 
     if final_message:
-        lines.extend(["", final_message])
+        lines.extend(["", "## 💡 Note", "", final_message])
 
     lines.extend(["", "**Meal memory:** not changed."])
     return "\n".join(lines)
@@ -404,21 +404,13 @@ def format_qa_response(response) -> str:
     lines.append("")
     lines.append(getattr(response, "answer", ""))
     lines.append("")
-
-    conf = (getattr(response, "confidence", "") or "").lower()
-    if conf == "high":
-        badge = "🟢 HIGH"
-    elif conf == "medium":
-        badge = "🟡 MEDIUM"
-    else:
-        badge = "🔴 LOW"
-
-    lines.append(f"**Confidence:** {badge}")
+    lines.append(f"**Confidence:** {badge_confidence(getattr(response, 'confidence', 'Unknown'))}")
 
     if sources_used:
         lines.append("")
         lines.append("## 📚 Sources Used")
         lines.append("")
+
         for i, source in enumerate(sources_used, 1):
             lines.append(f"{i}. `{source}`")
 
@@ -426,17 +418,19 @@ def format_qa_response(response) -> str:
         lines.append("")
         lines.append("## 🧠 Retrieved Contexts")
         lines.append("")
+
         for idx, ctx in enumerate(retrieved_contexts, start=1):
-            preview = ctx if len(ctx) <= 350 else ctx[:350] + "..."
+            preview = ctx if len(ctx) <= 500 else ctx[:500] + "..."
             lines.append(f"**Context {idx}**")
             lines.append(f"> {preview.replace(chr(10), chr(10) + '> ')}")
             lines.append("")
 
-    if getattr(response, "final_message", None) and response.final_message != response.answer:
+    final_message = getattr(response, "final_message", "") or ""
+    if final_message and final_message != getattr(response, "answer", ""):
         lines.append("")
         lines.append("## 💡 Note")
         lines.append("")
-        lines.append(response.final_message)
+        lines.append(final_message)
 
     lines.append("")
     lines.append("**Meal memory:** not changed.")
@@ -450,17 +444,18 @@ def build_welcome_message() -> str:
         "**Food & Nutrition AI**\n\n"
         "I can help you with:\n\n"
         "- **Calorie estimation** from food + grams\n"
-        "- **Nutrition Q&A** using retrieved knowledge\n"
-        "- **Semantic memory for repeated questions**\n"
+        "- **Nutrition Q&A** using retrieved Q&A dataset from ChromaDB\n"
+        "- **Same/similar question memory**\n"
         "- **Meal memory for calorie tracking**\n"
-        "- **Simple and user-friendly answers**\n\n"
+        "- **Grounded answers with sources and retrieved contexts**\n\n"
         "### Try one of these\n"
         "- `apple 200g`\n"
         "- `apple200g`\n"
         "- `apple 200g rice 150g`\n"
         "- `and banana 100g`\n"
         "- `What are good sources of protein?`\n"
-        "- `Is avocado healthy?`\n\n"
+        "- `Where can I find protein in food?`\n"
+        "- `What is malnutrition?`\n\n"
         "> Please use English for food and nutrition queries."
     )
 
@@ -485,6 +480,9 @@ def serialize_meal_state(meal_state) -> dict:
 
 
 def serialize_response_object(response):
+    if isinstance(response, dict):
+        return response
+
     try:
         return response.model_dump()
     except AttributeError:
@@ -543,25 +541,20 @@ def should_store_in_semantic_memory(response) -> bool:
     if getattr(response, "mode", "") != "nutrition_qa":
         return False
 
-    if not hasattr(response, "answer"):
-        return False
-
     answer = (getattr(response, "answer", "") or "").strip().lower()
+    sources = getattr(response, "sources_used", []) or []
+    contexts = getattr(response, "retrieved_contexts", []) or []
 
-    blocked_answers = {
-        NON_ENGLISH_MESSAGE.lower(),
-        EMPTY_MESSAGE.lower(),
-        QUANTITY_ONLY_MESSAGE.lower(),
-        NON_DIGIT_QUANTITY_MESSAGE.lower(),
-        UNCLEAR_MESSAGE.lower(),
-        "this assistant only handles food, calories, and nutrition.".lower(),
-        FOOD_NOT_CONFIDENT_MESSAGE.lower(),
-    }
-
-    if answer in blocked_answers:
+    if not answer or not sources or not contexts:
         return False
 
-    if answer.startswith("i recognized '") and "but i still need the quantity in grams." in answer:
+    if answer.startswith("i could not find"):
+        return False
+
+    if answer.startswith("this assistant only"):
+        return False
+
+    if answer.startswith("i need more information"):
         return False
 
     return True
@@ -573,6 +566,62 @@ def get_conversation_memory():
         memory = []
         cl.user_session.set("conversation_memory", memory)
     return memory
+
+
+def find_previous_qa_answer(normalized_user_text: str):
+    if QAResponse is None:
+        return None
+
+    memory = get_conversation_memory()
+    target = normalize_for_memory(normalized_user_text)
+
+    if not target:
+        return None
+
+    best_entry = None
+    best_score = 0.0
+
+    for entry in reversed(memory):
+        mode = (entry.get("kind") or entry.get("mode") or "").strip().lower()
+
+        if mode != "nutrition_qa":
+            continue
+
+        previous_input = normalize_for_memory(entry.get("normalized_input") or entry.get("user_input") or "")
+
+        if not previous_input:
+            continue
+
+        answer = entry.get("answer") or entry.get("assistant_text") or ""
+        sources_used = entry.get("sources_used", []) or []
+        retrieved_contexts = entry.get("retrieved_contexts", []) or []
+
+        if not answer or not sources_used or not retrieved_contexts:
+            continue
+
+        score = memory_similarity(target, previous_input)
+
+        if score > best_score:
+            best_score = score
+            best_entry = entry
+
+    if best_entry is None:
+        return None
+
+    if best_score < 0.78:
+        return None
+
+    return QAResponse(
+        mode="nutrition_qa",
+        answer=best_entry.get("answer") or best_entry.get("assistant_text") or "",
+        confidence=best_entry.get("confidence", "MEDIUM"),
+        sources_used=best_entry.get("sources_used", []) or [],
+        retrieved_contexts=best_entry.get("retrieved_contexts", []) or [],
+        final_message=(
+            "As I told you before, this question is the same or very similar to a question "
+            f"answered earlier in this conversation (similarity={best_score:.2f})."
+        ),
+    )
 
 
 def build_clear_meal_response(meal_state):
@@ -595,12 +644,26 @@ def build_clear_meal_response(meal_state):
 
 
 def build_remove_item_response(meal_state, target: str):
+    if meal_state is None:
+        return SimpleNamespace(
+            mode="calorie",
+            items=[],
+            total_calories=0,
+            coverage="0/0",
+            matched_items=0,
+            total_items=0,
+            confidence="LOW",
+            final_message="Meal memory is not available.",
+            suggestions=[],
+        )
+
     items = getattr(meal_state, "items", []) or []
     kept_items = []
     removed_items = []
 
     for item in items:
         food_name = str(getattr(item, "food", "")).strip().lower()
+
         if target and target in food_name:
             removed_items.append(item)
         else:
@@ -679,6 +742,8 @@ async def handle_query(user_text: str, thinking_message: cl.Message):
     normalized_user_text = normalize_text(user_text)
     normalized_command = normalize_command(original_user_text)
 
+    memory_hit = None
+
     if is_clear_meal_query(original_user_text):
         response = build_clear_meal_response(meal_state)
 
@@ -686,14 +751,20 @@ async def handle_query(user_text: str, thinking_message: cl.Message):
         response = build_remove_item_response(meal_state, get_remove_target(original_user_text))
 
     else:
-        response = engine.run(
-            normalized_user_text,
-            history=history,
-            memory_entries=memory_entries,
-            meal_state=meal_state,
-            conversation_memory=conversation_memory,
-        )
+        memory_hit = find_previous_qa_answer(normalized_user_text)
 
+        if memory_hit is not None:
+            response = memory_hit
+        else:
+            response = engine.run(
+                normalized_user_text,
+                history=history,
+                memory_entries=memory_entries,
+                meal_state=meal_state,
+                conversation_memory=conversation_memory,
+            )
+
+    response = ensure_response_object(response)
     mode = getattr(response, "mode", "")
 
     if mode == "calorie":
@@ -710,6 +781,7 @@ async def handle_query(user_text: str, thinking_message: cl.Message):
             "normalized_user_text": normalized_user_text,
             "original_user_text": original_user_text,
             "normalized_command": normalized_command,
+            "memory_hit": memory_hit is not None,
             "is_clear_meal_query": is_clear_meal_query(original_user_text),
             "remove_target": get_remove_target(original_user_text),
             "debug_enabled": is_debug_enabled(),
@@ -720,6 +792,7 @@ async def handle_query(user_text: str, thinking_message: cl.Message):
 
     elements = []
     weekly_chart = build_weekly_chart_element(normalized_command)
+
     if weekly_chart is not None:
         elements.append(weekly_chart)
 
@@ -736,6 +809,7 @@ async def handle_query(user_text: str, thinking_message: cl.Message):
     cl.user_session.set("history", history[-30:])
 
     cl.user_session.set("meal_state", meal_state)
+
     save_conversation_turn(
         original_user_text=original_user_text,
         normalized_user_text=normalized_user_text,
@@ -770,6 +844,7 @@ def save_conversation_turn(original_user_text: str, normalized_user_text: str, r
     if mode == "calorie":
         record["total_calories"] = getattr(response, "total_calories", None)
         record["final_message"] = getattr(response, "final_message", "")
+
         items = []
         for item in getattr(response, "items", []) or []:
             items.append(
@@ -787,6 +862,7 @@ def save_conversation_turn(original_user_text: str, normalized_user_text: str, r
                     "suggestions": getattr(item, "suggestions", None),
                 }
             )
+
         record["items"] = items
 
     if hasattr(response, "answer"):
@@ -794,6 +870,7 @@ def save_conversation_turn(original_user_text: str, normalized_user_text: str, r
         record["confidence"] = getattr(response, "confidence", "LOW")
         record["sources_used"] = getattr(response, "sources_used", []) or []
         record["retrieved_contexts"] = getattr(response, "retrieved_contexts", []) or []
+        record["final_message"] = getattr(response, "final_message", "")
 
     memory.append(record)
     cl.user_session.set("conversation_memory", memory[-50:])
@@ -905,7 +982,7 @@ async def main(message: cl.Message):
                 "- `apple200g`\n"
                 "- `apple 200g rice 150g`\n"
                 "- `and banana 100g`\n"
-                "- `Is avocado healthy?`"
+                "- `What is malnutrition?`"
             ),
             actions=get_debug_actions(),
         ).send()

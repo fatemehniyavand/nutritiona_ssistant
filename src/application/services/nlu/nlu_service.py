@@ -52,7 +52,7 @@ class NutritionNLUService:
     ]
 
     QUESTION_HINT_PATTERN = re.compile(
-        r"\b(what|which|why|how|is|are|can|should|do|does|healthy|protein|fat|vitamin|fiber|diet|nutrition|calories|carbs|sugar)\b",
+        r"\b(what|which|why|how|is|are|can|should|do|does|healthy|protein|fat|vitamin|fiber|diet|nutrition|nutritional|calories|carbs|sugar)\b",
         re.IGNORECASE,
     )
 
@@ -77,7 +77,7 @@ class NutritionNLUService:
         "the", "a", "an", "my", "some",
         "track", "log", "include", "including",
         "i", "want", "to", "eat", "ate", "have",
-        "for", "meal",
+        "for", "meal", "today", "thanks", "thank", "you",
     }
 
     def __init__(self):
@@ -90,7 +90,7 @@ class NutritionNLUService:
         normalized_text = self.food_normalizer.normalize(original_text)
 
         if not original_text.strip():
-            return NLUResult(
+            return self._result(
                 original_text=original_text,
                 normalized_text=normalized_text,
                 intent="empty",
@@ -100,7 +100,7 @@ class NutritionNLUService:
 
         forced_intent = self._override_command_intent(normalized_text)
         if forced_intent:
-            return NLUResult(
+            return self._result(
                 original_text=original_text,
                 normalized_text=normalized_text,
                 intent=forced_intent,
@@ -112,7 +112,8 @@ class NutritionNLUService:
 
         if parsed_items:
             clean_unparsed = "" if self._is_harmless_leftover(unparsed_text) else unparsed_text
-            return NLUResult(
+
+            return self._result(
                 original_text=original_text,
                 normalized_text=normalized_text,
                 intent="calorie_input",
@@ -129,10 +130,11 @@ class NutritionNLUService:
 
         if self.GRAM_TOKEN_PATTERN.search(normalized_text):
             warning = "Could not extract food and grams from calorie input."
+
             if is_quantity_only:
                 warning = "Quantity detected, but food name is missing."
 
-            return NLUResult(
+            return self._result(
                 original_text=original_text,
                 normalized_text=normalized_text,
                 intent="calorie_input",
@@ -143,7 +145,7 @@ class NutritionNLUService:
             )
 
         if is_quantity_not_numeric:
-            return NLUResult(
+            return self._result(
                 original_text=original_text,
                 normalized_text=normalized_text,
                 intent="calorie_input",
@@ -156,7 +158,7 @@ class NutritionNLUService:
         classified_intent = self.intent_classifier.classify(normalized_text)
 
         if classified_intent in {"nutrition_qa", "clear_meal", "remove_item", "total_query"}:
-            return NLUResult(
+            return self._result(
                 original_text=original_text,
                 normalized_text=normalized_text,
                 intent=classified_intent,
@@ -164,7 +166,7 @@ class NutritionNLUService:
             )
 
         if "?" in original_text or self.QUESTION_HINT_PATTERN.search(normalized_text):
-            return NLUResult(
+            return self._result(
                 original_text=original_text,
                 normalized_text=normalized_text,
                 intent="nutrition_qa",
@@ -174,7 +176,7 @@ class NutritionNLUService:
         is_food_only = self.food_parser.looks_like_food_only(normalized_text)
 
         if is_food_only:
-            return NLUResult(
+            return self._result(
                 original_text=original_text,
                 normalized_text=normalized_text,
                 intent="calorie_input",
@@ -184,13 +186,39 @@ class NutritionNLUService:
                 is_food_only=True,
             )
 
-        return NLUResult(
+        return self._result(
             original_text=original_text,
             normalized_text=normalized_text,
             intent="unknown",
             confidence="LOW",
             warnings=["Intent could not be determined confidently."],
             unparsed_text=unparsed_text,
+        )
+
+    def _result(
+        self,
+        original_text: str,
+        normalized_text: str,
+        intent: str,
+        parsed_items: List[ParsedFoodItem] = None,
+        confidence: str = "LOW",
+        warnings: List[str] = None,
+        unparsed_text: str = "",
+        is_food_only: bool = False,
+        is_quantity_only: bool = False,
+        is_quantity_not_numeric: bool = False,
+    ) -> NLUResult:
+        return NLUResult(
+            original_text=original_text,
+            normalized_text=normalized_text,
+            intent=intent,
+            parsed_items=parsed_items or [],
+            confidence=confidence,
+            warnings=warnings or [],
+            unparsed_text=unparsed_text,
+            is_food_only=is_food_only,
+            is_quantity_only=is_quantity_only,
+            is_quantity_not_numeric=is_quantity_not_numeric,
         )
 
     def _override_command_intent(self, normalized_text: str) -> str:

@@ -20,9 +20,15 @@ class FoodParser:
         "please", "the", "a", "an", "my", "some",
         "have", "eat", "ate", "eaten",
         "log", "track", "include", "including",
-        "i", "want", "to", "for", "meal", "hello", "hi", "hey",
-        "can", "you", "could", "would", "today", "thanks", "thank", "like",
-        "can", "you", "could", "would", "today", "thanks", "thank", "like",
+        "i", "want", "to", "for", "meal",
+        "hello", "hi", "hey",
+        "can", "you", "could", "would",
+        "today", "thanks", "thank", "like",
+    }
+
+    NOISE_TOKENS = {
+        "blah", "blahblah", "asdf", "qwerty", "xyz", "xxx",
+        "random", "gibberish", "unknown", "nonsense",
     }
 
     ITEM_PATTERN = re.compile(
@@ -84,11 +90,11 @@ class FoodParser:
 
             if not food_name:
                 continue
-
             if grams <= 0:
                 continue
-
             if self._looks_like_command(food_name):
+                continue
+            if self._contains_noise(food_name):
                 continue
 
             items.append(
@@ -150,6 +156,8 @@ class FoodParser:
         cleaned = self._clean_food_name(text)
         if not cleaned:
             return False
+        if self._contains_noise(cleaned):
+            return False
 
         return self.FOOD_ONLY_PATTERN.match(cleaned) is not None
 
@@ -167,10 +175,10 @@ class FoodParser:
 
     def _protect_item_boundaries(self, text: str) -> str:
         text = re.sub(r"(\d+(?:\.\d+)?g)\s+(?=[a-z])", r"\1 | ", text)
-        text = text.replace(" | and ", " and ")
-        text = text.replace(" | add ", " add ")
-        text = text.replace(" | with ", " with ")
-        text = text.replace(" | plus ", " plus ")
+
+        for connector in self.CONNECTORS:
+            text = text.replace(f" | {connector} ", f" {connector} ")
+
         return text
 
     def _prepare_text(self, text: str) -> str:
@@ -191,9 +199,17 @@ class FoodParser:
     def _clean_leftover_text(self, text: str) -> str:
         text = text.replace("|", " ")
         words = self._prepare_text(text).split()
-        words = [word for word in words if word not in self.LEADING_FILLERS]
-        words = [word for word in words if word not in self.CONNECTORS]
+
+        words = [
+            word for word in words
+            if word not in self.LEADING_FILLERS and word not in self.CONNECTORS
+        ]
+
         return " ".join(words).strip()
+
+    def _contains_noise(self, text: str) -> bool:
+        words = set(self._prepare_text(text).split())
+        return bool(words.intersection(self.NOISE_TOKENS))
 
     def _deduplicate_items(self, items: List[ParsedFoodItem]) -> List[ParsedFoodItem]:
         unique: List[ParsedFoodItem] = []
@@ -203,10 +219,14 @@ class FoodParser:
             key = (item.food_name.lower(), round(float(item.grams), 4))
             if key in seen:
                 continue
+
             seen.add(key)
             unique.append(item)
 
         return unique
 
     def _looks_like_command(self, text: str) -> bool:
-        return any(re.search(pattern, text, flags=re.IGNORECASE) for pattern in self.COMMAND_PATTERNS)
+        return any(
+            re.search(pattern, text, flags=re.IGNORECASE)
+            for pattern in self.COMMAND_PATTERNS
+        )

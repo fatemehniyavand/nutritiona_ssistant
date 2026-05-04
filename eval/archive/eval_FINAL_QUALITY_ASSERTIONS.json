@@ -1,0 +1,3142 @@
+[
+  {
+    "id": "Q200_001",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "apple 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 52,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "52"
+    ]
+  },
+  {
+    "id": "Q200_002",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "apple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 104,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "104"
+    ]
+  },
+  {
+    "id": "Q200_003",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 89,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_004",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "banana 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 178,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "banana",
+      "178"
+    ]
+  },
+  {
+    "id": "Q200_005",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "avocado 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 160,
+    "expected_matched_foods": [
+      "avocado"
+    ],
+    "must_contain": [
+      "avocado",
+      "160"
+    ]
+  },
+  {
+    "id": "Q200_006",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "avocado 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 320,
+    "expected_matched_foods": [
+      "avocado"
+    ],
+    "must_contain": [
+      "avocado",
+      "320"
+    ]
+  },
+  {
+    "id": "Q200_007",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "pineapple 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "50"
+    ]
+  },
+  {
+    "id": "Q200_008",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 100,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "100"
+    ]
+  },
+  {
+    "id": "Q200_009",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "mango 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "expected_matched_foods": [
+      "mango"
+    ],
+    "must_contain": [
+      "mango",
+      "60"
+    ]
+  },
+  {
+    "id": "Q200_010",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "mango 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 120,
+    "expected_matched_foods": [
+      "mango"
+    ],
+    "must_contain": [
+      "mango",
+      "120"
+    ]
+  },
+  {
+    "id": "Q200_011",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "watermelon 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 30,
+    "expected_matched_foods": [
+      "watermelon"
+    ],
+    "must_contain": [
+      "watermelon",
+      "30"
+    ]
+  },
+  {
+    "id": "Q200_012",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "watermelon 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "expected_matched_foods": [
+      "watermelon"
+    ],
+    "must_contain": [
+      "watermelon",
+      "60"
+    ]
+  },
+  {
+    "id": "Q200_013",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "kiwi 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 61,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "61"
+    ]
+  },
+  {
+    "id": "Q200_014",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "kiwi 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 122,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "kiwi",
+      "122"
+    ]
+  },
+  {
+    "id": "Q200_015",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "orange 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 47,
+    "expected_matched_foods": [
+      "orange"
+    ],
+    "must_contain": [
+      "orange",
+      "47"
+    ]
+  },
+  {
+    "id": "Q200_016",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "orange 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 94,
+    "expected_matched_foods": [
+      "orange"
+    ],
+    "must_contain": [
+      "orange",
+      "94"
+    ]
+  },
+  {
+    "id": "Q200_017",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "grapes 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "expected_matched_foods": [
+      "grapes"
+    ],
+    "must_contain": [
+      "grapes",
+      "69"
+    ]
+  },
+  {
+    "id": "Q200_018",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "grapes 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 138,
+    "expected_matched_foods": [
+      "grapes"
+    ],
+    "must_contain": [
+      "grapes",
+      "138"
+    ]
+  },
+  {
+    "id": "Q200_019",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "strawberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 32,
+    "expected_matched_foods": [
+      "strawberries"
+    ],
+    "must_contain": [
+      "strawberries",
+      "32"
+    ]
+  },
+  {
+    "id": "Q200_020",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "strawberries 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 64,
+    "expected_matched_foods": [
+      "strawberries"
+    ],
+    "must_contain": [
+      "strawberries",
+      "64"
+    ]
+  },
+  {
+    "id": "Q200_021",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "pear 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "expected_matched_foods": [
+      "pear"
+    ],
+    "must_contain": [
+      "pear",
+      "57"
+    ]
+  },
+  {
+    "id": "Q200_022",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "pear 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 114,
+    "expected_matched_foods": [
+      "pear"
+    ],
+    "must_contain": [
+      "pear",
+      "114"
+    ]
+  },
+  {
+    "id": "Q200_023",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "peach 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 39,
+    "expected_matched_foods": [
+      "peach"
+    ],
+    "must_contain": [
+      "peach",
+      "39"
+    ]
+  },
+  {
+    "id": "Q200_024",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "peach 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 78,
+    "expected_matched_foods": [
+      "peach"
+    ],
+    "must_contain": [
+      "peach",
+      "78"
+    ]
+  },
+  {
+    "id": "Q200_025",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "dates 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 282,
+    "expected_matched_foods": [
+      "dates"
+    ],
+    "must_contain": [
+      "dates",
+      "282"
+    ]
+  },
+  {
+    "id": "Q200_026",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "dates 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 564,
+    "expected_matched_foods": [
+      "dates"
+    ],
+    "must_contain": [
+      "dates",
+      "564"
+    ]
+  },
+  {
+    "id": "Q200_027",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "raisins 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 299,
+    "expected_matched_foods": [
+      "raisins"
+    ],
+    "must_contain": [
+      "raisins",
+      "299"
+    ]
+  },
+  {
+    "id": "Q200_028",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "raisins 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 598,
+    "expected_matched_foods": [
+      "raisins"
+    ],
+    "must_contain": [
+      "raisins",
+      "598"
+    ]
+  },
+  {
+    "id": "Q200_029",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "lemon 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 29,
+    "expected_matched_foods": [
+      "lemon"
+    ],
+    "must_contain": [
+      "lemon",
+      "29"
+    ]
+  },
+  {
+    "id": "Q200_030",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "lemon 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 58,
+    "expected_matched_foods": [
+      "lemon"
+    ],
+    "must_contain": [
+      "lemon",
+      "58"
+    ]
+  },
+  {
+    "id": "Q200_031",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "lime 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 30,
+    "expected_matched_foods": [
+      "lime"
+    ],
+    "must_contain": [
+      "lime",
+      "30"
+    ]
+  },
+  {
+    "id": "Q200_032",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "lime 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "expected_matched_foods": [
+      "lime"
+    ],
+    "must_contain": [
+      "lime",
+      "60"
+    ]
+  },
+  {
+    "id": "Q200_033",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "blueberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "expected_matched_foods": [
+      "blueberries"
+    ],
+    "must_contain": [
+      "blueberries",
+      "57"
+    ]
+  },
+  {
+    "id": "Q200_034",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "blueberries 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 114,
+    "expected_matched_foods": [
+      "blueberries"
+    ],
+    "must_contain": [
+      "blueberries",
+      "114"
+    ]
+  },
+  {
+    "id": "Q200_035",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "raspberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 52,
+    "expected_matched_foods": [
+      "raspberries"
+    ],
+    "must_contain": [
+      "raspberries",
+      "52"
+    ]
+  },
+  {
+    "id": "Q200_036",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "raspberries 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 104,
+    "expected_matched_foods": [
+      "raspberries"
+    ],
+    "must_contain": [
+      "raspberries",
+      "104"
+    ]
+  },
+  {
+    "id": "Q200_037",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "blackberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 43,
+    "expected_matched_foods": [
+      "blackberries"
+    ],
+    "must_contain": [
+      "blackberries",
+      "43"
+    ]
+  },
+  {
+    "id": "Q200_038",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "blackberries 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 86,
+    "expected_matched_foods": [
+      "blackberries"
+    ],
+    "must_contain": [
+      "blackberries",
+      "86"
+    ]
+  },
+  {
+    "id": "Q200_039",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "cherries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 50,
+    "expected_matched_foods": [
+      "cherries"
+    ],
+    "must_contain": [
+      "cherries",
+      "50"
+    ]
+  },
+  {
+    "id": "Q200_040",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "cherries 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 100,
+    "expected_matched_foods": [
+      "cherries"
+    ],
+    "must_contain": [
+      "cherries",
+      "100"
+    ]
+  },
+  {
+    "id": "Q200_041",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "figs 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 74,
+    "expected_matched_foods": [
+      "figs"
+    ],
+    "must_contain": [
+      "figs",
+      "74"
+    ]
+  },
+  {
+    "id": "Q200_042",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "figs 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 148,
+    "expected_matched_foods": [
+      "figs"
+    ],
+    "must_contain": [
+      "figs",
+      "148"
+    ]
+  },
+  {
+    "id": "Q200_043",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "guava 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 68,
+    "expected_matched_foods": [
+      "guava"
+    ],
+    "must_contain": [
+      "guava",
+      "68"
+    ]
+  },
+  {
+    "id": "Q200_044",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "guava 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 136,
+    "expected_matched_foods": [
+      "guava"
+    ],
+    "must_contain": [
+      "guava",
+      "136"
+    ]
+  },
+  {
+    "id": "Q200_045",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "jackfruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 95,
+    "expected_matched_foods": [
+      "jackfruit"
+    ],
+    "must_contain": [
+      "jackfruit",
+      "95"
+    ]
+  },
+  {
+    "id": "Q200_046",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "jackfruit 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 190,
+    "expected_matched_foods": [
+      "jackfruit"
+    ],
+    "must_contain": [
+      "jackfruit",
+      "190"
+    ]
+  },
+  {
+    "id": "Q200_047",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "papaya 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 43,
+    "expected_matched_foods": [
+      "papaya"
+    ],
+    "must_contain": [
+      "papaya",
+      "43"
+    ]
+  },
+  {
+    "id": "Q200_048",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "papaya 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 86,
+    "expected_matched_foods": [
+      "papaya"
+    ],
+    "must_contain": [
+      "papaya",
+      "86"
+    ]
+  },
+  {
+    "id": "Q200_049",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "pomegranate 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 83,
+    "expected_matched_foods": [
+      "pomegranate"
+    ],
+    "must_contain": [
+      "pomegranate",
+      "83"
+    ]
+  },
+  {
+    "id": "Q200_050",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "pomegranate 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 166,
+    "expected_matched_foods": [
+      "pomegranate"
+    ],
+    "must_contain": [
+      "pomegranate",
+      "166"
+    ]
+  },
+  {
+    "id": "Q200_051",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "plum 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 46,
+    "expected_matched_foods": [
+      "plum"
+    ],
+    "must_contain": [
+      "plum",
+      "46"
+    ]
+  },
+  {
+    "id": "Q200_052",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "plum 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 92,
+    "expected_matched_foods": [
+      "plum"
+    ],
+    "must_contain": [
+      "plum",
+      "92"
+    ]
+  },
+  {
+    "id": "Q200_053",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "cantaloupe 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 34,
+    "expected_matched_foods": [
+      "cantaloupe"
+    ],
+    "must_contain": [
+      "cantaloupe",
+      "34"
+    ]
+  },
+  {
+    "id": "Q200_054",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "cantaloupe 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 68,
+    "expected_matched_foods": [
+      "cantaloupe"
+    ],
+    "must_contain": [
+      "cantaloupe",
+      "68"
+    ]
+  },
+  {
+    "id": "Q200_055",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "nectarine 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 44,
+    "expected_matched_foods": [
+      "nectarine"
+    ],
+    "must_contain": [
+      "nectarine",
+      "44"
+    ]
+  },
+  {
+    "id": "Q200_056",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "nectarine 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 88,
+    "expected_matched_foods": [
+      "nectarine"
+    ],
+    "must_contain": [
+      "nectarine",
+      "88"
+    ]
+  },
+  {
+    "id": "Q200_057",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "apricot 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 48,
+    "expected_matched_foods": [
+      "apricot"
+    ],
+    "must_contain": [
+      "apricot",
+      "48"
+    ]
+  },
+  {
+    "id": "Q200_058",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "apricot 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 96,
+    "expected_matched_foods": [
+      "apricot"
+    ],
+    "must_contain": [
+      "apricot",
+      "96"
+    ]
+  },
+  {
+    "id": "Q200_059",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "cranberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 46,
+    "expected_matched_foods": [
+      "cranberries"
+    ],
+    "must_contain": [
+      "cranberries",
+      "46"
+    ]
+  },
+  {
+    "id": "Q200_060",
+    "category": "QUALITY_CAL_EXACT_NUMERIC",
+    "input": "cranberries 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 92,
+    "expected_matched_foods": [
+      "cranberries"
+    ],
+    "must_contain": [
+      "cranberries",
+      "92"
+    ]
+  },
+  {
+    "id": "Q200_061",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 120,
+    "expected_matched_foods": [
+      "canned pineapple"
+    ],
+    "must_contain": [
+      "canned pineapple",
+      "120"
+    ]
+  },
+  {
+    "id": "Q200_062",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned sliced pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 106,
+    "expected_matched_foods": [
+      "canned sliced pineapple"
+    ],
+    "must_contain": [
+      "canned sliced pineapple",
+      "106"
+    ]
+  },
+  {
+    "id": "Q200_063",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned crushed pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 106,
+    "expected_matched_foods": [
+      "canned crushed pineapple"
+    ],
+    "must_contain": [
+      "canned crushed pineapple",
+      "106"
+    ]
+  },
+  {
+    "id": "Q200_064",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned peaches 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 54,
+    "expected_matched_foods": [
+      "canned peaches"
+    ],
+    "must_contain": [
+      "canned peaches",
+      "54"
+    ]
+  },
+  {
+    "id": "Q200_065",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned pears 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 70,
+    "expected_matched_foods": [
+      "canned pears"
+    ],
+    "must_contain": [
+      "canned pears",
+      "70"
+    ]
+  },
+  {
+    "id": "Q200_066",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned mango 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 65,
+    "expected_matched_foods": [
+      "canned mango"
+    ],
+    "must_contain": [
+      "canned mango",
+      "65"
+    ]
+  },
+  {
+    "id": "Q200_067",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned mandarin oranges 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 71,
+    "expected_matched_foods": [
+      "canned mandarin oranges"
+    ],
+    "must_contain": [
+      "canned mandarin oranges",
+      "71"
+    ]
+  },
+  {
+    "id": "Q200_068",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned fruit salad 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 100,
+    "expected_matched_foods": [
+      "canned fruit salad"
+    ],
+    "must_contain": [
+      "canned fruit salad",
+      "100"
+    ]
+  },
+  {
+    "id": "Q200_069",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned apricots 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 48,
+    "expected_matched_foods": [
+      "canned apricots"
+    ],
+    "must_contain": [
+      "canned apricots",
+      "48"
+    ]
+  },
+  {
+    "id": "Q200_070",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned cherries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 54,
+    "expected_matched_foods": [
+      "canned cherries"
+    ],
+    "must_contain": [
+      "canned cherries",
+      "54"
+    ]
+  },
+  {
+    "id": "Q200_071",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned blackberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 92,
+    "expected_matched_foods": [
+      "canned blackberries"
+    ],
+    "must_contain": [
+      "canned blackberries",
+      "92"
+    ]
+  },
+  {
+    "id": "Q200_072",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned blueberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 88,
+    "expected_matched_foods": [
+      "canned blueberries"
+    ],
+    "must_contain": [
+      "canned blueberries",
+      "88"
+    ]
+  },
+  {
+    "id": "Q200_073",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned cranberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 178,
+    "expected_matched_foods": [
+      "canned cranberries"
+    ],
+    "must_contain": [
+      "canned cranberries",
+      "178"
+    ]
+  },
+  {
+    "id": "Q200_074",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned grapefruit 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 74,
+    "expected_matched_foods": [
+      "canned grapefruit"
+    ],
+    "must_contain": [
+      "canned grapefruit",
+      "74"
+    ]
+  },
+  {
+    "id": "Q200_075",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned grapes 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 76,
+    "expected_matched_foods": [
+      "canned grapes"
+    ],
+    "must_contain": [
+      "canned grapes",
+      "76"
+    ]
+  },
+  {
+    "id": "Q200_076",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned oranges 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 62,
+    "expected_matched_foods": [
+      "canned oranges"
+    ],
+    "must_contain": [
+      "canned oranges",
+      "62"
+    ]
+  },
+  {
+    "id": "Q200_077",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned plums 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 58,
+    "expected_matched_foods": [
+      "canned plums"
+    ],
+    "must_contain": [
+      "canned plums",
+      "58"
+    ]
+  },
+  {
+    "id": "Q200_078",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned raspberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 91,
+    "expected_matched_foods": [
+      "canned raspberries"
+    ],
+    "must_contain": [
+      "canned raspberries",
+      "91"
+    ]
+  },
+  {
+    "id": "Q200_079",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned strawberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 92,
+    "expected_matched_foods": [
+      "canned strawberries"
+    ],
+    "must_contain": [
+      "canned strawberries",
+      "92"
+    ]
+  },
+  {
+    "id": "Q200_080",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "canned tangerines 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 61,
+    "expected_matched_foods": [
+      "canned tangerines"
+    ],
+    "must_contain": [
+      "canned tangerines",
+      "61"
+    ]
+  },
+  {
+    "id": "Q200_081",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "applesauce 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 62,
+    "expected_matched_foods": [
+      "applesauce"
+    ],
+    "must_contain": [
+      "applesauce",
+      "62"
+    ]
+  },
+  {
+    "id": "Q200_082",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "fruit salad 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 100,
+    "expected_matched_foods": [
+      "fruit salad"
+    ],
+    "must_contain": [
+      "fruit salad",
+      "100"
+    ]
+  },
+  {
+    "id": "Q200_083",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 100,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "pineapple",
+      "100"
+    ]
+  },
+  {
+    "id": "Q200_084",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "mango 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "expected_matched_foods": [
+      "mango"
+    ],
+    "must_contain": [
+      "mango",
+      "60"
+    ]
+  },
+  {
+    "id": "Q200_085",
+    "category": "QUALITY_CAL_CANNED_FRESH_DISTINCTION",
+    "input": "peach 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 39,
+    "expected_matched_foods": [
+      "peach"
+    ],
+    "must_contain": [
+      "peach",
+      "39"
+    ]
+  },
+  {
+    "id": "Q200_086",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "apple 200g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "193",
+      "apple",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_087",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "mango 100g and pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 160,
+    "expected_matched_foods": [
+      "mango",
+      "pineapple"
+    ],
+    "must_contain": [
+      "160",
+      "mango",
+      "pineapple"
+    ]
+  },
+  {
+    "id": "Q200_088",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "watermelon 300g and kiwi 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 151,
+    "expected_matched_foods": [
+      "watermelon",
+      "kiwi"
+    ],
+    "must_contain": [
+      "151",
+      "watermelon",
+      "kiwi"
+    ]
+  },
+  {
+    "id": "Q200_089",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "orange 200g and strawberries 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 158,
+    "expected_matched_foods": [
+      "orange",
+      "strawberries"
+    ],
+    "must_contain": [
+      "158",
+      "orange",
+      "strawberries"
+    ]
+  },
+  {
+    "id": "Q200_090",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "dates 100g and raisins 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 581,
+    "expected_matched_foods": [
+      "dates",
+      "raisins"
+    ],
+    "must_contain": [
+      "581",
+      "dates",
+      "raisins"
+    ]
+  },
+  {
+    "id": "Q200_091",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "pear 100g and peach 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 135,
+    "expected_matched_foods": [
+      "pear",
+      "peach"
+    ],
+    "must_contain": [
+      "135",
+      "pear",
+      "peach"
+    ]
+  },
+  {
+    "id": "Q200_092",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "blueberries 100g and raspberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 109,
+    "expected_matched_foods": [
+      "blueberries",
+      "raspberries"
+    ],
+    "must_contain": [
+      "109",
+      "blueberries",
+      "raspberries"
+    ]
+  },
+  {
+    "id": "Q200_093",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "blackberries 100g and cherries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 93,
+    "expected_matched_foods": [
+      "blackberries",
+      "cherries"
+    ],
+    "must_contain": [
+      "93",
+      "blackberries",
+      "cherries"
+    ]
+  },
+  {
+    "id": "Q200_094",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "figs 100g and guava 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 142,
+    "expected_matched_foods": [
+      "figs",
+      "guava"
+    ],
+    "must_contain": [
+      "142",
+      "figs",
+      "guava"
+    ]
+  },
+  {
+    "id": "Q200_095",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "papaya 100g and pomegranate 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 126,
+    "expected_matched_foods": [
+      "papaya",
+      "pomegranate"
+    ],
+    "must_contain": [
+      "126",
+      "papaya",
+      "pomegranate"
+    ]
+  },
+  {
+    "id": "Q200_096",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "lemon 100g and lime 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 59,
+    "expected_matched_foods": [
+      "lemon",
+      "lime"
+    ],
+    "must_contain": [
+      "59",
+      "lemon",
+      "lime"
+    ]
+  },
+  {
+    "id": "Q200_097",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "apricot 100g and nectarine 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 92,
+    "expected_matched_foods": [
+      "apricot",
+      "nectarine"
+    ],
+    "must_contain": [
+      "92",
+      "apricot",
+      "nectarine"
+    ]
+  },
+  {
+    "id": "Q200_098",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "apple 100g and mango 100g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 201,
+    "expected_matched_foods": [
+      "apple",
+      "mango",
+      "banana"
+    ],
+    "must_contain": [
+      "201",
+      "apple",
+      "mango",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_099",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "kiwi 100g and orange 100g and grapes 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 177,
+    "expected_matched_foods": [
+      "kiwi",
+      "orange",
+      "grapes"
+    ],
+    "must_contain": [
+      "177",
+      "kiwi",
+      "orange",
+      "grapes"
+    ]
+  },
+  {
+    "id": "Q200_100",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "pineapple 100g and watermelon 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 110,
+    "expected_matched_foods": [
+      "pineapple",
+      "watermelon"
+    ],
+    "must_contain": [
+      "110",
+      "pineapple",
+      "watermelon"
+    ]
+  },
+  {
+    "id": "Q200_101",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "apple 200g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "193",
+      "apple",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_102",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "mango 100g and pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 160,
+    "expected_matched_foods": [
+      "mango",
+      "pineapple"
+    ],
+    "must_contain": [
+      "160",
+      "mango",
+      "pineapple"
+    ]
+  },
+  {
+    "id": "Q200_103",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "watermelon 300g and kiwi 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 151,
+    "expected_matched_foods": [
+      "watermelon",
+      "kiwi"
+    ],
+    "must_contain": [
+      "151",
+      "watermelon",
+      "kiwi"
+    ]
+  },
+  {
+    "id": "Q200_104",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "orange 200g and strawberries 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 158,
+    "expected_matched_foods": [
+      "orange",
+      "strawberries"
+    ],
+    "must_contain": [
+      "158",
+      "orange",
+      "strawberries"
+    ]
+  },
+  {
+    "id": "Q200_105",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "dates 100g and raisins 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 581,
+    "expected_matched_foods": [
+      "dates",
+      "raisins"
+    ],
+    "must_contain": [
+      "581",
+      "dates",
+      "raisins"
+    ]
+  },
+  {
+    "id": "Q200_106",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "pear 100g and peach 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 135,
+    "expected_matched_foods": [
+      "pear",
+      "peach"
+    ],
+    "must_contain": [
+      "135",
+      "pear",
+      "peach"
+    ]
+  },
+  {
+    "id": "Q200_107",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "blueberries 100g and raspberries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 109,
+    "expected_matched_foods": [
+      "blueberries",
+      "raspberries"
+    ],
+    "must_contain": [
+      "109",
+      "blueberries",
+      "raspberries"
+    ]
+  },
+  {
+    "id": "Q200_108",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "blackberries 100g and cherries 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 93,
+    "expected_matched_foods": [
+      "blackberries",
+      "cherries"
+    ],
+    "must_contain": [
+      "93",
+      "blackberries",
+      "cherries"
+    ]
+  },
+  {
+    "id": "Q200_109",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "figs 100g and guava 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 142,
+    "expected_matched_foods": [
+      "figs",
+      "guava"
+    ],
+    "must_contain": [
+      "142",
+      "figs",
+      "guava"
+    ]
+  },
+  {
+    "id": "Q200_110",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "papaya 100g and pomegranate 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 126,
+    "expected_matched_foods": [
+      "papaya",
+      "pomegranate"
+    ],
+    "must_contain": [
+      "126",
+      "papaya",
+      "pomegranate"
+    ]
+  },
+  {
+    "id": "Q200_111",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "lemon 100g and lime 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 59,
+    "expected_matched_foods": [
+      "lemon",
+      "lime"
+    ],
+    "must_contain": [
+      "59",
+      "lemon",
+      "lime"
+    ]
+  },
+  {
+    "id": "Q200_112",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "apricot 100g and nectarine 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 92,
+    "expected_matched_foods": [
+      "apricot",
+      "nectarine"
+    ],
+    "must_contain": [
+      "92",
+      "apricot",
+      "nectarine"
+    ]
+  },
+  {
+    "id": "Q200_113",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "apple 100g and mango 100g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 201,
+    "expected_matched_foods": [
+      "apple",
+      "mango",
+      "banana"
+    ],
+    "must_contain": [
+      "201",
+      "apple",
+      "mango",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_114",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "kiwi 100g and orange 100g and grapes 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 177,
+    "expected_matched_foods": [
+      "kiwi",
+      "orange",
+      "grapes"
+    ],
+    "must_contain": [
+      "177",
+      "kiwi",
+      "orange",
+      "grapes"
+    ]
+  },
+  {
+    "id": "Q200_115",
+    "category": "QUALITY_CAL_MULTI_ITEM_TOTAL",
+    "input": "pineapple 100g and watermelon 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 110,
+    "expected_matched_foods": [
+      "pineapple",
+      "watermelon"
+    ],
+    "must_contain": [
+      "110",
+      "pineapple",
+      "watermelon"
+    ]
+  },
+  {
+    "id": "Q200_116",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "apple200gbanana100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "193",
+      "apple",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_117",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "APPLE    200   GRAMS   AND     BANANA 100 G",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "193",
+      "apple",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_118",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "mango100gandpineapple200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 160,
+    "expected_matched_foods": [
+      "mango",
+      "pineapple"
+    ],
+    "must_contain": [
+      "160",
+      "mango",
+      "pineapple"
+    ]
+  },
+  {
+    "id": "Q200_119",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "watermelon300gandkiwi100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 151,
+    "expected_matched_foods": [
+      "watermelon",
+      "kiwi"
+    ],
+    "must_contain": [
+      "151",
+      "watermelon",
+      "kiwi"
+    ]
+  },
+  {
+    "id": "Q200_120",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "orange200grams and strawberries200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 158,
+    "expected_matched_foods": [
+      "orange",
+      "strawberries"
+    ],
+    "must_contain": [
+      "158",
+      "orange",
+      "strawberries"
+    ]
+  },
+  {
+    "id": "Q200_121",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "add apple 200g plus banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "193",
+      "apple",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_122",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "banana100gplusmango100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 149,
+    "expected_matched_foods": [
+      "banana",
+      "mango"
+    ],
+    "must_contain": [
+      "149",
+      "banana",
+      "mango"
+    ]
+  },
+  {
+    "id": "Q200_123",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "kiwi100gandorange200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 155,
+    "expected_matched_foods": [
+      "kiwi",
+      "orange"
+    ],
+    "must_contain": [
+      "155",
+      "kiwi",
+      "orange"
+    ]
+  },
+  {
+    "id": "Q200_124",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "grapes100g with pear100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 126,
+    "expected_matched_foods": [
+      "grapes",
+      "pear"
+    ],
+    "must_contain": [
+      "126",
+      "grapes",
+      "pear"
+    ]
+  },
+  {
+    "id": "Q200_125",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "peach200gandplum100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 124,
+    "expected_matched_foods": [
+      "peach",
+      "plum"
+    ],
+    "must_contain": [
+      "124",
+      "peach",
+      "plum"
+    ]
+  },
+  {
+    "id": "Q200_126",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "DATES 100 G AND RAISINS 100 GRAMS",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 581,
+    "expected_matched_foods": [
+      "dates",
+      "raisins"
+    ],
+    "must_contain": [
+      "581",
+      "dates",
+      "raisins"
+    ]
+  },
+  {
+    "id": "Q200_127",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "blueberries100g raspberries100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 109,
+    "expected_matched_foods": [
+      "blueberries",
+      "raspberries"
+    ],
+    "must_contain": [
+      "109",
+      "blueberries",
+      "raspberries"
+    ]
+  },
+  {
+    "id": "Q200_128",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "apple 200 g banana 100 g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "193",
+      "apple",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_129",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "addmango100gandpineapple200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 160,
+    "expected_matched_foods": [
+      "mango",
+      "pineapple"
+    ],
+    "must_contain": [
+      "160",
+      "mango",
+      "pineapple"
+    ]
+  },
+  {
+    "id": "Q200_130",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "today I ate apple 200g and banana 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "193",
+      "apple",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_131",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "I had mango 100g plus pineapple 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 160,
+    "expected_matched_foods": [
+      "mango",
+      "pineapple"
+    ],
+    "must_contain": [
+      "160",
+      "mango",
+      "pineapple"
+    ]
+  },
+  {
+    "id": "Q200_132",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "apple   200g   and   banana   100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "193",
+      "apple",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_133",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "APPLE200GBANANA100G",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 193,
+    "expected_matched_foods": [
+      "apple",
+      "banana"
+    ],
+    "must_contain": [
+      "193",
+      "apple",
+      "banana"
+    ]
+  },
+  {
+    "id": "Q200_134",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "watermelon 300 grams and kiwi 100 grams",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 151,
+    "expected_matched_foods": [
+      "watermelon",
+      "kiwi"
+    ],
+    "must_contain": [
+      "151",
+      "watermelon",
+      "kiwi"
+    ]
+  },
+  {
+    "id": "Q200_135",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "orange 200 G plus strawberries 200 G",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 158,
+    "expected_matched_foods": [
+      "orange",
+      "strawberries"
+    ],
+    "must_contain": [
+      "158",
+      "orange",
+      "strawberries"
+    ]
+  },
+  {
+    "id": "Q200_136",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "pear100gpeach200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 135,
+    "expected_matched_foods": [
+      "pear",
+      "peach"
+    ],
+    "must_contain": [
+      "135",
+      "pear",
+      "peach"
+    ]
+  },
+  {
+    "id": "Q200_137",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "lemon100glime100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 59,
+    "expected_matched_foods": [
+      "lemon",
+      "lime"
+    ],
+    "must_contain": [
+      "59",
+      "lemon",
+      "lime"
+    ]
+  },
+  {
+    "id": "Q200_138",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "figs100gandguava100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 142,
+    "expected_matched_foods": [
+      "figs",
+      "guava"
+    ],
+    "must_contain": [
+      "142",
+      "figs",
+      "guava"
+    ]
+  },
+  {
+    "id": "Q200_139",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "papaya100gandpomegranate100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 126,
+    "expected_matched_foods": [
+      "papaya",
+      "pomegranate"
+    ],
+    "must_contain": [
+      "126",
+      "papaya",
+      "pomegranate"
+    ]
+  },
+  {
+    "id": "Q200_140",
+    "category": "QUALITY_CAL_FORMAT_NOISE",
+    "input": "blackberries100gandcherries100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 93,
+    "expected_matched_foods": [
+      "blackberries",
+      "cherries"
+    ],
+    "must_contain": [
+      "93",
+      "blackberries",
+      "cherries"
+    ]
+  },
+  {
+    "id": "Q200_141",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "dragon meat 200g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_142",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "unicorn steak 150g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_143",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "alien fruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_144",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "robot soup 250g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_145",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "moon cheese 90g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_146",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "banana spaceship 100g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_147",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "apple laptop 200g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "outside",
+      "nutrition scope",
+      "food",
+      "diet",
+      "calories"
+    ],
+    "must_not_contain": []
+  },
+  {
+    "id": "Q200_148",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_149",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "ghost milk 250g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_150",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "plastic rice 200g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_151",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "cyber banana 120g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_152",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "stone soup 200g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_153",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "battery carbonara 100g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "not accurate",
+      "context",
+      "balance",
+      "health",
+      "not replace",
+      "depends"
+    ],
+    "must_not_contain": []
+  },
+  {
+    "id": "Q200_154",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "cloud protein 300g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "not accurate",
+      "context",
+      "balance",
+      "health",
+      "not replace",
+      "depends"
+    ],
+    "must_not_contain": []
+  },
+  {
+    "id": "Q200_155",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "invisible pasta 180g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_156",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "magic egg 100g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_157",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "phone 300g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_158",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "car 1000g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_159",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "wood apple 100g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_160",
+    "category": "QUALITY_CAL_FAKE_REJECTION",
+    "input": "dragon meat 200g",
+    "expected_mode": "calorie_input",
+    "expected_matched_foods": [],
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "not find",
+      "unclear",
+      "misspelled",
+      "suggest",
+      "rejected"
+    ],
+    "must_not_contain": [
+      "matched_food\": \"dragon fruit\"",
+      "dragon fruit 120"
+    ]
+  },
+  {
+    "id": "Q200_161",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "apple 200g and dragon meat 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 104,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "104",
+      "apple"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_162",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "banana 100g and robot soup 250g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 89,
+    "expected_matched_foods": [
+      "banana"
+    ],
+    "must_contain": [
+      "89",
+      "banana"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_163",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "pineapple 200g and alien fruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 100,
+    "expected_matched_foods": [
+      "pineapple"
+    ],
+    "must_contain": [
+      "100",
+      "pineapple"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_164",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "mango 100g and moon cheese 90g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 60,
+    "expected_matched_foods": [
+      "mango"
+    ],
+    "must_contain": [
+      "60",
+      "mango"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_165",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "kiwi 100g and phone 300g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 61,
+    "expected_matched_foods": [
+      "kiwi"
+    ],
+    "must_contain": [
+      "61",
+      "kiwi"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_166",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "orange 200g and car 1000g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 94,
+    "expected_matched_foods": [
+      "orange"
+    ],
+    "must_contain": [
+      "94",
+      "orange"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_167",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "grapes 100g and quantum bread 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 69,
+    "expected_matched_foods": [
+      "grapes"
+    ],
+    "must_contain": [
+      "69",
+      "grapes"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_168",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "watermelon 300g and unicorn steak 150g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 90,
+    "expected_matched_foods": [
+      "watermelon"
+    ],
+    "must_contain": [
+      "90",
+      "watermelon"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_169",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "pear 100g and ghost milk 250g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "expected_matched_foods": [
+      "pear"
+    ],
+    "must_contain": [
+      "57",
+      "pear"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_170",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "peach 200g and invisible pasta 180g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 78,
+    "expected_matched_foods": [
+      "peach"
+    ],
+    "must_contain": [
+      "78",
+      "peach"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_171",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "dates 100g and magic egg 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 282,
+    "expected_matched_foods": [
+      "dates"
+    ],
+    "must_contain": [
+      "282",
+      "dates"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_172",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "raisins 100g and alien fruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 299,
+    "expected_matched_foods": [
+      "raisins"
+    ],
+    "must_contain": [
+      "299",
+      "raisins"
+    ],
+    "must_not_contain": [
+      "alien fruit matched",
+      "matched_food\": \"alien fruit\""
+    ]
+  },
+  {
+    "id": "Q200_173",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "lemon 100g and robot soup 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 29,
+    "expected_matched_foods": [
+      "lemon"
+    ],
+    "must_contain": [
+      "29",
+      "lemon"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_174",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "lime 100g and plastic rice 200g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 30,
+    "expected_matched_foods": [
+      "lime"
+    ],
+    "must_contain": [
+      "30",
+      "lime"
+    ],
+    "must_not_contain": [
+      "dragon fruit 120",
+      "matched_food\": \"dragon fruit\""
+    ]
+  },
+  {
+    "id": "Q200_175",
+    "category": "QUALITY_CAL_PARTIAL_UNKNOWN",
+    "input": "blueberries 100g and alien fruit 100g",
+    "expected_mode": "calorie_input",
+    "expected_total_calories": 57,
+    "expected_matched_foods": [
+      "blueberries"
+    ],
+    "must_contain": [
+      "57",
+      "blueberries"
+    ],
+    "must_not_contain": [
+      "alien fruit matched",
+      "matched_food\": \"alien fruit\""
+    ]
+  },
+  {
+    "id": "Q200_176",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "digits",
+      "number",
+      "200g",
+      "provide"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_177",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "food name",
+      "include the food",
+      "which food"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_178",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "quantity",
+      "grams",
+      "200g"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_179",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "banana one hundred grams",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "digits",
+      "number",
+      "100g",
+      "provide"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_180",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple 2oo g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "could not",
+      "confidently understand",
+      "clear food",
+      "grams",
+      "nutrition question"
+    ],
+    "must_not_contain": []
+  },
+  {
+    "id": "Q200_181",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "سلام سیب ۲۰۰ گرم",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "English",
+      "english"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_182",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "empty",
+      "message"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_183",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "   ",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "empty",
+      "message"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_184",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple two hundred grams",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "digits",
+      "number",
+      "200g",
+      "provide",
+      "clear food",
+      "grams"
+    ],
+    "must_not_contain": []
+  },
+  {
+    "id": "Q200_185",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple -200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "could not",
+      "confidently understand",
+      "clear food",
+      "grams",
+      "nutrition question"
+    ],
+    "must_not_contain": []
+  },
+  {
+    "id": "Q200_186",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple 200kg",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "grams",
+      "g",
+      "valid"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_187",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple 200mg",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "grams",
+      "g",
+      "valid"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_188",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "banana g100",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "could not",
+      "confidently understand",
+      "clear food",
+      "grams",
+      "nutrition question"
+    ],
+    "must_not_contain": []
+  },
+  {
+    "id": "Q200_189",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "apple 200g",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [],
+    "must_not_contain": [
+      "2425"
+    ],
+    "expected_total_calories": 104,
+    "expected_matched_foods": [
+      "apple"
+    ],
+    "must_contain": [
+      "apple",
+      "104"
+    ]
+  },
+  {
+    "id": "Q200_190",
+    "category": "QUALITY_CAL_GUARDRAIL",
+    "input": "I ate something",
+    "expected_mode": "calorie_input",
+    "must_contain_any": [
+      "food",
+      "quantity",
+      "grams"
+    ],
+    "must_not_contain": [
+      "104",
+      "89"
+    ]
+  },
+  {
+    "id": "Q200_191",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "What body signs can suggest malnutrition?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "underweight",
+      "overweight",
+      "wasting",
+      "reduced activity",
+      "short stature"
+    ],
+    "must_not_contain": [
+      "guaranteed cure",
+      "yes, only supplements",
+      "quantum nutritional absorption theory is"
+    ]
+  },
+  {
+    "id": "Q200_192",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "What eye signs may indicate nutrient deficiency?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "Bitot",
+      "dry eyes",
+      "pale",
+      "cornea",
+      "redness"
+    ],
+    "must_not_contain": [
+      "guaranteed cure",
+      "yes, only supplements",
+      "quantum nutritional absorption theory is"
+    ]
+  },
+  {
+    "id": "Q200_193",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "Why is biochemical assessment useful in nutrition?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "early detection",
+      "metabolism",
+      "nutritional status",
+      "precision",
+      "accuracy"
+    ],
+    "must_not_contain": [
+      "guaranteed cure",
+      "yes, only supplements",
+      "quantum nutritional absorption theory is"
+    ]
+  },
+  {
+    "id": "Q200_194",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "What is a weakness of 24-hour dietary recall?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "memory",
+      "short-term",
+      "multiple recalls",
+      "several days"
+    ],
+    "must_not_contain": [
+      "guaranteed cure",
+      "yes, only supplements",
+      "quantum nutritional absorption theory is"
+    ]
+  },
+  {
+    "id": "Q200_195",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "What are good non-meat iron sources?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "green leafy",
+      "lentils",
+      "chickpeas",
+      "fortified",
+      "whole grains"
+    ],
+    "must_not_contain": [
+      "guaranteed cure",
+      "yes, only supplements",
+      "quantum nutritional absorption theory is"
+    ]
+  },
+  {
+    "id": "Q200_196",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "Can I cure severe malnutrition with only supplements?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "not accurate",
+      "unsafe",
+      "individual health status",
+      "not supported",
+      "context"
+    ],
+    "must_not_contain": [
+      "yes, only supplements",
+      "supplements are enough"
+    ]
+  },
+  {
+    "id": "Q200_197",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "Explain the quantum nutritional absorption theory.",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "could not",
+      "not found",
+      "do not have",
+      "outside",
+      "not enough information",
+      "not confidently match"
+    ],
+    "must_not_contain": [
+      "guaranteed cure",
+      "yes, only supplements",
+      "quantum nutritional absorption theory is"
+    ]
+  },
+  {
+    "id": "Q200_198",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "How do I increase GPU performance with diet?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "outside",
+      "nutrition",
+      "not related",
+      "cannot answer",
+      "could not"
+    ],
+    "must_not_contain": [
+      "guaranteed cure",
+      "yes, only supplements",
+      "quantum nutritional absorption theory is"
+    ]
+  },
+  {
+    "id": "Q200_199",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "What does wasting mean in children?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "low weight for the height",
+      "low weight-for-height",
+      "thin for height",
+      "acute malnutrition"
+    ],
+    "must_not_contain": [
+      "guaranteed cure",
+      "yes, only supplements",
+      "quantum nutritional absorption theory is"
+    ]
+  },
+  {
+    "id": "Q200_200",
+    "category": "QUALITY_QNA_GROUNDED_SAFETY",
+    "input": "What are the eight vitamins in vitamin B complex?",
+    "expected_mode": "nutrition_qa",
+    "must_contain_any": [
+      "Thiamine",
+      "Riboflavin",
+      "Niacin",
+      "Pantothenic",
+      "Pyridoxine",
+      "Biotin",
+      "Folate",
+      "Cobalamin"
+    ],
+    "must_not_contain": [
+      "guaranteed cure",
+      "yes, only supplements",
+      "quantum nutritional absorption theory is"
+    ]
+  }
+]

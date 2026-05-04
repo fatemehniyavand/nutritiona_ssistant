@@ -1,6 +1,5 @@
+from pydantic import BaseModel
 from typing import List, Optional
-
-from pydantic import BaseModel, Field
 
 
 # =========================================================
@@ -18,10 +17,11 @@ class FoodMatchResult(BaseModel):
     confidence: str
     distance: Optional[float] = None
 
-    status: str
+    status: str  # matched | rejected
 
-    suggestions: List[str] = Field(default_factory=list)
+    suggestions: List[str] = []
 
+    # Explainability
     match_reason: Optional[str] = None
     match_source: Optional[str] = None
     why_rejected: Optional[str] = None
@@ -35,8 +35,9 @@ class CalorieResponse(BaseModel):
     total_calories: Optional[float]
     confidence: str
 
-    suggestions: List[str] = Field(default_factory=list)
+    suggestions: List[str]
 
+    # Explainability (global)
     coverage: float
     matched_items: int
     total_items: int
@@ -54,7 +55,8 @@ class QAResponse(BaseModel):
     answer: str
     confidence: str
 
-    sources_used: List[str] = Field(default_factory=list)
-    retrieved_contexts: List[str] = Field(default_factory=list)
+    # Explainability
+    sources_used: List[str] = []
+    retrieved_contexts: List[str] = []
 
     final_message: str
